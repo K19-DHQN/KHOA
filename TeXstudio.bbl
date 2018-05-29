@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{aaltonen2010mutation}
+Kalle Aaltonen, Petri Ihantola, and Otto Sepp{\"a}l{\"a}.
+\newblock Mutation analysis vs. code coverage in automated assessment of
+  students' testing skills.
+\newblock In {\em Proceedings of the ACM international conference companion on
+  Object oriented programming systems languages and applications companion},
+  pages 153--160. ACM, 2010.
+
+\bibitem{li2016measuring}
+Sihan Li, Xusheng Xiao, Blake Bassett, Tao Xie, and Nikolai Tillmann.
+\newblock Measuring code behavioral similarity for programming and software
+  engineering education.
+\newblock In {\em Proceedings of the 38th International Conference on Software
+  Engineering Companion}, pages 501--510. ACM, 2016.
+
+\end{thebibliography}

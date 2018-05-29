@@ -1,0 +1,31 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[utf8]{vietnam}
+\usepackage[left=3cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\title{ĐỘ TƯƠNG TỰ HÀNH VI CỦA CHƯƠNG TRÌNH VÀ MỘT SỐ ỨNG DỤNG}
+\author{Phạm Văn Việt, Đỗ Đăng Khoa}
+
+\begin{document}
+\maketitle
+
+\section{Giới thiệu}
+
+\section{Độ tương tự hành vi}
+\section{Thi nghiem}
+Give me number $1,2,3$
+\section{Thực nghiệm}
+
+\begin{tabular}{|c|c|}
+\hline 
+stt & họ tên \\ 
+\hline 
+1 & khoa \\ 
+\hline 
+\end{tabular} 
+
+\bibliography{biblio.bib}
+\bibliographystyle{plain}
+\end{document}

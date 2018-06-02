@@ -46,38 +46,59 @@
 Ví dụ trên cho chúng ta thấy 2 chương trình là tương đường nhau về hành vi. Hai chương trình có giá trị đầu vào là như nhau (cùng kiểu $\textbf{Int}$ ). Chương trình đầu tiên sử dụng hàm $\textit{\textbf{switch...case}}$, chương trình tiếp theo sử dụng hàm $\textit{\textbf{if...else}}$ để kiểm tra giá trị đầu vào, tuy cú pháp khách nhau nhưng cách xử lý và trả về kết quả $\textbf{\textit{y}}$ là như nhau. 
 	
 \subsection{Sự khác biệt về hành vi (Behavioral Difference)}
-	\textit{Hai chương trình $P_{1}$ và $P_{2}$ có cùng một miền các giá trị đầu vào I và khác biệt về hành vi nếu exec($P_{1}$; I) $\neq$ exec($P_{2}$; I), $\nexists$i $\in$ I exec($P_{1}$; i) $\neq$ exec($P_{2}$; i)}.
+	\textit{Hai chương trình $P_{1}$ và $P_{2}$ có cùng một miền các giá trị đầu vào I và khác biệt về hành vi nếu exec($P_{1}$, I) $\neq$ exec($P_{2}$, I), $\nexists$i $\in$ I exec($P_{1}$, i) $\neq$ exec($P_{2}$, i)}.
 	
 \subsection{Tương tự hành vi (Behavioral Similarity)}
-	\textit{Hai chương trình $P_{1}$ và $P_{2}$ được gọi là tương tự hành vi khai là hai chương trình có cùng miền giá trị đầu vào I và $\left|I_{s}\right|\diagup$$\left|I\right|$, trong đó $I_{s}$ $\subseteq $ I, nếu exec($P_{1}$, $I_{s}$) = exec($P_{2}$, $I_{s}$), và $\forall$j $\in$ I $\backslash$$I_{s}$, exec($P_{1}$; j) $\neq$ exec($P_{2}$; j).}
+	\textit{Tương tự hành vi giữa hai chương trình $P_{1}$ và $P_{2}$ khi hai chương trình cùng miền giá trị đầu vào là tập hợp các giá trị $\left|I_{s}\right|\diagup$$\left|I\right|$, trong đó $I_{s}$ $\subseteq $ I, nếu exec($P_{1}$, $I_{s}$) = exec($P_{2}$, $I_{s}$), và $\forall$j $\in$ I $\backslash$$I_{s}$, exec($P_{1}$; j) $\neq$ exec($P_{2}$; j).}
 
-\subsubsection{Ví dụ BS:}
-	Ví dụ cụ thể
-	
+
 
 
 % Kỹ thuật các phép đo độ tương tự hành vi ============================================
 \section{Một số phép đo độ tương tự hành vi dựa trên testcase}
-Để tính sự tương đồng về hành vi giữa hai chương trình, chúng ta có thể đo bằng cách tính tỷ lệ đầu vào và đầu ra trên cả hai chương trình trên cùng toàn bộ miền giá trị đầu vào. Trong đó một phương pháp tiếp cận đơn giản đó là liệt kê tất cả các dữ liệu trong miền đầu vào và chạy từng đầu vào trên cả hai chương trình để so sánh các kết quả đầu ra. Nhưng việc này sẽ không thực tế hoặc không liên quan đến các chương trình với một miền đầu vào lớn hoặc vô hạn. \\
+Để tính sự tương đồng về hành vi giữa hai chương trình, chúng ta có thể đo bằng cách tính tỷ lệ đầu vào và đầu ra trên cả hai chương trình trên cùng toàn bộ miền giá trị đầu vào. Một phương pháp tiếp cận đó là liệt kê tất cả các dữ liệu trong miền đầu vào và chạy từng đầu vào trên cả hai chương trình để so sánh các kết quả đầu ra. Nhưng việc này sẽ không thực tế hoặc không liên quan đến các chương trình với một miền đầu vào lớn hoặc vô hạn. \\
 	
-Để đo độ tương tự hành vi được chính xác hơn, chúng tôi chạy các dữ liệu đầu vào đại diện thay vì tất cả các dữ liệu đầu vào cho các chương trình. Bằng cách thống nhất lấy mẫu một phần dữ liệu đầu vào từ miền đầu vào, độ tương tự về hành vi sẽ được tính dựa trên tỷ lệ các đầu vào mẫu trên các đầu ra. \\
+Để đo độ tương tự hành vi được chính xác hơn, chúng tôi chạy các dữ liệu đầu vào đại diện thay vì tất cả các dữ liệu đầu vào cho các chương trình. Bằng cách thống nhất lấy mẫu một phần dữ liệu đầu vào từ miền đầu vào, độ tương tự về hành vi sẽ được tính dựa trên tỷ lệ các mẫu đầu vào trên các đầu ra. \\
 	
-Dựa trên DSE, chúng ta có thể tạo ra được dữ liệu đầu vào thử nghiệm có độ bao phủ cao, và sử dụng trong các kỹ thuật đo độ tương tự. \\
+Dựa trên kỹ thuật Dynamic Symbolic Execution \textbf{(DSE)}, chúng ta có thể tạo ra được dữ liệu đầu vào thử nghiệm có độ bao phủ cao, và sử dụng trong các kỹ thuật đo độ tương tự. \\
 
-% Kỹ thuật RS============
-\subsection{Kỹ Thuật Random Sampling (RS)}
+% Kỹ thuật RS==================================================================================
+\subsection{Phép đo Random Sampling (RS)}
 	\subsubsection{Định nghĩa}
 	\textit{Hai chương trình $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đầu vào I và $I_{s}$ là tập con các giá trị đầu vào của tập I, và  $I_{a}$ là tập con các giá trị đầu vào của tập $I_{s}$, trong đó $\forall$i $\in$ $I_{a}$, sao cho exec($P_{1}$, i) = exec($P_{2}$, i) và $\forall$j $\in$ $I_{s} \backslash I_{a}$, exec($P_{1}$, j) $\neq$ exec($P_{2}$, j). Độ đo của kỹ thuật của RS sẽ là $M_{RS}$($P_{1},P_{2}$) = $\left|I_{a}\right|$$\diagup$$\left|I_{s}\right|$}
 	
+	Phép đo \textbf{RS} là một phương pháp đo tương đối đơn giản và hiệu quả để tính độ tương tự hành vi. Nhưng phép đo \textbf{RS} cũng có hạn chế nhất định trong những trường hợp có những hành vi nhỏ giữa các chương trình và phép đo \textbf{RS } không thể phân biệt các hành vi hơi khác nhau này.\\
 	
-% Kỹ thuật DSE============
-\subsection{Kỹ Thuật Single Program Symbol Execution (SSE)}
+	\subsubsection{Ví dụ:}
+	
+	\renewcommand{\lstlistingname}{Chương trình}
+	\begin{lstlisting}[language={[Sharp]C}, caption={Chương trình $P_{1}$}, label={Script}]
+	public static string Puzzle(string x) {
+		if (x == "Hello") return "NOT OK";
+		if (x == "Funny") return "NOT OK";
+	return "OK";
+	}
+	\end{lstlisting}
+	
+	\renewcommand{\lstlistingname}{Chương trình}
+	\begin{lstlisting}[language={[Sharp]C}, caption={Chương trình $P_{2}$}, label={Script}]
+	public static string Puzzle(string x) {
+		return "OK";
+	}
+	\end{lstlisting}
+	
+	Trong ví dụ trên, chương trình $P_{1}$ và $P_{2}$ có hành vi khác biệt nhỏ nhưng độ đo \textbf{RS} không thể phân biệt được sự khác biệt này và trả về độ đo bằng 1.
+	
+	
+% Kỹ thuật DSE=================================================================================
+\subsection{Phép đo Single Program Symbol Execution (SSE)}
+	\subsubsection{Định nghĩa}
+	\textit{Hai chương trình $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đầu vào I và $P_{1}$ là chương trình tham chiếu. Trong đó, $I_{s}$ là tập các giá trị đầu vào được tạo bởi DSE trên $P_{1}$, và  $I_{a}$ là tập con các giá trị đầu vào của tập $I_{s}$, sao cho $\forall$i $\in$ $I_{a}$, exec($P_{1}$, i) = exec($P_{2}$, i) và $\forall$j $\in$ $I_{s} \backslash I_{a}$, exec($P_{1}$, j) $\neq$ exec($P_{2}$, j). Độ đo của kỹ thuật của SSE sẽ là $M_{SSE}$($P_{1},P_{2}$) = $\left|I_{a}\right|$$\diagup$$\left|I_{s}\right|$.}
 
-
-%========================================================================================================
-\section{So sánh các phép đo và phương pháp kết hợp}
+%==============================================================================================
 % Kỹ thuật PSE============
 \subsection{Kỹ Thuật Paired Program Symbolic Execution (PSE)}
+\subsubsection{Định nghĩa}
 	
-
+\textit{Hai chương trình $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đầu vào I. Chúng ta có chương trình $P_{3}$ là chương trình kết hợp của $P_{1}$ và $P_{2}$ có dạng (exec($P_{1}$, I) = exec($P_{2}$, I)), thõa điều kiện đầu vào và khẳng định điều kiện là đúng, exec($P_{3}$, i) = T với giá trị đầu vào i trên $P_{3}$ là thõa điều kiện. Trong đó, $I_{s}$ là tập các giá trị đầu vào được tạo bởi DSE trên $P_{3}$, và  $I_{a}$ là tập con các giá trị đầu vào của tập $I_{s}$, sao cho $\forall$i $\in$ $I_{a}$, exec($P_{3}$, i) = T và $\nexists $ j $\in$ $I_{s} \backslash I_{a}$, exec($P_{3}$, j) = T. Độ đo của kỹ thuật của PSE sẽ là $M_{PSE}$($P_{1},P_{2}$) = $\left|I_{a}\right|$$\diagup$$\left|I_{s}\right|$.}
 	

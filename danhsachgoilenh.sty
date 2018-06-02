@@ -9,11 +9,11 @@
 
 
 % Cấu hình paragraph
-\setlength{\parindent}{0pt} % Không cho mỗi đoạn thụt đầu dòng vào 1 đoạn
-\setlength{\parskip}{1em}
-\renewcommand{\baselinestretch}{0.4}
-%\usepackage{indentfirst} % Tất cả đều thụt đầu dòng trong mỗi đoạn văn bản
-\renewcommand{\baselinestretch}{0.5} % Tăng khoảng cách giữa các đoạn văn
+\setlength{\parindent}{30pt} % Không cho mỗi đoạn thụt đầu dòng vào 1 đoạn
+\setlength{\parskip}{0.5em}
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{indentfirst} % Tất cả đều thụt đầu dòng trong mỗi đoạn văn bản
+\renewcommand{\baselinestretch}{0.2} % Tăng khoảng cách giữa các đoạn văn
 % Ép hai chữ nào đó luôn ở cùng 1 dòng
 % ... thông~minh ...
 
@@ -55,9 +55,10 @@
 \renewcommand{\cftpartpresnum}{Phần }
 \AtBeginDocument{\addtolength\cftpartnumwidth{\widthof{\bfseries Phần }}}
 
-%Đánh số secction trong văn bản
-\renewcommand\thesection{\Roman{section}}
-\renewcommand\thesubsection{\arabic{subsection}}
+%Đánh số section trong văn bản
+%\renewcommand\thesection{\arabic{section}}
+%\renewcommand\thesubsection{\arabic{subsection}}
+%\renewcommand\thesubsubsection{\arabic{subsection}}
 
 %MỘT SỐ CÂU LỆNH CẦN KHI SỬ DỤNG
 

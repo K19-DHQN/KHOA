@@ -2,54 +2,89 @@
 	
 \section{Một số khái niệm, định nghĩa}
 	
-	Để định lượng hai chương trình tương tự nhau, chúng ta định nghĩa các khái niệm về hành vi chương trình và các định nghĩa liên quan đến sự tương tự của hai chương trình, và ví dụ minh họa cho các định nghĩa. 
+Để định lượng hai chương trình tương tự nhau, chúng ta định nghĩa các khái niệm về hành vi chương trình và các định nghĩa liên quan đến sự tương tự của hai chương trình, và ví dụ minh họa cho các định nghĩa. 
 	
 \subsection{Hành vi của chương trình (Program Execution)}
-	\textit{Hành vi chương trình P là thực hiện hàm: P $\times$ I $\rightarrow$ O. Với giá trị đầu vào i $\in$ I, giá trị đầu ra o $\in$ O. Trong đó I là miền các trị đầu vào của chương trình P và O là tập hợp các giá trị đầu ra của chương trình P.}
-	
+
+\begin{definition}\label{def:progexe}
+Hành vi chương trình P là thực hiện hàm: P $\times$ I $\rightarrow$ O. Với giá trị đầu vào i $\in$ I, giá trị đầu ra o $\in$ O. Trong đó I là miền các trị đầu vào của chương trình P và O là tập hợp các giá trị đầu ra của chương trình P.  
+\end{definition}
+
 	
 \subsection{Tương đương hành vi (Behavioral Equivalence)}
-	\textit{Hai chương trình $P_{1}$ và $P_{2}$ có cùng một miền các giá trị đầu vào I và tương đương về hành vi nếu exec($P_{1}$; I) = exec($P_{2}$; I), với $\forall$i $\in$ I exec($P_{1}$; i) = exec($P_{2}$; i)}.
-	
+
+\begin{definition}
+  Hai chương trình $P_{1}$ và $P_{2}$ có cùng một miền các giá trị đầu
+  vào I và tương đương về hành vi nếu exec($P_{1}$; I) = exec($P_{2}$;
+  I), với $\forall$i $\in$ I exec($P_{1}$; i) = exec($P_{2}$; i).
+\end{definition}
 	
 \subsubsection{Ví dụ:}
 
-	\renewcommand{\lstlistingname}{Chương trình}
-	\begin{lstlisting}[language={[Sharp]C}, caption={Tính y, sử dụng hàm switch...case}, label={Script}]
-	public static int TinhY(int x)
-	{
-		y = 0;
-		switch (x) {
-			case 1: y += 4; break;
-			case 2: y *= 2; break;
-			default: y = y * y;
-		}
-		return y;
-	}
-	\end{lstlisting}
-	\renewcommand{\lstlistingname}{Chương trình}
-	
-	\begin{lstlisting}[language={[Sharp]C}, caption={Tính y, sử dụng hàm If...else}, label={Script}]
-	public static int TinhY(int x)
-	{
-		y = 0;
-		if (x == 1)
-			y += 4;
-		else if (x == 2)
-			y *= 2;
-		else
-			y = y * y;
-		return y;
-	}
-	\end{lstlisting}
 
-Ví dụ trên cho chúng ta thấy 2 chương trình là tương đường nhau về hành vi. Hai chương trình có giá trị đầu vào là như nhau (cùng kiểu $\textbf{Int}$ ). Chương trình đầu tiên sử dụng hàm $\textit{\textbf{switch...case}}$, chương trình tiếp theo sử dụng hàm $\textit{\textbf{if...else}}$ để kiểm tra giá trị đầu vào, tuy cú pháp khách nhau nhưng cách xử lý và trả về kết quả $\textbf{\textit{y}}$ là như nhau. 
+\begin{lstlisting}[language={[Sharp]C}, caption={Tính y, sử dụng hàm switch...case}, label={Script}]
+  public static int TinhY(int x)
+  {
+    y = 0;
+    switch (x) {
+      case 1: y += 4; break;
+      case 2: y *= 2; break;
+      default: y = y * y;
+    }
+    return y;
+  }
+\end{lstlisting}
+
+
+\begin{lstlisting}[language={[Sharp]C}, caption={Tính y, sử dụng hàm If...else}, label={Script}]
+  public static int TinhY(int x)
+  {
+    y = 0;
+    if (x == 1)
+    y += 4;
+    else if (x == 2)
+    y *= 2;
+    else
+    y = y * y;
+    return y;
+  }
+\end{lstlisting}
+
+Ví dụ trên cho chúng ta thấy 2 chương trình là tương đường nhau về
+hành vi. Hai chương trình có giá trị đầu vào là như nhau (cùng kiểu
+$\textbf{Int}$ ). Chương trình đầu tiên sử dụng hàm
+$\textit{\textbf{switch...case}}$, chương trình tiếp theo sử dụng hàm
+$\textit{\textbf{if...else}}$ để kiểm tra giá trị đầu vào, tuy cú pháp
+khách nhau nhưng cách xử lý và trả về kết quả $\textbf{\textit{y}}$ là
+như nhau.
 	
 \subsection{Sự khác biệt về hành vi (Behavioral Difference)}
+<<<<<<< HEAD
 	\textit{Hai chương trình $P_{1}$ và $P_{2}$ có cùng một miền các giá trị đầu vào I và khác biệt về hành vi nếu exec($P_{1}$, I) $\neq$ exec($P_{2}$, I), $\nexists$i $\in$ I exec($P_{1}$, i) $\neq$ exec($P_{2}$, i)}.
 	
 \subsection{Tương tự hành vi (Behavioral Similarity)}
 	\textit{Tương tự hành vi giữa hai chương trình $P_{1}$ và $P_{2}$ khi hai chương trình cùng miền giá trị đầu vào là tập hợp các giá trị $\left|I_{s}\right|\diagup$$\left|I\right|$, trong đó $I_{s}$ $\subseteq $ I, nếu exec($P_{1}$, $I_{s}$) = exec($P_{2}$, $I_{s}$), và $\forall$j $\in$ I $\backslash$$I_{s}$, exec($P_{1}$; j) $\neq$ exec($P_{2}$; j).}
+=======
+
+\begin{definition}
+  Hai chương trình $P_{1}$ và $P_{2}$ có cùng một miền các giá trị đầu
+  vào I và khác biệt về hành vi nếu exec($P_{1}$; I) $\neq$
+  exec($P_{2}$; I), $\nexists$i $\in$ I exec($P_{1}$; i) $\neq$
+  exec($P_{2}$; i).
+\end{definition}
+
+	
+\subsection{Tương tự hành vi (Behavioral Similarity)}
+
+\begin{definition}
+  Hai chương trình $P_{1}$ và $P_{2}$ được gọi là tương tự hành vi
+  khai là hai chương trình có cùng miền giá trị đầu vào I và
+  $\left|I_{s}\right|\diagup$$\left|I\right|$, trong đó
+  $I_{s}$ $\subseteq $ I, nếu exec($P_{1}$, $I_{s}$) =
+  exec($P_{2}$, $I_{s}$), và $\forall$j $\in$ I
+  $\backslash$$I_{s}$, exec($P_{1}$; j) $\neq$ exec($P_{2}$; j).
+\end{definition}
+>>>>>>> 6d1cb3950e1c029d690558aeb36596808134502a
 
 
 
@@ -100,5 +135,14 @@ Dựa trên kỹ thuật Dynamic Symbolic Execution \textbf{(DSE)}, chúng ta c�
 \subsection{Kỹ Thuật Paired Program Symbolic Execution (PSE)}
 \subsubsection{Định nghĩa}
 	
+<<<<<<< HEAD
 \textit{Hai chương trình $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đầu vào I. Chúng ta có chương trình $P_{3}$ là chương trình kết hợp của $P_{1}$ và $P_{2}$ có dạng (exec($P_{1}$, I) = exec($P_{2}$, I)), thõa điều kiện đầu vào và khẳng định điều kiện là đúng, exec($P_{3}$, i) = T với giá trị đầu vào i trên $P_{3}$ là thõa điều kiện. Trong đó, $I_{s}$ là tập các giá trị đầu vào được tạo bởi DSE trên $P_{3}$, và  $I_{a}$ là tập con các giá trị đầu vào của tập $I_{s}$, sao cho $\forall$i $\in$ $I_{a}$, exec($P_{3}$, i) = T và $\nexists $ j $\in$ $I_{s} \backslash I_{a}$, exec($P_{3}$, j) = T. Độ đo của kỹ thuật của PSE sẽ là $M_{PSE}$($P_{1},P_{2}$) = $\left|I_{a}\right|$$\diagup$$\left|I_{s}\right|$.}
 	
+=======
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "Main"
+%%% End:
+>>>>>>> 6d1cb3950e1c029d690558aeb36596808134502a

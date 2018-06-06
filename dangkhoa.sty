@@ -1,0 +1,106 @@
+\usepackage[utf8]{vietnam}
+
+\usepackage[acronym]{glossaries}
+\usepackage{pdfpages}
+\usepackage{todonotes}
+\usepackage{hyperref}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{lipsum}
+% \usepackage[left=3.5cm,right=2cm,top=3.5cm,bottom=3cm]{geometry}
+
+
+% Cấu hình paragraph
+% \setlength{\parindent}{30pt} % Không cho mỗi đoạn thụt đầu dòng vào 1 đoạn
+% \setlength{\parskip}{0.5em}
+% \renewcommand{\baselinestretch}{1.5}
+% \usepackage{indentfirst} % Tất cả đều thụt đầu dòng trong mỗi đoạn văn bản
+% \renewcommand{\baselinestretch}{0.2} % Tăng khoảng cách giữa các đoạn văn
+% Ép hai chữ nào đó luôn ở cùng 1 dòng
+% ... thông~minh ...
+
+
+% Cấu hình file --> để hiển nhập code c# 
+\usepackage{listings}
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+	language=[Sharp]C,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+% Cấu hình table
+\usepackage{tabu}
+
+% Thêm chữ chương trong mục lục
+% \usepackage{blindtext}
+% \usepackage{tocloft,calc}
+% \renewcommand{\cftchappresnum}{Chương }
+% \AtBeginDocument{\addtolength\cftchapnumwidth{\widthof{\bfseries Chương }}}
+
+% Thêm chữ Phần (Park) trong mục lục
+% \renewcommand{\cftpartpresnum}{Phần }
+% \AtBeginDocument{\addtolength\cftpartnumwidth{\widthof{\bfseries Phần }}}
+
+%Đánh số section trong văn bản
+%\renewcommand\thesection{\arabic{section}}
+%\renewcommand\thesubsection{\arabic{subsection}}
+%\renewcommand\thesubsubsection{\arabic{subsection}}
+
+%MỘT SỐ CÂU LỆNH CẦN KHI SỬ DỤNG
+
+% \input{loinoidau} -- THÊM TỪNG CHƯƠNG VÀO FILE CHÍNH
+% \input{chuong1}
+% \input{chuong2}
+% \input{ketluan}
+
+% \usepackage{goilenh} hoặc goilenh.sty -- TẬP  HỢP TẤT CẢ CÁC GÓI INPUT, KHAI BAO VÀO FILE GOILENH.STY
+
+% cú pháp thêm hình======================================================================================
+%	\begin{figure}	[h] %[h] la cau hinh figure o giua paragraph	
+%		\centering
+%		\includegraphics[scale=.4]{h1}
+%		\caption{Cái sẽ hiển thị bên dưới hình}	
+%	\end{figure}
+
+
+% cú pháp trích dẫn tai lieu
+%	\cite{aaltonen2010mutation} \newline
+%	\cite{aaltonen2010mutation} \newline
+
+
+
+%\begin{tabular}{|c|c|}
+%	\hline 
+%	stt & họ tên \\ 
+%	\hline 
+%	1 & khoa \\ 
+%	\hline 
+%\end{tabular} 
+
+
+
+\newtheorem{definition}{Định nghĩa}
+\renewcommand{\lstlistingname}{Mã lệnh}
+
+\newacronym{dse}{DSE}{Dynamic Symbolic Execution}

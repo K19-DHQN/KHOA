@@ -8,3 +8,6 @@
 *.rar
 *.dvi
 *.toc
+*.out
+*.tdo
+auto/

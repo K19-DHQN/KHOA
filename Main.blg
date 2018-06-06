@@ -1,5 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Main.aux
 The style file: plain.bst
-I found no \citation commands---while reading file Main.aux
 Database file #1: biblio.bib
+Repeated entry---line 253 of file biblio.bib
+ : @inproceedings{godefroid2005dart
+ :                                 ,
+I'm skipping whatever remains of this entry
+Warning--can't use both volume and number fields in godefroid2005dart
+Warning--can't use both volume and number fields in isong2001developing
+Warning--can't use both volume and number fields in sen2005cute
 (There was 1 error message)

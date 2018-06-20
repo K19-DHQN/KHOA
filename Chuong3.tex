@@ -1,17 +1,24 @@
-Chương này trình bày \dots
+Chương này trình bày một số định nghĩa và các phép đo đo được sử dụng trong luận văn bao gồm:
+\begin{itemize}	
+	\item Định nghĩa thực thi chương trình
+	\item Định nghĩa tương đương hành vi
+	\item Định nghĩa sự khác biệt về hành vi
+	\item Định nghĩa độ tương tự hành vi
+	\item Phép đo Random Sampling (RS)
+	\item Phép đo Single Program Symbol Execution (SSE)
+	\item Phép đo Paired Program Symbolic Execution
+	\item Tiêu chí đánh giá các phép đo.
+\end{itemize}
 
 \section{Hành vi của chương trình}
-	
 Để định lượng hai chương trình tương tự nhau, chúng ta định nghĩa các khái niệm về hành vi chương trình và các định nghĩa liên quan đến sự tương tự của hai chương trình, và ví dụ minh họa cho các định nghĩa. 
 	
 \subsection{Thực thi chương trình}
-
 \begin{definition}\label{def:progexe}
 Hành vi chương trình P là thực hiện hàm: P $\times$ I $\rightarrow$ O. Với giá trị đầu vào i $\in$ I, giá trị đầu ra o $\in$ O. Trong đó I là miền các trị đầu vào của chương trình P và O là tập hợp các giá trị đầu ra của chương trình P.  
 \end{definition}
-	
-\subsection{Tương đương hành vi}
 
+\subsection{Tương đương hành vi}
 \begin{definition}
   Hai chương trình $P_{1}$ và $P_{2}$ có cùng một miền các giá trị đầu
   vào I và tương đương về hành vi nếu exec($P_{1}$; I) = exec($P_{2}$;
@@ -19,8 +26,6 @@ Hành vi chương trình P là thực hiện hàm: P $\times$ I $\rightarrow$ O.
 \end{definition}
 	
 \subsubsection{Ví dụ:}
-
-
 \begin{lstlisting}[language={[Sharp]C}, caption={Tính y, sử dụng hàm switch...case}, label={Script}]
   public static int TinhY(int x)
   {
@@ -53,12 +58,11 @@ Ví dụ trên cho chúng ta thấy 2 chương trình là tương đường nhau
 hành vi. Hai chương trình có giá trị đầu vào là như nhau (cùng kiểu
 $\textbf{Int}$ ). Chương trình đầu tiên sử dụng hàm
 $\textit{\textbf{switch...case}}$, chương trình tiếp theo sử dụng hàm
-$\textit{\textbf{if...else}}$ để kiểm tra giá trị đầu vào, tuy cú pháp
+$\textit{\textbf{if...else}}$ để kiểm tra giá trị đầu vào x, tuy cú pháp
 khách nhau nhưng cách xử lý và trả về kết quả $\textbf{\textit{y}}$ là
 như nhau.
 	
 \subsection{Sự khác biệt về hành vi (Behavioral Difference)}
-
 \begin{definition}
   Hai chương trình $P_{1}$ và $P_{2}$ có cùng một miền các giá trị đầu
   vào I và khác biệt về hành vi nếu exec($P_{1}$, I) $\neq$
@@ -66,9 +70,7 @@ như nhau.
   exec($P_{2}$, i).
 \end{definition}
 
-	
 \subsection{Tương tự hành vi (Behavioral Similarity)}
-
 \begin{definition}
   Tương tự hành vi giữa hai chương trình $P_{1}$ và $P_{2}$ khi hai
   chương trình cùng miền giá trị đầu vào là tập hợp các giá trị
@@ -78,50 +80,18 @@ như nhau.
   $\backslash$$I_{s}$, exec($P_{1}$; j) $\neq$ exec($P_{2}$; j).
 \end{definition}
 
-
-
-\begin{definition}
-  Hai chương trình $P_{1}$ và $P_{2}$ có cùng một miền các giá trị đầu
-  vào I và khác biệt về hành vi nếu exec($P_{1}$; I) $\neq$
-  exec($P_{2}$; I), $\nexists$i $\in$ I exec($P_{1}$; i) $\neq$
-  exec($P_{2}$; i).
-\end{definition}
-
-	
-\subsection{Tương tự hành vi (Behavioral Similarity)}
-
-\begin{definition}
-  Hai chương trình $P_{1}$ và $P_{2}$ được gọi là tương tự hành vi
-  khai là hai chương trình có cùng miền giá trị đầu vào I và
-  $\left|I_{s}\right|\diagup$$\left|I\right|$, trong đó
-  $I_{s}$ $\subseteq $ I, nếu exec($P_{1}$, $I_{s}$) =
-  exec($P_{2}$, $I_{s}$), và $\forall$j $\in$ I
-  $\backslash$$I_{s}$, exec($P_{1}$; j) $\neq$ exec($P_{2}$; j).
-\end{definition}
-
-
 \section{Một số phép đo độ tương tự hành vi}
+Để đo sự tương đồng về hành vi giữa hai chương trình, chúng ta có thể đo bằng cách tính tỷ lệ đầu ra của hai chương trình trên cùng toàn bộ miền giá trị đầu vào. Liệt kê tất cả các dữ liệu trong miền đầu vào và chạy từng đầu vào trên cả hai chương trình để so sánh các kết quả đầu ra. Nhưng việc này sẽ không khả thi với các chương trình có miền đầu vào lớn hoặc vô hạn.
+	
+Để đo độ tương tự hành vi được chính xác hơn, nếu chạy các dữ liệu đầu vào đại diện thay vì tất cả các dữ liệu đầu vào cho các chương trình. Bằng cách thống nhất lấy mẫu một phần dữ liệu đầu vào từ miền đầu vào, độ tương tự về hành vi sẽ được tính dựa trên tỷ lệ các mẫu đầu vào trên các mẫu đầu đầu ra.
 
-Để tính sự tương đồng về hành vi giữa hai chương trình, chúng ta có
-thể đo bằng cách tính tỷ lệ đầu vào và đầu ra trên cả hai chương trình
-trên cùng toàn bộ miền giá trị đầu vào. Một phương pháp tiếp cận đó là
-liệt kê tất cả các dữ liệu trong miền đầu vào và chạy từng đầu vào
-trên cả hai chương trình để so sánh các kết quả đầu ra. Nhưng việc này
-sẽ không thực tế hoặc không liên quan đến các chương trình với một
-miền đầu vào lớn hoặc vô hạn.
-	
-Để đo độ tương tự hành vi được chính xác hơn, chúng tôi chạy các dữ
-liệu đầu vào đại diện thay vì tất cả các dữ liệu đầu vào cho các
-chương trình. Bằng cách thống nhất lấy mẫu một phần dữ liệu đầu vào từ
-miền đầu vào, độ tương tự về hành vi sẽ được tính dựa trên tỷ lệ các
-mẫu đầu vào trên các đầu ra.
-	
-Dựa trên kỹ thuật Dynamic Symbolic Execution \textbf{(DSE)}, chúng ta có thể tạo ra được dữ liệu đầu vào thử nghiệm có độ bao phủ cao, và sử dụng trong các kỹ thuật đo độ tương tự. \\
+Dựa trên kỹ thuật Dynamic Symbolic Execution \textbf{(DSE)}, chúng ta có thể tạo ra được dữ liệu đầu vào thử nghiệm có độ bao phủ cao, và sử dụng chúng trong các kỹ thuật đo độ tương tự.
 
 \subsection{Phép đo Random Sampling (RS)}
+Để tính toán sự giống nhau về hành vi giữa hai chương trình thông qua việc liệt kê tất cả các giá trị đầu vào có thể từ miền giá trị đầu vào là rất tốn thời gian và không khả thi. Thay vào đó chúng ta lấy mẫu ngẫu nhiên từ miền giá trị đầu vào để ước lượng tính toán, việc này sẽ không mất thời gian và khả thi hơn.
 
-\todo{Giới thiệu về phép đo RS}
-
+Phép đo \textbf{RS} là lấy mẫu thống nhất chung cho cả hai chương trình, dựa trên miền giá trị đầu vào của cả hai chương trình. Sau đó thực hiện chạy cả hai chương trình trên từng mẫu giá trị đầu vào thử nghiệm, tiến hành so sánh kết quả đầu ra của hai chương trình. Chúng ta có tỷ lệ số lượng các kết quả giống nhau của cả hai chương trình, trên tổng số lượng mẫu thống nhất chung của hai chương trình là kết quả của phép đo RS. Phép đo Random Sampling được định nghĩa như sau:
+ 
 \begin{definition}
   Hai chương trình $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền
   giá trị đầu vào I và $I_{s}$ là tập con các giá trị đầu vào của tập
@@ -133,22 +103,19 @@ Dựa trên kỹ thuật Dynamic Symbolic Execution \textbf{(DSE)}, chúng ta c�
   $\left|I_{a}\right|$$\diagup$$\left|I_{s}\right|$.
 \end{definition}
 
-	
-Phép đo \textbf{RS} là một phương pháp đo tương đối đơn giản và hiệu quả để tính độ tương tự hành vi. Nhưng phép đo \textbf{RS} cũng có hạn chế nhất định trong những trường hợp có những hành vi nhỏ giữa các chương trình và phép đo \textbf{RS } không thể phân biệt các hành vi hơi khác nhau này.
-	
+Phép đo \textbf{RS} là một phương pháp đo tương đối đơn giản để tính độ tương tự hành vi. Nhưng phép đo \textbf{RS} cũng có hạn chế nhất định trong những trường hợp có những hành vi nhỏ giữa các chương trình và phép đo \textbf{RS } không thể phân biệt các hành vi hơi khác nhau này.
 
 \begin{lstlisting}[caption={Chương trình $P_{1}$}, label={Script}]
-	public static string Puzzle(string x) {
-		if (x == "Hello") return "NOT OK";
-		if (x == "Funny") return "NOT OK";
-	return "OK";
+	public static int Puzzle(string x) {
+		if (x == "Hello") return 0;		
+	return 1;
 	}
 \end{lstlisting}
 
 	
 \begin{lstlisting}[caption={Chương trình $P_{2}$}, label={Script}]
-	public static string Puzzle(string x) {
-		return "OK";
+	public static int Puzzle(string x) {
+		return 1;
 	}
 \end{lstlisting}
 	
@@ -157,13 +124,12 @@ nhỏ nhưng độ đo \textbf{RS} không thể phân biệt được sự khác
 và trả về độ đo bằng 1.
 	
 \subsection{Phép đo Single Program Symbol Execution (SSE)}
-
-\todo{Giới thiệu về phép đo SSE}
+Phép đo SSE là một phép đo cải tiến của phép đo RS, bằng cách sử dụng kỹ DSE để khám phá các đường dẫn của chương trình thực thi. Để tính toán độ đo SSE, chúng ta chọn một chương trình làm chương trình tham chiếu, áp dụng kỹ thuật DSE để tạo ra các đầu vào thử nghiệm của chương trình tham chiếu. Sau đó chạy cả hai chương trình dựa trên các giá trị đầu vào thử nghiệm của chương trình tham chiếu. Tỷ lệ số lượng các kết quả giống nhau của cả hai chương trình trên tổng số các giá trị đầu vào của chương trình tham chiếu là kết quả của phép đo SSE. Chúng ta có thể định nghĩa phép đo SSE cụ thể như sau.
 
 \begin{definition}
   Hai chương trình $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền
-  giá trị đầu vào I và $P_{1}$ là chương trình tham chiếu. Trong đó,
-  $I_{s}$ là tập các giá trị đầu vào được tạo bởi DSE trên $P_{1}$, và
+  giá trị đầu vào I, và chương trình $P_{1}$ là chương trình tham chiếu. Trong đó,
+  $I_{s}$ là tập các giá trị đầu vào được tạo bởi DSE dựa trên chương trình $P_{1}$, và
   $I_{a}$ là tập con các giá trị đầu vào của tập $I_{s}$, sao cho
   $\forall$i $\in$ $I_{a}$, exec($P_{1}$, i) = exec($P_{2}$, i) và
   $\forall$j $\in$ $I_{s} \backslash I_{a}$, exec($P_{1}$, j) $\neq$
@@ -172,10 +138,20 @@ và trả về độ đo bằng 1.
   $\left|I_{a}\right|$$\diagup$$\left|I_{s}\right|$.
 \end{definition}
 
-\subsection{Kỹ Thuật Paired Program Symbolic Execution}
+Ngược lại với RS, SSE khám phá những đường dẫn khả thi khác nhau để tạo dữ liệu đầu vào của chương trình. Những SSE vẫn còn những hạn chế, đó là SSE không xem xét chương trình cần phân tích mà chỉ dựa vào các đầu vào thử nghiệm của chương trình tham chiếu. Các đầu vào thử nghiệm này không nắm bắt được các hành vi của chương trình phân tích, những chương trình phân tích sẽ có những hành vi khác với chương trình tham chiếu, SSE sẽ đánh giá không chính xác hành vi tương đương của hai chương trình. Ngoài ra, một số chương trình có thể có những vòng lập vô hạn phụ thuộc vào giá trị đầu nên chúng ta không thể liệt kê được tất cả các đường dẫn của chương trình.
 
-\todo{Giới thiệu về phép đo PSE}
-	
+\subsection{Kỹ Thuật Paired Program Symbolic Execution (PSE)}
+Để giải quyết hạn chế của SSE đó là không kiểm tra hành vi trong chương trình cần phân tích, kỹ thuật PSE xây dựng một chương trình ghép nối giữa chương trình cần phân tích với chương trình tham chiếu và tạo ra các đầu vào thử nghiệm bằng cách khám phá các đường dẫn trong chương trình được ghép nối. Chương trình ghép nối này chia sẽ cùng một miền giá trị đầu với với cả hai chương trình, chạy cùng một giá trị đầu vào này trên cả hai chương trình và xác nhận kết quả đầu ra của hai chương trình là giống nhau. DSE tạo ra các đầu vào thử nghiệm dựa trên chương trình ghép nối, các đầu vào thử nghiệm này bao gồm các đầu vào đúng và không đúng. Các đầu vào đầu vào thử nghiệm đúng là những giá trị khi chạy trên cả hai chương trình sẽ cho kết quả đầu ra như nhau, ngược lại các đầu vào thử nghiệm không đúng là những giá trị khi chạy trên cả hai chương trình sẽ cho kết quả khác nhau. Do đó, độ đo của kỹ thuật PSE được tính bằng tỷ lệ các giá trị đầu vào thử nghiệm đúng trên tổng số giá trị đầu vào thử nghiệm. 
+
+\begin{lstlisting}[caption={Chương trình ghép nối $P_{}$}, label={Script}]
+	public int PairedProgram (int number)
+	{
+		if(Program1(args) == Program2(args))
+			return 1;
+		return 0;
+	}
+\end{lstlisting}
+
 \begin{definition}
   Hai chương trình $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền
   giá trị đầu vào I. Chúng ta có chương trình $P_{3}$ là chương trình
@@ -186,19 +162,11 @@ và trả về độ đo bằng 1.
   tạo bởi DSE trên $P_{3}$, và $I_{a}$ là tập con các giá trị đầu vào
   của tập $I_{s}$, sao cho $\forall$i $\in$ $I_{a}$, exec($P_{3}$, i)
   = T và $\nexists $ j $\in$ $I_{s} \backslash I_{a}$, exec($P_{3}$,
-  j) = T. Độ đo của kỹ thuật của PSE sẽ là $M_{PSE}$($P_{1},P_{2}$) =
+  j) = T. Độ đo của PSE sẽ là $M_{PSE}$($P_{1},P_{2}$) =
   $\left|I_{a}\right|$$\diagup$$\left|I_{s}\right|$.
 \end{definition}
 
-\section{Tiêu chí đánh giá hiệu quả}
-
+Kỹ thuật PSE xây dựng một chương trình ghép nối giữa hai chương trình đã cải thiện được hạn chế của kỹ thuật SSE đó là chỉ khám phá hành vi của chương trình tham chiếu. Tuy nhiên, kỹ thuật PSE cũng có hạn chế trong việc xử lý các vòng lặp lơn hoặc vô hạn trong số các chương trình được ghép nối. Để giảm bớt hạn chế này, chúng ta có thể giới hạn miền đầu vào hoặc đếm số vòng lặp. Ngoài ra, kỹ thuật PSE khám phá đường dẫn của chương trình ghép nối nên sẽ tốn thời gian và tài nguyên hơn so với kỹ thuật SSE.
 
 \section*{Tổng kết chương}
-
-Tổng kết chương viết ở đây.
-
-
-%%% Local Variables:
-%%% mode: latex
-%%% TeX-master: "Main"
-%%% End:
+Nội dung chương 3 này trình bày sơ lược những định nghĩa về thực thi chương trình, hành vi của chương trình, độ tương tự về hành vi của chương trình. Mô tả, định nghĩa 3 kỹ thuật đo RS, SSE, PSE và nêu lên những ưu và nhược điểm cũng như hướng khắc phục của 3 kỹ thuật. Ba kỹ thuật đo này là nội dung chính trong luận văn của tôi.

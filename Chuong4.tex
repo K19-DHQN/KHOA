@@ -12,7 +12,7 @@ Chương này trình bày những nội dung như sau:
 \begin{center}
 	\begin{figure}[htp]
 		\begin{center}
-			\includegraphics[scale=.4]{codehunt1.png}
+			\includegraphics[scale=.3]{codehunt1.png}
 		\end{center}
 		\caption{Giao diện viết chương trình}
 		\label{refhinh1}
@@ -45,7 +45,7 @@ Visual Studio bao gồm một trình soạn thảo mã hỗ trợ IntelliSense c
 \begin{center}
 	\begin{figure}[htp]
 		\begin{center}
-			\includegraphics[scale=.4]{visualstudio.png}
+			\includegraphics[scale=.3]{visualstudio.png}
 		\end{center}
 		\caption{Giao diện phần mềm Visual studio 2013}
 		\label{refhinh1}
@@ -122,19 +122,7 @@ Khái niệm về DSE và các ứng dụng sử dụng kỹ thuật DSE đã c�
 
 Cũng như với Unit Test, ta có thể viết các lớp kiểm thử chứa các ca kiểm thử tham số hóa. Với sự hỗ trợ của Pex ta có thể thực thi các ca kiểm thử tham số hóa đó. Tuy nhiên không giống việc thực thi các lớp kiểm thử chứa các Unit Test, Pex chỉ thực thi được một ca kiểm thử tham số hóa trong mỗi lần chạy.
 
-\begin{lstlisting}[language={[Sharp]C}, caption={Ca kiểm thử tham số sử dụng Pex}, label={Script}]
-[PexMethod]
-public void AddSpec(ArrayList list, object element) {
-// assumptions
-PexAssume.IsTrue(list != null);
-// method sequence
-int len = list.Count; 
-list.Add(element);
-// assertions
-Assert.IsTrue(list[len] == element);
-}
-\end{lstlisting}
-
+\lstinputlisting[caption = {Ca kiểm thử tham số sử dụng Pex}]{TestPex.cs}
 
 \subsubsection*{Các mẫu kiểm thử tham số hóa}
 Viết các ca kiểm thử các tham số là một công việc tốn nhiều công sức. Để viết các ca kiểm thử các tham số hiệu quả, ta cần thực sự hiểu về mã cài đặt của chương trình mà ta muốn kiểm thử. Pex hỗ trợ cho chúng ta nhiều mẫu kiểm thử tham số khác nhau \cite{de2008parameterized}. Các mẫu được sử dụng nhiều nhất đó là mẫu AAA (Triple-A) và AAAA:
@@ -148,19 +136,7 @@ Viết các ca kiểm thử các tham số là một công việc tốn nhiều 
 	\item Với mẫu AAAA, một giả thuyết (Assume) được thêm vào để giới hạn miền giá trị của các tham số đầu vào.
 \end{itemize}
 
-\begin{lstlisting}[language={[Sharp]C}, caption={Mầu kiềm thử tham số hóa AAAA}, label={Script}]
-[PexMethod]
-void AssumeActAssert(ArrayList list, object item) { 
-// assume
-PexAssume.IsNotNull(list);
-// arrange
-var count = list.Count;
-// act
-list.Add(item);
-// assert
-Assert.IsTrue(list.Count == count + 1);
-}
-\end{lstlisting}
+\lstinputlisting[caption = {Mầu kiềm thử tham số hóa AAAA}]{AAAA.cs}
 
 \subsubsection*{Lọn chọn đầu vào kiểm thử với Pex}
 Đổ có thể sinh các đầu vào cụ thể cho các tham số Unit test, Pex cần phải phân tích chương trình với các tham số kiểm thử này. Có 2 kỹ thuật phân tích chương trình đó là:

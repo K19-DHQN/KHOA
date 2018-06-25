@@ -26,33 +26,11 @@ Hành vi chương trình P là thực hiện hàm: P $\times$ I $\rightarrow$ O.
 \end{definition}
 	
 \subsubsection{Ví dụ:}
-\begin{lstlisting}[language={[Sharp]C}, caption={Tính y, sử dụng hàm switch...case}, label={Script}]
-  public static int TinhY(int x)
-  {
-    y = 0;
-    switch (x) {
-      case 1: y += 4; break;
-      case 2: y *= 2; break;
-      default: y = y * y;
-    }
-    return y;
-  }
-\end{lstlisting}
 
+\lstinputlisting[caption = {Tính y, sử dụng hàm Switch...Case}]{SwitchCase.cs}
 
-\begin{lstlisting}[language={[Sharp]C}, caption={Tính y, sử dụng hàm If...else}, label={Script}]
-  public static int TinhY(int x)
-  {
-    y = 0;
-    if (x == 1)
-    y += 4;
-    else if (x == 2)
-    y *= 2;
-    else
-    y = y * y;
-    return y;
-  }
-\end{lstlisting}
+\lstinputlisting[caption = {Tính y, sử dụng hàm Switch...Case}]{IfElse.cs}
+
 
 Ví dụ trên cho chúng ta thấy 2 chương trình là tương đường nhau về
 hành vi. Hai chương trình có giá trị đầu vào là như nhau (cùng kiểu

@@ -34,15 +34,14 @@
 \contentsline {section}{\numberline {4.1}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{21}{section.4.1}
 \contentsline {section}{\numberline {4.2}C\IeC {\^o}ng c\IeC {\d u} d\IeC {\`u}ng trong th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{21}{section.4.2}
 \contentsline {subsection}{C\IeC {\^o}ng c\IeC {\d u} sinh d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u th\IeC {\h \uhorn } Pex}{26}{section*.44}
-\contentsline {section}{\numberline {4.3}\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a} k\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{28}{section.4.3}
-\contentsline {section}{\numberline {4.4}Kh\IeC {\h a} n\IeC {\u a}ng \IeC {\'\uhorn }ng d\IeC {\d u}ng}{28}{section.4.4}
+\contentsline {section}{\numberline {4.3}\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a} k\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{27}{section.4.3}
+\contentsline {section}{\numberline {4.4}Kh\IeC {\h a} n\IeC {\u a}ng \IeC {\'\uhorn }ng d\IeC {\d u}ng}{27}{section.4.4}
 \contentsline {subsection}{\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a} ti\IeC {\'\ecircumflex }n b\IeC {\d \ocircumflex } trong l\IeC {\d \acircumflex }p tr\IeC {\`\i }nh}{28}{section*.49}
-\contentsline {subsection}{X\IeC {\'\ecircumflex }p h\IeC {\d a}ng t\IeC {\d \uhorn } \IeC {\dj }\IeC {\d \ocircumflex }ng}{29}{section*.50}
+\contentsline {subsection}{X\IeC {\'\ecircumflex }p h\IeC {\d a}ng t\IeC {\d \uhorn } \IeC {\dj }\IeC {\d \ocircumflex }ng}{28}{section*.50}
 \contentsline {subsection}{G\IeC {\d \ohorn }i \IeC {\'y} gi\IeC {\h a}i ph\IeC {\'a}p l\IeC {\d \acircumflex }p tr\IeC {\`\i }nh}{29}{section*.51}
 \contentsline {subsection}{H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{29}{section*.52}
 \contentsline {section}{\numberline {4.5}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{29}{section.4.5}
 \contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{31}{chapter*.53}
-\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{36}{chapter*.54}
-\contentsline {appendix}{\chapternumberline {A}Quy\IeC {\'\ecircumflex }t \IeC {\dj }\IeC {\d i}nh XXX}{40}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Ph\IeC {\d u} l\IeC {\d u}c XXX}{41}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } m\IeC {\~a} l\IeC {\d \ecircumflex }nh quan tr\IeC {\d o}ng}{42}{appendix.C}
+\contentsline {appendix}{\chapternumberline {A}Quy\IeC {\'\ecircumflex }t \IeC {\dj }\IeC {\d i}nh XXX}{36}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Ph\IeC {\d u} l\IeC {\d u}c XXX}{37}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } m\IeC {\~a} l\IeC {\d \ecircumflex }nh quan tr\IeC {\d o}ng}{38}{appendix.C}

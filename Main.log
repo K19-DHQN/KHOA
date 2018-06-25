@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.5.25)  25 JUN 2018 18:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.5.25)  25 JUN 2018 19:01
 entering extended mode
 **./Main.tex
 (Main.tex
@@ -1669,132 +1669,6 @@ LaTeX Warning: Label `Script' multiply defined.
 
 LaTeX Warning: Label `Script' multiply defined.
 
-
-LaTeX Warning: Label `aaltonen2010mutation' multiply defined.
-
-
-LaTeX Warning: Label `alur2013automated' multiply defined.
-
-
-LaTeX Warning: Label `bates1993incremental' multiply defined.
-
-
-LaTeX Warning: Label `binkley1992using' multiply defined.
-
-
-LaTeX Warning: Label `bucur2011parallel' multiply defined.
-
-
-LaTeX Warning: Label `cadar2011symbolic' multiply defined.
-
-
-LaTeX Warning: Label `cadar2013symbolic' multiply defined.
-
-
-LaTeX Warning: Label `chen2010adaptive' multiply defined.
-
-
-LaTeX Warning: Label `darringer1978applications' multiply defined.
-
-
-LaTeX Warning: Label `de2008z3' multiply defined.
-
-
-LaTeX Warning: Label `douce2005automatic' multiply defined.
-
-
-LaTeX Warning: Label `geldenhuys2012probabilistic' multiply defined.
-
-
-LaTeX Warning: Label `godefroid2005dart' multiply defined.
-
-
-LaTeX Warning: Label `godefroid2008automated' multiply defined.
-
-
-LaTeX Warning: Label `hext1969automatic' multiply defined.
-
-
-LaTeX Warning: Label `ihantola2010review' multiply defined.
-
-
-LaTeX Warning: Label `isong2001developing' multiply defined.
-
-
-LaTeX Warning: Label `jackson1994semantic' multiply defined.
-
-
-LaTeX Warning: Label `jiang2009automatic' multiply defined.
-
-
-LaTeX Warning: Label `jones2001grading' multiply defined.
-
-
-LaTeX Warning: Label `khurshid2003generalized' multiply defined.
-
-
-LaTeX Warning: Label `king1976symbolic' multiply defined.
-
-
-LaTeX Warning: Label `lahiri2012symdiff' multiply defined.
-
-
-LaTeX Warning: Label `li2016measuring' multiply defined.
-
-
-LaTeX Warning: Label `meudec2001atgen' multiply defined.
-
-
-LaTeX Warning: Label `pacheco2007feedback' multiply defined.
-
-
-LaTeX Warning: Label `pappano2012year' multiply defined.
-
-
-LaTeX Warning: Label `puasuareanu2010symbolic' multiply defined.
-
-
-LaTeX Warning: Label `puasuareanu2004verification' multiply defined.
-
-
-LaTeX Warning: Label `puasuareanu2009survey' multiply defined.
-
-
-LaTeX Warning: Label `person2008differential' multiply defined.
-
-
-LaTeX Warning: Label `roberts2003online' multiply defined.
-
-
-LaTeX Warning: Label `sen2005cute' multiply defined.
-
-
-LaTeX Warning: Label `singh2013automated' multiply defined.
-
-
-LaTeX Warning: Label `su2016code' multiply defined.
-
-
-LaTeX Warning: Label `su2016identifying' multiply defined.
-
-
-LaTeX Warning: Label `taneja2008diffgen' multiply defined.
-
-
-LaTeX Warning: Label `tillmann2008pex' multiply defined.
-
-
-LaTeX Warning: Label `tillmann2014transferring' multiply defined.
-
-
-LaTeX Warning: Label `tillmann2013teaching' multiply defined.
-
-
-LaTeX Warning: Label `walenstein2007similarity' multiply defined.
-
-
-LaTeX Warning: Label `xiao2013characteristic' multiply defined.
-
 )
 \openout1 = `Main.aux'.
 
@@ -2112,7 +1986,7 @@ Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 
 
 [11]
-<images/giai-doan-kiem-thu-1.png, id=256, 820.06375pt x 424.58624pt>
+<images/giai-doan-kiem-thu-1.png, id=251, 820.06375pt x 424.58624pt>
 File: images/giai-doan-kiem-thu-1.png Graphic file (type png)
 <use images/giai-doan-kiem-thu-1.png>
 Package pdftex.def Info: images/giai-doan-kiem-thu-1.png  used on input line 70
@@ -2422,7 +2296,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 10.
 
-<images/codehunt1.png, id=375, 1027.58907pt x 595.47469pt>
+<images/codehunt1.png, id=370, 1027.58907pt x 595.47469pt>
 File: images/codehunt1.png Graphic file (type png)
 <use images/codehunt1.png>
 Package pdftex.def Info: images/codehunt1.png  used on input line 15. on input 
@@ -2434,42 +2308,35 @@ Overfull \hbox (70.02835pt too wide) in paragraph at lines 15--16
  [] 
  []
 
-<images/codehunt.png, id=377, 556.32843pt x 362.10281pt>
-File: images/codehunt.png Graphic file (type png)
-<use images/codehunt.png>
-Package pdftex.def Info: images/codehunt.png  used on input line 27. on input l
-ine 27.
-Package pdftex.def Info: Requested size: 222.52742pt x 144.83855pt on input lin
-e 27.
-<images/java-to-csharp-collections.png, id=378, 532.389pt x 356.532pt>
+<images/java-to-csharp-collections.png, id=372, 532.389pt x 356.532pt>
 File: images/java-to-csharp-collections.png Graphic file (type png)
 <use images/java-to-csharp-collections.png>
 Package pdftex.def Info: images/java-to-csharp-collections.png  used on input l
-ine 40. on input line 40.
+ine 31. on input line 31.
 Package pdftex.def Info: Requested size: 212.95183pt x 142.61026pt on input lin
-e 40.
+e 31.
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 47.
+(hyperref)                removing `\textdotbelow' on input line 38.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 47.
+(hyperref)                removing `\textdotbelow' on input line 38.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 47.
+(hyperref)                removing `\uhorn' on input line 38.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 47.
+(hyperref)                removing `\textdotbelow' on input line 38.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 47.
+(hyperref)                removing `\ecircumflex' on input line 38.
 
 [21
 
@@ -2477,16 +2344,16 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 
 
-[22 <./images/codehunt1.png> <./images/codehunt.png>]
-<images/visualstudio.png, id=390, 916.92563pt x 576.65437pt>
+[22 <./images/codehunt1.png> <./images/java-to-csharp-collections.png>]
+<images/visualstudio.png, id=384, 916.92563pt x 576.65437pt>
 File: images/visualstudio.png Graphic file (type png)
 <use images/visualstudio.png>
-Package pdftex.def Info: images/visualstudio.png  used on input line 57. on inp
-ut line 57.
+Package pdftex.def Info: images/visualstudio.png  used on input line 48. on inp
+ut line 48.
 Package pdftex.def Info: Requested size: 366.76376pt x 230.65765pt on input lin
-e 57.
+e 48.
 
-Overfull \hbox (25.76376pt too wide) in paragraph at lines 57--58
+Overfull \hbox (25.76376pt too wide) in paragraph at lines 48--49
  [] 
  []
 
@@ -2494,102 +2361,93 @@ Overfull \hbox (25.76376pt too wide) in paragraph at lines 57--58
 Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 
 
-[23 <./images/java-to-csharp-collections.png>]
+[23 <./images/visualstudio.png>]
 Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 
 
-[24 <./images/visualstudio.png>]
-<images/quatrinhthongdich.png, id=404, 562.1pt x 195.73125pt>
+[24]
+<images/quatrinhthongdich.png, id=400, 562.1pt x 195.73125pt>
 File: images/quatrinhthongdich.png Graphic file (type png)
 <use images/quatrinhthongdich.png>
-Package pdftex.def Info: images/quatrinhthongdich.png  used on input line 113. 
-on input line 113.
+Package pdftex.def Info: images/quatrinhthongdich.png  used on input line 104. 
+on input line 104.
 Package pdftex.def Info: Requested size: 224.83601pt x 78.2911pt on input line 
-113.
+104.
 
 Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 
 
 [25 <./images/quatrinhthongdich.png>]
-
-LaTeX Warning: Citation `de2008parameterized' on page 26 undefined on input lin
-e 149.
-
-
 Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 
 
 [26]
-
-LaTeX Warning: Citation `kroening2016decision' on page 27 undefined on input li
-ne 184.
-
-<images/pex.png, id=443, 573.64313pt x 433.62pt>
+<images/pex.png, id=446, 573.64313pt x 433.62pt>
 File: images/pex.png Graphic file (type png)
 <use images/pex.png>
-Package pdftex.def Info: images/pex.png  used on input line 191. on input line 
-191.
+Package pdftex.def Info: images/pex.png  used on input line 182. on input line 
+182.
 Package pdftex.def Info: Requested size: 229.45319pt x 173.44492pt on input lin
-e 191.
+e 182.
+
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 198.
+(hyperref)                removing `\textacute' on input line 189.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 198.
+(hyperref)                removing `\ecircumflex' on input line 189.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 198.
+(hyperref)                removing `\h' on input line 189.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 198.
+(hyperref)                removing `\textdotbelow' on input line 189.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 198.
+(hyperref)                removing `\uhorn' on input line 189.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 198.
+(hyperref)                removing `\textdotbelow' on input line 189.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 198.
+(hyperref)                removing `\ecircumflex' on input line 189.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 192.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\u' on input line 192.
+
+
+Package hyperref Warning: Composite letter `\textacute+\uhorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 192.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 192.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 192.
 
 
 Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 
 
 [27]
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 201.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\u' on input line 201.
-
-
-Package hyperref Warning: Composite letter `\textacute+\uhorn'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 201.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 201.
-
-
-Package hyperref Warning: Composite letter `\textdotbelow+u'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 201.
-
-
 Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 
 
@@ -2597,31 +2455,26 @@ Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 225.
+(hyperref)                removing `\textacute' on input line 216.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 225.
+(hyperref)                removing `\ecircumflex' on input line 216.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 225.
+(hyperref)                removing `\textdotbelow' on input line 216.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 225.
+(hyperref)                removing `\acircumflex' on input line 216.
 
 
 Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 
 
-[29]
-
-LaTeX Warning: Citation `kroening2016decision' on page 30 undefined on input li
-ne 228.
-
-) (Main.bbl
+[29]) (Main.bbl
 Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 
 
@@ -2629,15 +2482,15 @@ Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 2.
+(hyperref)                removing `\textdotbelow' on input line 1.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 2.
+(hyperref)                removing `\ecircumflex' on input line 1.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 2.
+(hyperref)                removing `\h' on input line 1.
 
 bibitemlist
 [31
@@ -2647,13 +2500,13 @@ Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 
 
 [32]
-Underfull \hbox (badness 1062) in paragraph at lines 203--209
+Underfull \hbox (badness 1062) in paragraph at lines 211--217
 []\T5/cmr/m/n/10 Ettore Merlo, Giu-liano An-to-niol, Mas-si-m-il-iano Di Penta,
  and Vin-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
+Underfull \hbox (badness 10000) in paragraph at lines 226--228
 []\T5/cmr/m/n/10 Coursera MOOC on Soft-ware En-gi-neer-ing for SaaS.
  []
 
@@ -2665,289 +2518,14 @@ Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 
 
-[34]
-Overfull \vbox (2.95145pt too high) has occurred while \output is active []
-
-
-[35]
-
-Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 371.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 371.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 371.
-
-bibitemlist
-pdfTeX warning (ext4): destination with the same identifier (name{cite.aaltonen
-2010mutation}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.373 \bibitem{aaltonen2010mutation}
-                                    pdfTeX warning (ext4): destination with the
- same identifier (name{cite.alur2013automated}) has been already used, duplicat
-e ignored
-<to be read again> 
-                   \relax 
-l.381 \bibitem{alur2013automated}
-                                 pdfTeX warning (ext4): destination with the sa
-me identifier (name{cite.bates1993incremental}) has been already used, duplicat
-e ignored
-<to be read again> 
-                   \relax 
-l.387 \bibitem{bates1993incremental}
-                                    pdfTeX warning (ext4): destination with the
- same identifier (name{cite.binkley1992using}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.393 \bibitem{binkley1992using}
-                                pdfTeX warning (ext4): destination with the sam
-e identifier (name{cite.bucur2011parallel}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.399 \bibitem{bucur2011parallel}
-                                 pdfTeX warning (ext4): destination with the sa
-me identifier (name{cite.cadar2011symbolic}) has been already used, duplicate i
-gnored
-<to be read again> 
-                   \relax 
-l.406 \bibitem{cadar2011symbolic}
-                                 pdfTeX warning (ext4): destination with the sa
-me identifier (name{cite.cadar2013symbolic}) has been already used, duplicate i
-gnored
-<to be read again> 
-                   \relax 
-l.414 \bibitem{cadar2013symbolic}
-                                 pdfTeX warning (ext4): destination with the sa
-me identifier (name{cite.chen2010adaptive}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.419 \bibitem{chen2010adaptive}
-                                pdfTeX warning (ext4): destination with the sam
-e identifier (name{cite.darringer1978applications}) has been already used, dupl
-icate ignored
-<to be read again> 
-                   \relax 
-l.424 \bibitem{darringer1978applications}
-                                         pdfTeX warning (ext4): destination wit
-h the same identifier (name{cite.de2008z3}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.429 \bibitem{de2008z3}
-                        pdfTeX warning (ext4): destination with the same identi
-fier (name{cite.douce2005automatic}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.435 \bibitem{douce2005automatic}
-                                   [36
-
-]pdfTeX warning (ext4): destination with the same identifier (name{cite.geldenh
-uys2012probabilistic}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.441 \bibitem{geldenhuys2012probabilistic}
-                                           pdfTeX warning (ext4): destination w
-ith the same identifier (name{cite.godefroid2005dart}) has been already used, d
-uplicate ignored
-<to be read again> 
-                   \relax 
-l.447 \bibitem{godefroid2005dart}
-                                 pdfTeX warning (ext4): destination with the sa
-me identifier (name{cite.godefroid2008automated}) has been already used, duplic
-ate ignored
-<to be read again> 
-                   \relax 
-l.452 \bibitem{godefroid2008automated}
-                                      pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.hext1969automatic}) has been already used, duplic
-ate ignored
-<to be read again> 
-                   \relax 
-l.457 \bibitem{hext1969automatic}
-                                 pdfTeX warning (ext4): destination with the sa
-me identifier (name{cite.ihantola2010review}) has been already used, duplicate 
-ignored
-<to be read again> 
-                   \relax 
-l.462 \bibitem{ihantola2010review}
-                                  pdfTeX warning (ext4): destination with the s
-ame identifier (name{cite.isong2001developing}) has been already used, duplicat
-e ignored
-<to be read again> 
-                   \relax 
-l.469 \bibitem{isong2001developing}
-                                   pdfTeX warning (ext4): destination with the 
-same identifier (name{cite.jackson1994semantic}) has been already used, duplica
-te ignored
-<to be read again> 
-                   \relax 
-l.475 \bibitem{jackson1994semantic}
-                                   pdfTeX warning (ext4): destination with the 
-same identifier (name{cite.jiang2009automatic}) has been already used, duplicat
-e ignored
-<to be read again> 
-                   \relax 
-l.480 \bibitem{jiang2009automatic}
-                                  pdfTeX warning (ext4): destination with the s
-ame identifier (name{cite.jones2001grading}) has been already used, duplicate i
-gnored
-<to be read again> 
-                   \relax 
-l.487 \bibitem{jones2001grading}
-                                pdfTeX warning (ext4): destination with the sam
-e identifier (name{cite.khurshid2003generalized}) has been already used, duplic
-ate ignored
-<to be read again> 
-                   \relax 
-l.493 \bibitem{khurshid2003generalized}
-                                       pdfTeX warning (ext4): destination with 
-the same identifier (name{cite.king1976symbolic}) has been already used, duplic
-ate ignored
-<to be read again> 
-                   \relax 
-l.499 \bibitem{king1976symbolic}
-                                pdfTeX warning (ext4): destination with the sam
-e identifier (name{cite.lahiri2012symdiff}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.504 \bibitem{lahiri2012symdiff}
-                                 pdfTeX warning (ext4): destination with the sa
-me identifier (name{cite.li2016measuring}) has been already used, duplicate ign
-ored
-<to be read again> 
-                   \relax 
-l.510 \bibitem{li2016measuring}
-                               pdfTeX warning (ext4): destination with the same
- identifier (name{cite.meudec2001atgen}) has been already used, duplicate ignor
-ed
-<to be read again> 
-                   \relax 
-l.517 \bibitem{meudec2001atgen}
-                               
-Overfull \vbox (2.95145pt too high) has occurred while \output is active []
-
-
-[37]pdfTeX warning (ext4): destination with the same identifier (name{cite.pach
-eco2007feedback}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.524 \bibitem{pacheco2007feedback}
-                                   pdfTeX warning (ext4): destination with the 
-same identifier (name{cite.pappano2012year}) has been already used, duplicate i
-gnored
-<to be read again> 
-                   \relax 
-l.530 \bibitem{pappano2012year}
-                               pdfTeX warning (ext4): destination with the same
- identifier (name{cite.puasuareanu2010symbolic}) has been already used, duplica
-te ignored
-<to be read again> 
-                   \relax 
-l.535 \bibitem{puasuareanu2010symbolic}
-                                       pdfTeX warning (ext4): destination with 
-the same identifier (name{cite.puasuareanu2004verification}) has been already u
-sed, duplicate ignored
-<to be read again> 
-                   \relax 
-l.541 \bibitem{puasuareanu2004verification}
-                                           pdfTeX warning (ext4): destination w
-ith the same identifier (name{cite.puasuareanu2009survey}) has been already use
-d, duplicate ignored
-<to be read again> 
-                   \relax 
-l.548 \bibitem{puasuareanu2009survey}
-                                     pdfTeX warning (ext4): destination with th
-e same identifier (name{cite.person2008differential}) has been already used, du
-plicate ignored
-<to be read again> 
-                   \relax 
-l.555 \bibitem{person2008differential}
-                                      pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.roberts2003online}) has been already used, duplic
-ate ignored
-<to be read again> 
-                   \relax 
-l.561 \bibitem{roberts2003online}
-                                 pdfTeX warning (ext4): destination with the sa
-me identifier (name{cite.sen2005cute}) has been already used, duplicate ignored
-
-<to be read again> 
-                   \relax 
-l.567 \bibitem{sen2005cute}
-                           pdfTeX warning (ext4): destination with the same ide
-ntifier (name{cite.singh2013automated}) has been already used, duplicate ignore
-d
-<to be read again> 
-                   \relax 
-l.573 \bibitem{singh2013automated}
-                                  pdfTeX warning (ext4): destination with the s
-ame identifier (name{cite.su2016code}) has been already used, duplicate ignored
-
-<to be read again> 
-                   \relax 
-l.579 \bibitem{su2016code}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.su2016identifying}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.586 \bibitem{su2016identifying}
-                                 pdfTeX warning (ext4): destination with the sa
-me identifier (name{cite.taneja2008diffgen}) has been already used, duplicate i
-gnored
-<to be read again> 
-                   \relax 
-l.592 \bibitem{taneja2008diffgen}
-                                 
-Overfull \vbox (2.95145pt too high) has occurred while \output is active []
-
-
-[38]pdfTeX warning (ext4): destination with the same identifier (name{cite.till
-mann2008pex}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.599 \bibitem{tillmann2008pex}
-                               pdfTeX warning (ext4): destination with the same
- identifier (name{cite.tillmann2014transferring}) has been already used, duplic
-ate ignored
-<to be read again> 
-                   \relax 
-l.604 \bibitem{tillmann2014transferring}
-                                        pdfTeX warning (ext4): destination with
- the same identifier (name{cite.tillmann2013teaching}) has been already used, d
-uplicate ignored
-<to be read again> 
-                   \relax 
-l.611 \bibitem{tillmann2013teaching}
-                                    pdfTeX warning (ext4): destination with the
- same identifier (name{cite.walenstein2007similarity}) has been already used, d
-uplicate ignored
-<to be read again> 
-                   \relax 
-l.619 \bibitem{walenstein2007similarity}
-                                        pdfTeX warning (ext4): destination with
- the same identifier (name{cite.xiao2013characteristic}) has been already used,
- duplicate ignored
-<to be read again> 
-                   \relax 
-l.627 \bibitem{xiao2013characteristic}
-                                      )
+[34])
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 61.
 
 Overfull \vbox (2.95145pt too high) has occurred while \output is active []
 
 
-[39]
+[35]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -2966,7 +2544,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+i'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textdotbelow' on input line 67.
 
-(Quyetdinhgiaoluanvan.tex) [40
+(Quyetdinhgiaoluanvan.tex) [36
 
 ]
 
@@ -2979,7 +2557,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textdotbelow' on input line 74.
 
-(Phuluc.tex) [41
+(Phuluc.tex) [37
 
 ]
 
@@ -3020,7 +2598,7 @@ Class memoir Warning: The material used in the headers is too large
 either increase the head height or redesign the header
 (in both cases you will find help in the memoir manual). on input line 82.
 
-[42
+[38
 
 ]
 \tf@tdo=\write6
@@ -3035,23 +2613,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 90EEA893E325DE34BC33F8839E5DBECD;1538.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: FDB2BB7932594696ACA0E812058D12F5;1479.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 28219 strings out of 493312
- 477014 string characters out of 3138899
+ 28209 strings out of 493312
+ 476894 string characters out of 3138899
  736995 words of memory out of 3000000
- 30963 multiletter control sequences out of 15000+200000
+ 30958 multiletter control sequences out of 15000+200000
  32223 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,13n,76p,1994b,1915s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 76i,13n,76p,1994b,1951s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX
@@ -3066,9 +2641,9 @@ ntex/vnr/vnr12.pfb><C:/Users/admin/AppData/Roaming/MiKTeX/2.9/fonts/type1/vntex
 /vnr/vnsl10.pfb><C:/Users/admin/AppData/Roaming/MiKTeX/2.9/fonts/type1/vntex/vn
 r/vnti10.pfb><C:/Users/admin/AppData/Roaming/MiKTeX/2.9/fonts/type1/vntex/vnr/v
 ntt9.pfb>
-Output written on Main.pdf (42 pages, 1907587 bytes).
+Output written on Main.pdf (38 pages, 1761201 bytes).
 PDF statistics:
- 666 PDF objects out of 1000 (max. 8388607)
- 264 named destinations out of 1000 (max. 500000)
- 232 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 648 PDF objects out of 1000 (max. 8388607)
+ 260 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 

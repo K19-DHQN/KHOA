@@ -12,17 +12,25 @@
 \usepackage{graphicx}
 \graphicspath{ {images/} }
 \usepackage{lipsum}
-% \usepackage[left=3.5cm,right=2cm,top=3.5cm,bottom=3cm]{geometry}
+\usepackage[left=3.5cm,right=2cm,top=3.5cm,bottom=3cm]{geometry}
+\setlength{\parindent}{0pt} % Ngăn thụt vào đầu dòng ở đầu dòng mỗi đoạn
+\setlength{\parskip}{1em} % Khoảng cách giữa các Paragraph
+\renewcommand{\baselinestretch}{1.5}%Tăng khoảng cách giữa các dòng trong đoạn
 
-% Cấu hình paragraph
-% \setlength{\parindent}{30pt} % Không cho mỗi đoạn thụt đầu dòng vào 1 đoạn
-% \setlength{\parskip}{0.5em}
-% \renewcommand{\baselinestretch}{1.5}
-% \usepackage{indentfirst} % Tất cả đều thụt đầu dòng trong mỗi đoạn văn bản
-% \renewcommand{\baselinestretch}{0.2} % Tăng khoảng cách giữa các đoạn văn
-% Ép hai chữ nào đó luôn ở cùng 1 dòng
-% ... thông~minh ...
 
+% set font size chapter 16pt
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+   {\normalfont\sffamily\huge\bfseries\color{black}}
+   {\chaptertitlename\ \thechapter}{14pt}{\Huge}
+\titleformat{\section}
+   {\normalfont\sffamily\Large\bfseries\color{black}}
+   {\thesection}{1em}{}
+
+% Remove spacing before chapter
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{0pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{0pt}
 
 % Cấu hình file --> để hiển nhập code c# 
 \usepackage{listings}

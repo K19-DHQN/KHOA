@@ -14,7 +14,7 @@
 \usepackage{lipsum}
 \usepackage[left=3.5cm,right=2cm,top=3.5cm,bottom=3cm]{geometry}
 \setlength{\parindent}{0pt} % Ngăn thụt vào đầu dòng ở đầu dòng mỗi đoạn
-\setlength{\parskip}{1em} % Khoảng cách giữa các Paragraph
+\setlength{\parskip}{0.5em} % Khoảng cách giữa các Paragraph
 \renewcommand{\baselinestretch}{1.5}%Tăng khoảng cách giữa các dòng trong đoạn
 
 
@@ -23,14 +23,16 @@
 \titleformat{\chapter}[display]
    {\normalfont\sffamily\huge\bfseries\color{black}}
    {\chaptertitlename\ \thechapter}{14pt}{\Huge}
-\titleformat{\section}
-   {\normalfont\sffamily\Large\bfseries\color{black}}
-   {\thesection}{1em}{}
+
+
 
 % Remove spacing before chapter
 \titleformat{\chapter}[display]
 {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{0pt}{\Huge}
 \titlespacing*{\chapter}{0pt}{0pt}{0pt}
+
+
+\titlespacing*{\section}{0pt}{0pt}{0pt}
 
 % Cấu hình file --> để hiển nhập code c# 
 \usepackage{listings}

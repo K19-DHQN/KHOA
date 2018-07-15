@@ -14,6 +14,11 @@ Rajeev Alur, Loris D'Antoni, Sumit Gulwani, Dileep Kini, and Mahesh
 \newblock Automated grading of dfa constructions.
 \newblock In {\em IJCAI}, volume~13, pages 1976--1982, 2013.
 
+\bibitem{ammann2016introduction}
+Paul Ammann and Jeff Offutt.
+\newblock {\em Introduction to software testing}.
+\newblock Cambridge University Press, 2016.
+
 \bibitem{bates1993incremental}
 Samuel Bates and Susan Horwitz.
 \newblock Incremental program testing using program dependence graphs.
@@ -207,6 +212,11 @@ Sihan Li, Xusheng Xiao, Blake Bassett, Tao Xie, and Nikolai Tillmann.
 \newblock In {\em Proceedings of the 38th International Conference on Software
   Engineering Companion}, pages 501--510. ACM, 2016.
 
+\bibitem{Marciniak}
+John~J. Marciniak, editor.
+\newblock {\em Encyclopedia of Software Engineering (Vol. 1 A-N)}.
+\newblock Wiley-Interscience, New York, NY, USA, 1994.
+
 \bibitem{merlo2004linear}
 Ettore Merlo, Giuliano Antoniol, Massimiliano Di~Penta, and Vincenzo~Fabio
   Rollo.
@@ -221,6 +231,11 @@ Christophe Meudec.
   programming and symbolic execution.
 \newblock {\em Software Testing, Verification and Reliability}, 11(2):81--96,
   2001.
+
+\bibitem{myers2011art}
+Glenford~J Myers, Corey Sandler, and Tom Badgett.
+\newblock {\em The art of software testing}.
+\newblock John Wiley \& Sons, 2011.
 
 \bibitem{mooc}
 Coursera~MOOC on~Software Engineering~for SaaS.
@@ -351,6 +366,11 @@ Andrew Walenstein, Mohammad El-Ramly, James~R Cordy, William~S Evans, Kiarash
 Tiantian Wang, Xiaohong Su, Yuying Wang, and Peijun Ma.
 \newblock Semantic similarity-based grading of student programs.
 \newblock volume~49, pages 99--107. Elsevier, 2007.
+
+\bibitem{whittaker2000software}
+James~A Whittaker.
+\newblock What is software testing? and why is it so hard?
+\newblock {\em IEEE software}, 17(1):70--79, 2000.
 
 \bibitem{wikipedia}
 Wikipedia.

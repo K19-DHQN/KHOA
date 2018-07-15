@@ -7,22 +7,12 @@
 
 \begin{document}
 
-%\includepdf{trangbia.pdf} % Trang bìa
-\maketitle{} % Trang tiêu đề bên trong
+\includepdf[pages=-]{trangbia.pdf}
 
-
-\listoftodos{}
-
-	
 % \pagenumbering{gobble} % Trước trang không đánh số thứ tự 
-% \input{Trangbia}
 
 % \pagenumbering{roman} % Trước trang đánh số la mã
 % \setcounter{page}{1}
-
-% \input{Loicamdoan}
-% \input{Loicamon}
-
 
 \chapter*{Lời cam đoan}
 \input{Loicamdoan}
@@ -30,10 +20,7 @@
 \chapter*{Lời cảm ơn}
 \input{Loicamon}
 
-% Dùng cách khác để đưa vào danh sách viết tắt
-
-% \chapter*{Danh mục ký hiệu}
-% \input{Danhmuccackyhieu}
+\includepdf[pages=-]{Danhmuckyhieu.pdf}
 
 \newpage
 \tableofcontents
@@ -42,7 +29,7 @@
 % \pagenumbering{arabic} % Trước trang đánh số thứ tự thêm 2 dòng này
 % \setcounter{page}{1}   % Trước trang đánh số thứ tự thêm 2 dòng này - số trang bắt đầu bằng 3
 
- \input{Modau}
+\includepdf[pages=-]{Tomtat.pdf}
 
 \chapter{Giới thiệu}
 \input{Chuong1}
@@ -66,18 +53,14 @@
 
 \chapter{Quyết định XXX}
 \input{Quyetdinhgiaoluanvan}
-
 \todo{scan quyet dinh sang pdf và include}
-
 %\includepdf{quyetdinh.pdf}
 
 \chapter{Phụ lục XXX}
 \input{Phuluc}
 
 \chapter{Một số mã lệnh quan trọng}
-
-\todo{Đưa một số đoạn code quan trọng}
-
+\input{SourceCode}
 
 \end{document}
 

@@ -1,5 +1,4 @@
-int foo(int v) 
-{
+int foo(int v) {
    return 2*v;
 }
 void test_me(int x, int y) {

@@ -1,11 +1,12 @@
 using System;
 public class Program {
     public static int Puzzle(int x) {
-	    if(x>0 && x<100){
-            return x - 10;
-	    }
-	    else {
-        	return x; 
-	    }
+        int y = 0;
+        switch (x)
+        {
+            case 1: y += 4; break;
+            default: y = x - 100; break;
+        }
+        return y;
     }
 }

@@ -106,35 +106,40 @@ Ngược lại với phép đo RS, phép đo SSE khám phá những đường đ
 
 \begin{minipage}[t]{0.45\linewidth}
 	\begin{lstlisting}[caption={Chương trình $P_{1}$}, label={Script}]
-	public static int Y(int x) {
-	    if(x>0 && x<100){
-            return x - 10;
-	    }
-	    else {
-        	return x; 
-	    }
+	public static int sol(int x) {
+            int y = 0;
+            switch (x)
+            {
+                case 1: 
+                			y += 4;
+                			break;                
+                default: 
+                			y = x - 100; 
+                			break;
+            }
+            return y;        
     }
 	\end{lstlisting}
 \end{minipage}%
 \hfill\vrule\hfill
 \begin{minipage}[t]{0.45\linewidth}
 	\begin{lstlisting}[caption={Chương trình $P_{2}$}, label={Script}]
-	public static int Y(int x){
-	    if(x>=0 && x<100){
-        	return x - 10;
-	    }
-	    else {
-        	return x; 
-	    }
-    }
+	public static int sub(int x) {
+            int y = 0;
+            if (x == 1) 
+            	return y += 4;
+            if (x == 2) 
+            	return y *= 4;                      
+            else 
+            	return y = x - 100;
+        }
 	\end{lstlisting}
 \end{minipage}%
 
-Hai đoạn Mã lệnh $3.9$ và Mã lệnh $3.10$ của hai Chương trình $P_{1}$ và $P_{2}$, chọn Chương trình $P_{1}$ làm Chương trình tham chiếu, sử dụng kỹ thuật \textbf{DSE} để phân tích chương trình $P_{1}$ ta được tập các giá trị đầu vào thử nghiệm là ${(0, 1)}$. Trong khi đó, phân tích Chương trình $P_{2}$ chúng ta được tập các giá trị đầu vào thử nghiệm của Chương trình $P_{2}$  là ${(-1, 0, 1)}$. Do đó, chúng ta thấy tập giá trị đầu vào thử nghiệm do phép đo \textbf{SSE} tạo ra thiếu giá trị đầu thử nghiệm $-1$ để có thể thực thi hết các đường đi của Chương trình $P_{2}$.
+Hai đoạn Mã lệnh $3.9$ và Mã lệnh $3.10$ của hai Chương trình $P_{1}$ và $P_{2}$, chọn Chương trình $P_{1}$ làm Chương trình tham chiếu, sử dụng kỹ thuật \textbf{DSE} để phân tích chương trình $P_{1}$ ta được tập các giá trị đầu vào thử nghiệm là ${(0, 1)}$. Trong khi đó, phân tích Chương trình $P_{2}$ chúng ta được tập các giá trị đầu vào thử nghiệm của Chương trình $P_{2}$  là ${(0, 1, 2)}$. Do đó, chúng ta thấy tập giá trị đầu vào thử nghiệm do phép đo \textbf{SSE} tạo ra thiếu giá trị đầu thử nghiệm $2$ để có thể thực thi hết các đường đi của Chương trình $P_{2}$.
 
 \subsection{Kỹ thuật thực thi chương trình kết hợp Paired Program Symbolic Execution (PSE)}
 Để giải quyết giới hạn của phép đo \textbf{SSE} khi tạo ra tập các giá trị đầu vào thử nghiệm không thực thi hết các các đi của Chương trình cần phân tích. Phép đo \textbf{PSE} giải quyết giới hạn của phép đo \textbf{SSE} bằng cách tạo một Chương trình kết hợp giữa Chương trình cần phân tích với Chương trình tham chiếu. Dựa trên Chương trình kết hợp sử dụng kỹ thuật \textbf{DSE} để tạo ra đầu vào thử nghiệm cho cả hai chương trình, các đầu vào thử nghiệm này bao gồm các đầu vào thử nghiệm đúng và không đúng. Các đầu vào thử nghiệm đúng là những giá trị khi thực thi trên cả hai chương trình sẽ cho kết quả đầu ra như nhau, ngược lại các đầu vào thử nghiệm không đúng là những giá trị khi thực thi trên cả hai chương trình sẽ cho kết quả khác nhau. Do đó, phép đo \textbf{PSE} được tính bằng tỷ lệ các giá trị đầu vào thử nghiệm đúng trên tổng số các giá trị đầu vào được thử nghiệm. 
-
 \begin{lstlisting}[caption={Chương trình $P_{3}$, label={Script}]
 	public int $P_{3}$ (int number) {
 		if(Program1(args) == Program2(args))
@@ -142,16 +147,12 @@ Hai đoạn Mã lệnh $3.9$ và Mã lệnh $3.10$ của hai Chương trình $P_
 		return 0;
 	}
 \end{lstlisting}
-
 Dựa trên cách thức hoạt động của phép đo \textbf{PSE}, chúng ta có định nghĩa phép đo \textbf{PSE} như sau:
-
 \begin{definition}[Phép đo PSE]
 Cho $P_{1}$ và $P_{2}$ là hai Chương trình có cùng miền giá trị đầu vào $I$. $P_{3}$ là Chương trình
 kết hợp của $P_{1}$ và $P_{2}$, ký hiệu $(exec(P_{1}, I) =  exec(P_{2}, I))$.  $I_{s}$ là tập các giá trị đầu vào được tạo bởi \textbf{DSE} từ Chương trình $P_{3}$, $I_{a}$ là tập con $I_{s}$. Hai Chương trình $P_{1}$ và $P_{2}$ thực thi giống nhau khi Chương trình $P_{3}$ thực thi cho giá trị đúng với $\forall i \in I_{a}$, ký hiệu $exec(P_{3}, i) = T$, và $\nexists j \in I_{s} \backslash I_{a}$ thực thi Chương trình $P_{3}$ cho giá trị đúng. Chỉ số phép đo \textbf{PSE} được định nghĩa là $M_{PSE}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup \left|I_{s}\right| $.
 \end{definition}
-
 Phép đo \textbf{PSE} đã cải thiện được hạn chế của phép đo \textbf{SSE} khi dữ liệu thử nghiệm được  tạo ra từ trên Chương trình kết hợp, tập dữ liệu thử nghiệm có khả năng thực thi hết các nhánh đường đi của Chương trình tham chiếu và Chương trình cần tính. Tuy nhiên, phép đo \textbf{PSE} cũng có hạn chế trong quá trình xử lý các vòng lặp lớn hoặc vô hạn. Để giảm bớt hạn chế này, chúng ta có thể giới hạn miền đầu vào hoặc đếm số vòng lặp của các Chương trình. Ngoài ra, phép đo \textbf{PSE} khám phá đường dẫn của Chương trình kết hợp nên quá trình xử lý sẽ tốn thời gian và tài nguyên hơn so với phép đo \textbf{SSE} khi chỉ khám phá đường dẫn của Chương trình tham chiếu.
-
 \section{Tiêu chí đánh giá hiệu quả}
 Để đánh giá độ hiệu quả của các phép đo, chúng ta có thể áp dụng những tiêu chí cơ bản sau:
 \begin{itemize}
@@ -160,7 +161,6 @@ Phép đo \textbf{PSE} đã cải thiện được hạn chế của phép đo \
 \item Độ phủ của dữ liệu thử
 \item Kết quả đánh giá độ tương tự hành vi
 \end{itemize}
-
 Phép đo \textbf{RS} sử dụng kỹ thuật lấy ngẫu nhiên giá trị thử nghiệm trong miền giá trị đầu vào của cả hai Chương trình nên tốc độ xử lý của phép đo \textbf{RS} nhanh, đơn giản và sử dụng ít tài nguyên. Nhưng độ phủ dữ liệu thử nghiệm do phép đo \textbf{RS} tạo ra  không cao, không phủ hết các trường hợp có thể thực thi của chương trình nên kết quả đánh giá độ tương tự hành vi của Chương trình đạt mức tương đối so với hành vi thực tế.
 
 Phép đo \textbf{SSE} là một phép đo cải tiến của phép đo \textbf{RS}, khi sử dụng kỹ thuật \textbf{DSE} dựa trên Chương trình tham chiếu để tạo các giá trị đầu vào thử nghiệm. Vì phải khám tất cả các nhánh đường đi của Chương trình tham chiếu nên tốc độ xử lý của phép đo \textbf{SSE} sẽ chậm và chiếm nhiều tài nguyên hơn phép đo \textbf{RS}. Tập dữ liệu đầu vào thử nghiệm được tạo bởi phép đo \textbf{SSE} có khả năng phủ tất cả các nhánh của Chương trình tham chiếu nên kết quả đánh giá độ tương tự hành vi của phép đo \textbf{SSE} sẽ chính xác hơn kết quả đánh giá độ tương tự hành vi của phép đo \textbf{RS}.

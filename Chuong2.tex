@@ -87,26 +87,23 @@ Một kỹ thuật khác giúp khắc phục được hạn chế của kiểm t
 
 
 \section{Kỹ thuật Dynamic symbolic execution}
-% What? 
-% why?
-% how?
-% who?
 
 Dynamic symbolic execution (DSE) là một kỹ thuật duyệt tự động tất cả các đường đi có thể của chương trình bằng cách chạy chương trình với nhiều giá trị đầu vào khác nhau để tăng độ phủ của dữ liệu thử \cite{xie2009fitness}.
 
 Dựa trên các tham số đầu vào của chương trình, DSE sẽ tạo ra các giá trị đầu vào cụ thể và thực thi chương trình với các giá trị cụ thể này. Trong quá trình thực thi, DSE sẽ ghi nhận lại ràng buộc tại các nút, phủ định lại các ràng buộc này và sinh các giá trị đầu vào thỏa điều kiện ràng buộc tại các nút rẽ nhánh này. Với một giá trị đầu vào cụ thể, DSE sẽ thực thi chương trình và duyệt được một đường đi cụ thể, quá trình thực thi này sẽ lặp lại cho đến khi duyệt hết tất cả các đường đi của chương trình.
 
-\subsection*{Thuật toán}
-\begin{center}
-	\begin{figure}[htp]
-		\begin{center}
-			\includegraphics[scale=.7]{thuat_toan_DSE.png}
-		\end{center}
-		\caption{Thuật toán kỹ thuật DSE}
-		\label{refhinh1}
-	\end{figure}
-\end{center}
-
+\begin{algorithm}
+	\caption{DSE}
+	\begin{algorithmic}	
+		\item Set J:= $\varnothing $ \Comment{J: Tập hợp các đầu vào của chương trình phân tích}
+		\item loop
+			\subitem Chọn đầu vào i $\notin $ J \Comment{Dừng lại nếu không có i nào được tìm thấy}
+			\subitem Xuất ra i
+			\subitem Thực thi P(i); lưu lại điều kiện đường đi C(i); suy ra C'(i)
+			\subitem Đặt J := j $\cup $ i			
+		\item end loop
+	\end{algorithmic}
+\end{algorithm}
 
 \subsection*{Ví dụ:}
 

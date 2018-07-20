@@ -12,11 +12,11 @@ Chương này trình bày những nội dung như sau:
 \section{Dữ liệu thực nghiệm}
 Để tiến hành làm thực nghiệm những nội dung nghiên cứu trong đề tài, tôi đã sử dụng hai nguồn dữ liệu chính để làm thực nghiệm. Một nguồn là dữ liệu của trò chơi Code Hunt, nguồn dữ liệu còn lại do tôi tự thiết kế.
 
-Code Hunt \cite{CodeHunt} là một game về lập trinh, được sử dụng cho các cuộc thi viết mã và thực hành các kỹ năng lập trình do Microsoft phát triển. Code Hunt dựa trên công cụ thực thi biểu tượng Pex, ứng dụng kỹ thuật DSE khám phá các nhánh đường đi của chương trình để suy ra giá trị đầu vào có độ phủ cao. Mã Code Hunt là một nền tảng mã hóa trực tuyến, trong đó mỗi câu đố được trình bày với các trường hợp kiểm tra, không có đặc điểm kỹ thuật. Đầu tiên người chơi phải chọn câu hỏi và trả lời mã câu hỏi bằng cách viết một đoạn mã sao cho kết quả trùng với kết quả cử câu hỏi. Code Hunt đã được hơn 350.000 người chơi sử dụng tính đến tháng 8 năm 2016. Dữ liệu từ các cuộc thi gần đây đã được công khai và cho phép những người quan tâm đến Code Hunt tải về để phân tích và nghiên cứu trong cộng đồng giáo dục.
+Code Hunt \cite{CodeHunt} là một game về lập trinh, được sử dụng cho các cuộc thi viết mã và thực hành các kỹ năng lập trình do Microsoft phát triển. Code Hunt dựa trên công cụ thực thi biểu tượng Pex, ứng dụng kỹ thuật DSE khám phá các nhánh đường đi của chương trình để suy ra giá trị đầu vào có độ phủ cao. Mã Code Hunt là một nền tảng mã hóa trực tuyến, trong đó mỗi câu đố được trình bày như một bài kiểm tra. Đầu tiên người chơi phải chọn câu hỏi và trả lời mã câu hỏi bằng cách viết một đoạn mã sao cho kết quả trùng với kết quả cử câu hỏi. Code Hunt đã được hơn 350.000 người chơi sử dụng tính đến tháng 8 năm 2016. Dữ liệu từ các cuộc thi gần đây đã được công khai và cho phép những người quan tâm đến Code Hunt tải về để phân tích và nghiên cứu trong cộng đồng giáo dục.
 
 \label{sec:data}
 \begin{center}
-	\begin{figure}[htp]
+	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[scale=.3]{codehunt2.png}
 		\end{center}
@@ -30,7 +30,7 @@ Tập dữ liệu Code Hunt là một tập dữ liệu chứa các chương tr�
 
 
 \begin{center}
-	\begin{figure}[htp]
+	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[scale=.4]{java-to-csharp-collections.png}
 		\end{center}
@@ -47,10 +47,8 @@ Trong quá trình làm thực nghiệm, tôi đã sử dụng một số công c
 \subsection*{Microsoft Visual studio}
 Microsoft Visual Studio là một môi trường phát triển tích hợp từ Microsoft. Nó được sử dụng để phát triển chương trình máy tính cho Microsoft Windows, cũng như các trang web, các ứng dụng web và các dịch vụ web. Microsoft Visual Studio sử dụng nền tảng phát triển phần mềm của Microsoft như Windows API, Windows Forms, Windows Presentation Foundation, Windows Store và Microsoft Silverlight. 
 
-Microsoft Visual Studio bao gồm một trình soạn thảo mã hỗ trợ IntelliSense cũng như cải tiến mã nguồn. Trình gỡ lỗi tích hợp hoạt động cả về trình gỡ lỗi mức độ mã nguồn và gỡ lỗi mức độ máy. Công cụ tích hợp khác bao gồm một mẫu thiết kế xây dựng giao diện ứng dụng, thiết kế web, thiết kế lớp và thiết kế giản đồ cơ sở dữ liệu. Nó chấp nhận các plug-in nâng cao các chức năng ở hầu hết các cấp bao gồm thêm hỗ trợ cho các hệ thống quản lý phiên bản (như Subversion) và bổ sung thêm bộ công cụ mới như biên tập và thiết kế trực quan cho các miền ngôn ngữ cụ thể hoặc bộ công cụ dành cho các khía cạnh khác trong quy trình phát triển phần mềm.
-
 \begin{center}
-	\begin{figure}[htp]
+	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[scale=.3]{visualstudio.png}
 		\end{center}
@@ -65,48 +63,10 @@ Visual Studio hỗ trợ nhiều ngôn ngữ lập trình khác nhau và cho ph�
 \subsubsection*{Tổng quan}
 Ngôn ngữ lập trình C\# là một ngôn ngữ lập trình hiện đại, được phát triển bởi Anders Hejlsberg cùng nhóm phát triển .Net Framework của Microsoft và được phê duyệt bởi European Computer Manufacturers Association (ECMA) và International Standards Organization (ISO).
 
-Quá trình dịch chương trình trong C\# được thiết kế cho các ngôn ngữ có chung cơ sở hạ tầng (Common Language Infrastructure – CLI), trong đó bao gồm các mã (Executable Code) và môi trường thực thi (Runtime Environment) cho phép sử dụng các ngôn ngữ cấp cao khác nhau trên đa nền tảng máy tính và kiến trúc khác nhau.
-
-\subsubsection*{Ngôn ngữ ra đời cùng với .NET}
-\begin{itemize}
-	\item Kết hợp C++ và Java.
-	\item Hướng đối tượng.
-	\item Hướng thành phần.
-	\item Mạnh mẽ (robust) và bền vững (durable).
-	\item Mọi thứ trong Quá trình dịch chương trình trong C\#  đều Object oriented.
-	\item Chỉ cho phép đơn kế thừa.
-	\item Lớp Object là cha của tất cả các lớp.
-	\item Cho phép chia chương trình thành các thành phần nhỏ độc lập nhau.
-	\item Mỗi lớp gói gọn trong một file, không cần file header như C/C++.
-	\item Bổ sung khái niệm namespace để gom nhóm các lớp.
-	\item Bổ sung khái niệm “property” cho các lớp.
-	\item Khái niệm delegate và event.
-\end{itemize}
-
-\subsubsection*{Vai trò C\#  trong .NET Framework}
-\begin{itemize}
-	\item .NET runtime sẽ phổ biến và được cài trong máy client.
-	\begin{enumerate}
-		\item Việc cài đặt App C\#  như là tái phân phối các thành phần .NET
-		\item Nhiều App thương mại sẽ được cài đặt bằng Quá trình dịch chương trình trong C\# .
-	\end{enumerate}
-	\item C\# tạo cơ hội cho các tổ chức xây dựng các App Client/Server n-tier.
-	\item Kết nối ADO.NET cho phép truy cập nhanh chóng và dễ dàng với SQL Server, Oracle…
-	\item Cách tổ chức .NET cho phép hạn chế những vấn đề phiên bản.
-	\item ASP.NET viết bằng Quá trình dịch chương trình trong C\#.
-	\begin{enumerate}
-		\item GUI thông minh.
-		\item Chạy nhanh hơn (đặc tính của .NET)
-		\item Mã ASP.NET không còn hỗn độn.
-		\item Khả năng bẫy lỗi tốt, hỗ trợ mạnh trong quá trình xây dựng App Web.
-	\end{enumerate}
-\end{itemize}
-
-\subsubsection*{Quá trình dịch chương trình trong C\# }
 Mã nguồn C\# là các tập tin *.cs được trình biên dịch Compiler biên dịch thành các file *.dll hoặc *.exe, sau đó các file này được các hệ thống thông dịch CLR trên điều hành thông dịch qua mã máy và dùng kỹ thuật JIT (just-in-time) để tăng tốc độ.
 
 \begin{center}
-	\begin{figure}[htp]
+	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[scale=.4]{quatrinhthongdich.png}
 		\end{center}
@@ -115,13 +75,7 @@ Mã nguồn C\# là các tập tin *.cs được trình biên dịch Compiler bi
 	\end{figure}
 \end{center}
 
-\subsubsection*{Các loại ứng dụng của C\#}
-C\# có thể tạo ra được nhiều loại ứng dụng, trong đó có 3 kiểu phổ biến được nhiều nhà lập trình viên sử dụng nhất đó là: Console, Window và ứng dụng Web. Trong đó:
-\begin{itemize}
-	\item Ứng dụng Console là ứng dụng có giao diện text, chỉ xử lý nhập xuất trên màn hình Console, tương tự với các ứng dụng DOS trước đây. Loại ứng dụng Console thường đơn giản, ta có thể nhanh chóng tạo chương trình hiển thị kết xuất trên màn hình. Do đó, các minh hoạ, ví dụ ngắn gọn ta thường sử dụng dạng chương trình Console để thể hiện.
-	\item Ứng dụng Windows Form là ứng dụng được hiển thị với giao diện cửa sổ đồ họa. Chúng ta chỉ cần kéo và thả các điều khiển (control) lên cửa sổ Form. Visual Studio sẽ sinh mã trong chương trình để tạo ra, hiển thị các thành phần trên cửa sổ.
-	\item Ứng dụng Web, trên môi trường .NET cung cấp công nghệ ASP.NET, MVC giúp xây dựng những trang Web động. Để tạo ra một trang Web, người lập trình sử dụng ngôn ngữ biên dịch như C\# hoặc C\# để viết mã. Để đơn giản hóa quá trình xây dựng giao diện người dùng cho trang Web, .NET giới thiệu công nghệ Webform. Cách thức tạo ra các Web control tương tự như khi ta xây dựng ứng dụng trên Window Form.
-\end{itemize}
+C\# có thể tạo ra được nhiều loại ứng dụng, trong đó có 3 kiểu phổ biến được nhiều nhà lập trình viên sử dụng nhất đó là: Console, Window và ứng dụng Web. 
 
 \subsection{Công cụ sinh dữ liệu thử Pex}
 \subsubsection*{Giới thiệu}
@@ -130,20 +84,6 @@ Khái niệm về DSE và các ứng dụng sử dụng kỹ thuật DSE đã c�
 Cũng như với Unit Test, ta có thể viết các lớp kiểm thử chứa các ca kiểm thử tham số hóa. Với sự hỗ trợ của Pex ta có thể thực thi các ca kiểm thử tham số hóa đó. Tuy nhiên không giống việc thực thi các lớp kiểm thử chứa các Unit Test, Pex chỉ thực thi được một ca kiểm thử tham số hóa trong mỗi lần chạy.
 
 \lstinputlisting[caption = {Ca kiểm thử tham số sử dụng Pex}]{TestPex.cs}
-
-\subsubsection*{Các mẫu kiểm thử tham số hóa}
-Viết các ca kiểm thử các tham số là một công việc tốn nhiều công sức. Để viết các ca kiểm thử các tham số hiệu quả, ta cần thực sự hiểu về mã cài đặt của chương trình mà ta muốn kiểm thử. Pex hỗ trợ cho chúng ta nhiều mẫu kiểm thử tham số khác nhau \cite{de2008parameterized}. Các mẫu được sử dụng nhiều nhất đó là mẫu AAA (Triple-A) và AAAA:
-\begin{itemize}
-	\item Với mẫu AAA (Arrange, Act, Assert) PUT được tổ chức thành 3 phần:
-	\begin{itemize}
-		\item Arrange: khởi tạo giá trị các biến sẽ sử dụng
-		\item Act: dãy các lời gọi phương thức
-		\item Assert: sự xác nhận
-	\end{itemize}
-	\item Với mẫu AAAA, một giả thuyết (Assume) được thêm vào để giới hạn miền giá trị của các tham số đầu vào.
-\end{itemize}
-
-\lstinputlisting[caption = {Mẫu kiểm thử tham số hóa AAAA}]{AAAA.cs}
 
 \subsubsection*{Lọn chọn đầu vào kiểm thử với Pex}
 Đổ có thể sinh các đầu vào cụ thể cho các tham số Unit test, Pex cần phải phân tích chương trình với các tham số kiểm thử này. Có 2 kỹ thuật phân tích chương trình đó là:
@@ -160,7 +100,7 @@ Pex sử dụng bộ xử lý ràng buộc Z3 \cite{de2008z3} kết hợp với 
 \subsubsection*{Mô hình ứng dụng Pex}
 
 \begin{center}
-	\begin{figure}[htp]
+	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[scale=.4]{pex.png}
 		\end{center}
@@ -170,10 +110,10 @@ Pex sử dụng bộ xử lý ràng buộc Z3 \cite{de2008z3} kết hợp với 
 \end{center}
 
 \section{Đánh giá kết quả thực nghiệm}
-Trong chương 2 và chương 3 của đề tài, tôi đã trình bày một số lý thuyết về kiểm thử phần mềm, các kỹ thuật sinh dữ liệu thử nghiệm, và các kỹ thuật đo độ tương tự hành vi chương trình \textbf{RS, SSE và PSE}. Áp dụng những lý thuyết trên, tôi thực nghiệm bằng cách xây dựng một ứng dụng, mô tả quá trình hoạt động của các kỹ thuật đo, và đánh giá kết quả các kỹ thuật đo, kết quả thực nghiệm đạt được như sau:
+Nội dung chương 2 và chương 3 đã trình bày một số lý thuyết về kiểm thử phần mềm, các kỹ thuật sinh dữ liệu thử nghiệm, và các kỹ thuật đo độ tương tự hành vi chương trình \textbf{RS, SSE và PSE}. Áp dụng những lý thuyết trên, tôi thực nghiệm bằng cách xây dựng một ứng dụng, mô tả quá trình hoạt động của các kỹ thuật đo, và đánh giá kết quả các kỹ thuật đo, kết quả thực nghiệm đạt được như sau:
 
 \begin{center}
-	\begin{figure}[htp]
+	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[scale=.5]{main.png}
 		\end{center}
@@ -181,7 +121,7 @@ Trong chương 2 và chương 3 của đề tài, tôi đã trình bày một s�
 	\end{figure}
 \end{center}
 
-Hai nút đầu tiên, cho phép chúng ta chọn files chương trình tham chiếu và của học sinh. Bên dưới là các chút chức năng đo hành vi, và tính toán độ tương tự hành vi của chương tình theo các độ đo khách nhau RS, SSE và PSE.
+Hai nút đầu tiên, cho phép chúng ta chọn file chương trình tham chiếu và files cần tính độ tương tự. Bên dưới là các chút chức năng đo hành vi, và tính toán độ tương tự hành vi của chương tình theo các độ đo khách nhau RS, SSE và PSE.
 
 Một số files mẫu chương trình tham chiếu và chương trình cần tính độ tương tự (chương trình của sinh viên) có nội dung như sau:
 
@@ -191,7 +131,7 @@ Một số files mẫu chương trình tham chiếu và chương trình cần t�
 
 \subsection{Kết quả độ đo RS}
 \begin{center}
-	\begin{figure}[htp]
+	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[scale=.5]{kq_rs.png}
 		\end{center}
@@ -203,7 +143,7 @@ Dựa vào kết quả độ đo RS ở trên, chúng ta có danh sách các gi�
 
 \subsection{Kết quả độ đo SSE}
 \begin{center}
-	\begin{figure}[htp]
+	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[scale=.5]{kq_sse.png}
 		\end{center}
@@ -211,11 +151,11 @@ Dựa vào kết quả độ đo RS ở trên, chúng ta có danh sách các gi�
 	\end{figure}
 \end{center}
 
-Phần tích chương trình tham chiếu với kỹ thuật DSE chúng ta suy ra được 3 miền giá trị đầu vào là (x < 0), (0 < x \&\& x < 100) và (x > 100), giá trị đầu vào đại diện lần lượt là 0, 1, 101. Các giá trị đầu vào này, khi thực thi trên chương trình của hai sinh viên chỉ cho 2 kết quả đầu ra trùng khớp trên tổng số 3 kết quả so với chương trình tham chiếu, đạt tỷ lệ 0.666666666666667. Kết quả độ đo SSE khả quan hơn độ đo RS, khi đưa ra được giá trị thử nghiệm có thể phủ hết các nhánh của chương trình tham chiếu. Những kỹ thuật đo SSE lại hạn chế khi không xem xét chương trình của sinh viên, không thống nhất tham số đầu vào có khả năng phủ hết các nhánh của chương trình. Trong khi chương trình của sinh viên có hành vi khác biết so với chương trình tham chiếu.
+Phần tích chương trình tham chiếu với kỹ thuật DSE chúng ta có 3 miền giá trị đầu vào là \textbf{(x < 0), (0 < x \&\& x < 100) và (x > 100)\textit{}}, giá trị đầu vào đại diện lần lượt là \textbf{0, 1, 101}. Các giá trị đầu vào này, khi thực thi trên chương trình của hai sinh viên chỉ cho 2 kết quả đầu ra trùng khớp trên tổng số 3 kết quả so với chương trình tham chiếu, đạt tỷ lệ 0.666666666666667. Kết quả độ đo SSE cho chúng ta một kết quả chính xác hơn kết quả độ đo RS, khi đưa ra được giá trị thử nghiệm có thể phủ hết các nhánh của chương trình tham chiếu. Những kỹ thuật đo SSE lại khi không xem xét chương trình của sinh viên, không thống nhất tham số đầu vào có khả năng phủ hết các nhánh của chương trình sinh viên. Trong khi chương trình của sinh viên hiện có hành vi khác biết so với chương trình tham chiếu.
 
 \subsection{Kết quả độ đo PSE}
 \begin{center}
-	\begin{figure}[htp]
+	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[scale=.5]{kq_pse.png}
 		\end{center}
@@ -223,7 +163,7 @@ Phần tích chương trình tham chiếu với kỹ thuật DSE chúng ta suy r
 	\end{figure}
 \end{center}
 
-Kết quả độ đo PSE đã thay đổi so với kết quả độ đo SSE. Tham số đầu vào trên mỗi chương trình của sinh viên có sự khác biệt, PSE tạo ra được 5 tham số đầu vào cho chương trình kết hợp của sinh viên thứ 1 với chương trình tham chiếu (lần lượt là  -21478364, 0, 1, 100, 101), và 4 tham số đầu vào cho chương trình kết hợp của sinh viên thứ 2 với chương trình tham chiếu (lần lượt là  -21478364, 0, 1, 101). Các tham số đầu vào trên 2 chương trình kết hợp, có khả năng phủ hết các nhánh đường đi có thể trên cả chương trình tham chiếu và chương trình của sinh viên. Kết quả độ đo PSE cho sinh viên thứ nhất đạt \textbf{0.6}, và sinh viên thứ hai đạt \textbf{0.75}, kết quả này tương đối chính xác so với việc phân tích bằng tay, đáp ứng được mục tiêu đo độ tương tự hành vi của chương trình.
+Kết quả độ đo PSE đã thay đổi so với kết quả độ đo SSE. Tham số đầu vào trên mỗi chương trình của sinh viên có sự khác biệt, PSE tạo ra được 5 tham số đầu vào cho chương trình kết hợp của sinh viên thứ 1 với chương trình tham chiếu (lần lượt là \textbf{-21478364, 0, 1, 100, 101}), và 4 tham số đầu vào cho chương trình kết hợp của sinh viên thứ 2 với chương trình tham chiếu (lần lượt là \textbf{-21478364, 0, 1, 101}). Các tham số đầu vào trên 2 chương trình kết hợp, có khả năng phủ hết các nhánh đường đi có thể trên cả chương trình tham chiếu và chương trình của sinh viên. Kết quả độ đo PSE cho sinh viên thứ nhất đạt \textbf{0.6}, và sinh viên thứ hai đạt \textbf{0.75}, kết quả này tương đối chính xác nếu chúng ta so sánh kết quả với việc phân tích thủ công, dữ liệu thử đáp ứng được mục tiêu phủ hết các nhánh của chương trình cần tính và chương tình tham chiếu.
 
 \section{Khả năng ứng dụng}
 Các kỹ thuật đo độ tương tự trình bày trong đề tài này có thể áp dụng được trong nhiều lĩnh vực, nhưng chủ yếu tập trung vào giáo dục, các chương trình đào tạo lập trình viên, hay đào tạo kỹ sư phần mềm... Một số ứng dụng thực tế có thể phát triển trong tương lai như: 

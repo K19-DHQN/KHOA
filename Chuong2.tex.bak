@@ -1,0 +1,273 @@
+Chương này trình bày những kiến thức cơ sở để triển khai luận văn này,  bao gồm kiến thức về kiểm thử phần mềm, kỹ thuật sinh ngẫu nhiên dữ liệu thử, và kỹ thuật Dynamic Symbolic Execution.
+\section{Kiểm thử phần mềm}
+%\cite{myers2011art,whittaker2000software,ammann2016introduction}
+\subsection{Giới thiệu}
+Trong nền kinh tế hiện nay, ngành công nghiệp phần mềm giữ vai trò hết sức quan trọng, một số nước có nền công nghệ thông tin phát triển thì ngành công nghiệp phần mềm có khả năng chi phối cả nền kinh tế. Vì vậy việc đảm bảo chất lượng phần mềm trở nên cần thiết hơn bao giờ hết. Quá trình phát hiện và khắc phục lỗi cho phần mềm là một công việc đòi hỏi nhiều nỗ lực, công sức, cũng như tiêu tốn nhiều hơn chi phí trong việc phát triển phần mềm. Hiện nay, một sản phẩm phần mềm chất lượng có thể được nhiều người sử dụng biết đến, nó mang lại hiệu quả tích cực trong công việc của người sử dụng. Tuy nhiên, một phần mềm kém chất lượng sẽ gây thiệt hại về kinh tế cũng như  tiến độ công việc của người sử dụng. Phần mềm phải luôn đảm bảo được sự ổn định, không phát sinh lỗi trong quá trình sử dụng.
+
+Việc kiểm thử phần mềm chính là một quá trình hoặc một loạt các quy trình được thiết kế, để đảm bảo mã máy tính chỉ làm những gì nó được thiết kế và không làm bất cứ điều gì ngoài ý muốn \cite{myers2011art}. Phần mềm phải được dự đoán và nhất quán, không gây bất ngờ cho người dùng. Đây là một bước quan trọng trong quá trình phát triển một phần mềm, giúp cho người phát triển phần mềm và người sử dụng thấy được hệ thống đã đáp ứng yêu cầu đặt ra.
+
+\subsection{Các phương pháp kiểm thử}
+Có nhiều phương pháp để kiểm thử phần mềm, nhưng trọng tâm là hai phương pháp kiểm chính là kiểm thử thử tĩnh và kiểm thử động.
+\textbf{\textit{Kiểm thử tĩnh (Static testing)}}: Là phương pháp kiểm thử phần mềm bằng cách duyệt lại các yêu cầu và các đặc tả bằng tay, thông qua việc sử dụng giấy, bút để kiểm tra tính logic từng chi tiết mà không cần chạy chương trình. Kiểu kiểm thử này thường được sử dụng bởi chuyên viên thiết kế, người viết mã lệnh chương trình. Kiểm thử tĩnh cũng có thể được tự động hóa bằng cách thực hiện kiểm tra toàn bộ hệ thống thông qua một trình thông dịch hoặc trình biên dịch, xác nhận tính hợp lệ về cú pháp của chương trình.
+		
+\textbf{\textit{Kiểm thử động (Dynamic testing)}}: Là phương pháp kiểm thử thông qua việc chạy chương trình để điều tra trạng thái tác động của chương trình, dựa trên các ca kiểm thử xác định các đối tượng kiểm thử của chương trình. Đồng thời kiểm thử động sẽ tiến hành kiểm tra cách thức hoạt động của mã lệnh, tức là kiểm tra phản ứng từ hệ thống với các biến luôn thay đổi theo thời gian. Trong kiểm thử động, phần mềm phải được biên dịch và chạy, và bao gồm việc nhập các giá trị đầu vào và kiểm tra giá trị đầu ra có như mong muốn hay không.	
+	
+\subsection{Các chiến lược kiểm thử}
+Kiểm thử phần mềm có nhiều chiến lược để kiểm thử, trong đó có hai chiến lược được sử dụng nhiều nhất đó là kiểm thử hộp đen và kiểm thử hộp trắng.
+	
+\textbf{\textit{Kiểm thử hộp đen – Black box}}. Là một chiến lược kiểm thử với cách thức hoạt động chủ yếu dựa vào hướng dữ liệu inputs/ouputs của chương trình, xem chương trình như là một “hộp đen”, chiến lược kiểm thử này  hoàn toàn không quan tâm về cách xử lý và cấu trúc bên trong của chương trình. Kiểm thử hộp đen tập trung vào tìm các trường hợp mà chương trình không thực hiện theo các đặc tả kỹ thuật. Kiểm thử viên hộp đen cố gắng tìm ra những lỗi mà lập trình viên không tìm ra. Tuy nhiên, phương pháp kiểm thử này cũng có mặt hạn chế của nó, kiểm thử viên không biết các phần mềm được kiểm tra thực sự được xây dựng như thế nào, cố gắng viết rất nhiều ca kiểm thử để kiểm tra một chức năng của phần mềm nhưng lẽ ra chỉ cần kiểm tra bằng một ca kiểm thử duy nhất, hoặc một số phần của chương trình có thể bị bỏ qua không được kiểm tra.
+		
+Do vậy, kiểm thử hộp đen có ưu điểm là đánh giá khách quan, mặt khác nó lại có nhược điểm là thăm dò mù. Trong phần nghiên cứu của đề tài, kiểm thử hộp đen cũng được sử dụng như một phương pháp đo độ tương tự hành vi của các chương trình.
+		
+\textbf{\textit{Kiểm thử hộp trắng – White box}}. Đây là một chiến lược kiểm thử khác, trái ngược hoàn toàn với kiểm thử hộp đen, kiểm thử hộp trắng hay còn gọi là kiểm thử hướng logic của phần mềm. Cách kiểm thử này cho phép tạo ra dữ liệu thử nghiệm từ việc kiểm tra, khảo sát cấu trúc bên trong và kiểm thử tính logic của chương trình. Dữ liệu thử nghiệm có độ phủ lớn, đảm bảo được tất cả các đường dẫn, hoặc các nhánh của chương trình được thực hiện ít nhất một lần, khắc phục được những nhược điểm thăm dò mù trong cách kiểm thử hộp đen.
+		
+Phương pháp kiểm thử hộp trắng cũng có thể được sử dụng để đánh giá một bộ kiểm thử được tạo với các phương pháp kiểm thử hộp đen. Trong các phép đo độ tương tự của đề tài, phương pháp kiểm thử hộp trắng là một phương pháp quan trọng, được áp dụng để đo hành vi của các chương trình.
+	
+\subsection{Các cấp độ kiểm thử trong kiểm thử phần mềm}
+Kiểm thử phần mềm gồm có các cấp độ kiểm thử như sau:
+\begin{itemize}
+	\item Kiểm thử đơn vị
+	\item Kiểm thử tích hợp
+	\item Kiểm thử hệ thống
+	\item Kiểm thử chấp nhận sản phẩm
+\end{itemize}
+	
+\begin{center}
+	\begin{figure}[h]
+		\begin{center}
+			\includegraphics[scale=.5]{kiemthu1.png}
+		\end{center}
+		\caption{Sơ đồ các cấp độ kiểm thử}		
+	\end{figure}
+\end{center}
+
+
+\subsection{Đảm bảo chất lượng phần mềm}
+\textbf{Định nghĩa theo Daniel Galin \cite{galin2004software}:} Đảm bảo chất lượng phần mềm là một tập hợp các hành động được lên kế hoạch một cách hệ thống để cung cấp đầy đủ thông tin quá trình phát triển phần mềm, các yêu cầu chức năng kỹ thuật cũng như các yêu cầu quản lý theo lịch trình và hoạt động trong giới hạn.
+
+\section{Sinh ngẫu nhiên dữ liệu thử}
+%Phần này trình bày cơ bản về sinh dữ liệu thử ngẫu nhiên, những ưu và nhược điểm cùng những cải tiến để nâng cao hiệu quả.
+Sinh ngẫu nhiên dữ liệu thử là một kỹ thuật kiểm thử phần mềm Black-Box, kỹ thuật này tạo ra ngẫu nhiên các giá trị đầu vào và thực thi từng giá trị đầu vào trên chương trình được kiểm thử. Kết quả đầu ra của chương trình được so sánh với các thông số kỹ thuật của phần mềm, xác định đầu ra thử nghiệm thành công hoặc không thành công \cite{myers2011art}.  
+
+Kỹ thuật sinh ngẫu nhiên dữ liệu thử không quan tâm đến hành vi và cấu trúc bên trong của chương trình, chỉ tập trung tìm kiếm những trường hợp chương trình không hoạt động theo đặc tả kỹ thuật của chương trình. Trong phương pháp này, dữ liệu thử nghiệm được tạo ngẫu nhiên từ các đặc tả kỹ thuật của phần mềm (tức là không liên quan tới hành vi và cấu trúc của chương trình).
+
+\subsection*{Ví dụ:}
+\lstinputlisting[caption = {Hàm sinh ngẫu nhiên dữ liệu thử}]{RandomTesting.cs}
+Đây là một hàm sinh ngẫu nhiên dữ liệu thử, chúng ta thấy hàm \textbf{testAbs} chỉ thực hiện việc tạo giá trị đầu vào ngẫu nhiên \textbf{int x} theo đặc tả tham số đầu vào của chương trình \textbf{myAbs}, và kiểm tra kết quả đầu ra của chương trình \textbf{assert(result >= 0)}, không quan tâm hành vi và cấu trúc bên trong của hàm \textbf{myAbs}.
+
+\subsection*{Ưu điểm và hạn chế}
+Sinh ngẫu nhiên dữ liệu thử có một số ưu điểm và nhược điểm như sau:
+\textit{* Ưu điểm:}
+\begin{itemize}
+	\item Đơn giản, dễ dàng sinh các đầu vào ngẫu nhiên
+	\item Không tốn nhiều tài nguyên bộ nhớ lúc thực thi
+\end{itemize}
+
+\textit{* Hạn chế:}
+\begin{itemize}
+	\item Một nhánh hành vi của chương trình được kiểm thử nhiều lần với nhiều đầu vào khác nhau
+	\item Có thể một số nhánh hành vi của chương trình bị bỏ qua
+	\item Khó xác định khi nào việc kiểm thử nên dừng lại
+	\item Không biết dữ liệu thử có duyệt được tất cả các nhánh trong chương trình hay không
+\end{itemize}
+
+\subsection*{Hướng khác phục}
+Để xác định khi nào việc kiểm thử dừng lại, hệ thống kiểm thử ngẫu nhiên có thể kết hợp với kỹ thuật Adequacy Criterion \cite{zhu1997software}. Kỹ thuật Adequacy Criterion là một kỹ thuật yêu cầu duyệt tất cả các nhánh của chương trình, bằng việc kết hợp này cho phép việc kiểm thử chỉ dừng lại khi tất cả các câu lệnh của chương trình được thực thi ít nhất một lần.
+
+Một kỹ thuật khác giúp khắc phục được hạn chế của kiểm thử ngẫu nhiên đó là kỹ thuật thực thi tượng trưng \cite{king1976symbolic}. Thực thi tượng trưng là một kỹ thuật xây dựng các ràng buộc dựa vào các điều kiện tại các nút nhánh của chương trình, giải quyết các ràng buộc đó để sinh ra các giá trị  đầu của chương trình. Thực thi các giá trị đầu vào này, chúng ta có thể duyệt được tất cả các nhánh của chương trình. 
+
+\section{Kỹ thuật Dynamic symbolic execution}
+
+Dynamic symbolic execution (DSE) là một kỹ thuật duyệt tự động tất cả các đường đi có thể của chương trình bằng cách chạy chương trình với nhiều giá trị đầu vào khác nhau để tăng độ phủ của dữ liệu thử \cite{xie2009fitness}.
+
+Dựa trên các tham số đầu vào của chương trình, DSE sẽ tạo ra các giá trị đầu vào cụ thể và thực thi chương trình với các giá trị cụ thể này. Trong quá trình thực thi, DSE sẽ ghi nhận lại ràng buộc tại các nút, phủ định lại các ràng buộc này và sinh các giá trị đầu vào thỏa điều kiện ràng buộc tại các nút rẽ nhánh này. Với một giá trị đầu vào cụ thể, DSE sẽ thực thi chương trình và duyệt được một đường đi cụ thể, quá trình thực thi này sẽ lặp lại cho đến khi duyệt hết tất cả các đường đi của chương trình.
+
+\begin{algorithm}
+	\caption{DSE}
+	\begin{algorithmic}	
+		\item Set J:= $\varnothing $ \Comment{J: Tập hợp các đầu vào của chương trình phân tích}
+		\item loop
+			\subitem Chọn đầu vào i $\notin $ J \Comment{Dừng lại nếu không có i nào được tìm thấy}
+			\subitem Xuất ra i
+			\subitem Thực thi P(i); lưu lại điều kiện đường đi C(i); suy ra C'(i)
+			\subitem Đặt J := j $\cup $ i			
+		\item end loop
+	\end{algorithmic}
+\end{algorithm}
+
+\subsection*{Ví dụ:}
+
+\lstinputlisting[caption = {Minh họa kỹ thuật DSE}]{DSE.cs}
+	
+Trong ví dụ trên, chúng ta xem xét hàm $test\_me$ với hai tham số đầu vào là $int x$ và $int y$, và hàm này không có giá trị trả về. Cách thức làm việc của DSE trên hàm $test\_me$ như sau: 
+
+Đầu tiên, DSE tạo hai giá trị đầu vào thử nghiệm ngẫu nhiên $x$ và $y$, giả sử $x = 22$ và $y = 7$. Ngoài ra, DSE sẽ theo dõi trạng thái các giá trị đầu vào thử nghiệm của chương trình: $x$ bằng một số $x_{0}$ và $y$ bằng một số $y_{0}$.
+\begin{center}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=.6]{dse11.png}
+		\end{center}
+		\caption{DSE khởi tạo các giá trị đầu vào}
+		\label{refhinh1}
+	\end{figure}
+\end{center}
+Ở dòng đầu tiên, số nguyên $z$ được gán bằng hàm$foo(y)$. Điều này có nghĩa là $z = 14$, và ở trạng thái tượng trưng, biến $ z = 2*y_{0} $. 
+\begin{center}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=.6]{dse12.png}
+		\end{center}
+		\caption{Số nguyên Z được gán bằng hàm foo(y)}
+		\label{refhinh1}
+	\end{figure}
+\end{center}
+
+Tại nhánh $z$ == $x$, DSE nhận biết giá trị của $x$ không bằng giá trị của $z$. Về mặt biểu tượng, DSE lưu trữ ràng buộc này là $z != x$, và giá trị tương trưng của đường này là: $ 2*y_{0} != x_{0} $. DSE đi theo nhánh $false$ dẫn đến kết thúc chương trình.
+\begin{center}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=.6]{dse13.png}
+		\end{center}
+		\caption{Với điều kiện $z == x$, giá trị của  $z != x$ nên DSE chạy theo nhánh $false$  }
+		\label{refhinh1}
+	\end{figure}
+\end{center}
+
+Sau khi kết thúc chương trình, DSE sẽ quay trở lại điểm nhánh gần nhất và cố gắng chọn nhánh $true$. Với mục đích này, nó phủ định ràng buộc được thêm gần nhất trong điều kiện đường dẫn $2*y_{0} != x_{0}$ thành $2*y_{0} = x_{0}$. Để thỏa mãn ràng buộc  $2*y_{0} != x_{0}$  thì hai số nguyên này sẽ là $x_{0} = 2$ và $ y_{0} = 1$.
+
+\begin{center}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=.6]{dse2.png}
+		\end{center}
+		\caption{Các giá trị DSE sinh ra sau khi thực thi chương trình lần 1}
+		\label{refhinh1}
+	\end{figure}
+\end{center}
+
+Sau đó, DSE khởi động lại hàm $test_me$, lần này nó gọi các giá trị đầu vào cụ thể với giá trị: $x = 2$ và $y = 1$ được tạo ra bởi quá trình giải quyết ràng buộc trước đó. DSE tiếp tục theo dõi trạng thái các biến với $x = x_{0}$ và $y = y_{0}$.
+
+\begin{center}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=.6]{dse21.png}
+		\end{center}
+		\caption{DSE khởi động lại hàm test\_me}
+		\label{refhinh1}
+	\end{figure}
+\end{center}
+
+Sau khi thực hiện dòng đầu tiên, $z$ có giá trị cụ thể $2$ và giá trị biểu tượng $2*y_{0}$.
+
+\begin{center}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=.6]{dse22.png}
+		\end{center}
+		\caption{Thực hiện dòng đầu tiên $int z = foo(y)$}
+		\label{refhinh1}
+	\end{figure}
+\end{center}
+
+Ở dòng kế tiếp, chúng ta kiểm tra tình trạng nhánh $z == x$. Trong trường hợp này, điều kiện là đúng vì vậy điều kiện đường dẫn của chúng ta trở thành $2*y_{0} == x_{0}$. Sau đó DSE kiểm tra dòng tiếp theo của nhánh $true$.
+
+\begin{center}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=.6]{dse23.png}
+		\end{center}
+		\caption{DSE thực hiện điều kiện đường dẫn $true$}
+		\label{refhinh1}
+	\end{figure}
+\end{center} 
+
+Tại điểm nhánh tiếp theo, $x$ có giá trị cụ thể là $2$ và $y + 10$ có giá trị cụ thể là $11$, vì vậy DSE lấy nhánh $false$, kết thúc chương trình. Thêm ràng buộc tượng trưng $x_{0} <= y_{0} + 10$ vào điều kiện đường dẫn, đây là sự phủ định của điều kiện nhánh mà DSE phát hiện là $fasle$.
+
+\begin{center}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=.6]{dse24.png}
+		\end{center}
+		\caption{DSE lấy nhánh $false$ kết thúc chương trình}
+		\label{refhinh1}
+	\end{figure}
+\end{center} 
+
+Vì DSE đã đến cuối chương trình, nó phủ nhận ràng buộc vừa được thêm gần nhất trong điều kiện đường dẫn để có được $ x_{0} > y_{0} + 10 $, và sau đó nó vượt qua các ràng buộc $ 2*y_{0} == x  AND x_{0} > y_{0} + 10$. Để thỏa những ràng buộc này, DSE trả về $x_{0} = 30$ và $y_{0} = 15$.
+
+\begin{center}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=.6]{dse3.png}
+		\end{center}
+		\caption{Các giá trị DSE sinh ra sau khi thực thi chương trình lần 2}
+		\label{refhinh1}
+	\end{figure}
+\end{center}
+
+Bây giờ, DSE chạy hàm $test_me$ một lần nữa, lần này với các đầu vào $x = 30$ và $y = 15$. Trạng thái biểu tượng các biến bắt đầu $x = x_{0}$ và $y = y_{0}$. $z$ được gán giá trị cụ thể là $30$, trong khi giá trị tượng trưng của nó là $2*y_0$ như những lần chạy trước.
+
+Khi tới điều kiện rẻ nhánh $z == x$, DSE nhận thấy đây là điều kiện $true$, vì vậy DSE thêm điều kiện tượng trưng $2*y_{0} == x_{0}$.
+
+Sau đó tại điểm nhánh tiếp theo, với $x > y + 10$ vì vậy DSE thêm ràng buộc tượng trưng mới $ x_{0} > y_{0}+ 10 $. Nhánh này dẫn đến $ERROR$, tại thời điểm đó chúng ta đã xác định được đầu vào cụ thể làm cho chương trình dẫn đến $ERROR$ là: $x = 30$ và $y = 15$.
+
+\begin{center}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=.6]{dse4.png}
+		\end{center}
+		\caption{Các giá trị DSE sinh ra sau khi thực thi chương trình lần 3}
+		\label{refhinh1}
+	\end{figure}
+\end{center}
+
+Kết quả, sau 3 lần chạy chương trình, DSE tạo ra được các cặp giá trị đầu vào có thể duyệt hết các nhánh của chương trình $test_me$ đó là: $[22,7], [2,1], [30,15]$
+	
+\subsection{Một số công cụ ứng dụng DSE}	
+Trên thế giới hiện đã có nhiều công cụ sử dụng kỹ thuật DSE để giải quyết các ràng buộc và tạo ra các giá trị đầu vào có độ phủ cao như như Pex \cite{tillmann2008pex} và SAGE \cite{godefroid2008automated}... và những công cụ này được phát triển để có thể chạy được trên nhiều nền tảng khác nhau. Chúng ta có thể tham khảo một số công cụ sau đây:
+		
+	\begin{center}
+		\begin{tabular}  {|c|c|c|} 
+			\hline 
+			\textbf{Tên Công cụ} & \textbf{Ngôn ngữ} & \textbf{Url} \\ 
+			\hline 
+			KLEE & LLVM & klee.github.io/ \\ 
+			\hline 
+			JPF	 & Java	& babelfish.arc.nasa.gov/trac/jpf \\
+			\hline 
+			jCUTE &	Java &	github.com/osl/jcute \\
+			\hline 
+			janala2	 & Java &	github.com/ksen007/janala2 \\
+			\hline 
+			JBSE	& Java	 & github.com/pietrobraione/jbse \\
+			\hline 
+			KeY &	Java &	www.key-project.org/ \\	
+			\hline 
+			Mayhem & 	Binary &	forallsecure.com/mayhem.html \\
+			\hline 
+			Otter &	C	& bitbucket.org/khooyp/otter/overview \\
+			\hline 
+			Rubyx & 	Ruby &	www.cs.umd.edu/~avik/papers/ssarorwa.pdf \\
+			\hline 
+			Pex	& .NET Framework	 & research.microsoft.com/en-us/projects/pex/ \\
+			\hline 
+			Jalangi2 &	JavaScript &	github.com/Samsung/jalangi2 \\
+			\hline 
+			Kite &	LLVM &	www.cs.ubc.ca/labs/isd/Projects/Kite/ \\
+			\hline 
+			pysymemu &	x86-64 / Native	 &github.com/feliam/pysymemu/ \\
+			\hline 
+			Triton	& x86 and x86-64 &	triton.quarkslab.com \\	
+			\hline 
+			BE-PUM &	x86	 & https://github.com/NMHai/BE-PUM	 \\	
+			\hline
+			
+		\end{tabular} 
+
+	\end{center}
+	
+\section*{Tổng kết chương}
+%Tổng kết chương viết ở đây.
+Nội dung trong Chương 2, tôi đã trình bày sơ lượt những kiến thức cơ bản như: Kỹ thuật kiểm thử phần mềm; các kỹ thuật sinh dữ liệu thử; kỹ thuật Dynamic symbolic execution. Những kiến thức này giúp chúng ta có cái nhìn tổng quan về cách thức kiểm thử phần mềm, phương pháp giải quyết các ràng buộc trong chương trình để tạo ra các giá trị đầu vào thử nghiệm có độ phủ cao.
+
+

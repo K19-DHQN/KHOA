@@ -1,41 +1,22 @@
-\contentsline {chapter}{M\d {u}c l\d {u}c}{3}{section*.3}
-\contentsline {chapter}{\chapternumberline {1}GI\IeC {\'\OHORN }I THI\IeC {\d \ECIRCUMFLEX }U}{6}{chapter.1}
-\contentsline {section}{\numberline {1.1}L\IeC {\'y} do ch\IeC {\d o}n \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{6}{section.1.1}
-\contentsline {subsection}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u chung}{6}{section.1.1}
-\contentsline {section}{\numberline {1.2}\IeC {\DJ }\IeC {\'\ocircumflex }i t\IeC {\uhorn }\IeC {\d \ohorn }ng, ph\IeC {\d a}m vi, ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p nghi\IeC {\^e}n c\IeC {\'\uhorn }u}{7}{section.1.2}
-\contentsline {section}{\numberline {1.3}Nh\IeC {\~\uhorn }ng nghi\IeC {\^e}n c\IeC {\'\uhorn }u c\IeC {\'o} li\IeC {\^e}n quan}{9}{section.1.3}
-\contentsline {chapter}{\chapternumberline {2}KI\IeC {\'\ECIRCUMFLEX }N TH\IeC {\'\UHORN }C C\IeC {\OHORN } S\IeC {\h \OHORN }}{12}{chapter.2}
-\contentsline {section}{\numberline {2.1}Ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn } ph\IeC {\`\acircumflex }n m\IeC {\`\ecircumflex }m}{12}{section.2.1}
-\contentsline {subsection}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{12}{section.2.1}
-\contentsline {subsection}{C\IeC {\'a}c ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn }}{13}{section.2.1}
-\contentsline {subsection}{C\IeC {\'a}c chi\IeC {\'\ecircumflex }n l\IeC {\uhorn }\IeC {\d \ohorn }c ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn }}{13}{section.2.1}
-\contentsline {subsection}{C\IeC {\'a}c c\IeC {\'\acircumflex }p \IeC {\dj }\IeC {\d \ocircumflex } ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn } trong ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn } ph\IeC {\`\acircumflex }n m\IeC {\`\ecircumflex }m}{14}{section.2.1}
-\contentsline {subsection}{\IeC {\DJ }\IeC {\h a}m b\IeC {\h a}o ch\IeC {\'\acircumflex }t l\IeC {\uhorn }\IeC {\d \ohorn }ng ph\IeC {\`\acircumflex }n m\IeC {\`\ecircumflex }m}{15}{figure.2.1}
-\contentsline {section}{\numberline {2.2}Sinh ng\IeC {\~\acircumflex }u nhi\IeC {\^e}n d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u th\IeC {\h \uhorn }}{15}{section.2.2}
-\contentsline {section}{\numberline {2.3}K\IeC {\~y} thu\IeC {\d \acircumflex }t Dynamic symbolic execution}{17}{section.2.3}
-\contentsline {subsection}{M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } c\IeC {\^o}ng c\IeC {\d u} \IeC {\'\uhorn }ng d\IeC {\d u}ng DSE}{21}{figure.2.4}
-\contentsline {chapter}{\chapternumberline {3}\IeC {\DJ }O \IeC {\DJ }\IeC {\d \OCIRCUMFLEX } T\IeC {\UHORN }\IeC {\OHORN }NG T\IeC {\d \UHORN } V\IeC {\`\ECIRCUMFLEX } H\IeC {\`A}NH VI GI\IeC {\~\UHORN }A C\IeC {\'A}C CH\IeC {\UHORN }\IeC {\OHORN }NG TR\IeC {\`I}NH}{23}{chapter.3}
-\contentsline {section}{\numberline {3.1}H\IeC {\`a}nh vi c\IeC {\h u}a ch\IeC {\uhorn }\IeC {\ohorn }ng tr\IeC {\`\i }nh }{23}{section.3.1}
-\contentsline {subsection}{Th\IeC {\d \uhorn }c thi ch\IeC {\uhorn }\IeC {\ohorn }ng tr\IeC {\`\i }nh}{23}{section.3.1}
-\contentsline {subsection}{\IeC {\DJ }\IeC {\d \ocircumflex } t\IeC {\uhorn }\IeC {\ohorn }ng \IeC {\dj }\IeC {\uhorn }\IeC {\ohorn }ng v\IeC {\`\ecircumflex } h\IeC {\`a}nh vi (Behavioral Equivalence)}{23}{definition.1}
-\contentsline {subsection}{S\IeC {\d \uhorn } kh\IeC {\'a}c bi\IeC {\d \ecircumflex }t v\IeC {\`\ecircumflex } h\IeC {\`a}nh vi (Behavioral Difference) }{24}{definition.2}
-\contentsline {subsection}{\IeC {\DJ }\IeC {\d \ocircumflex } t\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\d \uhorn } h\IeC {\`a}nh vi (Behavioral Similarity)}{25}{definition.3}
-\contentsline {section}{\numberline {3.2}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } ph\IeC {\'e}p \IeC {\dj }o \IeC {\dj }\IeC {\d \ocircumflex } t\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\d \uhorn } h\IeC {\`a}nh vi}{26}{section.3.2}
-\contentsline {subsection}{Ph\IeC {\'e}p \IeC {\dj }o l\IeC {\'\acircumflex }y m\IeC {\~\acircumflex }u ng\IeC {\~\acircumflex }u nhi\IeC {\^e}n (RS)}{27}{section.3.2}
-\contentsline {subsection}{Ph\IeC {\'e}p \IeC {\dj }o t\IeC {\uhorn }\IeC {\d \ohorn }ng tr\IeC {\uhorn }ng tr\IeC {\^e}n m\IeC {\d \ocircumflex }t ch\IeC {\uhorn }\IeC {\ohorn }ng tr\IeC {\`\i }nh Single Program Symbol Execution (SSE)}{28}{lstnumber.3.8.4}
-\contentsline {subsection}{K\IeC {\~y} thu\IeC {\d \acircumflex }t th\IeC {\d \uhorn }c thi ch\IeC {\uhorn }\IeC {\ohorn }ng tr\IeC {\`\i }nh k\IeC {\'\ecircumflex }t h\IeC {\d \ohorn }p Paired Program Symbolic Execution (PSE)}{30}{lstnumber.3.10.9}
-\contentsline {chapter}{\chapternumberline {4}TH\IeC {\d \UHORN }C NGHI\IeC {\d \ECIRCUMFLEX }M, \IeC {\DJ }\IeC {\'A}NH GI\IeC {\'A}, K\IeC {\'\ECIRCUMFLEX }T LU\IeC {\d \ACIRCUMFLEX }N}{32}{chapter.4}
-\contentsline {section}{\numberline {4.1}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{32}{section.4.1}
-\contentsline {section}{\numberline {4.2}C\IeC {\^o}ng c\IeC {\d u} d\IeC {\`u}ng trong th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{33}{section.4.2}
-\contentsline {subsection}{C\IeC {\^o}ng c\IeC {\d u} sinh d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u th\IeC {\h \uhorn } Pex}{35}{figure.4.4}
-\contentsline {section}{\numberline {4.3}\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a} k\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{37}{section.4.3}
-\contentsline {subsection}{K\IeC {\'\ecircumflex }t qu\IeC {\h a} \IeC {\dj }\IeC {\d \ocircumflex } \IeC {\dj }o RS}{39}{lstnumber.4.4.12}
-\contentsline {subsection}{K\IeC {\'\ecircumflex }t qu\IeC {\h a} \IeC {\dj }\IeC {\d \ocircumflex } \IeC {\dj }o SSE}{40}{figure.4.7}
-\contentsline {subsection}{K\IeC {\'\ecircumflex }t qu\IeC {\h a} \IeC {\dj }\IeC {\d \ocircumflex } \IeC {\dj }o PSE}{40}{figure.4.8}
-\contentsline {section}{\numberline {4.4}Kh\IeC {\h a} n\IeC {\u a}ng \IeC {\'\uhorn }ng d\IeC {\d u}ng}{41}{section.4.4}
-\contentsline {subsection}{H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{42}{section.4.4}
-\contentsline {section}{\numberline {4.5}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{43}{section.4.5}
-\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{45}{chapter*.4}
-\contentsline {appendix}{\chapternumberline {A}QUY\IeC {\'\ECIRCUMFLEX }T \IeC {\DJ }\IeC {\d I}NH GIAO LU\IeC {\d \ACIRCUMFLEX }N V\IeC {\u A}N}{53}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Ph\IeC {\d u} l\IeC {\d u}c XXX}{55}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}M\IeC {\d \OCIRCUMFLEX }T S\IeC {\'\OCIRCUMFLEX } M\IeC {\~A} L\IeC {\d \ECIRCUMFLEX }NH QUAN TR\IeC {\d O}NG}{56}{appendix.C}
+\contentsline {chapter}{M\d {u}c l\d {u}c}{5}{section*.3}
+\contentsline {chapter}{\chapternumberline {1}T\IeC {\UHORN }\IeC {\OHORN }NG T\IeC {\d \UHORN } V\IeC {\`\ECIRCUMFLEX } H\IeC {\`A}NH VI GI\IeC {\~\UHORN }A C\IeC {\'A}C CH\IeC {\UHORN }\IeC {\OHORN }NG TR\IeC {\`I}NH}{7}{chapter.1}
+\contentsline {section}{\numberline {1.1}Ki\IeC {\'\ecircumflex }n th\IeC {\'\uhorn }c c\IeC {\ohorn } s\IeC {\h \ohorn }}{7}{section.1.1}
+\contentsline {subsection}{Ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn } ph\IeC {\`\acircumflex }n m\IeC {\`\ecircumflex }m}{7}{section.1.1}
+\contentsline {subsubsection}{C\IeC {\'a}c ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn }}{8}{section.1.1}
+\contentsline {subsubsection}{C\IeC {\'a}c chi\IeC {\'\ecircumflex }n l\IeC {\uhorn }\IeC {\d \ohorn }c ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn }}{9}{section.1.1}
+\contentsline {subsubsection}{C\IeC {\'a}c c\IeC {\'\acircumflex }p \IeC {\dj }\IeC {\d \ocircumflex } ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn } trong ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn } ph\IeC {\`\acircumflex }n m\IeC {\`\ecircumflex }m}{10}{section.1.1}
+\contentsline {subsection}{Sinh d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn }}{10}{figure.1.1}
+\contentsline {subsection}{K\IeC {\~y} thu\IeC {\d \acircumflex }t Dynamic symbolic execution}{13}{lstnumber.1.1.16}
+\contentsline {subsection}{M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } c\IeC {\^o}ng c\IeC {\d u} \IeC {\'\uhorn }ng d\IeC {\d u}ng DSE}{19}{figure.1.11}
+\contentsline {section}{\numberline {1.2}H\IeC {\`a}nh vi c\IeC {\h u}a ch\IeC {\uhorn }\IeC {\ohorn }ng tr\IeC {\`\i }nh }{20}{section.1.2}
+\contentsline {subsection}{Th\IeC {\d \uhorn }c thi ch\IeC {\uhorn }\IeC {\ohorn }ng tr\IeC {\`\i }nh}{20}{section.1.2}
+\contentsline {subsection}{\IeC {\DJ }\IeC {\d \ocircumflex } t\IeC {\uhorn }\IeC {\ohorn }ng \IeC {\dj }\IeC {\uhorn }\IeC {\ohorn }ng v\IeC {\`\ecircumflex } h\IeC {\`a}nh vi (Behavioral Equivalence)}{21}{definition.1}
+\contentsline {subsection}{S\IeC {\d \uhorn } kh\IeC {\'a}c bi\IeC {\d \ecircumflex }t v\IeC {\`\ecircumflex } h\IeC {\`a}nh vi (Behavioral Difference) }{22}{definition.2}
+\contentsline {subsection}{\IeC {\DJ }\IeC {\d \ocircumflex } t\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\d \uhorn } h\IeC {\`a}nh vi (Behavioral Similarity)}{22}{definition.3}
+\contentsline {section}{\numberline {1.3}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } ph\IeC {\'e}p \IeC {\dj }o \IeC {\dj }\IeC {\d \ocircumflex } t\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\d \uhorn } h\IeC {\`a}nh vi}{23}{section.1.3}
+\contentsline {subsection}{Ph\IeC {\'e}p \IeC {\dj }o l\IeC {\'\acircumflex }y m\IeC {\~\acircumflex }u ng\IeC {\~\acircumflex }u nhi\IeC {\^e}n (RS)}{24}{section.1.3}
+\contentsline {subsection}{Ph\IeC {\'e}p \IeC {\dj }o t\IeC {\uhorn }\IeC {\d \ohorn }ng tr\IeC {\uhorn }ng tr\IeC {\^e}n m\IeC {\d \ocircumflex }t ch\IeC {\uhorn }\IeC {\ohorn }ng tr\IeC {\`\i }nh Single Program Symbol Execution (SSE)}{25}{lstnumber.1.10.4}
+\contentsline {subsection}{K\IeC {\~y} thu\IeC {\d \acircumflex }t th\IeC {\d \uhorn }c thi ch\IeC {\uhorn }\IeC {\ohorn }ng tr\IeC {\`\i }nh k\IeC {\'\ecircumflex }t h\IeC {\d \ohorn }p Paired Program Symbolic Execution (PSE)}{27}{lstnumber.1.12.9}
+\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{30}{chapter*.4}
+\contentsline {appendix}{\chapternumberline {A}QUY\IeC {\'\ECIRCUMFLEX }T \IeC {\DJ }\IeC {\d I}NH GIAO LU\IeC {\d \ACIRCUMFLEX }N V\IeC {\u A}N}{38}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}M\IeC {\d \OCIRCUMFLEX }T S\IeC {\'\OCIRCUMFLEX } M\IeC {\~A} L\IeC {\d \ECIRCUMFLEX }NH QUAN TR\IeC {\d O}NG}{40}{appendix.B}

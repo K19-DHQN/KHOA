@@ -1,18 +1,17 @@
-Chương này trình bày một số định nghĩa liên quan đến hành vi chương trình, các phép đo độ tương tự hành vi của chương trình và tiêu chí đánh giá các phép đo này.
+Chương này trình bày một số kiến thức cơ sở về kiểm thử phần mềm, các phương pháp kiểm thử phần mềm, kỹ thuật sinh dữ liệu thử. Một số định nghĩa liên quan đến hành vi chương trình, các phép đo độ tương tự hành vi của chương trình.
 
 \section{Kiến thức cơ sở}
-Phần này trình bày những kiến thức cơ sở để triển khai luận văn này,  bao gồm kiến thức về kiểm thử phần mềm, kỹ thuật sinh ngẫu nhiên dữ liệu thử, và kỹ thuật Dynamic Symbolic Execution.
-\subsection{Kiểm thử phần mềm}
-%\cite{myers2011art,whittaker2000software,ammann2016introduction}
-Trong nền kinh tế hiện nay, ngành công nghiệp phần mềm giữ vai trò hết sức quan trọng, một số nước có nền công nghệ thông tin phát triển thì ngành công nghiệp phần mềm có khả năng chi phối cả nền kinh tế. Vì vậy việc đảm bảo chất lượng phần mềm trở nên cần thiết hơn bao giờ hết. Quá trình phát hiện và khắc phục lỗi cho phần mềm là một công việc đòi hỏi nhiều nỗ lực, công sức, cũng như tiêu tốn nhiều hơn chi phí trong việc phát triển phần mềm. Hiện nay, một sản phẩm phần mềm chất lượng có thể được nhiều người sử dụng biết đến, nó mang lại hiệu quả tích cực trong công việc của người sử dụng. Tuy nhiên, một phần mềm kém chất lượng sẽ gây thiệt hại về kinh tế cũng như  tiến độ công việc của người sử dụng. Phần mềm phải luôn đảm bảo được sự ổn định, không phát sinh lỗi trong quá trình sử dụng.
+Những kiến thức cơ sở để triển khai luận văn bao gồm kiến thức về kiểm thử phần mềm, kỹ thuật sinh ngẫu nhiên dữ liệu thử, và kỹ thuật Dynamic Symbolic Execution.
 
-Việc kiểm thử phần mềm chính là một quá trình hoặc một loạt các quy trình được thiết kế, để đảm bảo mã máy tính chỉ làm những gì nó được thiết kế và không làm bất cứ điều gì ngoài ý muốn \cite{myers2011art}. Phần mềm phải được dự đoán và nhất quán, không gây bất ngờ cho người dùng. Đây là một bước quan trọng trong quá trình phát triển một phần mềm, giúp cho người phát triển phần mềm và người sử dụng thấy được hệ thống đã đáp ứng yêu cầu đặt ra.
+\subsection{Kiểm thử phần mềm}
+Hiện nay, ngành công nghiệp phần mềm giữ vai trò hết sức quan trọng, một số nước có nền công nghệ thông tin phát triển thì ngành công nghiệp phần mềm có khả năng chi phối cả nền kinh tế. Vì vậy,  việc đảm bảo chất lượng phần mềm trở nên cần thiết hơn bao giờ hết. Quá trình phát hiện và khắc phục lỗi của phần mềm là một công việc đòi hỏi nhiều nỗ lực, công sức, phát sinh thêm nhiều chi phí trong việc phát triển phần mềm. Một sản phẩm phần mềm đạt chất lượng cao, đáp ứng được yêu cầu của người sử dụng sẽ được nhiều người biết đến, nó mang lại hiệu quả tích cực trong công việc của người sử dụng. Ngược lại, một phần mềm kém chất lượng sẽ gây thiệt hại về kinh tế, ảnh hưởng đến công việc của người sử dụng. Vì vậy, yêu cầu đặt ra đó là một sản phẩm phần mềm phải đảm bảo được sự ổn định, không phát sinh lỗi trong quá trình sử dụng.
+
+Kiểm thử phần mềm chính là một quá trình hoặc một loạt các quy trình được thiết kế, để đảm bảo mã máy tính chỉ làm những gì nó được thiết kế và không làm bất cứ điều gì ngoài ý muốn \cite{myers2011art}. Phần mềm phải được dự đoán và nhất quán, không gây bất ngờ cho người dùng. Đây là một bước quan trọng trong quá trình phát triển một phần mềm, giúp cho nhà phát triển phần mềm và người sử dụng thấy được hệ thống đã đáp ứng được yêu cầu đặt ra.
 
 \subsubsection{Các phương pháp kiểm thử}
-Có nhiều phương pháp để kiểm thử phần mềm, nhưng trọng tâm là hai phương pháp kiểm chính là kiểm thử thử tĩnh và kiểm thử động.
-\textbf{\textit{Kiểm thử tĩnh (Static testing)}}: Là phương pháp kiểm thử phần mềm bằng cách duyệt lại các yêu cầu và các đặc tả bằng tay, thông qua việc sử dụng giấy, bút để kiểm tra tính logic từng chi tiết mà không cần chạy chương trình. Kiểu kiểm thử này thường được sử dụng bởi chuyên viên thiết kế, người viết mã lệnh chương trình. Kiểm thử tĩnh cũng có thể được tự động hóa bằng cách thực hiện kiểm tra toàn bộ hệ thống thông qua một trình thông dịch hoặc trình biên dịch, xác nhận tính hợp lệ về cú pháp của chương trình.
+Có nhiều phương pháp để kiểm thử phần mềm, trong đó hai phương pháp kiểm chính là kiểm thử thử tĩnh và kiểm thử động là hai phương pháp chính. \textbf{\textit{Kiểm thử tĩnh (Static testing)}}: Là phương pháp kiểm thử phần mềm bằng cách duyệt lại các yêu cầu và các đặc tả bằng tay, thông qua việc sử dụng giấy, bút để kiểm tra tính logic từng chi tiết mà không cần chạy chương trình. Kiểu kiểm thử này thường được sử dụng bởi chuyên viên thiết kế, người viết mã lệnh chương trình. Kiểm thử tĩnh cũng có thể được tự động hóa bằng cách thực hiện kiểm tra toàn bộ hệ thống thông qua một trình thông dịch hoặc trình biên dịch, xác nhận tính hợp lệ về cú pháp của chương trình.
 		
-\textbf{\textit{Kiểm thử động (Dynamic testing)}}: Là phương pháp kiểm thử thông qua việc chạy chương trình để điều tra trạng thái tác động của chương trình, dựa trên các ca kiểm thử xác định các đối tượng kiểm thử của chương trình. Đồng thời kiểm thử động sẽ tiến hành kiểm tra cách thức hoạt động của mã lệnh, tức là kiểm tra phản ứng từ hệ thống với các biến luôn thay đổi theo thời gian. Trong kiểm thử động, phần mềm phải được biên dịch và chạy, và bao gồm việc nhập các giá trị đầu vào và kiểm tra giá trị đầu ra có như mong muốn hay không.	
+\textbf{\textit{Kiểm thử động (Dynamic testing)}}: Là phương pháp kiểm thử thông qua việc chạy chương trình để kiểm tra trạng thái tác động của chương trình, dựa trên các ca kiểm thử xác định các đối tượng kiểm thử của chương trình. Đồng thời, kiểm thử động sẽ tiến hành kiểm tra cách thức hoạt động của mã lệnh, tức là kiểm tra phản ứng từ hệ thống với các biến thay đổi theo thời gian. Trong kiểm thử động, phần mềm phải được biên dịch và chạy, và bao gồm việc nhập các giá trị đầu vào và kiểm tra giá trị đầu ra có như mong muốn hay không.	
 	
 \subsubsection{Các chiến lược kiểm thử}
 Kiểm thử phần mềm có nhiều chiến lược để kiểm thử, trong đó có hai chiến lược được sử dụng nhiều nhất đó là kiểm thử hộp đen và kiểm thử hộp trắng.
@@ -21,7 +20,7 @@ Kiểm thử phần mềm có nhiều chiến lược để kiểm thử, trong 
 		
 Do vậy, kiểm thử hộp đen có ưu điểm là đánh giá khách quan, mặt khác nó lại có nhược điểm là thăm dò mù. Trong phần nghiên cứu của đề tài, kiểm thử hộp đen cũng được sử dụng như một phương pháp đo độ tương tự hành vi của các chương trình.
 		
-\textbf{\textit{Kiểm thử hộp trắng – White box}}. Đây là một chiến lược kiểm thử khác, trái ngược hoàn toàn với kiểm thử hộp đen, kiểm thử hộp trắng hay còn gọi là kiểm thử hướng logic của phần mềm. Cách kiểm thử này cho phép tạo ra dữ liệu thử nghiệm từ việc kiểm tra, khảo sát cấu trúc bên trong và kiểm thử tính logic của chương trình. Dữ liệu thử nghiệm có độ phủ lớn, đảm bảo được tất cả các đường dẫn, hoặc các nhánh của chương trình được thực hiện ít nhất một lần, khắc phục được những nhược điểm thăm dò mù trong cách kiểm thử hộp đen.
+\textbf{\textit{Kiểm thử hộp trắng – White box}}. Đây là một chiến lược kiểm thử khác, trái ngược hoàn toàn với kiểm thử hộp đen, kiểm thử hộp trắng hay còn gọi là kiểm thử hướng logic của phần mềm. Cách kiểm thử này cho phép tạo ra dữ liệu thử nghiệm từ việc kiểm tra, khảo sát cấu trúc bên trong và kiểm thử tính logic của chương trình. Dữ liệu thử nghiệm có độ phủ lớn, đảm bảo tất cả các đường dẫn, hoặc các nhánh của chương trình được thực hiện ít nhất một lần, khắc phục được những nhược điểm thăm dò mù trong cách kiểm thử hộp đen.
 		
 Phương pháp kiểm thử hộp trắng cũng có thể được sử dụng để đánh giá một bộ kiểm thử được tạo với các phương pháp kiểm thử hộp đen. Trong các phép đo độ tương tự của đề tài, phương pháp kiểm thử hộp trắng là một phương pháp quan trọng, được áp dụng để đo hành vi của các chương trình.
 	
@@ -44,16 +43,14 @@ Kiểm thử phần mềm gồm có các cấp độ kiểm thử như sau:
 \end{center}
 
 \subsection{Sinh dữ liệu kiểm thử}
-%Phần này trình bày cơ bản về sinh dữ liệu thử ngẫu nhiên, những ưu và nhược điểm cùng những cải tiến để nâng cao hiệu quả.
 Sinh ngẫu nhiên dữ liệu thử là một kỹ thuật kiểm thử phần mềm Black-Box, kỹ thuật này tạo ra ngẫu nhiên các giá trị đầu vào và thực thi từng giá trị đầu vào trên chương trình được kiểm thử. Kết quả đầu ra của chương trình được so sánh với các thông số kỹ thuật của phần mềm, xác định đầu ra thử nghiệm thành công hoặc không thành công \cite{myers2011art}.  
 
 Kỹ thuật sinh ngẫu nhiên dữ liệu thử không quan tâm đến hành vi và cấu trúc bên trong của chương trình, chỉ tập trung tìm kiếm những trường hợp chương trình không hoạt động theo đặc tả kỹ thuật của chương trình. Trong phương pháp này, dữ liệu thử nghiệm được tạo ngẫu nhiên từ các đặc tả kỹ thuật của phần mềm (tức là không liên quan tới hành vi và cấu trúc của chương trình).
 
-\subsubsection*{Ví dụ:}
-\lstinputlisting[caption = {Hàm sinh ngẫu nhiên dữ liệu thử}]{RandomTesting.cs}
-Đây là một hàm sinh ngẫu nhiên dữ liệu thử, chúng ta thấy hàm \textbf{testAbs} chỉ thực hiện việc tạo giá trị đầu vào ngẫu nhiên \textbf{int x} theo đặc tả tham số đầu vào của chương trình \textbf{myAbs}, và kiểm tra kết quả đầu ra của chương trình \textbf{assert(result >= 0)}, không quan tâm hành vi và cấu trúc bên trong của hàm \textbf{myAbs}.
+\lstinputlisting[label={rt}, caption = {Hàm sinh ngẫu nhiên dữ liệu thử}]{RandomTesting.cs}
+Mã lệnh \ref{rt} là một hàm sinh ngẫu nhiên dữ liệu thử, chúng ta thấy hàm $testAbs$ chỉ thực hiện việc tạo giá trị đầu vào ngẫu nhiên $int x$ theo đặc tả tham số đầu vào của chương trình $myAbs$, và kiểm tra kết quả đầu ra của chương trình $assert(result >= 0)$, không quan tâm hành vi và cấu trúc bên trong của hàm $myAbs$.
 
-\subsubsection*{Ưu điểm và hạn chế}
+\subsubsection*{Ưu điểm, hạn chế, hướng khắc phục}
 Sinh ngẫu nhiên dữ liệu thử có một số ưu điểm và nhược điểm như sau:
 \textit{* Ưu điểm:}
 \begin{itemize}
@@ -69,13 +66,10 @@ Sinh ngẫu nhiên dữ liệu thử có một số ưu điểm và nhược đi
 	\item Không biết dữ liệu thử có duyệt được tất cả các nhánh trong chương trình hay không
 \end{itemize}
 
-\subsubsection*{Hướng khác phục}
+\textit{* Hướng khắc phục:}
 Để xác định khi nào việc kiểm thử dừng lại, hệ thống kiểm thử ngẫu nhiên có thể kết hợp với kỹ thuật Adequacy Criterion \cite{zhu1997software}. Kỹ thuật Adequacy Criterion là một kỹ thuật yêu cầu duyệt tất cả các nhánh của chương trình, bằng việc kết hợp này cho phép việc kiểm thử chỉ dừng lại khi tất cả các câu lệnh của chương trình được thực thi ít nhất một lần.
 
-Một kỹ thuật khác giúp khắc phục được hạn chế của kiểm thử ngẫu nhiên đó là kỹ thuật thực thi tượng trưng \cite{king1976symbolic}. Thực thi tượng trưng là một kỹ thuật xây dựng các ràng buộc dựa vào các điều kiện tại các nút nhánh của chương trình, giải quyết các ràng buộc đó để sinh ra các giá trị  đầu của chương trình. Thực thi các giá trị đầu vào này, chúng ta có thể duyệt được tất cả các nhánh của chương trình. 
-
 \subsection{Kỹ thuật Dynamic symbolic execution}
-
 Dynamic symbolic execution (DSE) là một kỹ thuật duyệt tự động tất cả các đường đi có thể của chương trình bằng cách chạy chương trình với nhiều giá trị đầu vào khác nhau để tăng độ phủ của dữ liệu thử \cite{xie2009fitness}.
 
 Dựa trên các tham số đầu vào của chương trình, DSE sẽ tạo ra các giá trị đầu vào cụ thể và thực thi chương trình với các giá trị cụ thể này. Trong quá trình thực thi, DSE sẽ ghi nhận lại ràng buộc tại các nút, phủ định lại các ràng buộc này và sinh các giá trị đầu vào thỏa điều kiện ràng buộc tại các nút rẽ nhánh này. Với một giá trị đầu vào cụ thể, DSE sẽ thực thi chương trình và duyệt được một đường đi cụ thể, quá trình thực thi này sẽ lặp lại cho đến khi duyệt hết tất cả các đường đi của chương trình.
@@ -93,11 +87,9 @@ Dựa trên các tham số đầu vào của chương trình, DSE sẽ tạo ra 
 	\end{algorithmic}
 \end{algorithm}
 
-\subsubsection*{Ví dụ:}
-
-\lstinputlisting[caption = {Minh họa kỹ thuật DSE}]{DSE.cs}
+\lstinputlisting[label={vddse}, caption = {Minh họa kỹ thuật DSE}]{DSE.cs}
 	
-Trong ví dụ trên, chúng ta xem xét hàm $test\_me$ với hai tham số đầu vào là $int x$ và $int y$, và hàm này không có giá trị trả về. Cách thức làm việc của DSE trên hàm $test\_me$ như sau: 
+Trong mã lệnh \ref{vddse}, chúng ta xem xét hàm $test\_me$ với hai tham số đầu vào là $int x$ và $int y$, và hàm này không có giá trị trả về. Cách thức làm việc của DSE trên hàm $test\_me$ như sau: 
 
 Đầu tiên, DSE tạo hai giá trị đầu vào thử nghiệm ngẫu nhiên $x$ và $y$, giả sử $x = 22$ và $y = 7$. Ngoài ra, DSE sẽ theo dõi trạng thái các giá trị đầu vào thử nghiệm của chương trình: $x$ bằng một số $x_{0}$ và $y$ bằng một số $y_{0}$.
 \begin{center}
@@ -222,7 +214,7 @@ Sau đó tại điểm nhánh tiếp theo, với $x > y + 10$ vì vậy DSE thê
 Kết quả, sau 3 lần chạy chương trình, DSE tạo ra được các cặp giá trị đầu vào có thể duyệt hết các nhánh của chương trình $test_me$ đó là: $[22,7], [2,1], [30,15]$
 	
 \subsection{Một số công cụ ứng dụng DSE}	
-Trên thế giới hiện đã có nhiều công cụ sử dụng kỹ thuật DSE để giải quyết các ràng buộc và tạo ra các giá trị đầu vào có độ phủ cao như như Pex \cite{tillmann2008pex} và SAGE \cite{godefroid2008automated}... và những công cụ này được phát triển để có thể chạy được trên nhiều nền tảng khác nhau. Chúng ta có thể tham khảo một số công cụ sau đây:
+Trên thế giới hiện có nhiều công cụ sử dụng kỹ thuật DSE để giải quyết các ràng buộc và tạo ra các giá trị đầu vào có độ phủ cao như như Pex \cite{tillmann2008pex} và SAGE \cite{godefroid2008automated}... và những công cụ này được phát triển để có thể chạy được trên nhiều nền tảng khác nhau. Chúng ta có thể tham khảo một số công cụ sau đây:
 		
 	\begin{center}
 		\begin{tabular}  {|c|c|c|} 
@@ -266,7 +258,7 @@ Trên thế giới hiện đã có nhiều công cụ sử dụng kỹ thuật D
 	
 
 \section{Hành vi của chương trình }
-Để định lượng hai chương trình tương tự nhau, chúng ta nghiên cứu các định nghĩa liên quan hành vi của hai chương trình như sau:
+Để định lượng hai chương trình tương tự nhau, chúng ta nghiên cứu một số định nghĩa liên quan đến hành vi của hai chương trình như sau:
 	
 \subsection{Thực thi chương trình}
 \begin{definition}\label{def:progexe}

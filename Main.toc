@@ -33,5 +33,4 @@
 \contentsline {section}{\numberline {3.4}Kh\IeC {\h a} n\IeC {\u a}ng \IeC {\'\uhorn }ng d\IeC {\d u}ng}{46}{section.3.4}
 \contentsline {section}{\numberline {3.5}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{48}{section.3.5}
 \contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{49}{chapter*.4}
-\contentsline {chapter}{\chapternumberline {4}QUY\IeC {\'\ECIRCUMFLEX }T \IeC {\DJ }\IeC {\d I}NH GIAO LU\IeC {\d \ACIRCUMFLEX }N V\IeC {\u A}N}{57}{chapter.4}
-\contentsline {chapter}{\chapternumberline {5}M\IeC {\d \OCIRCUMFLEX }T S\IeC {\'\OCIRCUMFLEX } M\IeC {\~A} L\IeC {\d \ECIRCUMFLEX }NH QUAN TR\IeC {\d O}NG}{59}{chapter.5}
+\contentsline {chapter}{\chapternumberline {4}M\IeC {\d \OCIRCUMFLEX }T S\IeC {\'\OCIRCUMFLEX } M\IeC {\~A} L\IeC {\d \ECIRCUMFLEX }NH QUAN TR\IeC {\d O}NG}{58}{chapter.4}

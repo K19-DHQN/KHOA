@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.5.25)  23 JUL 2018 01:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.5.25)  23 JUL 2018 17:51
 entering extended mode
 **./Main.tex
 (Main.tex
@@ -1823,7 +1823,7 @@ LaTeX Info: Redefining \nameref on input line 5.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count320
-<trangbia.pdf, id=78, pagebox=cropbox, 614.295pt x 794.97pt>
+<trangbia.pdf, id=74, pagebox=cropbox, 614.295pt x 794.97pt>
 File: trangbia.pdf Graphic file (type pdf)
 <use trangbia.pdf>
 Package pdftex.def Info: trangbia.pdf  used on input line 6. on input line 6.
@@ -1834,7 +1834,7 @@ File: trangbia.pdf Graphic file (type pdf)
 Package pdftex.def Info: trangbia.pdf  used on input line 6. on input line 6.
 Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
 e 6.
-<trangbia.pdf, id=81, page=1, pagebox=cropbox, 614.295pt x 794.97pt>
+<trangbia.pdf, id=77, page=1, pagebox=cropbox, 614.295pt x 794.97pt>
 File: trangbia.pdf Graphic file (type pdf)
 <use trangbia.pdf, page 1>
 Package pdftex.def Info: trangbia.pdf , page1 used on input line 6. on input li
@@ -1868,7 +1868,7 @@ Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
 [1
 
  <./trangbia.pdf>]
-<trangbia.pdf, id=111, page=2, pagebox=cropbox, 614.295pt x 794.97pt>
+<trangbia.pdf, id=107, page=2, pagebox=cropbox, 614.295pt x 794.97pt>
 File: trangbia.pdf Graphic file (type pdf)
 <use trangbia.pdf, page 2>
 Package pdftex.def Info: trangbia.pdf , page2 used on input line 6. on input li
@@ -1894,45 +1894,45 @@ LaTeX Font Info:    Font shape `T5/ppl/bx/n' in size <24.88> not available
 
 {C:/Users/admin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (Loicamon.t
 ex
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 13.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 12.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 13.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 12.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 13.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 12.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 13.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 12.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 13.
+(Font)              scaled to size 12.50409pt on input line 12.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 13.
+(Font)              scaled to size 9.37807pt on input line 12.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 13.
+(Font)              scaled to size 7.29405pt on input line 12.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 13.
+(Font)              scaled to size 12.50409pt on input line 12.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 13.
+(Font)              scaled to size 9.37807pt on input line 12.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 13.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 13.
+(Font)              scaled to size 7.29405pt on input line 12.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 12.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
@@ -1955,52 +1955,54 @@ Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textdotbelow' on input line 19.
 
-(Main.toc)
-<Danhmuckyhieu.pdf, id=147, pagebox=cropbox, 614.47566pt x 794.97pt>
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
+<Danhmuckyhieu.pdf, id=125, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Danhmuckyhieu.pdf Graphic file (type pdf)
 <use Danhmuckyhieu.pdf>
 Package pdftex.def Info: Danhmuckyhieu.pdf  used on input line 19. on input lin
 e 19.
-Package pdftex.def Info: Requested size: 614.47415pt x 794.96806pt on input lin
+Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
 e 19.
 File: Danhmuckyhieu.pdf Graphic file (type pdf)
 <use Danhmuckyhieu.pdf>
 Package pdftex.def Info: Danhmuckyhieu.pdf  used on input line 19. on input lin
 e 19.
-Package pdftex.def Info: Requested size: 614.47415pt x 794.96806pt on input lin
+Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
 e 19.
-<Danhmuckyhieu.pdf, id=150, page=1, pagebox=cropbox, 614.47566pt x 794.97pt>
+<Danhmuckyhieu.pdf, id=128, page=1, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Danhmuckyhieu.pdf Graphic file (type pdf)
 <use Danhmuckyhieu.pdf, page 1>
 Package pdftex.def Info: Danhmuckyhieu.pdf , page1 used on input line 19. on in
 put line 19.
-Package pdftex.def Info: Requested size: 614.47415pt x 794.96806pt on input lin
+Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
 e 19.
 File: Danhmuckyhieu.pdf Graphic file (type pdf)
 <use Danhmuckyhieu.pdf, page 1>
 Package pdftex.def Info: Danhmuckyhieu.pdf , page1 used on input line 19. on in
 put line 19.
-Package pdftex.def Info: Requested size: 614.7648pt x 795.3441pt on input line 
-19.
- [5]
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 19.
+[5]
 File: Danhmuckyhieu.pdf Graphic file (type pdf)
 <use Danhmuckyhieu.pdf, page 1>
 Package pdftex.def Info: Danhmuckyhieu.pdf , page1 used on input line 19. on in
 put line 19.
-Package pdftex.def Info: Requested size: 614.7648pt x 795.3441pt on input line 
-19.
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 19.
 File: Danhmuckyhieu.pdf Graphic file (type pdf)
 <use Danhmuckyhieu.pdf, page 1>
 Package pdftex.def Info: Danhmuckyhieu.pdf , page1 used on input line 19. on in
 put line 19.
-Package pdftex.def Info: Requested size: 614.7648pt x 795.3441pt on input line 
-19.
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 19.
 File: Danhmuckyhieu.pdf Graphic file (type pdf)
 <use Danhmuckyhieu.pdf, page 1>
 Package pdftex.def Info: Danhmuckyhieu.pdf , page1 used on input line 19. on in
 put line 19.
-Package pdftex.def Info: Requested size: 614.7648pt x 795.3441pt on input line 
-19.
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 19.
  [6 <./Danhmuckyhieu.pdf>]
 
 Package hyperref Warning: Composite letter `\textacute+\OHORN'
@@ -2042,67 +2044,85 @@ Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 6.
 
+
+LaTeX Warning: Citation `mooc' on page 7 undefined on input line 10.
+
+
+LaTeX Warning: Citation `edx' on page 7 undefined on input line 11.
+
+
+LaTeX Warning: Citation `coursera' on page 7 undefined on input line 12.
+
+
+LaTeX Warning: Citation `Udacity' on page 7 undefined on input line 13.
+
+
+LaTeX Warning: Citation `Pex4Fun' on page 7 undefined on input line 15.
+
+
+LaTeX Warning: Citation `CodeHunt' on page 7 undefined on input line 17.
+
 [7
 
 ]
 
 Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 55.
+(hyperref)                removing `\textacute' on input line 28.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 55.
+(hyperref)                removing `\ocircumflex' on input line 28.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 55.
+(hyperref)                removing `\uhorn' on input line 28.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 55.
+(hyperref)                removing `\textdotbelow' on input line 28.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 55.
+(hyperref)                removing `\ohorn' on input line 28.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 55.
+(hyperref)                removing `\textdotbelow' on input line 28.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 55.
+(hyperref)                removing `\uhorn' on input line 28.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 55.
+(hyperref)                removing `\ohorn' on input line 28.
 
 
 Package hyperref Warning: Composite letter `\textacute+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 55.
+(hyperref)                removing `\textacute' on input line 28.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 55.
+(hyperref)                removing `\uhorn' on input line 28.
 
 LaTeX Font Info:    Font shape `T5/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T5/ppl/b/n' tried instead on input line 56.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 63.
+(Font)              Font shape `T5/ppl/b/n' tried instead on input line 29.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 35.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsppl.fd"
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
 
 
 Class memoir Warning: The material used in the headers is too large
 (15.45602pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 67.
+(in both cases you will find help in the memoir manual). on input line 38.
 
 
 Overfull \vbox (0.95602pt too high) has occurred while \output is active []
@@ -2116,26 +2136,92 @@ Overfull \vbox (0.95602pt too high) has occurred while \output is active []
 
 Package hyperref Warning: Composite letter `\texttilde+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 102.
+(hyperref)                removing `\texttilde' on input line 73.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 102.
+(hyperref)                removing `\uhorn' on input line 73.
 
 
 Package hyperref Warning: Composite letter `\textacute+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 102.
+(hyperref)                removing `\textacute' on input line 73.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 102.
+(hyperref)                removing `\uhorn' on input line 73.
+
+
+LaTeX Warning: Citation `alur2013automated' on page 10 undefined on input line 
+78.
+
+
+LaTeX Warning: Citation `singh2013automated' on page 10 undefined on input line
+ 87.
+
+
+Overfull \hbox (15.12701pt too wide) in paragraph at lines 87--97
+[]\T5/ppl/m/it/12 Automated Feed-back Gen-er-a-tion for In-tro-duc-tory Pro-gra
+m-ming As-sign-ments \T5/ppl/m/n/12 [[]], � xu�t ph��ng
+ []
+
+
+LaTeX Warning: Citation `wang2007semantic' on page 10 undefined on input line 9
+9.
 
 
 Overfull \vbox (0.95602pt too high) has occurred while \output is active []
 
 
 [10]
+
+LaTeX Warning: Citation `bates1993incremental' on page 11 undefined on input li
+ne 110.
+
+
+LaTeX Warning: Citation `binkley1992using' on page 11 undefined on input line 1
+11.
+
+
+LaTeX Warning: Citation `jackson1994semantic' on page 11 undefined on input lin
+e 112.
+
+
+LaTeX Warning: Citation `person2008differential' on page 11 undefined on input 
+line 113.
+
+
+LaTeX Warning: Citation `jiang2009automatic' on page 11 undefined on input line
+ 119.
+
+
+LaTeX Warning: Citation `hext1969automatic' on page 11 undefined on input line 
+126.
+
+
+LaTeX Warning: Citation `jackson1997grading' on page 11 undefined on input line
+ 131.
+
+
+LaTeX Warning: Citation `kamiya2002ccfinder' on page 11 undefined on input line
+ 143.
+
+
+LaTeX Warning: Citation `baxter1998clone' on page 11 undefined on input line 14
+4.
+
+
+LaTeX Warning: Citation `komondoor2001using' on page 11 undefined on input line
+ 145.
+
+
+LaTeX Warning: Citation `dang2012xiao' on page 11 undefined on input line 146.
+
+
+LaTeX Warning: Citation `merlo2004linear' on page 11 undefined on input line 14
+6.
+
+
 Overfull \vbox (0.95602pt too high) has occurred while \output is active []
 
 
@@ -2221,14 +2307,16 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 [13
 
 ]
-LaTeX Font Info:    Font shape `T5/ppl/bx/it' in size <12> not available
-(Font)              Font shape `T5/ppl/b/it' tried instead on input line 13.
 
+LaTeX Warning: Citation `myers2011art' on page 14 undefined on input line 9.
+
+LaTeX Font Info:    Font shape `T5/ppl/bx/it' in size <12> not available
+(Font)              Font shape `T5/ppl/b/it' tried instead on input line 12.
 
 Class memoir Warning: The material used in the headers is too large
 (16.81802pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 20.
+(in both cases you will find help in the memoir manual). on input line 19.
 
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
@@ -2239,13 +2327,17 @@ Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
 [15]
-<images/kiemthu1.png, id=271, 820.06375pt x 424.58624pt>
+<images/kiemthu1.png, id=208, 820.06375pt x 424.58624pt>
 File: images/kiemthu1.png Graphic file (type png)
 <use images/kiemthu1.png>
-Package pdftex.def Info: images/kiemthu1.png  used on input line 40. on input l
-ine 40.
+Package pdftex.def Info: images/kiemthu1.png  used on input line 39. on input l
+ine 39.
 Package pdftex.def Info: Requested size: 410.03087pt x 212.2926pt on input line
- 40.
+ 39.
+
+
+LaTeX Warning: Citation `myers2011art' on page 16 undefined on input line 46.
+
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
@@ -2255,45 +2347,62 @@ Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.49 
+l.47 
       <./images/kiemthu1.png>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 53.
-LaTeX Font Info:    Try loading font information for T5+cmtt on input line 53.
+nput line 50.
+LaTeX Font Info:    Try loading font information for T5+cmtt on input line 50.
 
 (C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\vntex\t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 (Filecodes/RandomTesting.cs)
+
+LaTeX Warning: Reference `rt' on page 17 undefined on input line 51.
+
+
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
 [17]
+
+LaTeX Warning: Citation `zhu1997software' on page 18 undefined on input line 70
+.
+
+
+LaTeX Warning: Citation `xie2009fitness' on page 18 undefined on input line 73.
+
+
+
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
 [18]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 84.
- (Filecodes/DSE.cs
+put line 78.
+ (Filecodes/DSE.cs)
+
+LaTeX Warning: Reference `vddse' on page 19 undefined on input line 92.
+
+
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[19])
-<images/dse11.png, id=320, 513.41812pt x 271.0125pt>
+[19]
+<images/dse11.png, id=261, 513.41812pt x 271.0125pt>
 File: images/dse11.png Graphic file (type png)
 <use images/dse11.png>
-Package pdftex.def Info: images/dse11.png  used on input line 106. on input lin
-e 106.
+Package pdftex.def Info: images/dse11.png  used on input line 98. on input line
+ 98.
 Package pdftex.def Info: Requested size: 308.05324pt x 162.60875pt on input lin
-e 106.
-<images/dse12.png, id=322, 514.92375pt x 264.99pt>
+e 98.
+<images/dse12.png, id=263, 514.92375pt x 264.99pt>
 File: images/dse12.png Graphic file (type png)
 <use images/dse12.png>
-Package pdftex.def Info: images/dse12.png  used on input line 116. on input lin
-e 116.
+Package pdftex.def Info: images/dse12.png  used on input line 108. on input lin
+e 108.
 Package pdftex.def Info: Requested size: 308.95662pt x 158.99522pt on input lin
-e 116.
+e 108.
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
@@ -2303,22 +2412,22 @@ Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.121 \end{center}
+l.113 \end{center}
                    <./images/dse11.png>]
-<images/dse13.png, id=340, 514.17094pt x 268.75406pt>
+<images/dse13.png, id=270, 514.17094pt x 268.75406pt>
 File: images/dse13.png Graphic file (type png)
 <use images/dse13.png>
-Package pdftex.def Info: images/dse13.png  used on input line 127. on input lin
-e 127.
+Package pdftex.def Info: images/dse13.png  used on input line 119. on input lin
+e 119.
 Package pdftex.def Info: Requested size: 308.50494pt x 161.25368pt on input lin
-e 127.
-<images/dse2.png, id=341, 729.47531pt x 353.06906pt>
+e 119.
+<images/dse2.png, id=271, 729.47531pt x 353.06906pt>
 File: images/dse2.png Graphic file (type png)
 <use images/dse2.png>
-Package pdftex.def Info: images/dse2.png  used on input line 139. on input line
- 139.
+Package pdftex.def Info: images/dse2.png  used on input line 131. on input line
+ 131.
 Package pdftex.def Info: Requested size: 437.68855pt x 211.84306pt on input lin
-e 139.
+e 131.
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
@@ -2328,28 +2437,28 @@ Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.144 \end{center}
+l.136 \end{center}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{figure.2.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.144 \end{center}
+l.136 \end{center}
                    <./images/dse12.png> <./images/dse13.png>]
-<images/dse21.png, id=350, 516.42938pt x 261.97874pt>
+<images/dse21.png, id=280, 516.42938pt x 261.97874pt>
 File: images/dse21.png Graphic file (type png)
 <use images/dse21.png>
-Package pdftex.def Info: images/dse21.png  used on input line 151. on input lin
-e 151.
+Package pdftex.def Info: images/dse21.png  used on input line 143. on input lin
+e 143.
 Package pdftex.def Info: Requested size: 309.86002pt x 157.18845pt on input lin
-e 151.
-<images/dse22.png, id=351, 510.40688pt x 264.23718pt>
+e 143.
+<images/dse22.png, id=281, 510.40688pt x 264.23718pt>
 File: images/dse22.png Graphic file (type png)
 <use images/dse22.png>
-Package pdftex.def Info: images/dse22.png  used on input line 163. on input lin
-e 163.
+Package pdftex.def Info: images/dse22.png  used on input line 155. on input lin
+e 155.
 Package pdftex.def Info: Requested size: 306.24648pt x 158.54352pt on input lin
-e 163.
+e 155.
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
@@ -2359,28 +2468,28 @@ Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.168 \end{center}
+l.160 \end{center}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{figure.2.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.168 \end{center}
+l.160 \end{center}
                    <./images/dse2.png> <./images/dse21.png>]
-<images/dse23.png, id=359, 511.15968pt x 264.99pt>
+<images/dse23.png, id=289, 511.15968pt x 264.99pt>
 File: images/dse23.png Graphic file (type png)
 <use images/dse23.png>
-Package pdftex.def Info: images/dse23.png  used on input line 175. on input lin
-e 175.
+Package pdftex.def Info: images/dse23.png  used on input line 167. on input lin
+e 167.
 Package pdftex.def Info: Requested size: 306.69817pt x 158.99522pt on input lin
-e 175.
-<images/dse24.png, id=360, 511.15968pt x 259.7203pt>
+e 167.
+<images/dse24.png, id=290, 511.15968pt x 259.7203pt>
 File: images/dse24.png Graphic file (type png)
 <use images/dse24.png>
-Package pdftex.def Info: images/dse24.png  used on input line 187. on input lin
-e 187.
+Package pdftex.def Info: images/dse24.png  used on input line 179. on input lin
+e 179.
 Package pdftex.def Info: Requested size: 306.69817pt x 155.83337pt on input lin
-e 187.
+e 179.
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
@@ -2390,21 +2499,21 @@ Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.192 \end{center}
+l.184 \end{center}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{figure.2.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.192 \end{center}
+l.184 \end{center}
                    <./images/dse22.png> <./images/dse23.png>]
-<images/dse3.png, id=369, 730.98094pt x 347.04657pt>
+<images/dse3.png, id=299, 730.98094pt x 347.04657pt>
 File: images/dse3.png Graphic file (type png)
 <use images/dse3.png>
-Package pdftex.def Info: images/dse3.png  used on input line 199. on input line
- 199.
+Package pdftex.def Info: images/dse3.png  used on input line 191. on input line
+ 191.
 Package pdftex.def Info: Requested size: 438.59195pt x 208.22954pt on input lin
-e 199.
+e 191.
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
@@ -2414,21 +2523,30 @@ Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.207 
+l.199 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.207 
+l.199 
        <./images/dse24.png> <./images/dse3.png>]
-<images/dse4.png, id=377, 715.17188pt x 370.38374pt>
+<images/dse4.png, id=307, 715.17188pt x 370.38374pt>
 File: images/dse4.png Graphic file (type png)
 <use images/dse4.png>
-Package pdftex.def Info: images/dse4.png  used on input line 215. on input line
- 215.
+Package pdftex.def Info: images/dse4.png  used on input line 207. on input line
+ 207.
 Package pdftex.def Info: Requested size: 429.10643pt x 222.23195pt on input lin
-e 215.
+e 207.
+
+
+LaTeX Warning: Citation `tillmann2008pex' on page 25 undefined on input line 21
+7.
+
+
+LaTeX Warning: Citation `godefroid2008automated' on page 25 undefined on input 
+line 217.
+
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
@@ -2438,85 +2556,110 @@ Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.226 		
+l.218 		
          <./images/dse4.png>]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 268.
+(hyperref)                removing `\h' on input line 260.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 268.
+(hyperref)                removing `\uhorn' on input line 260.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 268.
+(hyperref)                removing `\ohorn' on input line 260.
 
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
 [26] (Filecodes/SwitchCase.cs) (Filecodes/IfElse.cs)
+
+LaTeX Warning: Reference `SwitchCase' on page 27 undefined on input line 280.
+
+
+LaTeX Warning: Reference `IfElse' on page 27 undefined on input line 280.
+
+
+LaTeX Warning: Reference `SwitchCase' on page 27 undefined on input line 280.
+
+
+LaTeX Warning: Reference `IfElse' on page 27 undefined on input line 280.
+
+
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
 [27] (Filecodes/Khac_biet_HV_1.cs) (Filecodes/Khac_biet_HV_2.cs)
+
+LaTeX Warning: Reference `KBHV1' on page 28 undefined on input line 298.
+
+
+LaTeX Warning: Reference `KBHV2' on page 28 undefined on input line 298.
+
 (Filecodes/TuongTu_HV_1.cs) (Filecodes/TuongTu_HV_2.cs)
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
 [28]
 
+LaTeX Warning: Reference `TTHV1' on page 29 undefined on input line 315.
+
+
+LaTeX Warning: Reference `TTHV2' on page 29 undefined on input line 315.
+
+
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 329.
+(hyperref)                removing `\textdotbelow' on input line 321.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 329.
+(hyperref)                removing `\ocircumflex' on input line 321.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 329.
+(hyperref)                removing `\textacute' on input line 321.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 329.
+(hyperref)                removing `\ocircumflex' on input line 321.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 329.
+(hyperref)                removing `\dj' on input line 321.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 329.
+(hyperref)                removing `\dj' on input line 321.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 329.
+(hyperref)                removing `\textdotbelow' on input line 321.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 329.
+(hyperref)                removing `\ocircumflex' on input line 321.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 329.
+(hyperref)                removing `\uhorn' on input line 321.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 329.
+(hyperref)                removing `\ohorn' on input line 321.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 329.
+(hyperref)                removing `\textdotbelow' on input line 321.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 329.
+(hyperref)                removing `\uhorn' on input line 321.
 
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
@@ -2527,6 +2670,13 @@ Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
 [30] (Filecodes/RS1.cs) (Filecodes/RS2.cs)
+
+LaTeX Warning: Reference `RS1' on page 31 undefined on input line 341.
+
+
+LaTeX Warning: Reference `RS2' on page 31 undefined on input line 341.
+
+
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
@@ -2535,6 +2685,13 @@ Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
 [32]
+
+LaTeX Warning: Reference `SSE1' on page 33 undefined on input line 362.
+
+
+LaTeX Warning: Reference `SSE2' on page 33 undefined on input line 362.
+
+
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
@@ -2602,7 +2759,10 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 3.
 
-<images/codehunt2.png, id=544, 669.2503pt x 493.0922pt>
+
+LaTeX Warning: Citation `CodeHunt' on page 36 undefined on input line 6.
+
+<images/codehunt2.png, id=457, 669.2503pt x 493.0922pt>
 File: images/codehunt2.png Graphic file (type png)
 <use images/codehunt2.png>
 Package pdftex.def Info: images/codehunt2.png  used on input line 12. on input 
@@ -2612,7 +2772,7 @@ e 12.
 [36
 
 ]
-<images/java-to-csharp-collections.png, id=549, 532.389pt x 356.532pt>
+<images/java-to-csharp-collections.png, id=462, 532.389pt x 356.532pt>
 File: images/java-to-csharp-collections.png Graphic file (type png)
 <use images/java-to-csharp-collections.png>
 Package pdftex.def Info: images/java-to-csharp-collections.png  used on input l
@@ -2662,7 +2822,7 @@ ed
 l.36 \subsection{Microsoft Visual studio}
                                           <./images/codehunt2.png> <./images/ja
 va-to-csharp-collections.png>]
-<images/visualstudio.png, id=557, 916.92563pt x 576.65437pt>
+<images/visualstudio.png, id=470, 916.92563pt x 576.65437pt>
 File: images/visualstudio.png Graphic file (type png)
 <use images/visualstudio.png>
 Package pdftex.def Info: images/visualstudio.png  used on input line 42. on inp
@@ -2681,7 +2841,7 @@ Overfull \vbox (0.95602pt too high) has occurred while \output is active []
 l.51 T
       rong luận văn này, tôi sử dụng chủ yếu là Ngôn ngữ l�...
  <./images/visualstudio.png>]
-<images/quatrinhthongdich.png, id=563, 562.1pt x 195.73125pt>
+<images/quatrinhthongdich.png, id=476, 562.1pt x 195.73125pt>
 File: images/quatrinhthongdich.png Graphic file (type png)
 <use images/quatrinhthongdich.png>
 Package pdftex.def Info: images/quatrinhthongdich.png  used on input line 56. o
@@ -2699,18 +2859,33 @@ Overfull \vbox (0.95602pt too high) has occurred while \output is active []
                                                   \fi \fi 
 l.69 
       <./images/quatrinhthongdich.png>] (Filecodes/TestPex.cs)
+
+LaTeX Warning: Citation `xie2009fitness' on page 40 undefined on input line 80.
+
+
+
+LaTeX Warning: Citation `godefroid2005dart' on page 40 undefined on input line 
+80.
+
+
 Overfull \vbox (0.95602pt too high) has occurred while \output is active []
 
 
 [40]
-<images/pex.png, id=589, 573.64313pt x 433.62pt>
+
+LaTeX Warning: Citation `de2008z3' on page 41 undefined on input line 82.
+
+
+LaTeX Warning: Citation `kroening2016decision' on page 41 undefined on input li
+ne 82.
+
+<images/pex.png, id=498, 573.64313pt x 433.62pt>
 File: images/pex.png Graphic file (type png)
 <use images/pex.png>
 Package pdftex.def Info: images/pex.png  used on input line 88. on input line 8
 8.
 Package pdftex.def Info: Requested size: 229.45319pt x 173.44492pt on input lin
 e 88.
-
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -2753,7 +2928,7 @@ Overfull \vbox (0.95602pt too high) has occurred while \output is active []
                                                   \fi \fi 
 l.103 
        <./images/pex.png>]
-<images/main.png, id=598, 426.09187pt x 225.09094pt>
+<images/main.png, id=504, 426.09187pt x 225.09094pt>
 File: images/main.png Graphic file (type png)
 <use images/main.png>
 Package pdftex.def Info: images/main.png  used on input line 107. on input line
@@ -2778,7 +2953,7 @@ Overfull \vbox (0.95602pt too high) has occurred while \output is active []
 l.117 ...ương trình tham chiếu}]{solution.cs}
                                                    <./images/main.png>]
 (Filecodes/user1.cs) (Filecodes/user2.cs)
-<images/kq_rs.png, id=617, 478.78876pt x 374.14781pt>
+<images/kq_rs.png, id=523, 478.78876pt x 374.14781pt>
 File: images/kq_rs.png Graphic file (type png)
 <use images/kq_rs.png>
 Package pdftex.def Info: images/kq_rs.png  used on input line 125. on input lin
@@ -2790,7 +2965,7 @@ Overfull \vbox (0.95602pt too high) has occurred while \output is active []
 
 
 [43]
-<images/kq_sse.png, id=645, 385.44pt x 295.1025pt>
+<images/kq_sse.png, id=551, 385.44pt x 295.1025pt>
 File: images/kq_sse.png Graphic file (type png)
 <use images/kq_sse.png>
 Package pdftex.def Info: images/kq_sse.png  used on input line 148. on input li
@@ -2808,7 +2983,7 @@ Overfull \vbox (0.95602pt too high) has occurred while \output is active []
                                                   \fi \fi 
 l.153 
        <./images/kq_rs.png>]
-<images/kq_pse.png, id=652, 612.03656pt x 285.31593pt>
+<images/kq_pse.png, id=558, 612.03656pt x 285.31593pt>
 File: images/kq_pse.png Graphic file (type png)
 <use images/kq_pse.png>
 Package pdftex.def Info: images/kq_pse.png  used on input line 169. on input li
@@ -2938,138 +3113,108 @@ Overfull \vbox (0.95602pt too high) has occurred while \output is active []
 
 
 [55])
+<quyetdinh.pdf, id=673, pagebox=cropbox, 614.295pt x 794.97pt>
+File: quyetdinh.pdf Graphic file (type pdf)
+<use quyetdinh.pdf>
+Package pdftex.def Info: quyetdinh.pdf  used on input line 34. on input line 34
+.
+Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
+e 34.
+File: quyetdinh.pdf Graphic file (type pdf)
+<use quyetdinh.pdf>
+Package pdftex.def Info: quyetdinh.pdf  used on input line 34. on input line 34
+.
+Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
+e 34.
+<quyetdinh.pdf, id=676, page=1, pagebox=cropbox, 614.295pt x 794.97pt>
+File: quyetdinh.pdf Graphic file (type pdf)
+<use quyetdinh.pdf, page 1>
+Package pdftex.def Info: quyetdinh.pdf , page1 used on input line 34. on input 
+line 34.
+Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
+e 34.
+File: quyetdinh.pdf Graphic file (type pdf)
+<use quyetdinh.pdf, page 1>
+Package pdftex.def Info: quyetdinh.pdf , page1 used on input line 34. on input 
+line 34.
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 34.
+
 Overfull \vbox (0.95602pt too high) has occurred while \output is active []
 
 
 [56]
-
-Package hyperref Warning: Composite letter `\textacute+\ECIRCUMFLEX'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 34.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ECIRCUMFLEX' on input line 34.
-
-
-Package hyperref Warning: Composite letter `\textdotbelow+I'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 34.
-
-
-Package hyperref Warning: Composite letter `\textdotbelow+\ACIRCUMFLEX'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 34.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ACIRCUMFLEX' on input line 34.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\u' on input line 34.
-
-(Quyetdinhgiaoluanvan.tex)
-<quyetdinh.pdf, id=745, pagebox=cropbox, 614.295pt x 794.97pt>
-File: quyetdinh.pdf Graphic file (type pdf)
-<use quyetdinh.pdf>
-Package pdftex.def Info: quyetdinh.pdf  used on input line 36. on input line 36
-.
-Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
-e 36.
-File: quyetdinh.pdf Graphic file (type pdf)
-<use quyetdinh.pdf>
-Package pdftex.def Info: quyetdinh.pdf  used on input line 36. on input line 36
-.
-Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
-e 36.
-<quyetdinh.pdf, id=748, page=1, pagebox=cropbox, 614.295pt x 794.97pt>
 File: quyetdinh.pdf Graphic file (type pdf)
 <use quyetdinh.pdf, page 1>
-Package pdftex.def Info: quyetdinh.pdf , page1 used on input line 36. on input 
-line 36.
-Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
-e 36.
-File: quyetdinh.pdf Graphic file (type pdf)
-<use quyetdinh.pdf, page 1>
-Package pdftex.def Info: quyetdinh.pdf , page1 used on input line 36. on input 
-line 36.
+Package pdftex.def Info: quyetdinh.pdf , page1 used on input line 34. on input 
+line 34.
 Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
- 36.
- [57
-
-]
+ 34.
 File: quyetdinh.pdf Graphic file (type pdf)
 <use quyetdinh.pdf, page 1>
-Package pdftex.def Info: quyetdinh.pdf , page1 used on input line 36. on input 
-line 36.
+Package pdftex.def Info: quyetdinh.pdf , page1 used on input line 34. on input 
+line 34.
 Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
- 36.
+ 34.
 File: quyetdinh.pdf Graphic file (type pdf)
 <use quyetdinh.pdf, page 1>
-Package pdftex.def Info: quyetdinh.pdf , page1 used on input line 36. on input 
-line 36.
+Package pdftex.def Info: quyetdinh.pdf , page1 used on input line 34. on input 
+line 34.
 Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
- 36.
-File: quyetdinh.pdf Graphic file (type pdf)
-<use quyetdinh.pdf, page 1>
-Package pdftex.def Info: quyetdinh.pdf , page1 used on input line 36. on input 
-line 36.
-Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
- 36.
- [58 <./quyetdinh.pdf>]
+ 34.
+ [57 <./quyetdinh.pdf>]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\OCIRCUMFLEX'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 37.
+(hyperref)                removing `\textdotbelow' on input line 35.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\OCIRCUMFLEX' on input line 37.
+(hyperref)                removing `\OCIRCUMFLEX' on input line 35.
 
 
 Package hyperref Warning: Composite letter `\textacute+\OCIRCUMFLEX'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 37.
+(hyperref)                removing `\textacute' on input line 35.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\OCIRCUMFLEX' on input line 37.
+(hyperref)                removing `\OCIRCUMFLEX' on input line 35.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ECIRCUMFLEX'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 37.
+(hyperref)                removing `\textdotbelow' on input line 35.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ECIRCUMFLEX' on input line 37.
+(hyperref)                removing `\ECIRCUMFLEX' on input line 35.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+O'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 37.
+(hyperref)                removing `\textdotbelow' on input line 35.
 
-(SourceCode.tex (Filecodes/MakeProjects.cs [59
+(SourceCode.tex (Filecodes/MakeProjects.cs [58
 
 ])
 (Filecodes/MakeSecretProjects.cs
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[60]) (Filecodes/BuildProjects.cs
+[59]) (Filecodes/BuildProjects.cs
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[61]) (Filecodes/BuildSecretProjects.cs) (Filecodes/BuildMetaProjects.cs
+[60]) (Filecodes/BuildSecretProjects.cs) (Filecodes/BuildMetaProjects.cs
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[62]) (Filecodes/RunPexOnMetaProjects.cs
+[61]) (Filecodes/RunPexOnMetaProjects.cs
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[63]
+[62]
 Overfull \hbox (0.3198pt too wide) in paragraph at lines 19--20
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3078,7 +3223,7 @@ Overfull \hbox (0.3198pt too wide) in paragraph at lines 19--20
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[64]
+[63]
 Overfull \hbox (62.85017pt too wide) in paragraph at lines 18--19
 [][][][][][][][][][][][][][][][][][][][][]  
  []
@@ -3092,11 +3237,11 @@ Overfull \hbox (6.52606pt too wide) in paragraph at lines 31--32
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[65]) (Filecodes/ComputeMetric2.cs
+[64]) (Filecodes/ComputeMetric2.cs
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[66]
+[65]
 Overfull \hbox (11.1242pt too wide) in paragraph at lines 23--24
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3115,19 +3260,19 @@ Overfull \hbox (124.92091pt too wide) in paragraph at lines 37--38
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
+[66]
+Overfull \vbox (2.31802pt too high) has occurred while \output is active []
+
+
 [67]
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[68]
+[68]) (Filecodes/ComputeMetric3.cs
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[69]) (Filecodes/ComputeMetric3.cs
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[70]
+[69]
 Overfull \hbox (11.1242pt too wide) in paragraph at lines 24--25
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3146,42 +3291,49 @@ Overfull \hbox (124.92091pt too wide) in paragraph at lines 38--39
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
+[70]
+Overfull \vbox (2.31802pt too high) has occurred while \output is active []
+
+
 [71]
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[72]
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[73]))
+[72]))
 
 Class memoir Warning: The material used in the headers is too large
 (16.81802pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 39.
+(in both cases you will find help in the memoir manual). on input line 37.
 
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[74]
+[73]
 \tf@toc=\write6
 \openout6 = `Main.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
  (Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 39.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 37.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: B3FEF9CC422B6A6990373614FC4A160B;1221.
+(rerunfilecheck)             Checksum: F9073C45C96F5D07695087C43F33F424;1159.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 30400 strings out of 493312
- 510044 string characters out of 3138899
- 772712 words of memory out of 3000000
- 32521 multiletter control sequences out of 15000+200000
+ 30388 strings out of 493312
+ 509801 string characters out of 3138899
+ 772713 words of memory out of 3000000
+ 32516 multiletter control sequences out of 15000+200000
  58211 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,18n,72p,2014b,1962s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3199,9 +3351,9 @@ r8v.pfb><C:/Users/admin/AppData/Roaming/MiKTeX/2.9/fonts/type1/vntex/urwvn/uplr
 ers/admin/AppData/Roaming/MiKTeX/2.9/fonts/type1/vntex/urwvn/uplri8v.pfb><C:/Us
 ers/admin/AppData/Roaming/MiKTeX/2.9/fonts/type1/vntex/vnr/vnssbx10.pfb><C:/Use
 rs/admin/AppData/Roaming/MiKTeX/2.9/fonts/type1/vntex/vnr/vntt10.pfb>
-Output written on Main.pdf (74 pages, 2007032 bytes).
+Output written on Main.pdf (73 pages, 2023704 bytes).
 PDF statistics:
- 1435 PDF objects out of 1440 (max. 8388607)
- 756 named destinations out of 1000 (max. 500000)
- 322 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1362 PDF objects out of 1440 (max. 8388607)
+ 754 named destinations out of 1000 (max. 500000)
+ 314 words of extra memory for PDF output out of 10000 (max. 10000000)
 

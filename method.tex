@@ -16,7 +16,7 @@ Có nhiều phương pháp để kiểm thử phần mềm, trong đó hai phư�
 \subsubsection{Các chiến lược kiểm thử}
 Kiểm thử phần mềm có nhiều chiến lược để kiểm thử, trong đó có hai chiến lược được sử dụng nhiều nhất đó là kiểm thử hộp đen và kiểm thử hộp trắng.
 	
-\textbf{\textit{Kiểm thử hộp đen – Black box}}. Là một chiến lược kiểm thử với cách thức hoạt động chủ yếu dựa vào hướng dữ liệu inputs/ouputs của chương trình, xem chương trình như là một “hộp đen”, chiến lược kiểm thử này  hoàn toàn không quan tâm về cách xử lý và cấu trúc bên trong của chương trình. Kiểm thử hộp đen tập trung vào tìm các trường hợp mà chương trình không thực hiện theo các đặc tả kỹ thuật. Kiểm thử viên hộp đen cố gắng tìm ra những lỗi mà lập trình viên không tìm ra. Tuy nhiên, phương pháp kiểm thử này cũng có mặt hạn chế của nó, kiểm thử viên không biết các phần mềm được kiểm tra thực sự được xây dựng như thế nào, cố gắng viết rất nhiều ca kiểm thử để kiểm tra một chức năng của phần mềm nhưng lẽ ra chỉ cần kiểm tra bằng một ca kiểm thử duy nhất, hoặc một số phần của chương trình có thể bị bỏ qua không được kiểm tra.
+\textbf{\textit{Kiểm thử hộp đen – Black box}}. Là một chiến lược kiểm thử với cách thức hoạt động chủ yếu dựa vào hướng dữ liệu inputs/outputs của chương trình, xem chương trình như là một “hộp đen”, chiến lược kiểm thử này  hoàn toàn không quan tâm về cách xử lý và cấu trúc bên trong của chương trình. Kiểm thử hộp đen tập trung vào tìm các trường hợp mà chương trình không thực hiện theo các đặc tả kỹ thuật. Kiểm thử viên hộp đen cố gắng tìm ra những lỗi mà lập trình viên không tìm ra. Tuy nhiên, phương pháp kiểm thử này cũng có mặt hạn chế của nó, kiểm thử viên không biết các phần mềm được kiểm tra thực sự được xây dựng như thế nào, cố gắng viết rất nhiều ca kiểm thử để kiểm tra một chức năng của phần mềm nhưng lẽ ra chỉ cần kiểm tra bằng một ca kiểm thử duy nhất, hoặc một số phần của chương trình có thể bị bỏ qua không được kiểm tra.
 		
 Do vậy, kiểm thử hộp đen có ưu điểm là đánh giá khách quan, mặt khác nó lại có nhược điểm là thăm dò mù. Trong phần nghiên cứu của đề tài, kiểm thử hộp đen cũng được sử dụng như một phương pháp đo độ tương tự hành vi của các chương trình.
 		
@@ -52,6 +52,7 @@ Mã lệnh \ref{rt} là một hàm sinh ngẫu nhiên dữ liệu thử, chúng 
 
 \subsubsection*{Ưu điểm, hạn chế, hướng khắc phục}
 Sinh ngẫu nhiên dữ liệu thử có một số ưu điểm và nhược điểm như sau:
+
 \textit{* Ưu điểm:}
 \begin{itemize}
 	\item Đơn giản, dễ dàng sinh các đầu vào ngẫu nhiên
@@ -82,20 +83,20 @@ Dựa trên các tham số đầu vào của chương trình, DSE sẽ tạo ra 
 			\subitem Chọn đầu vào i $\notin $ J \Comment{Dừng lại nếu không có i nào được tìm thấy}
 			\subitem Xuất ra i
 			\subitem Thực thi P(i); lưu lại điều kiện đường đi C(i); suy ra C'(i)
-			\subitem Đặt J := j $\cup $ i			
+			\subitem Đặt J := J $\cup $ i			
 		\item end loop
 	\end{algorithmic}
 \end{algorithm}
 
 \lstinputlisting[label={vddse}, caption = {Minh họa kỹ thuật DSE}]{DSE.cs}
 	
-Trong mã lệnh \ref{vddse}, chúng ta xem xét hàm $test\_me$ với hai tham số đầu vào là $int x$ và $int y$, và hàm này không có giá trị trả về. Cách thức làm việc của DSE trên hàm $test\_me$ như sau: 
+Trong mã lệnh \ref{vddse}, chúng ta xem xét hàm test\_me với hai tham số đầu vào là $int x$ và $int y$, và hàm này không có giá trị trả về. Cách thức làm việc của DSE trên hàm $test\_me$ như sau: 
 
-Đầu tiên, DSE tạo hai giá trị đầu vào thử nghiệm ngẫu nhiên $x$ và $y$, giả sử $x = 22$ và $y = 7$. Ngoài ra, DSE sẽ theo dõi trạng thái các giá trị đầu vào thử nghiệm của chương trình: $x$ bằng một số $x_{0}$ và $y$ bằng một số $y_{0}$.
+Đầu tiên, DSE tạo hai giá trị đầu vào thử nghiệm ngẫu nhiên $x$ và $y$, giả sử $x = 22$ và $y = 7$. Ngoài ra, DSE sẽ theo dõi trạng thái các giá trị đầu vào thử nghiệm của chương trình với $x$ bằng một số $x_{0}$ và $y$ bằng một số $y_{0}$.
 \begin{center}
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[scale=.6]{dse11.png}
+			\includegraphics[scale=.8]{dse11.png}
 		\end{center}
 		\caption{DSE khởi tạo các giá trị đầu vào}
 		\label{dse11}
@@ -105,25 +106,25 @@ Trong mã lệnh \ref{vddse}, chúng ta xem xét hàm $test\_me$ với hai tham 
 \begin{center}
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[scale=.6]{dse12.png}
+			\includegraphics[scale=.8]{dse12.png}
 		\end{center}
 		\caption{Số nguyên Z được gán bằng hàm foo(y)}
 		\label{dse12}
 	\end{figure}
 \end{center}
 
-Tại nhánh $z$ == $x$, DSE nhận biết giá trị của $x$ không bằng giá trị của $z$. Về mặt biểu tượng, DSE lưu trữ ràng buộc này là $z != x$, và giá trị tương trưng của đường này là: $ 2*y_{0} != x_{0} $. DSE đi theo nhánh $false$ dẫn đến kết thúc chương trình.
+Tại nhánh $z$ == $x$, DSE nhận biết giá trị của $z$ không bằng giá trị của $x$ và lưu trữ ràng buộc này là $z != x$, và giá trị tương trưng của đường này là: $ 2*y_{0} != x_{0} $. DSE đi theo nhánh $false$ dẫn đến kết thúc chương trình.
 \begin{center}
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[scale=.6]{dse13.png}
+			\includegraphics[scale=.8]{dse13.png}
 		\end{center}
 		\caption{Với điều kiện $z == x$, giá trị của  $z != x$ nên DSE chạy theo nhánh $false$  }
 		\label{dse13}
 	\end{figure}
 \end{center}
 
-Sau khi kết thúc chương trình, DSE sẽ quay trở lại điểm nhánh gần nhất và cố gắng chọn nhánh $true$. Với mục đích này, nó phủ định ràng buộc được thêm gần nhất trong điều kiện đường dẫn $2*y_{0} != x_{0}$ thành $2*y_{0} = x_{0}$. Để thỏa mãn ràng buộc  $2*y_{0} != x_{0}$  thì hai số nguyên này sẽ là $x_{0} = 2$ và $ y_{0} = 1$.
+Sau khi kết thúc chương trình, DSE sẽ quay trở lại điểm nhánh gần nhất và chọn nhánh $true$. Với mục đích này, nó phủ định ràng buộc được thêm gần nhất trong điều kiện đường dẫn $2*y_{0} != x_{0}$ thành $2*y_{0} = x_{0}$. Để thỏa mãn ràng buộc  $2*y_{0} != x_{0}$  thì hai số nguyên này sẽ là $x_{0} = 2$ và $ y_{0} = 1$.
 
 \begin{center}
 	\begin{figure}[H]
@@ -135,12 +136,12 @@ Sau khi kết thúc chương trình, DSE sẽ quay trở lại điểm nhánh g�
 	\end{figure}
 \end{center}
 
-Sau đó, DSE khởi động lại hàm $test_me$, lần này nó gọi các giá trị đầu vào cụ thể với giá trị: $x = 2$ và $y = 1$ được tạo ra bởi quá trình giải quyết ràng buộc trước đó. DSE tiếp tục theo dõi trạng thái các biến với $x = x_{0}$ và $y = y_{0}$.
+Sau đó, DSE khởi động lại hàm test\_me, lần này nó gọi các giá trị đầu vào cụ thể với giá trị: $x = 2$ và $y = 1$ được tạo ra bởi quá trình giải quyết ràng buộc trước đó. DSE tiếp tục theo dõi trạng thái các biến với $x = x_{0}$ và $y = y_{0}$.
 
 \begin{center}
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[scale=.6]{dse21.png}
+			\includegraphics[scale=.8]{dse21.png}
 		\end{center}
 		\caption{DSE khởi động lại hàm test\_me}
 		\label{dse21}
@@ -152,7 +153,7 @@ Sau khi thực hiện dòng đầu tiên, $z$ có giá trị cụ thể $2$ và 
 \begin{center}
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[scale=.6]{dse22.png}
+			\includegraphics[scale=.8]{dse22.png}
 		\end{center}
 		\caption{Thực hiện dòng đầu tiên $int z = foo(y)$}
 		\label{dse22}
@@ -164,7 +165,7 @@ Sau khi thực hiện dòng đầu tiên, $z$ có giá trị cụ thể $2$ và 
 \begin{center}
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[scale=.6]{dse23.png}
+			\includegraphics[scale=.8]{dse23.png}
 		\end{center}
 		\caption{DSE thực hiện điều kiện đường dẫn $true$}
 		\label{dse23}
@@ -176,14 +177,14 @@ Tại điểm nhánh tiếp theo, $x$ có giá trị cụ thể là $2$ và $y +
 \begin{center}
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[scale=.6]{dse24.png}
+			\includegraphics[scale=.8]{dse24.png}
 		\end{center}
 		\caption{DSE lấy nhánh $false$ kết thúc chương trình}
 		\label{dse24}
 	\end{figure}
 \end{center} 
 
-Vì DSE đã đến cuối chương trình, nó phủ nhận ràng buộc vừa được thêm gần nhất trong điều kiện đường dẫn để có được $ x_{0} > y_{0} + 10 $, và sau đó nó vượt qua các ràng buộc $ 2*y_{0} == x  AND x_{0} > y_{0} + 10$. Để thỏa những ràng buộc này, DSE trả về $x_{0} = 30$ và $y_{0} = 15$.
+Vì DSE đã đến cuối chương trình, nó phủ nhận ràng buộc vừa được thêm gần nhất trong điều kiện đường dẫn để có được $ x_{0} > y_{0} + 10 $, và sau đó nó vượt qua các ràng buộc $ 2*y_{0} == x_{0} $ và $ x_{0} > y_{0} + 10$. Để thỏa những ràng buộc này, DSE trả về $x_{0} = 30$ và $y_{0} = 15$.
 
 \begin{center}
 	\begin{figure}[H]
@@ -195,7 +196,7 @@ Vì DSE đã đến cuối chương trình, nó phủ nhận ràng buộc vừa 
 	\end{figure}
 \end{center}
 
-Bây giờ, DSE chạy hàm $test_me$ một lần nữa, lần này với các đầu vào $x = 30$ và $y = 15$. Trạng thái biểu tượng các biến bắt đầu $x = x_{0}$ và $y = y_{0}$. $z$ được gán giá trị cụ thể là $30$, trong khi giá trị tượng trưng của nó là $2*y_0$ như những lần chạy trước.
+Bây giờ, DSE chạy hàm test\_me một lần nữa, lần này với các đầu vào $x = 30$ và $y = 15$. Trạng thái biểu tượng các biến bắt đầu $x = x_{0}$ và $y = y_{0}$. $z$ được gán giá trị cụ thể là $30$, trong khi giá trị tượng trưng của nó là $2*y_0$ như những lần chạy trước.
 
 Khi tới điều kiện rẻ nhánh $z == x$, DSE nhận thấy đây là điều kiện $true$, vì vậy DSE thêm điều kiện tượng trưng $2*y_{0} == x_{0}$.
 
@@ -211,7 +212,7 @@ Sau đó tại điểm nhánh tiếp theo, với $x > y + 10$ vì vậy DSE thê
 	\end{figure}
 \end{center}
 
-Kết quả, sau 3 lần chạy chương trình, DSE tạo ra được các cặp giá trị đầu vào có thể duyệt hết các nhánh của chương trình $test_me$ đó là: $[22,7], [2,1], [30,15]$
+Kết quả, sau 3 lần chạy chương trình, DSE tạo ra được các cặp giá trị đầu vào có thể duyệt hết các nhánh của chương trình test\_me đó là: $[22,7], [2,1], [30,15]$
 	
 \subsection{Một số công cụ ứng dụng DSE}	
 Trên thế giới hiện có nhiều công cụ sử dụng kỹ thuật DSE để giải quyết các ràng buộc và tạo ra các giá trị đầu vào có độ phủ cao như như Pex \cite{tillmann2008pex} và SAGE \cite{godefroid2008automated}... và những công cụ này được phát triển để có thể chạy được trên nhiều nền tảng khác nhau. Chúng ta có thể tham khảo một số công cụ sau đây:
@@ -298,7 +299,7 @@ Mã lệnh \ref{SwitchCase} và \ref{IfElse} có tham số đầu vào cùng ki�
 Mã lệnh \ref{KBHV1} và Mã lệnh \ref{KBHV2}  của Chương trình $P_{1}$ và $P_{2}$, cả hai Chương trình có miền giá trị đầu vào cùng kiểu $int$, giá trị trả về của Chương trình $P_{1}$ là $x - 10$, giá trị trả về của Chương tình $P_{2}$ là $x + 10$. Với mọi giá trị của $x$ được thực thi trên cả hai chương trình $P_{1}$ và $P_{2}$ kết quả trả về sẽ không giống nhau. Mặc dù cả hai Chương trình $P_{1}$ và $P_{2}$ có miền giá trị đầu vào như nhau, nhưng hành vi của hai Chương trình hoàn toàn khác nhau. Qua đó, chúng ta có thể định nghĩa sự khác biệt về hành vi như sau:
 
 \begin{definition}[Sự khác biệt hành vi]
-Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng một miền các giá trị đầu vào $I$. Hai chương trình này được xem là có sự khác biêt về hành vi khi và chỉ khi thực thi của chúng khác nhau trên mọi giá trị đầu vào $I$, ký hiệu là $exec(P_{1}, I) \neq exec(P_{2}, i)$.
+Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng một miền các giá trị đầu vào $I$. Hai chương trình này được xem là có sự khác biêt về hành vi khi và chỉ khi thực thi của chúng khác nhau trên mọi giá trị đầu vào $I$, ký hiệu là $exec(P_{1}, I) \neq exec(P_{2}, I)$.
 \end{definition}
 
 \subsection{Độ tương tự hành vi (Behavioral Similarity)}
@@ -319,14 +320,32 @@ Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đ�
 \end{definition}
 
 \section{Một số phép đo độ tương tự hành vi}
-Để đo độ tương tự về hành vi giữa hai Chương trình, chúng ta có thể chạy từng giá trị đầu vào trong miền giá trị đầu vào của hai Chương trình. Tỷ lệ giữa số lượng đầu vào thử nghiệm khi thực thi trên cả hai Chương trình cho kết quả đầu ra giống nhau trên tổng số lượng đầu vào được thử nghiệm là độ tương tự hành vi giữa hai Chương trình. Dựa trên cách tính tỷ lệ kết quả đầu ra của hai Chương trình, chúng ta có một số phép đo độ tương tự hành vi như sau:
+Để đo độ tương tự về hành vi giữa hai chương trình, chúng ta có thể chạy từng giá trị đầu vào trong miền giá trị đầu vào của hai chương trình. Tỷ lệ giữa số lượng đầu vào thử nghiệm khi thực thi trên cả hai chương trình cho kết quả đầu ra giống nhau trên tổng số lượng đầu vào được thử nghiệm là độ tương tự hành vi giữa hai chương trình. Dựa trên cách tính tỷ lệ kết quả đầu ra của hai chương trình, chúng ta có một số phép đo độ tương tự hành vi như sau:
 
 \subsection{Phép đo lấy mẫu ngẫu nhiên (RS)}
-Kỹ thuật của phép đo \textbf{RS} là thực hiện lấy ngẫu nhiên giá trị đầu vào trên miền giá trị đầu vào của hai Chương trình. Thực thi cả hai Chương trình trên từng giá trị đầu vào, tiến hành so sánh giá trị kết quả đầu ra của cả hai Chương trình. Tỷ lệ giữa tổng số mẫu đầu vào khi thực thi những mẫu này hai chương trình cho kết quả đầu ra có giá trị giống nhau, trên tổng số mẫu đầu vào được thử nghiệm là kết quả cho phép đo RS. Từ đó, chúng ta có định nghĩa phép đo \textbf{RS} như sau:
+Kỹ thuật của phép đo \textbf{RS} là thực hiện lấy mẫu ngẫu nhiên giá trị đầu vào trên miền giá trị đầu vào của hai chương trình. Thực thi cả hai chương trình trên từng giá trị đầu vào, tiến hành so sánh giá trị kết quả đầu ra của cả hai chương trình. Tỷ lệ giữa tổng số mẫu đầu vào khi thực thi những mẫu này hai chương trình cho kết quả đầu ra có giá trị giống nhau, trên tổng số mẫu đầu vào được thử nghiệm là kết quả cho phép đo RS. Từ đó, chúng ta có định nghĩa phép đo \textbf{RS} như sau:
 
 \begin{definition}[Phép đo RS]
-	Cho $P_{1}$ và $P_{2}$ là hai Chương trình có cùng miền giá trị đầu vào $I$, $I_{s}$ là tập con ngẫu nhiên của $I$, $I_{a}$ là tập con $I_{s}$. Hai Chương trình thực thi giống nhau với $\forall i \in I_{a}$, ký hiệu $exec(P_{1}, i) = exec(P_{2}, i)$ và hai Chương trình thực thi khác nhau với $\forall j \in I_{s} \setminus I_{a}$, ký hiệu $exec(P_{1}, j) \neq exec(P_{2}, j)$. Chỉ số phép đo \textbf{RS} được định nghĩa là $M_{RS}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup \left|I_{s}\right| $.
+	Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đầu vào $I$, $I_{s}$ là tập con ngẫu nhiên của $I$, $I_{a}$ là tập con $I_{s}$. Hai chương trình thực thi giống nhau với $\forall i \in I_{a}$, ký hiệu $exec(P_{1}, i) = exec(P_{2}, i)$ và hai chương trình thực thi khác nhau với $\forall j \in I_{s} \setminus I_{a}$, ký hiệu $exec(P_{1}, j) \neq exec(P_{2}, j)$. Chỉ số phép đo \textbf{RS} được định nghĩa là $M_{RS}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup \left|I_{s}\right| $.
 \end{definition}
+
+\begin{algorithm}[H]
+	\caption{Phép đo RS}
+	\begin{algorithmic}	
+		\item $P_{1}, P_{2}:$ Là hai chương trình cần đo độ tương tự
+		\item $I$: Miền giá trị đầu vào của $P_{1}, P_{2}$
+		\item Set $I_{s} = Random(I)$ \Comment{$I_{s}$: Tập con ngẫu nhiên của $I$}
+		\item Set $I_{a} = \emptyset$ 
+		\While {$i \in I_{s}$ }  \Comment {Vòng lặp dừng lại khi $\forall i \in I_{s}$ đã được thực thi}
+				
+				\If{ ($exec(P_{1}, i) = exec(P_{2}, i)$) }
+				\State $I_{a} = I_{a} \cup i$		
+				\EndIf
+		\EndWhile
+		\item $M_{RS}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup \left|I_{s}\right| $. 
+	\end{algorithmic}
+\end{algorithm}
+
 
 Phép đo \textbf{RS} là một một phép đo đơn giản và hiệu quả để tính độ tương tự của hành vi. Khi miền giá trị của tham số đầu vào rất lớn hoặc vô hạn, phép đo \textbf{RS} thực hiện lấy mẫu ngẫu nhiên để tính toán độ tương tự của hành vi, kết quả đầu ra tương đối tốt và hợp lý so với hành vi thực tế của chương trình. Phép đo \textbf{RS} xử lý, tính toán độ tương tự hành vi dưới dạng hộp đen và không phân tích chương trình để tạo thử nghiệm, nên tốc độ xử lý nhanh và chiếm ít tài nguyên. Mặc khác, phép đo \textbf{RS} không phân tích chương trình để tạo đầu vào thử nghiệm nên phép đo \textbf{RS} có thể bỏ qua một vài tham số đầu vào thử nghiệm có thể được sử dụng để thực thi một số nhánh khác nhau giữa hai chương trình. Vì vậy, phép đo \textbf{RS} không phân biệt được các chương trình có một số hành vi khác nhau. Chúng ta phân tích Mã lệnh $3.7$ và $3.8$ sau để thấy được hạn chế của phép đo \textbf{RS}:
 
@@ -334,10 +353,10 @@ Phép đo \textbf{RS} là một một phép đo đơn giản và hiệu quả đ
 	\lstinputlisting[label={RS1}, caption = {Chương trình $P_{1}$}]{RS1.cs}
 \end{minipage}%
 \hfill\vrule\hfill
-\begin{minipage}[t]{0.45\linewidth}
+\begin{minipage}[t]{0.45\linewidth} 
 	\lstinputlisting[label={RS2}, caption = {Chương trình $P_{2}$}]{RS2.cs}
 \end{minipage}%
-
+ 
 Chúng ta thấy đoạn Mã lệnh \ref{RS1} và \ref{RS2} của hai Chương trình $P_{1}$ và $P_{2}$ có cùng miền giá trị đầu vào là $string x$, cấu trúc mã lệnh hai chương trình gần như nhau. Nhưng Chương trình $P_{1}$ khác với Chương trình $P_{2}$ đó là sẽ trả kết quả về $0$ nếu tham số đầu vào có giá trị là $XYZ$. Tỷ lệ phép đo \textbf{RS} lấy ngẫu nhiên giá trị đầu vào $x$ trên miền giá trị đầu vào của hai chương trình có giá trị bằng $XYZ$ là rất thấp, vì vậy khả năng câu lệnh $if (x == "XYZ") return 0;$ của Chương trình $P_{1}$ có thể sẽ không được thực thi nên kết quả của phép đo \textbf{RS} sẽ ở mức tương đối so với hành vi thực tế của chương trình.
 
 \subsection{Phép đo tượng trưng trên một chương trình Single Program Symbol Execution (SSE)}
@@ -348,6 +367,24 @@ Phép đo \textbf{SSE} là một phép đo dựa trên số lượng các nhánh
 \begin{definition}
 	Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đầu vào $I$, Chương trình $P_{1}$ là Chương trình tham chiếu, $I_{s}$ là tập các giá trị đầu vào được tạo bởi DSE trên chương trình $P_{1}$, và $I_{a}$ là tập con $I_{s}$. Hai Chương trình thực thi giống nhau với $\forall i \in I_{a}$, ký hiệu $exec(P_{1}, i) = exec(P_{2}, i)$ và hai Chương trình thực thi khác nhau với $\forall j \in I_{s} \setminus I_{a}$, ký hiệu $exec(P_{1}, j) \neq exec(P_{2}, j)$. Chỉ số phép đo \textbf{SSE} được định nghĩa là $M_{SSE}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup \left|I_{s}\right| $.
 \end{definition}
+
+\begin{algorithm}[H]
+	\caption{Phép đo SSE}
+	\begin{algorithmic}	
+		\item $P_{1}, P_{2}:$ Là hai chương trình cần đo tương tự
+		\item $I$: Miền giá trị đầu vào của $P_{1}, P_{2}$
+		\item $P_{1}$: Là Chương trình tham chiếu
+		\item Set $I_{s} = DSE(P_{1})$ \Comment{$I_{s}$: Tập đầu vào của $P_{1}$ theo DSE}
+		\item Set $I_{a} = \emptyset$ 
+		\While{ ($i \in I_{s}$) }  \Comment {Vòng lặp dừng lại khi $\forall i \in I_{s}$ đã được thực thi}
+		
+		\If{ ($exec(P_{1}, i) = exec(P_{2}, i)$) }
+		\State $I_{a} = I_{a} \cup i$		
+		\EndIf
+		\EndWhile
+		\item $M_{SSE}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup \left|I_{s}\right| $. 
+	\end{algorithmic}
+\end{algorithm}
 
 Ngược lại với phép đo RS, phép đo SSE khám phá những đường đi khả thi khác nhau trong chương chình tham chiếu để tạo dữ liệu đầu vào của chương trình. Do đó, các đầu vào thử nghiệm này sẽ thực thi hết các đường đi của chương trình tham chiếu và có khả năng phát hiện được những chương trình cần tính có những hành vi khác so với Chương trình tham chiếu. Những phép đo SSE vẫn còn hạn chế, đó là phép đo SSE không xem xét đường đi của Chương trình cần phân tích để tạo các giá trị đầu vào thử nghiệm mà chỉ dựa vào các đầu vào thử nghiệm được phân tích từ Chương trình tham chiếu. Các đầu vào thử nghiệm này không nắm bắt được hết các hành vi của Chương trình cần phân tích, Chương trình cần phân tích có thể sẽ có những hành vi khác so với Chương trình tham chiếu. Một số chương trình có thể có những vòng lập vô hạn phụ thuộc vào giá trị đầu vào nên SSE không thể liệt kê được tất cả các đường dẫn của chương trình. Chúng ta xem xét và phân tích 2 đoạn Mã lệnh $3.9$ và $3.10$ để thấy được hạn chế của phép đo SSE như sau:
 
@@ -371,6 +408,25 @@ Dựa trên cách thức hoạt động của phép đo \textbf{PSE}, chúng ta 
 	Cho $P_{1}$ và $P_{2}$ là hai Chương trình có cùng miền giá trị đầu vào $I$. $P_{3}$ là Chương trình
 	kết hợp của $P_{1}$ và $P_{2}$, ký hiệu $(exec(P_{1}, I) =  exec(P_{2}, I))$.  $I_{s}$ là tập các giá trị đầu vào được tạo bởi \textbf{DSE} từ Chương trình $P_{3}$, $I_{a}$ là tập con $I_{s}$. Hai Chương trình $P_{1}$ và $P_{2}$ thực thi giống nhau khi Chương trình $P_{3}$ thực thi cho giá trị đúng với $\forall i \in I_{a}$, ký hiệu $exec(P_{3}, i) = T$, và $\nexists j \in I_{s} \backslash I_{a}$ thực thi Chương trình $P_{3}$ cho giá trị đúng. Chỉ số phép đo \textbf{PSE} được định nghĩa là $M_{PSE}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup \left|I_{s}\right| $.
 \end{definition}
+
+\begin{algorithm}[H]
+	\caption{Phép đo PSE}
+	\begin{algorithmic}	
+		\item $P_{1}, P_{2}$: Là hai chương trình cần đo tương tự
+		\item $I$: Miền giá trị đầu vào của $P_{1}, P_{2}$
+		\item $P_{3}$: Là Chương trình kết hợp của $P_{1}, P_{2}$, ký hiệu  $(exec(P_{1}, I) = exec(P_{2}, I))$
+		\item Set $I_{s} = DSE(P_{3})$ \Comment{$I_{s}$: Tập đầu vào của $P_{3}$ theo DSE}
+		\item Set $I_{a} = \emptyset$ 
+		\While{$i \in I_{s}$} \Comment {Vòng lặp dừng lại khi $\forall i \in I_{s}$ đã được thực thi} 		
+			\If{ ($exec(P_{1}, i) = exec(P_{2}, i)$) }
+			\State $I_{a} = I_{a} \cup i$		
+			\EndIf
+		\EndWhile
+		\item $M_{PSE}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup \left|I_{s}\right| $. 
+	\end{algorithmic}
+\end{algorithm}
+
+
 Phép đo \textbf{PSE} đã cải thiện được hạn chế của phép đo \textbf{SSE} khi dữ liệu thử nghiệm được  tạo ra từ trên Chương trình kết hợp, tập dữ liệu thử nghiệm có khả năng thực thi hết các nhánh đường đi của Chương trình tham chiếu và Chương trình cần tính. Tuy nhiên, phép đo \textbf{PSE} cũng có hạn chế trong quá trình xử lý các vòng lặp lớn hoặc vô hạn. Để giảm bớt hạn chế này, chúng ta có thể giới hạn miền đầu vào hoặc đếm số vòng lặp của các Chương trình. Ngoài ra, phép đo \textbf{PSE} khám phá đường dẫn của Chương trình kết hợp nên quá trình xử lý sẽ tốn thời gian và tài nguyên hơn so với phép đo \textbf{SSE} khi chỉ khám phá đường dẫn của Chương trình tham chiếu.
 %\section{Tiêu chí đánh giá hiệu quả}
 %Để đánh giá độ hiệu quả của các phép đo, chúng ta có thể áp dụng những tiêu chí cơ bản sau:
@@ -386,5 +442,6 @@ Phép đo \textbf{PSE} đã cải thiện được hạn chế của phép đo \
 %
 %Phép đo \textbf{PSE} sử dụng kỹ thuật \textbf{DSE} khám phá tất cả các nhánh đường đi của Chương trình kết hợp để tạo ra tập dữ liệu đầu vào thử nghiệm chung cho cả hai chương trình. Vì vậy, phép đo \textbf{PSE} sẽ tốn nhiều thời gian thực thi chương trình và chiếm nhiều tài nguyên hơn phép đo \textbf{SSE}. Dữ liệu thử nghiệm của phép đo \textbf{PSE} sẽ có độ phủ cao hơn phép đo \textbf{SSE}, vì tất cả các giá trị đầu vào thử nghiệm có khả năng phủ tất cả các nhánh của Chương trình tham chiếu và Chương trình cần tình. Kết quả đánh giá độ tương tự hành vi của phép đo \textbf{PSE} sẽ chính xác hơn kết quả đánh giá độ tương tự của phép đo \textbf{SSE}.
 
-\section*{Tổng kết chương}
-Nội dung chính được trình bày trong chương này bao gồm những định nghĩa về thực thi chương trình, độ tương tự hành vi, sự khác biệt về hành vi độ tương tự về hành vi của chương trình. Mô tả, định nghĩa 3 kỹ thuật đo RS, SSE, PSE cũng như trình bày những ưu điểm, nhược điểm và hướng khắc phục của 3 kỹ thuật đo. Qua đó, giới thiệu một số tiêu chí đánh giá hiệu quả các kỹ thuật đo.
+\section*{Tổng kết chương}  
+Nội dung chính được trình bày trong chương này bao gồm những kiến thức cơ sở về kiểm thử phần mềm, kỹ thuật sinh dữ liệu kiểm, kỹ thuật Dynamic symbolic execution. Một số định nghĩa về thực thi chương trình, độ tương tự hành vi, sự khác biệt về hành vi độ tương tự về hành vi của chương trình. Mô tả thuật toán và định nghĩa 3 kỹ thuật đo RS, SSE, PSE cũng như trình bày những ưu điểm, nhược điểm và hướng khắc phục của 3 kỹ thuật đo. 
+  

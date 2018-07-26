@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper,oneside,openright]{memoir}
+\documentclass[12pt, oneside ]{memoir}
 \input{dangkhoa.sty}
 \title{Độ tương tự hành vi của chương trình \\ và thực nghiệm}
 \author{Đỗ Đăng Khoa}
@@ -7,8 +7,8 @@
 % \pagenumbering{gobble} % Trước trang không đánh số thứ tự 
 % \pagenumbering{roman} % Trước trang đánh số la mã
 % \setcounter{page}{1}
-\pagenumbering{arabic} % Trước trang đánh số thứ tự thêm 2 dòng này
-\setcounter{page}{1}   % Trước trang đánh số thứ tự thêm 2 dòng này - số trang bắt đầu bằng 3
+%\pagenumbering{arabic} % Trước trang đánh số thứ tự thêm 2 dòng này
+%\setcounter{page}{1}   % Trước trang đánh số thứ tự thêm 2 dòng này - số trang bắt đầu bằng 3
 \chapter*{LỜI CAM ĐOAN}
 \input{Loicamdoan}
 \chapter*{LỜI CẢM ƠN}
@@ -21,21 +21,17 @@
 \chapter{GIỚI THIỆU}
 \input{intro}
 
-\chapter{ĐO ĐỘ TƯƠNG TỰ VỀ HÀNH VI GIỮA CÁC CHƯƠNG TRÌNH}
+\chapter{TƯƠNG TỰ VỀ HÀNH VI GIỮA CÁC CHƯƠNG TRÌNH}
 \input{method}
 
-\chapter{THỰC NGHIỆM, ĐÁNH GIÁ, KẾT LUẬN}
+\chapter{THỰC NGHIỆM, ĐÁNH GIÁ}
 \input{results}
 
 \bibliographystyle{plain}
 \bibliography{biblio}
-\nocite{*} % dùng tạm thời
-\appendix
-\chapter{QUYẾT ĐỊNH GIAO LUẬN VĂN}
-\input{Quyetdinhgiaoluanvan}
+%\nocite{*} % dùng tạm thời
+%\appendix
 \includepdf{quyetdinh.pdf}
-\chapter{Phụ lục XXX}
-\input{Phuluc}
 \chapter{MỘT SỐ MÃ LỆNH QUAN TRỌNG}
 \input{SourceCode}
 \end{document}

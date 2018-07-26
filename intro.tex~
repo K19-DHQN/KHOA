@@ -1,93 +1,155 @@
-Chương này trình bày lý do chọn đề tài, mục tiêu nghiên cứu, đối tượng, phạm vi nghiên cứu và những nội dung chính cần nghiên cứu. Qua đó, trình bày nhu cầu thực tiễn về một công cụ hỗ trợ cho việc dạy và học lập trình trong các trường đại học, cao đẳng.
+Chương này trình bày lý do chọn đề tài, mục tiêu nghiên cứu, đối
+tượng, phạm vi nghiên cứu và những nội dung chính cần nghiên cứu. Qua
+đó, trình bày nhu cầu thực tiễn về một công cụ hỗ trợ cho việc dạy và
+học lập trình trong các trường đại học, cao đẳng.
 
 \section{Lý do chọn đề tài}
 
-\subsection{Giới thiệu chung}
+Hiện nay, ngành Công nghệ thông tin đang có xu hướng phát triển mạnh mẽ và trở nên phổ biến. Một số chương trình đào tạo nổi tiếng như
+\href{https://www.coursera.org/course/saas}{Massive Open Online
+  Courses (MOOC)} \cite{mooc}, \href{https://www.edx.org/}{edX}
+\cite{edx}, \href{https://www.coursera.org/}{Coursera}
+\cite{coursera}, \href{http://www.udacity.com/}{Udacity}
+\cite{Udacity}, chương trình
+học lập trình online như \href{https://www.pexforfun.com/}{Pex4Fun}
+\cite{Pex4Fun} hay
+\href{https://www.microsoft.com/en-us/research/project/code-hunt/}{Code
+  Hunt} \cite{CodeHunt} thu hút nhiều sự quan tâm của các bậc phụ huynh và các em học sinh.
 
-Hiện nay, ngành Công nghệ thông tin đang rất phát triển với nhiều chương trình đào tạo lập trình Online, kỹ sư phần mềm... đang trở nên phổ biến. Một số chương trình đào tạo nổi tiếng như \href{https://www.coursera.org/course/saas}{Massive Open Online Courses (MOOC)} \cite{mooc}, \href{https://www.edx.org/}{edX} \cite{edx}, \href{https://www.coursera.org/}{Coursera} \cite{coursera}, \href{http://www.udacity.com/}{Udacity} \cite{Udacity} thu hút nhiều sinh viên theo học. Một số chương trình học lập trình online như \href{https://www.pexforfun.com/}{Pex4Fun} \cite{Pex4Fun} hay \href{https://www.microsoft.com/en-us/research/project/code-hunt/}{Code Hunt} \cite{CodeHunt} đây là những nền tảng học lập trình online thông qua trò chơi. 
+Những lớp học như vậy thường có nhiều sinh viên tham gia, các em sinh viên đến từ nhiều nơi trên thế giới với nhiều nền văn hóa và ngôn ngữ khác nhau. Để có thể quản lý được những lớp học như vậy là cả một khối lượng công việc lớn, yêu cầu nỗ lực của những người quản lý và giảng viên. Chỉ riêng việc đọc hiểu để đánh giá kết quả mã lệnh do sinh viên viết đã tốn nhiều thời gian, nếu như bỏ qua thì giảng viên sẽ không theo dõi được quá trình học tập của sinh viên. Những lúc khó khăn trong việc viết mã chương trình, sinh viên
+có thể nhờ bạn bè hoặc nhờ những người có kinh nghiệm giúp đỡ. Tuy nhiên, không phải lúc nào cũng có người bên cạnh để giúp đỡ cho họ, và kinh nghiệm cũng như kiến thức của những người này chưa chắc có thể đáp ứng được yêu cầu.
 
-Những lớp học như vậy thường có nhiều sinh viên tham gia, nhưng chỉ có một vài giảng viên tham gia giảng dạy. Hằng ngày, công việc của giảng viên rất nhiều, họ còn phải thường xuyên kiểm tra, nhắc nhở và phải nghiên cứu giúp đỡ cho sinh viên. Chỉ riêng việc đánh giá kết quả mã lệnh do sinh viên viết đã tốn nhiều thời gian, nếu như bỏ qua thì giảng viên sẽ không theo dõi được quá trình học tập của sinh viên. Sinh viên khi gặp khó khăn trong việc viết mã chương trình, họ có thể nhờ bạn bè hoặc nhờ những người có kinh nghiệm giúp đỡ. Nhưng không phải lúc nào cũng có người bên cạnh để giúp đỡ cho họ, và kinh nghiệm cũng như kiến thức của những người này chưa chắc có thể đáp ứng được mong muốn của sinh viên.
-
-Để giảm bớt khó khăn cho giảng viên và sinh viên, một công cụ hỗ trợ tự động đánh giá kết quả chương trình của sinh viên với chương trình của giảng viên sẽ giúp cho giảng viên và sinh viên tiết kiệm được thời gian, giúp cho giảng viên quản lý việc học tập của sinh viên được tốt hơn. Sinh viên có thể nhanh chóng biết được chương trình của mình viết đúng hay sai. 
+Để giảm bớt khó khăn cho giảng viên và sinh viên, một công cụ hỗ trợ tự động đánh giá kết quả chương trình của sinh viên với chương trình của giảng viên sẽ giúp tiết kiệm được thời gian, giúp cho giảng viên quản lý việc học tập của sinh viên được tốt hơn. Sinh viên có thể nhanh chóng biết được chương trình của mình viết đúng hay sai.
 
 Cách thức hoạt động của công cụ này là đánh giá độ tương tự về hành vi của hai chương trình. Công cụ sẽ tính toán để tìm ra các mẫu dữ liệu đầu vào chung cho cả hai chương trình, tiến hành lấy từng mẫu dữ liệu đầu vào chạy đồng thời trên cả hai chương trình và so sánh kết quả đầu ra của hai chương trình. Nếu kết quả đầu ra của hai chương trình có tỷ lệ giống nhau càng cao thì điểm số của sinh viên càng cao. Ngược lại, nếu tỷ lệ càng thấp thì tương ứng với điểm số của sinh viên càng thấp. Dựa trên kết quả này, giảng viên có thể nắm bắt được tình hình học tập của sinh viên và có hướng khắc phục những hạn chế mà sinh viên đang gặp phải. Đây cũng là một cách giúp cho sinh viên không đi lệch khỏi định hướng kiến thức, các kỹ thuật, kỹ năng lập trình và hạn chế được những nguy cơ tìm ẩn trong cách viết mã lệnh chương trình. Đồng thời giúp tiết kiệm được thời gian cho cả giảng viên và sinh viên.
 
 \section{Đối tượng, phạm vi, phương pháp nghiên cứu}
-	\subsection*{Mục tiêu nghiên cứu}
-		\subsubsection*{Mục tiêu nghiên cứu chính}
-		\begin{itemize}
-		\item Đánh giá độ tương tự về hành vi của các chương trình
-		\end{itemize}
-		
-		\subsubsection*{Mục tiêu nghiên cứu cụ thể}
-		\begin{itemize}
-		\item Tìm hiểu sự tương tự hành vi của chương trình
-		\item Tìm hiểu kỹ thuật, công cụ sinh Test Case tự động và áp dụng kỹ thuật sinh Test Case tự động trên các kỹ thuật đo độ tương tự
-		\item Tìm cách kết hợp các kỹ thuật đo với nhau
-		\item Đánh giá kết quả thực nghiệm
-		\end{itemize}
+\subsection*{Mục tiêu nghiên cứu}
 
-	\subsection*{Đối tượng, phạm vi nghiên cứu}	
-		\subsubsection*{Đối tượng nghiên cứu}
-		\begin{itemize}
-		\item Kỹ thuật sinh Test Case
-		\item Các kỹ thuật đo độ tương tự hành vi
-		\item Ứng dụng của các kỹ thuật đo độ tương tự hành vi
-		\end{itemize}
+Mục tiêu nghiên cứu chính của luận văn là đánh giá độ tương tự về hành vi của các chương trình.
+		
+\subsubsection*{Mục tiêu nghiên cứu cụ thể}
+\begin{itemize}
+\item Tìm hiểu sự tương tự hành vi của chương trình
+\item Tìm hiểu kỹ thuật, công cụ sinh Test Case tự động và áp dụng kỹ thuật sinh Test Case tự động trên các kỹ thuật đo độ tương tự
+\item Tìm cách kết hợp các kỹ thuật đo với nhau
+\item Đánh giá kết quả thực nghiệm
+\end{itemize}
+
+\subsection*{Đối tượng, phạm vi nghiên cứu}	
+\subsubsection*{Đối tượng nghiên cứu}
+\begin{itemize}
+\item Kỹ thuật sinh Test Case
+\item Các kỹ thuật đo độ tương tự hành vi
+\item Ứng dụng của các kỹ thuật đo độ tương tự hành vi
+\end{itemize}
 	
-		\subsubsection*{Phạm vi nghiên cứu}
-		\begin{itemize}
-		\item  Đo độ tương tự hành vi dựa vào Test Case
-		\item  Thực nghiệm, đánh giá trên các chương trình C\#
-		\end{itemize}
+\subsubsection*{Phạm vi nghiên cứu}
+\begin{itemize}
+\item Đo độ tương tự hành vi dựa vào Test Case
+\item Thực nghiệm, đánh giá trên các chương trình C\#
+\end{itemize}
 
 
-	\subsection*{Phương pháp nghiên cứu, thực nghiệm}
-		\subsubsection*{Nghiên cứu lý thuyết}
-			\begin{itemize}
-			\item Độ tương tự hành vi
-			\item Một số kỹ thuật sinh Test Case tự động
-			\item Kỹ thuật đo độ tương tự hành vi dựa trên Test Case
-			\item So sánh, kết hợp các phép đo độ tương tự hành vi
-			\end{itemize}
+\subsection*{Phương pháp nghiên cứu, thực nghiệm}
+\subsubsection*{Nghiên cứu lý thuyết}
+\begin{itemize}
+\item Độ tương tự hành vi
+\item Một số kỹ thuật sinh Test Case tự động
+\item Kỹ thuật đo độ tương tự hành vi dựa trên Test Case
+\item So sánh, kết hợp các phép đo độ tương tự hành vi
+\end{itemize}
 		
-		\subsubsection*{Thực nghiệm}
-			\begin{itemize}
-			\item Tiến hành cài đặt các kỹ thuật đo độ tương tự hành vi
-			\item Thực nghiệm trên dữ liệu thực của CodeHunt,và một số dữ liệu thử
-			\item Phân tích, đánh giá dựa trên kết quả thực nghiệm
-			\end{itemize}
+\subsubsection*{Thực nghiệm}
+\begin{itemize}
+\item Tiến hành cài đặt các kỹ thuật đo độ tương tự hành vi
+\item Thực nghiệm trên dữ liệu thực của CodeHunt, và một số dữ liệu thử khác
+\item Phân tích, đánh giá dựa trên kết quả thực nghiệm
+\end{itemize}
 
 
 \section{Những nghiên cứu có liên quan}
 
-	\subsection*{Phân loại tự động}
+\subsection*{Phân loại tự động}
 	
-	\textit{Automated Grading of DFA Constructions (DFAs)} \cite{alur2013automated}, đề xuất một phương pháp tự động so sánh những chỗ sai trong mã nguồn của sinh viên với mã nguồn tham chiếu. Cách tiếp cận của phương pháp này là chọn từng phần, bắt những đoạn cú pháp khác nhau dựa trên khoảng cách của cú pháp và sự khác biệt cơ bản về ngữ nghĩa trên một chuỗi giá trị đầu vào được chấp nhận. Trong luận văn này, cách tiếp cận là dựa trên sự hoạt động của các chương trình.
+\textit{Automated Grading of DFA Constructions (DFAs)}
+\cite{alur2013automated}, đề xuất một phương pháp tự động so sánh
+những chỗ sai trong mã nguồn của sinh viên với mã nguồn tham
+chiếu. Cách tiếp cận của phương pháp này là chọn từng phần, bắt những
+đoạn cú pháp khác nhau dựa trên khoảng cách của cú pháp và sự khác
+biệt cơ bản về ngữ nghĩa trên một chuỗi giá trị đầu vào được chấp
+nhận. Trong luận văn này, cách tiếp cận là dựa trên sự hoạt động của
+các chương trình.
 	
-	\textit{Automated Feedback Generation for Introductory Programming Assignments} \cite{singh2013automated}, đề xuất phương pháp tự động xác định những lỗi nhỏ nhất trong lời giải của sinh viên, và lời giải của sinh viên không chính xác về hành vi so với lời giải tham chiếu. Cách tiếp cận của bài báo đó là tập trung vào việc cung cấp các phản hồi, làm thế nào để sinh viên biết và khắc phục những lỗi cú pháp trong Chương trình của mình so với Chương trình tham chiếu. Trong nội dung nghiên cứu, Luận văn này tập trung vào việc làm thế nào định lượng độ tương tự hành vi của hai chương trình dựa vào các giá trị đầu vào và đầu ra của hai chương trình, không phân biệt hai chương trình có cấu trúc hay cú pháp khác nhau.
+\textit{Automated Feedback Generation for Introductory Programming
+  Assignments} \cite{singh2013automated}, đề xuất phương pháp tự động
+xác định những lỗi nhỏ nhất trong lời giải của sinh viên, và lời giải
+của sinh viên không chính xác về hành vi so với lời giải tham
+chiếu. Cách tiếp cận của bài báo đó là tập trung vào việc cung cấp các
+phản hồi, làm thế nào để sinh viên biết và khắc phục những lỗi cú pháp
+trong Chương trình của mình so với Chương trình tham chiếu. Trong nội
+dung nghiên cứu, Luận văn này tập trung vào việc làm thế nào định
+lượng độ tương tự hành vi của hai chương trình dựa vào các giá trị đầu
+vào và đầu ra của hai chương trình, không phân biệt hai chương trình
+có cấu trúc hay cú pháp khác nhau.
 
-	\textit{Semantic similarity-based grading of student programs} \cite{wang2007semantic}, đề xuất một giải pháp đó là chuyển đổi Chương trình của học sinh và Chương trình tham chiếu về một dạng chung nhưng không thay đổi ngữ nghĩa, tiến hành so sánh đồ thị sự phục thuộc vào hệ thống của hai chương để tính toán sự tương đồng. Thay vì so sánh các đồ thị, cách tiếp cận của đề tài này là so sánh các cặp đầu vào, đầu ra của các chương trình để tính toán các điểm tương đồng về hành vi. 
+\textit{Semantic similarity-based grading of student programs}
+\cite{wang2007semantic}, đề xuất một giải pháp đó là chuyển đổi Chương
+trình của học sinh và Chương trình tham chiếu về một dạng chung nhưng
+không thay đổi ngữ nghĩa, tiến hành so sánh đồ thị sự phục thuộc vào
+hệ thống của hai chương để tính toán sự tương đồng. Thay vì so sánh
+các đồ thị, cách tiếp cận của đề tài này là so sánh các cặp đầu vào,
+đầu ra của các chương trình để tính toán các điểm tương đồng về hành
+vi.
 	
-	\subsection*{Kiểm tra tương đương}
-	Một số phương pháp kiểm tra sự tương đương về ngữ nghĩa, hành vi của các chương trình bằng cách sử dụng đồ thị biểu hiện sự phụ thuộc chương trình vào hệ thống \cite{bates1993incremental} \cite{binkley1992using}, phụ thuộc giá trị đầu vào, đầu ra \cite{jackson1994semantic}, tóm tắt biểu tượng \cite{person2008differential}. Tất cả các phương pháp kiểm tra độ tương đương này đều trả về giá trị Boolean, và một số phương pháp cho kết quả về hành vi là như nhau. 
+\subsection*{Kiểm tra tương đương}
+Một số phương pháp kiểm tra sự tương đương về ngữ nghĩa, hành vi của
+các chương trình bằng cách sử dụng đồ thị biểu hiện sự phụ thuộc
+chương trình vào hệ thống \cite{bates1993incremental}
+\cite{binkley1992using}, phụ thuộc giá trị đầu vào, đầu ra
+\cite{jackson1994semantic}, tóm tắt biểu tượng
+\cite{person2008differential}. Tất cả các phương pháp kiểm tra độ
+tương đương này đều trả về giá trị Boolean, và một số phương pháp cho
+kết quả về hành vi là như nhau.
 	
-	Phương pháp tự động xác định những đoạn mã tương đương nhau về chức năng thông qua các thử nghiệm ngẫu nhiên \cite{jiang2009automatic}. Cách tiếp cận này xem xét 2 đoạn mã có tương đương nhau hay không thông qua giá trị đầu vào và đầu ra, không quan tâm đến cấu trúc và cú pháp của 2 đoạn mã.
+Phương pháp tự động xác định những đoạn mã tương đương nhau về chức
+năng thông qua các thử nghiệm ngẫu nhiên
+\cite{jiang2009automatic}. Cách tiếp cận này xem xét 2 đoạn mã có
+tương đương nhau hay không thông qua giá trị đầu vào và đầu ra, không
+quan tâm đến cấu trúc và cú pháp của 2 đoạn mã.
 	
-	\subsection*{Phản hồi dựa trên trường hợp các thử nghiệm}
-	Phương pháp tự động phân loại chương trình, bài tập đơn giản \cite{hext1969automatic}, cách tiếp cận của phương pháp này là so sánh dữ liệu được tạo ra trong quá trình thực thi chương trình với dữ liệu đã lưu trữ trước đó. 
+\subsection*{Phản hồi dựa trên trường hợp các thử nghiệm}
+
+Phương pháp tự động phân loại chương trình, bài tập đơn giản
+\cite{hext1969automatic}, cách tiếp cận của phương pháp này là so sánh
+dữ liệu được tạo ra trong quá trình thực thi chương trình với dữ liệu
+đã lưu trữ trước đó.
 	
-	Phương pháp phân loại chương trình của sinh viên sử dụng ASSYST \cite{jackson1997grading}, tác giả đề xuất cách tiếp cận đó là tự động kiểm tra tính chính xác của chương trình và kiểu lập trình như mô đun, độ phức tạp và hiệu quả.
+Phương pháp phân loại chương trình của sinh viên sử dụng ASSYST
+\cite{jackson1997grading}, tác giả đề xuất cách tiếp cận đó là tự động
+kiểm tra tính chính xác của chương trình và kiểu lập trình như mô đun,
+độ phức tạp và hiệu quả.
 	
-	Pex4Fun sử dụng DSE để tạo ra các giá trị đầu vào thử nghiệm cho các chương trình và các chương trình khi thực thi các giá trị này sẽ cho ra các giá trị đầu ra khác nhau.
+Pex4Fun sử dụng DSE để tạo ra các giá trị đầu vào thử nghiệm cho các
+chương trình và các chương trình khi thực thi các giá trị này sẽ cho
+ra các giá trị đầu ra khác nhau.
 	
-	\subsection*{Phát hiện các đoạn mã giống nhau}
-	Những nhà nghiên cứu đã đề xuất các phương pháp tiếp cận tính toán các điểm tương đồng của các đoạn mã và tự động nhận diện những đoạn mã giống nhau, như mã hóa báo cáo \cite{kamiya2002ccfinder}, cú pháp cây trừu tượng \cite{baxter1998clone}, biểu đồ phụ thuộc chương trình \cite{komondoor2001using}, số liệu dựa trên số lượng cú pháp \cite{dang2012xiao} \cite{merlo2004linear}. Các cách tiếp cận này tập trung vào các đoạn của mã nguồn và tính toán các điểm tương đồng dựa trên việc biểu diễn cú pháp hoặc ngữ nghĩa của các đoạn mã.
-	 
-	
+\subsection*{Phát hiện các đoạn mã giống nhau}
+
+Những nhà nghiên cứu đã đề xuất các phương pháp tiếp cận tính toán các
+điểm tương đồng của các đoạn mã và tự động nhận diện những đoạn mã
+giống nhau, như mã hóa báo cáo \cite{kamiya2002ccfinder}, cú pháp cây
+trừu tượng \cite{baxter1998clone}, biểu đồ phụ thuộc chương trình
+\cite{komondoor2001using}, số liệu dựa trên số lượng cú pháp
+\cite{dang2012xiao} \cite{merlo2004linear}. Các cách tiếp cận này tập
+trung vào các đoạn của mã nguồn và tính toán các điểm tương đồng dựa
+trên việc biểu diễn cú pháp hoặc ngữ nghĩa của các đoạn mã.
 	
 \section*{Tổng kết chương}
-Chương 1 giới thiệu tổng quan về lý do và mục đích chọn đề tài, đối tượng, phạm vi và phương pháp nghiên cứu thực hiện, những nội dung chính cần nghiên cứu và một số nghiên cứu khác có liên quan đến đề tài.
+Chương 1 giới thiệu tổng quan về lý do và mục đích chọn đề tài, đối
+tượng, phạm vi và phương pháp nghiên cứu thực hiện, những nội dung
+chính cần nghiên cứu và một số nghiên cứu khác có liên quan đến đề
+tài.
 
 
 

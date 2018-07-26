@@ -1,9 +1,10 @@
-﻿public static int TinhY(int x) {
-    y = 0;
-    if (x == 1)
-        y += 4;
-    else if (x == 2)
-        y *= 2;
-    else y = y * y;
-    return y;
+﻿public static int TinhY(int x) 
+{
+  y = 0;
+  if (x == 1)
+      y += 4;
+  else if (x == 2)
+      y *= 2;
+  else y = y * y;
+  return y;
 }

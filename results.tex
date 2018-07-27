@@ -1,31 +1,47 @@
-Chương này, trình bày một số nội dung về dữ liệu và những công cụ được sử dụng trong quá trình thực nghiệm. Đánh giá kết quả thực nghiệm đã làm được cũng như khả năng ứng dụng và hướng phát triển của đề tài trong tương lai. Qua đó đưa ra những nhận xét, đánh giá và kết luận chung cho đề tài.
+
+Chương này, trình bày một số nội dung về dữ liệu và những công cụ được sử dụng trong quá trình thực nghiệm, đánh giá kết quả thực nghiệm đã làm được cũng như khả năng ứng dụng và hướng phát triển của đề tài trong tương lai. Qua đó đưa ra những nhận xét, đánh giá và kết luận chung cho đề tài.
 
 \section{Dữ liệu thực nghiệm}
-Để tiến hành làm thực nghiệm những nội dung nghiên cứu trong đề tài, tôi đã sử dụng hai nguồn dữ liệu chính để làm thực nghiệm. Một nguồn là dữ liệu của trò chơi Code Hunt, nguồn dữ liệu còn lại do tôi tự thiết kế.
 
-Code Hunt \cite{CodeHunt} là một game về lập trình, được sử dụng cho các cuộc thi viết mã và thực hành các kỹ năng lập trình do Microsoft phát triển. Code Hunt dựa trên công cụ Pex, ứng dụng kỹ thuật DSE khám phá các nhánh đường đi của chương trình để suy ra giá trị đầu vào có độ phủ cao. Dữ liệu trong trò chơi Code Hunt là một tập hợp những chương trình con, tương ứng mỗi chương trình con là những câu hỏi được trình bày như một bài kiểm tra. Người chơi phải chọn câu hỏi và trả lời mã câu hỏi bằng cách viết một đoạn mã sao cho kết quả trùng với kết quả cử câu hỏi. Hiện nay Code Hunt đã được hơn 350.000 người chơi sử dụng tính đến tháng 8 năm 2016. Dữ liệu từ các cuộc thi gần đây đã được công khai, cho phép những người quan tâm đến Code Hunt tải về để phân tích và nghiên cứu trong cộng đồng giáo dục.
+Để tiến hành thực nghiệm những nội dung nghiên cứu lý thuyết trong đề
+tài, tôi đã sử dụng hai nguồn dữ liệu chính để làm thực nghiệm. Một
+nguồn là dữ liệu của trò chơi Code Hunt, nguồn dữ liệu còn lại do tôi
+tự thiết kế.
+
+Code Hunt \cite{CodeHunt} là một game về lập trình, được sử dụng cho
+các cuộc thi viết mã và thực hành các kỹ năng lập trình do Microsoft
+phát triển. Code Hunt dựa trên công cụ Pex, ứng dụng kỹ thuật DSE khám
+phá các nhánh đường đi của chương trình để suy ra giá trị đầu vào có
+độ phủ cao. Dữ liệu trong trò chơi Code Hunt là một tập hợp những
+chương trình con, tương ứng mỗi chương trình con là những câu hỏi được
+trình bày như một bài kiểm tra. Người chơi phải chọn câu hỏi và trả
+lời mã câu hỏi bằng cách viết một đoạn mã sao cho kết quả trùng với
+kết quả cử câu hỏi. Hiện nay Code Hunt đã được hơn 350.000 người chơi
+sử dụng tính đến tháng 8 năm 2016. Dữ liệu từ các cuộc thi gần đây đã
+được công khai, cho phép những người quan tâm đến Code Hunt tải về để
+phân tích và nghiên cứu trong cộng đồng giáo dục.
 
 \label{sec:data}
 \begin{center}
-	\begin{figure}[H]
-		\begin{center}
-			\includegraphics[scale=.3]{codehunt2.png}
-		\end{center}
-		\caption{Giao diện viết chương trình của Code Hunt}
-		\label{codehunt2}
-	\end{figure}
+  \begin{figure}[H]
+    \begin{center}
+      \includegraphics[scale=.3]{codehunt2.png}
+    \end{center}
+    \caption{Giao diện viết chương trình của Code Hunt}
+    \label{codehunt2}
+  \end{figure}
 \end{center}
 
 Tập dữ liệu Code Hunt là một tập dữ liệu chứa các chương trình do sinh viên trên toàn thế giới viết khi tham gia trò chơi, với 250 người sử dụng, 24 câu hỏi và khoảng 13.000 chương trình được sinh viên thực hiện trên 2 ngôn ngữ là Java và C\#. Để có thể sử dụng tập dữ liệu Code Hunt cho đề tài của tôi, tôi đã thực hiện chuyển đổi những chương trình sử dụng ngôn ngữ lập trình Java thành ngôn ngữ C\# bằng công cụ chuyển đổi của hãng Tangible Software Solutions, loại bỏ một số chương trình lỗi và không phù hợp với đề tài.
 
 \begin{center}
-	\begin{figure}[H]
-		\begin{center}
-			\includegraphics[scale=.4]{java-to-csharp-collections.png}
-		\end{center}
-		\caption{Chuyển đổi code Java sang C\#}
-		\label{java-to-csharp}
-	\end{figure}
+  \begin{figure}[H]
+    \begin{center}
+      \includegraphics[scale=.4]{java-to-csharp-collections.png}
+    \end{center}
+    \caption{Chuyển đổi code Java sang C\#}
+    \label{java-to-csharp}
+  \end{figure}
 \end{center}
 
 \section{Công cụ dùng trong thực nghiệm}
@@ -48,15 +64,15 @@ Microsoft Visual Studio là một môi trường phát triển tích hợp từ 
 
 Visual Studio hỗ trợ nhiều ngôn ngữ lập trình khác nhau và cho phép trình biên tập mã và gỡ lỗi để hỗ trợ (mức độ khác nhau) hầu như mọi ngôn ngữ lập trình. Các ngôn ngữ tích hợp gồm có C, C++ và C++/CLI (thông qua Visual C++), VB.NET (thông qua Visual Basic.NET), C\#  (thông qua Visual C\#) và F\# (như của Visual Studio 2010). Hỗ trợ cho các ngôn ngữ khác như J++/J\#, Python và Ruby thông qua dịch vụ cài đặt riêng rẽ. Nó cũng hỗ trợ XML/XSLT, HTML/XHTML, JavaScript và CSS.
 
-Trong luận văn này, tôi sử dụng chủ yếu là Ngôn ngữ lập trình C\# viết viết ứng dụng minh họa. Ngôn ngữ lập trình này là một ngôn ngữ lập trình hiện đại, được phát triển bởi Anders Hejlsberg cùng nhóm phát triển .Net Framework của Microsoft và được phê duyệt bởi European Computer Manufacturers Association (ECMA) và International Standards Organization (ISO). Mã nguồn C\# là các tập tin *.cs được trình biên dịch Compiler biên dịch thành các file *.dll hoặc *.exe, sau đó các file này được các hệ thống thông dịch CLR trên điều hành thông dịch qua mã máy và dùng kỹ thuật JIT (just-in-time) để tăng tốc độ.
+Trong luận văn này, tôi sử dụng chủ yếu là Ngôn ngữ lập trình C\# để viết ứng dụng minh họa. Ngôn ngữ lập trình này là một ngôn ngữ lập trình hiện đại, được phát triển bởi Anders Hejlsberg cùng nhóm phát triển .Net Framework của Microsoft và được phê duyệt bởi European Computer Manufacturers Association (ECMA) và International Standards Organization (ISO). Mã nguồn C\# là các tập tin *.cs được trình biên dịch Compiler biên dịch thành các file *.dll hoặc *.exe, sau đó các file này được các hệ thống thông dịch CLR trên điều hành thông dịch qua mã máy và dùng kỹ thuật JIT (just-in-time) để tăng tốc độ.
 
 \begin{center}
-	\begin{figure}[H]
-		\begin{center}
-			\includegraphics[scale=.4]{quatrinhthongdich.png}
-		\end{center}
-		\caption{Quá trình dịch chương trình trong C\#}		
-	\end{figure}
+  \begin{figure}[H]
+    \begin{center}
+      \includegraphics[scale=.4]{quatrinhthongdich.png}
+    \end{center}
+    \caption{Quá trình dịch chương trình trong C\#}
+  \end{figure}
 \end{center}
 
 C\# có thể tạo ra được nhiều loại ứng dụng, trong đó có 3 kiểu phổ biến được nhiều nhà lập trình viên sử dụng nhất đó là: Console, Window và ứng dụng Web. 
@@ -70,11 +86,20 @@ Cũng như với Unit Test, ta có thể viết các lớp kiểm thử chứa c
 \lstinputlisting[caption = {Ca kiểm thử tham số sử dụng Pex}]{TestPex.cs}
 
 \subsubsection*{Lựa chọn đầu vào kiểm thử với Pex}
-Để có thể sinh các đầu vào cụ thể cho các tham số Unit test, Pex cần phải phân tích chương trình với các tham số kiểm thử này. Có 2 kỹ thuật phân tích chương trình đó là:
+
+Để có thể sinh các đầu vào cụ thể cho các tham số Unit test, Pex cần
+phải phân tích chương trình với các tham số kiểm thử này. Có 2 kỹ
+thuật phân tích chương trình đó là:
 
 \begin{itemize}
-	\item Phân tích tĩnh (static analysis): Kiểm chứng một tính chất nào đó của chương trình bằng việc phân tích tất cả các đường đi thực thi. Kỹ thuật này coi các cảnh bảo (violations) là các lỗi (error).
-	\item Phân tích động (dynamic analysis): Kiểm chứng một tính chất bằng việc phân tích một số đường đi thực thi. Đây là một kỹ thuật phân tích động hỗ trợ việc phát hiện ra các lỗi (bugs) nhưng không khẳng định được rằng có còn những lỗi khác hay không. Các kỹ thuật này thường không tìm ra được tất cả các lỗi.
+\item Phân tích tĩnh (static analysis): Kiểm chứng một tính chất nào
+  đó của chương trình bằng việc phân tích tất cả các đường đi thực
+  thi. Kỹ thuật này coi các cảnh bảo (violations) là các lỗi (error).
+\item Phân tích động (dynamic analysis): Kiểm chứng một tính chất bằng
+  việc phân tích một số đường đi thực thi. Đây là một kỹ thuật phân
+  tích động hỗ trợ việc phát hiện ra các lỗi (bugs) nhưng không khẳng
+  định được rằng có còn những lỗi khác hay không. Các kỹ thuật này
+  thường không tìm ra được tất cả các lỗi.
 \end{itemize}
 
 Pex cài đặt một kỹ thuật phân tích chương trình bằng cách kết hợp cả hai kỹ thuật phân tích chương trình ở trên gọi là DSE \cite{xie2009fitness, godefroid2005dart}. Về bản chất Pex là một công cụ hỗ trợ kỹ thuật kiểm thử hộp hắng (white-box testing). Tương tự như kỹ thuật phân tích chương trình tĩnh, Pex chứng minh được rằng một tính chất được kiểm chứng trong tất cả các đường đi khả thi. Pex chỉ báo cáo (reporting) về các lỗi thực sự như với kỹ thuật phân tích chương trình động.

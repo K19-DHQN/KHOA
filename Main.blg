@@ -1,35 +1,23 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Main.aux
 The style file: plain.bst
 Database file #1: biblio.bib
-Repeated entry---line 400 of file biblio.bib
+Repeated entry---line 402 of file biblio.bib
  : @inproceedings{godefroid2005dart
  :                                 ,
 I'm skipping whatever remains of this entry
 Warning--empty booktitle in coursera
 Warning--empty year in coursera
-Warning--empty booktitle in de2008parameterized
 Warning--empty booktitle in edx
 Warning--empty year in edx
-Warning--empty booktitle in galin2004software
-Warning--empty booktitle in gill1991cyclomatic
-Warning--can't use both volume and number fields in gill1991cyclomatic
 Warning--can't use both volume and number fields in godefroid2005dart
 Warning--empty booktitle in CodeHunt
 Warning--empty year in CodeHunt
-Warning--can't use both volume and number fields in isong2001developing
-Warning--can't use both volume and number fields in jackson1997grading
 Warning--empty booktitle in mooc
 Warning--empty year in mooc
 Warning--empty booktitle in Pex4Fun
 Warning--empty year in Pex4Fun
-Warning--empty booktitle in pressman2005software
-Warning--can't use both volume and number fields in sen2005cute
 Warning--empty booktitle in Udacity
 Warning--empty year in Udacity
 Warning--empty booktitle in wang2007semantic
 Warning--can't use both volume and number fields in wang2007semantic
-Warning--empty booktitle in wikipedia
-Warning--empty year in wikipedia
-Warning--empty booktitle in zhu1997software
-Warning--can't use both volume and number fields in zhu1997software
 (There was 1 error message)

@@ -1,23 +1,10 @@
 \begin{thebibliography}{10}
 
-\bibitem{aaltonen2010mutation}
-Kalle Aaltonen, Petri Ihantola, and Otto Sepp{\"a}l{\"a}.
-\newblock Mutation analysis vs. code coverage in automated assessment of
-  students' testing skills.
-\newblock In {\em Proceedings of the ACM international conference companion on
-  Object oriented programming systems languages and applications companion},
-  pages 153--160. ACM, 2010.
-
 \bibitem{alur2013automated}
 Rajeev Alur, Loris D'Antoni, Sumit Gulwani, Dileep Kini, and Mahesh
   Viswanathan.
 \newblock Automated grading of dfa constructions.
 \newblock In {\em IJCAI}, volume~13, pages 1976--1982, 2013.
-
-\bibitem{ammann2016introduction}
-Paul Ammann and Jeff Offutt.
-\newblock {\em Introduction to software testing}.
-\newblock Cambridge University Press, 2016.
 
 \bibitem{bates1993incremental}
 Samuel Bates and Susan Horwitz.
@@ -38,31 +25,6 @@ David Binkley.
 \newblock In {\em Software Maintenance, 1992. Proceerdings., Conference on},
   pages 41--50. IEEE, 1992.
 
-\bibitem{bucur2011parallel}
-Stefan Bucur, Vlad Ureche, Cristian Zamfir, and George Candea.
-\newblock Parallel symbolic execution for automated real-world software
-  testing.
-\newblock In {\em Proceedings of the sixth conference on Computer systems},
-  pages 183--198. ACM, 2011.
-
-\bibitem{cadar2011symbolic}
-Cristian Cadar, Patrice Godefroid, Sarfraz Khurshid, Corina~S
-  P{\u{a}}s{\u{a}}reanu, Koushik Sen, Nikolai Tillmann, and Willem Visser.
-\newblock Symbolic execution for software testing in practice: preliminary
-  assessment.
-\newblock In {\em Proceedings of the 33rd International Conference on Software
-  Engineering}, pages 1066--1071. ACM, 2011.
-
-\bibitem{cadar2013symbolic}
-Cristian Cadar and Koushik Sen.
-\newblock Symbolic execution for software testing: three decades later.
-\newblock {\em Communications of the ACM}, 56(2):82--90, 2013.
-
-\bibitem{chen2010adaptive}
-Tsong~Yueh Chen, Fei-Ching Kuo, Robert~G Merkel, and TH~Tse.
-\newblock Adaptive random testing: The art of test case diversity.
-\newblock {\em Journal of Systems and Software}, 83(1):60--66, 2010.
-
 \bibitem{coursera}
 Coursera.
 \newblock https://www.coursera.org/.
@@ -73,47 +35,15 @@ Yingnong Dang, Dongmei Zhang, Song Ge, Chengyun Chu, Yingjun Qiu, and Tao Xie.
 \newblock In {\em Proceedings of the 28th Annual Computer Security Applications
   Conference}, pages 369--378. ACM, 2012.
 
-\bibitem{darringer1978applications}
-John~A Darringer and James~C King.
-\newblock Applications of symbolic execution to program testing.
-\newblock {\em Computer}, 11(4):51--60, 1978.
-
-\bibitem{de2008parameterized}
-Peli de~Halleux and Nikolai Tillmann.
-\newblock Parameterized test patterns for effective testing with pex.
-\newblock volume~21. Citeseer, 2008.
-
 \bibitem{de2008z3}
 Leonardo De~Moura and Nikolaj Bj{\o}rner.
 \newblock Z3: An efficient smt solver.
 \newblock {\em Tools and Algorithms for the Construction and Analysis of
   Systems}, pages 337--340, 2008.
 
-\bibitem{douce2005automatic}
-Christopher Douce, David Livingstone, and James Orwell.
-\newblock Automatic test-based assessment of programming: A review.
-\newblock {\em Journal on Educational Resources in Computing (JERIC)}, 5(3):4,
-  2005.
-
 \bibitem{edx}
 EdX.
 \newblock https://www.edx.org/.
-
-\bibitem{galin2004software}
-Daniel Galin.
-\newblock Software quality assurance: from theory to implementation.
-\newblock Pearson Education India, 2004.
-
-\bibitem{geldenhuys2012probabilistic}
-Jaco Geldenhuys, Matthew~B Dwyer, and Willem Visser.
-\newblock Probabilistic symbolic execution.
-\newblock In {\em Proceedings of the 2012 International Symposium on Software
-  Testing and Analysis}, pages 166--176. ACM, 2012.
-
-\bibitem{gill1991cyclomatic}
-Geoffrey~K. Gill and Chris~F. Kemerer.
-\newblock Cyclomatic complexity density and software maintenance productivity.
-\newblock volume~17, pages 1284--1288. IEEE, 1991.
 
 \bibitem{godefroid2005dart}
 Patrice Godefroid, Nils Klarlund, and Koushik Sen.
@@ -125,37 +55,14 @@ Patrice Godefroid, Michael~Y Levin, David~A Molnar, et~al.
 \newblock Automated whitebox fuzz testing.
 \newblock In {\em NDSS}, volume~8, pages 151--166, 2008.
 
-\bibitem{hext1969automatic}
-Jan~B Hext and JW~Winings.
-\newblock An automatic grading scheme for simple programming exercises.
-\newblock {\em Communications of the ACM}, 12(5):272--275, 1969.
-
 \bibitem{CodeHunt}
 Code Hunt.
 \newblock https://www.microsoft.com/en-us/research/project/code-hunt/.
-
-\bibitem{ihantola2010review}
-Petri Ihantola, Tuukka Ahoniemi, Ville Karavirta, and Otto Sepp{\"a}l{\"a}.
-\newblock Review of recent systems for automatic assessment of programming
-  assignments.
-\newblock In {\em Proceedings of the 10th Koli Calling International Conference
-  on Computing Education Research}, pages 86--93. ACM, 2010.
-
-\bibitem{isong2001developing}
-Julia Isong.
-\newblock Developing an automated program checkers.
-\newblock In {\em Journal of Computing Sciences in Colleges}, volume~16, pages
-  218--224. Consortium for Computing Sciences in Colleges, 2001.
 
 \bibitem{jackson1994semantic}
 Daniel Jackson, David~A Ladd, et~al.
 \newblock Semantic diff: A tool for summarizing the effects of modifications.
 \newblock In {\em ICSM}, volume~94, pages 243--252, 1994.
-
-\bibitem{jackson1997grading}
-David Jackson and Michelle Usher.
-\newblock Grading student programs using assyst.
-\newblock In {\em ACM SIGCSE Bulletin}, volume~29, pages 335--339. ACM, 1997.
 
 \bibitem{jiang2009automatic}
 Lingxiao Jiang and Zhendong Su.
@@ -163,30 +70,6 @@ Lingxiao Jiang and Zhendong Su.
   testing.
 \newblock In {\em Proceedings of the eighteenth international symposium on
   Software testing and analysis}, pages 81--92. ACM, 2009.
-
-\bibitem{jones2001grading}
-Edward~L Jones.
-\newblock Grading student programs-a software testing approach.
-\newblock {\em Journal of Computing Sciences in Colleges}, 16(2):185--192,
-  2001.
-
-\bibitem{kamiya2002ccfinder}
-Toshihiro Kamiya, Shinji Kusumoto, and Katsuro Inoue.
-\newblock Ccfinder: a multilinguistic token-based code clone detection system
-  for large scale source code.
-\newblock {\em IEEE Transactions on Software Engineering}, 28(7):654--670,
-  2002.
-
-\bibitem{khurshid2003generalized}
-Sarfraz Khurshid, Corina~S P{\u{a}}s{\u{a}}reanu, and Willem Visser.
-\newblock Generalized symbolic execution for model checking and testing.
-\newblock In {\em International Conference on Tools and Algorithms for the
-  Construction and Analysis of Systems}, pages 553--568. Springer, 2003.
-
-\bibitem{king1976symbolic}
-James~C King.
-\newblock Symbolic execution and program testing.
-\newblock {\em Communications of the ACM}, 19(7):385--394, 1976.
 
 \bibitem{komondoor2001using}
 Raghavan Komondoor and Susan Horwitz.
@@ -199,24 +82,6 @@ Daniel Kroening and Ofer Strichman.
 \newblock Decision procedures for propositional logic.
 \newblock In {\em Decision Procedures}, pages 27--58. Springer, 2016.
 
-\bibitem{lahiri2012symdiff}
-Shuvendu~K Lahiri, Chris Hawblitzel, Ming Kawaguchi, and Henrique Reb{\^e}lo.
-\newblock Symdiff: A language-agnostic semantic diff tool for imperative
-  programs.
-\newblock In {\em CAV}, volume~12, pages 712--717. Springer, 2012.
-
-\bibitem{li2016measuring}
-Sihan Li, Xusheng Xiao, Blake Bassett, Tao Xie, and Nikolai Tillmann.
-\newblock Measuring code behavioral similarity for programming and software
-  engineering education.
-\newblock In {\em Proceedings of the 38th International Conference on Software
-  Engineering Companion}, pages 501--510. ACM, 2016.
-
-\bibitem{Marciniak}
-John~J. Marciniak, editor.
-\newblock {\em Encyclopedia of Software Engineering (Vol. 1 A-N)}.
-\newblock Wiley-Interscience, New York, NY, USA, 1994.
-
 \bibitem{merlo2004linear}
 Ettore Merlo, Giuliano Antoniol, Massimiliano Di~Penta, and Vincenzo~Fabio
   Rollo.
@@ -224,13 +89,6 @@ Ettore Merlo, Giuliano Antoniol, Massimiliano Di~Penta, and Vincenzo~Fabio
   software evolution analyses.
 \newblock In {\em Software Maintenance, 2004. Proceedings. 20th IEEE
   International Conference on}, pages 412--416. IEEE, 2004.
-
-\bibitem{meudec2001atgen}
-Christophe Meudec.
-\newblock Atgen: automatic test data generation using constraint logic
-  programming and symbolic execution.
-\newblock {\em Software Testing, Verification and Reliability}, 11(2):81--96,
-  2001.
 
 \bibitem{myers2011art}
 Glenford~J Myers, Corey Sandler, and Tom Badgett.
@@ -241,68 +99,9 @@ Glenford~J Myers, Corey Sandler, and Tom Badgett.
 Coursera~MOOC on~Software Engineering~for SaaS.
 \newblock https://www.coursera.org/course/saas.
 
-\bibitem{pacheco2007feedback}
-Carlos Pacheco, Shuvendu~K Lahiri, Michael~D Ernst, and Thomas Ball.
-\newblock Feedback-directed random test generation.
-\newblock In {\em Proceedings of the 29th international conference on Software
-  Engineering}, pages 75--84. IEEE Computer Society, 2007.
-
-\bibitem{pappano2012year}
-Laura Pappano.
-\newblock The year of the mooc.
-\newblock {\em The New York Times}, 2(12):2012, 2012.
-
-\bibitem{puasuareanu2010symbolic}
-Corina~S P{\u{a}}s{\u{a}}reanu and Neha Rungta.
-\newblock Symbolic pathfinder: symbolic execution of java bytecode.
-\newblock In {\em Proceedings of the IEEE/ACM international conference on
-  Automated software engineering}, pages 179--180. ACM, 2010.
-
-\bibitem{puasuareanu2004verification}
-Corina~S P{\u{a}}s{\u{a}}reanu and Willem Visser.
-\newblock Verification of java programs using symbolic execution and invariant
-  generation.
-\newblock In {\em International SPIN Workshop on Model Checking of Software},
-  pages 164--181. Springer, 2004.
-
-\bibitem{puasuareanu2009survey}
-Corina~S P{\u{a}}s{\u{a}}reanu and Willem Visser.
-\newblock A survey of new trends in symbolic execution for software testing and
-  analysis.
-\newblock {\em International Journal on Software Tools for Technology Transfer
-  (STTT)}, 11(4):339--353, 2009.
-
-\bibitem{person2008differential}
-Suzette Person, Matthew~B Dwyer, Sebastian Elbaum, and Corina~S Pǎsǎreanu.
-\newblock Differential symbolic execution.
-\newblock In {\em Proceedings of the 16th ACM SIGSOFT International Symposium
-  on Foundations of software engineering}, pages 226--237. ACM, 2008.
-
 \bibitem{Pex4Fun}
 Pex4Fun.
 \newblock https://pexforfun.com/.
-
-\bibitem{pressman2005software}
-Roger~S Pressman.
-\newblock Software engineering: a practitioner's approach.
-\newblock Palgrave Macmillan, 2005.
-
-\bibitem{radatz1990ieee}
-Jane Radatz, Anne Geraci, and Freny Katki.
-\newblock Ieee standard glossary of software engineering terminology.
-\newblock {\em IEEE Std}, 610121990(121990):3, 1990.
-
-\bibitem{roberts2003online}
-Graham~HB Roberts and Janet~LM Verbyla.
-\newblock An online programming assessment tool.
-\newblock In {\em Proceedings of the fifth Australasian conference on Computing
-  education-Volume 20}, pages 69--75. Australian Computer Society, Inc., 2003.
-
-\bibitem{sen2005cute}
-Koushik Sen, Darko Marinov, and Gul Agha.
-\newblock Cute: a concolic unit testing engine for c.
-\newblock In {\em ACM SIGSOFT Software Engineering Notes}, volume~30, pages
-  263--272. ACM, 2005.
 
 \bibitem{singh2013automated}
 Rishabh Singh, Sumit Gulwani, and Armando Solar-Lezama.
@@ -310,88 +109,24 @@ Rishabh Singh, Sumit Gulwani, and Armando Solar-Lezama.
   assignments.
 \newblock {\em ACM SIGPLAN Notices}, 48(6):15--26, 2013.
 
-\bibitem{su2016code}
-Fang-Hsiang Su, Jonathan Bell, Kenneth Harvey, Simha Sethumadhavan, Gail
-  Kaiser, and Tony Jebara.
-\newblock Code relatives: Detecting similarly behaving software.
-\newblock In {\em Proceedings of the 2016 24th ACM SIGSOFT International
-  Symposium on Foundations of Software Engineering}, pages 702--714. ACM, 2016.
-
-\bibitem{su2016identifying}
-Fang-Hsiang Su, Jonathan Bell, Gail Kaiser, and Simha Sethumadhavan.
-\newblock Identifying functionally similar code in complex codebases.
-\newblock In {\em Program Comprehension (ICPC), 2016 IEEE 24th International
-  Conference on}, pages 1--10. IEEE, 2016.
-
-\bibitem{taneja2008diffgen}
-Kunal Taneja and Tao Xie.
-\newblock Diffgen: Automated regression unit-test generation.
-\newblock In {\em Proceedings of the 2008 23rd IEEE/ACM International
-  Conference on Automated Software Engineering}, pages 407--410. IEEE Computer
-  Society, 2008.
-
 \bibitem{tillmann2008pex}
 Nikolai Tillmann and Jonathan De~Halleux.
 \newblock Pex--white box test generation for. net.
 \newblock {\em Tests and Proofs}, pages 134--153, 2008.
 
-\bibitem{tillmann2014transferring}
-Nikolai Tillmann, Jonathan De~Halleux, and Tao Xie.
-\newblock Transferring an automated test generation tool to practice: From pex
-  to fakes and code digger.
-\newblock In {\em Proceedings of the 29th ACM/IEEE international conference on
-  Automated software engineering}, pages 385--396. ACM, 2014.
-
-\bibitem{tillmann2013teaching}
-Nikolai Tillmann, Jonathan De~Halleux, Tao Xie, Sumit Gulwani, and Judith
-  Bishop.
-\newblock Teaching and learning programming and software engineering via
-  interactive gaming.
-\newblock In {\em Proceedings of the 2013 International Conference on Software
-  Engineering}, pages 1117--1126. IEEE Press, 2013.
-
 \bibitem{Udacity}
 Udacity.
 \newblock http://www.udacity.com/.
-
-\bibitem{walenstein2007similarity}
-Andrew Walenstein, Mohammad El-Ramly, James~R Cordy, William~S Evans, Kiarash
-  Mahdavi, Markus Pizka, Ganesan Ramalingam, and J{\"u}rgen~Wolff von
-  Gudenberg.
-\newblock Similarity in programs.
-\newblock In {\em Dagstuhl Seminar Proceedings}. Schloss
-  Dagstuhl-Leibniz-Zentrum f{\"u}r Informatik, 2007.
 
 \bibitem{wang2007semantic}
 Tiantian Wang, Xiaohong Su, Yuying Wang, and Peijun Ma.
 \newblock Semantic similarity-based grading of student programs.
 \newblock volume~49, pages 99--107. Elsevier, 2007.
 
-\bibitem{whittaker2000software}
-James~A Whittaker.
-\newblock What is software testing? and why is it so hard?
-\newblock {\em IEEE software}, 17(1):70--79, 2000.
-
-\bibitem{wikipedia}
-Wikipedia.
-\newblock https://en.wikipedia.org.
-
-\bibitem{xiao2013characteristic}
-Xusheng Xiao, Sihan Li, Tao Xie, and Nikolai Tillmann.
-\newblock Characteristic studies of loop problems for structural test
-  generation via symbolic execution.
-\newblock In {\em Automated Software Engineering (ASE), 2013 IEEE/ACM 28th
-  International Conference on}, pages 246--256. IEEE, 2013.
-
 \bibitem{xie2009fitness}
 Tao Xie, Nikolai Tillmann, Jonathan de~Halleux, and Wolfram Schulte.
 \newblock Fitness-guided path exploration in dynamic symbolic execution.
 \newblock In {\em Dependable Systems \& Networks, 2009. DSN'09. IEEE/IFIP
   International Conference on}, pages 359--368. IEEE, 2009.
-
-\bibitem{zhu1997software}
-Hong Zhu, Patrick~AV Hall, and John~HR May.
-\newblock Software unit test coverage and adequacy.
-\newblock volume~29, pages 366--427. ACM, 1997.
 
 \end{thebibliography}

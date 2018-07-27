@@ -100,50 +100,51 @@ kiểm thử hộp đen.
 % 	\end{figure}
 % \end{center}
 
-\subsection{Sinh dữ liệu kiểm thử}
+% \subsection{Sinh dữ liệu kiểm thử}
 
-Sinh ngẫu nhiên dữ liệu thử là một kỹ thuật kiểm thử phần mềm Black-Box, kỹ thuật này tạo ra ngẫu nhiên các giá trị đầu vào và thực thi từng giá trị đầu vào trên chương trình được kiểm thử. Kết quả đầu ra của chương trình được so sánh với các thông số kỹ thuật của phần mềm, xác định đầu ra thử nghiệm thành công hoặc không thành công \cite{myers2011art}.  
+% Sinh ngẫu nhiên dữ liệu thử là một kỹ thuật kiểm thử phần mềm Black-Box, kỹ thuật này tạo ra ngẫu nhiên các giá trị đầu vào và thực thi từng giá trị đầu vào trên chương trình được kiểm thử. Kết quả đầu ra của chương trình được so sánh với các thông số kỹ thuật của phần mềm, xác định đầu ra thử nghiệm thành công hoặc không thành công \cite{myers2011art}.  
 
-Kỹ thuật sinh ngẫu nhiên dữ liệu thử không quan tâm đến hành vi và cấu trúc bên trong của chương trình, chỉ tập trung tìm kiếm những trường hợp chương trình không hoạt động theo đặc tả kỹ thuật của chương trình. Trong phương pháp này, dữ liệu thử nghiệm được tạo ngẫu nhiên từ các đặc tả kỹ thuật của phần mềm (tức là không liên quan tới hành vi và cấu trúc của chương trình).
+% Kỹ thuật sinh ngẫu nhiên dữ liệu thử không quan tâm đến hành vi và cấu trúc bên trong của chương trình, chỉ tập trung tìm kiếm những trường hợp chương trình không hoạt động theo đặc tả kỹ thuật của chương trình. Trong phương pháp này, dữ liệu thử nghiệm được tạo ngẫu nhiên từ các đặc tả kỹ thuật của phần mềm (tức là không liên quan tới hành vi và cấu trúc của chương trình).
 
-\lstinputlisting[label={rt}, caption = {Hàm sinh ngẫu nhiên dữ liệu thử}]{RandomTesting.cs}
-Mã lệnh \ref{rt} là một hàm sinh ngẫu nhiên dữ liệu thử, chúng ta thấy hàm $testAbs$ chỉ thực hiện việc tạo giá trị đầu vào ngẫu nhiên $int x$ theo đặc tả tham số đầu vào của chương trình $myAbs$, và kiểm tra kết quả đầu ra của chương trình $assert(result >= 0)$, không quan tâm hành vi và cấu trúc bên trong của hàm $myAbs$.
+% \lstinputlisting[label={rt}, caption = {Hàm sinh ngẫu nhiên dữ liệu thử}]{RandomTesting.cs}
+% Mã lệnh \ref{rt} là một hàm sinh ngẫu nhiên dữ liệu thử, chúng ta thấy hàm $testAbs$ chỉ thực hiện việc tạo giá trị đầu vào ngẫu nhiên $int x$ theo đặc tả tham số đầu vào của chương trình $myAbs$, và kiểm tra kết quả đầu ra của chương trình $assert(result >= 0)$, không quan tâm hành vi và cấu trúc bên trong của hàm $myAbs$.
 
-\subsubsection*{Ưu điểm, hạn chế, hướng khắc phục}
-Sinh ngẫu nhiên dữ liệu thử có một số ưu điểm và nhược điểm như sau:
+% \subsubsection*{Ưu điểm, hạn chế, hướng khắc phục}
+% Sinh ngẫu nhiên dữ liệu thử có một số ưu điểm và nhược điểm như sau:
 
-\textit{* Ưu điểm:}
-\begin{itemize}
-	\item Đơn giản, dễ dàng sinh các đầu vào ngẫu nhiên
-	\item Không tốn nhiều tài nguyên bộ nhớ lúc thực thi
-\end{itemize}
+% \textit{* Ưu điểm:}
+% \begin{itemize}
+% 	\item Đơn giản, dễ dàng sinh các đầu vào ngẫu nhiên
+% 	\item Không tốn nhiều tài nguyên bộ nhớ lúc thực thi
+% \end{itemize}
 
-\textit{* Hạn chế:}
-\begin{itemize}
-	\item Một nhánh hành vi của chương trình được kiểm thử nhiều lần với nhiều đầu vào khác nhau
-	\item Có thể một số nhánh hành vi của chương trình bị bỏ qua
-	\item Khó xác định khi nào việc kiểm thử nên dừng lại
-	\item Không biết dữ liệu thử có duyệt được tất cả các nhánh trong chương trình hay không
-\end{itemize}
+% \textit{* Hạn chế:}
+% \begin{itemize}
+% 	\item Một nhánh hành vi của chương trình được kiểm thử nhiều lần với nhiều đầu vào khác nhau
+% 	\item Có thể một số nhánh hành vi của chương trình bị bỏ qua
+% 	\item Khó xác định khi nào việc kiểm thử nên dừng lại
+% 	\item Không biết dữ liệu thử có duyệt được tất cả các nhánh trong chương trình hay không
+% \end{itemize}
 
-\textit{* Hướng khắc phục:}
-Để xác định khi nào việc kiểm thử dừng lại, hệ thống kiểm thử ngẫu nhiên có thể kết hợp với kỹ thuật Adequacy Criterion \cite{zhu1997software}. Kỹ thuật Adequacy Criterion là một kỹ thuật yêu cầu duyệt tất cả các nhánh của chương trình, bằng việc kết hợp này cho phép việc kiểm thử chỉ dừng lại khi tất cả các câu lệnh của chương trình được thực thi ít nhất một lần.
+% \textit{* Hướng khắc phục:}
+% Để xác định khi nào việc kiểm thử dừng lại, hệ thống kiểm thử ngẫu nhiên có thể kết hợp với kỹ thuật Adequacy Criterion \cite{zhu1997software}. Kỹ thuật Adequacy Criterion là một kỹ thuật yêu cầu duyệt tất cả các nhánh của chương trình, bằng việc kết hợp này cho phép việc kiểm thử chỉ dừng lại khi tất cả các câu lệnh của chương trình được thực thi ít nhất một lần.
 
 \subsection{Kỹ thuật Dynamic symbolic execution}
+
 Dynamic symbolic execution (DSE) là một kỹ thuật duyệt tự động tất cả các đường đi có thể của chương trình bằng cách chạy chương trình với nhiều giá trị đầu vào khác nhau để tăng độ phủ của dữ liệu thử \cite{xie2009fitness}.
 
 Dựa trên các tham số đầu vào của chương trình, DSE sẽ tạo ra các giá trị đầu vào cụ thể và thực thi chương trình với các giá trị cụ thể này. Trong quá trình thực thi, DSE sẽ ghi nhận lại ràng buộc tại các nút, phủ định lại các ràng buộc này và sinh các giá trị đầu vào thỏa điều kiện ràng buộc tại các nút rẽ nhánh này. Với một giá trị đầu vào cụ thể, DSE sẽ thực thi chương trình và duyệt được một đường đi cụ thể, quá trình thực thi này sẽ lặp lại cho đến khi duyệt hết tất cả các đường đi của chương trình.
 
 \begin{algorithm}
 	\caption{DSE}
-	\begin{algorithmic}	
-		\item Set J:= $\varnothing $ \Comment{J: Tập hợp các đầu vào của chương trình phân tích}
-		\item loop
-			\subitem Chọn đầu vào i $\notin $ J \Comment{Dừng lại nếu không có i nào được tìm thấy}
-			\subitem Xuất ra i
-			\subitem Thực thi P(i); lưu lại điều kiện đường đi C(i); suy ra C'(i)
-			\subitem Đặt J := J $\cup $ i			
-		\item end loop
+	\begin{algorithmic}
+        \item Set J:= $\varnothing $ \Comment{J: Tập hợp các đầu vào
+            của chương trình phân tích}
+        \item loop \subitem Chọn đầu vào i $\notin $ J \Comment{Dừng
+            lại nếu không có i nào được tìm thấy} \subitem Xuất ra i
+          \subitem Thực thi P(i); lưu lại điều kiện đường đi C(i); suy
+          ra C'(i) \subitem Đặt J := J $\cup $ i
+        \item end loop
 	\end{algorithmic}
 \end{algorithm}
 
@@ -273,51 +274,58 @@ Sau đó tại điểm nhánh tiếp theo, với $x > y + 10$ vì vậy DSE thê
 
 Kết quả, sau 3 lần chạy chương trình, DSE tạo ra được các cặp giá trị đầu vào có thể duyệt hết các nhánh của chương trình test\_me đó là: $[22,7], [2,1], [30,15]$
 	
-\subsection{Một số công cụ ứng dụng DSE}	
-Trên thế giới hiện có nhiều công cụ sử dụng kỹ thuật DSE để giải quyết các ràng buộc và tạo ra các giá trị đầu vào có độ phủ cao như như Pex \cite{tillmann2008pex} và SAGE \cite{godefroid2008automated}... và những công cụ này được phát triển để có thể chạy được trên nhiều nền tảng khác nhau. Chúng ta có thể tham khảo một số công cụ sau đây:
-		
-	\begin{center}
-		\begin{tabular}  {|c|c|c|} 
-			\hline 
-			\textbf{Tên Công cụ} & \textbf{Ngôn ngữ} & \textbf{Url} \\ 
-			\hline 
-			KLEE & LLVM & klee.github.io/ \\ 
-			\hline 
-			JPF	 & Java	& babelfish.arc.nasa.gov/trac/jpf \\
-			\hline 
-			jCUTE &	Java &	github.com/osl/jcute \\
-			\hline 
-			janala2	 & Java &	github.com/ksen007/janala2 \\
-			\hline 
-			JBSE	& Java	 & github.com/pietrobraione/jbse \\
-			\hline 
-			KeY &	Java &	www.key-project.org/ \\	
-			\hline 
-			Mayhem & 	Binary &	forallsecure.com/mayhem.html \\
-			\hline 
-			Otter &	C	& bitbucket.org/khooyp/otter/overview \\
-			\hline 
-			Rubyx & 	Ruby &	www.cs.umd.edu/~avik/papers/ssarorwa.pdf \\
-			\hline 
-			Pex	& .NET Framework	 & research.microsoft.com/en-us/projects/pex/ \\
-			\hline 
-			Jalangi2 &	JavaScript &	github.com/Samsung/jalangi2 \\
-			\hline 
-			Kite &	LLVM &	www.cs.ubc.ca/labs/isd/Projects/Kite/ \\
-			\hline 
-			pysymemu &	x86-64 / Native	 &github.com/feliam/pysymemu/ \\
-			\hline 
-			Triton	& x86 and x86-64 &	triton.quarkslab.com \\	
-			\hline 
-			BE-PUM &	x86	 & https://github.com/NMHai/BE-PUM	 \\	
-			\hline
-			
-		\end{tabular} 
+\subsection{Một số công cụ áp dụng DSE}	
 
-	\end{center}
+Trên thế giới hiện có nhiều công cụ sử dụng kỹ thuật DSE để giải quyết
+các ràng buộc và tạo ra các giá trị đầu vào có độ phủ cao như như Pex
+\cite{tillmann2008pex} và SAGE \cite{godefroid2008automated}\dots và
+những công cụ này được phát triển để có thể chạy được trên nhiều nền
+tảng khác nhau. Chúng ta có thể tham khảo một số công cụ khác ở Bảng \ref{tbl:DSETools}.
+		
+\begin{table}[h]
+  \centering
+  \label{tbl:DSETools}
+  \caption{Một số công cụ áp dụng kỹ thuật DSE}
+  \begin{tabular} {|c|c|l|}
+    \hline 
+    \textbf{Tên Công cụ} & \textbf{Ngôn ngữ} & \textbf{Url} \\ 
+    \hline 
+    KLEE & LLVM & klee.github.io/ \\ 
+    \hline 
+    JPF	 & Java	& babelfish.arc.nasa.gov/trac/jpf \\
+    \hline 
+    jCUTE &	Java &	github.com/osl/jcute \\
+    \hline 
+    janala2	 & Java &	github.com/ksen007/janala2 \\
+    \hline 
+    JBSE	& Java	 & github.com/pietrobraione/jbse \\
+    \hline 
+    KeY &	Java &	www.key-project.org/ \\	
+    \hline 
+    Mayhem & 	Binary &	forallsecure.com/mayhem.html \\
+    \hline 
+    Otter &	C	& bitbucket.org/khooyp/otter/overview \\
+    \hline 
+    Rubyx & 	Ruby &	www.cs.umd.edu/~avik/papers/ssarorwa.pdf \\
+    \hline 
+    Pex	& .NET Framework	 & research.microsoft.com/en-us/projects/pex/ \\
+    \hline 
+    Jalangi2 &	JavaScript &	github.com/Samsung/jalangi2 \\
+    \hline 
+    Kite &	LLVM &	www.cs.ubc.ca/labs/isd/Projects/Kite/ \\
+    \hline 
+    pysymemu &	x86-64 / Native	 &github.com/feliam/pysymemu/ \\
+    \hline 
+    Triton	& x86 and x86-64 &	triton.quarkslab.com \\	
+    \hline 
+    BE-PUM &	x86	 & https://github.com/NMHai/BE-PUM	 \\	
+    \hline
+  \end{tabular} 
+\end{table}
 	
 
-        \section{Hành vi của chương trình } \label{sec:behavior}
+\section{Hành vi của chương trình }
+\label{sec:behavior}
         
 Để định lượng hai chương trình tương tự nhau, chúng ta nghiên cứu một số định nghĩa liên quan đến hành vi của hai chương trình như sau:
 	
@@ -326,7 +334,7 @@ Trên thế giới hiện có nhiều công cụ sử dụng kỹ thuật DSE đ
 Cho $P$ là một chương trình, $I$ là tập hợp các trị đầu vào của $P$ và $O$ là tập hợp các giá trị đầu ra của $P$. Thực thi chương trình P là ánh xạ $exec: P \times I \rightarrow O$. Với giá trị đầu vào $i \in I$, sau khi thực thi $P$ trên $i$ ta có giá trị đầu ra tương ứng $o \in O$ và ký hiệu $o = exec(P, i)$.  
 \end{definition}
 
-\subsection{Độ tương đương về hành vi (Behavioral Equivalence)}
+\subsection{Tương đương về hành vi}
 
 Dựa trên định nghĩa về thực thi chương trình, chúng ta tìm hiểu thế nào là độ tương đương về hành vi giữa hai chương trình thông qua hai chương trình minh họa sau:
 
@@ -344,7 +352,7 @@ Mã lệnh \ref{SwitchCase} và \ref{IfElse} có tham số đầu vào cùng ki�
  Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền các giá trị đầu vào $I$. Hai chương trình này được gọi là tương đương khi và chỉ khi thực thi của chúng giống nhau trên mọi giá trị đầu vào trên $I$, ký hiệu là exec($P_{1}, I$) = exec($P_{2}, I$). 
 \end{definition}	
 	
-\subsection{Sự khác biệt về hành vi (Behavioral Difference)}
+\subsection{Khác biệt về hành vi}
 Để tìm hiểu sự khác biệt về hành vi của hai chương trình, chúng ta tìm hiểu hai mã lệnh sau:
 
 \begin{minipage}[t]{0.45\linewidth}
@@ -362,7 +370,7 @@ Mã lệnh \ref{KBHV1} và Mã lệnh \ref{KBHV2}  của Chương trình $P_{1}$
 Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng một miền các giá trị đầu vào $I$. Hai chương trình này được xem là có sự khác biêt về hành vi khi và chỉ khi thực thi của chúng khác nhau trên mọi giá trị đầu vào $I$, ký hiệu là $exec(P_{1}, I) \neq exec(P_{2}, I)$.
 \end{definition}
 
-\subsection{Độ tương tự hành vi (Behavioral Similarity)}
+\subsection{Độ tương tự về hành vi}
 Để hiểu thế nào là tương tự hành vi, chúng ta phân tích hai Mã lệnh sau:
 
 \begin{minipage}[t]{0.45\linewidth}
@@ -419,7 +427,7 @@ Phép đo \textbf{RS} là một một phép đo đơn giản và hiệu quả đ
 	\lstinputlisting[label={RS2}, caption = {Chương trình $P_{2}$}]{RS2.cs}
 \end{minipage}%
  
-Chúng ta thấy đoạn Mã lệnh \ref{RS1} và \ref{RS2} của hai Chương trình $P_{1}$ và $P_{2}$ có cùng miền giá trị đầu vào là $string x$, cấu trúc mã lệnh hai chương trình gần như nhau. Nhưng Chương trình $P_{1}$ khác với Chương trình $P_{2}$ đó là sẽ trả kết quả về $0$ nếu tham số đầu vào có giá trị là $XYZ$. Tỷ lệ phép đo \textbf{RS} lấy ngẫu nhiên giá trị đầu vào $x$ trên miền giá trị đầu vào của hai chương trình có giá trị bằng $XYZ$ là rất thấp, vì vậy khả năng câu lệnh $if (x == "XYZ") return 0;$ của Chương trình $P_{1}$ có thể sẽ không được thực thi nên kết quả của phép đo \textbf{RS} sẽ ở mức tương đối so với hành vi thực tế của chương trình.
+Chúng ta thấy đoạn Mã lệnh \ref{RS1} và \ref{RS2} của hai Chương trình $P_{1}$ và $P_{2}$ có cùng miền giá trị đầu vào là \texttt{string x}, cấu trúc mã lệnh hai chương trình gần như nhau. Nhưng Chương trình $P_{1}$ khác với Chương trình $P_{2}$ đó là sẽ trả kết quả về $0$ nếu tham số đầu vào có giá trị là $XYZ$. Tỷ lệ phép đo \textbf{RS} lấy ngẫu nhiên giá trị đầu vào $x$ trên miền giá trị đầu vào của hai chương trình có giá trị bằng $XYZ$ là rất thấp, vì vậy khả năng câu lệnh $if (x == "XYZ") return 0;$ của Chương trình $P_{1}$ có thể sẽ không được thực thi nên kết quả của phép đo \textbf{RS} sẽ ở mức tương đối so với hành vi thực tế của chương trình.
 
 \subsection{Phép đo tượng trưng trên một chương trình Single Program Symbol Execution (SSE)}
 Phép đo \textbf{SSE} là một phép đo dựa trên số lượng các nhánh đường đi của Chương trình mẫu, mỗi nhánh đường đi của Chương trình mẫu được xem là một hành vi của chương trình. Nếu chọn một giá trị đầu vào thử nghiệm cho một nhánh đường đi trong Chương trình thì các giá trị đầu vào thử nghiệm này sẽ khám phá hết các hành vi trong Chương trình mẫu. Do vậy, số phần tử trong tập các giá trị đầu vào thử nghiệm của phép đo \textbf{SSE} sẽ nhỏ hơn tập các giá trị đầu vào thử nghiệm được chọn theo phương pháp lấy ngẫu nhiên giá trị đầu vào. 
@@ -427,7 +435,17 @@ Phép đo \textbf{SSE} là một phép đo dựa trên số lượng các nhánh
 Để tính độ tương tự hành vi của hai chương trình với phép đo \textbf{SSE}, chúng ta chọn Chương trình mẫu làm Chương trình tham chiếu và áp dụng kỹ thuật \textbf{DSE} để tạo ra các đầu vào thử nghiệm dựa trên Chương trình tham chiếu. Sau đó thực thi cả hai chương trình dựa trên các giá trị đầu vào thử nghiệm. Tỷ lệ số lượng các kết quả đầu ra giống nhau của cả hai chương trình trên tổng số các giá trị đầu vào thử nghiệm của Chương trình tham chiếu là kết quả của phép đo \textbf{SSE}. Qua đó, chúng ta có định nghĩa phép đo \textbf{SSE} như sau:
 
 \begin{definition}
-	Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đầu vào $I$, Chương trình $P_{1}$ là Chương trình tham chiếu, $I_{s}$ là tập các giá trị đầu vào được tạo bởi DSE trên chương trình $P_{1}$, và $I_{a}$ là tập con $I_{s}$. Hai Chương trình thực thi giống nhau với $\forall i \in I_{a}$, ký hiệu $exec(P_{1}, i) = exec(P_{2}, i)$ và hai Chương trình thực thi khác nhau với $\forall j \in I_{s} \setminus I_{a}$, ký hiệu $exec(P_{1}, j) \neq exec(P_{2}, j)$. Chỉ số phép đo \textbf{SSE} được định nghĩa là $M_{SSE}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup \left|I_{s}\right| $.
+  Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đầu
+  vào $I$, Chương trình $P_{1}$ là Chương trình tham chiếu, $I_{s}$ là
+  tập các giá trị đầu vào được tạo bởi DSE trên chương trình $P_{1}$,
+  và $I_{a}$ là tập con $I_{s}$. Hai Chương trình thực thi giống nhau
+  với $\forall i \in I_{a}$, ký hiệu $exec(P_{1}, i) = exec(P_{2}, i)$
+  và hai Chương trình thực thi khác nhau với
+  $\forall j \in I_{s} \setminus I_{a}$, ký hiệu
+  $exec(P_{1}, j) \neq exec(P_{2}, j)$. Chỉ số phép đo \textbf{SSE}
+  được định nghĩa là
+  $M_{SSE}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup
+  \left|I_{s}\right| $.
 \end{definition}
 
 \begin{algorithm}[H]

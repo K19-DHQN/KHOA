@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.12.31)  27 JUL 2018 06:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.12.31)  27 JUL 2018 08:00
 entering extended mode
 **\input Main.tex
 (Main.tex ("C:\Program Files\MiKTeX\tex\latex\memoir\memoir.cls"
@@ -2046,271 +2046,267 @@ Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
 [10]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 139.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 108.
-LaTeX Font Info:    Try loading font information for T5+cmtt on input line 108.
+nput line 151.
+LaTeX Font Info:    Try loading font information for T5+cmtt on input line 151.
 
  ("C:\Program Files\MiKTeX\tex\latex\vntex\t5cmtt.fd"
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-(Filecodes/RandomTesting.cs
+) (Filecodes/DSE.cs
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[11])
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 116.
-
- ("C:\Program Files\MiKTeX\tex\latex\psnfss\omsppl.fd"
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 116.
-
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[12]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 137.
- (Filecodes/DSE.cs
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[13]) <images/dse11.png, id=205, 513.41812pt x 271.0125pt>
+[11]) <images/dse11.png, id=174, 513.41812pt x 271.0125pt>
 File: images/dse11.png Graphic file (type png)
 
 <use images/dse11.png>
-Package pdftex.def Info: images/dse11.png used on input line 157.
+Package pdftex.def Info: images/dse11.png used on input line 159.
 (pdftex.def)             Requested size: 410.73505pt x 216.81029pt.
+ <images/dse12.png, id=176, 514.92375pt x 264.99pt>
+File: images/dse12.png Graphic file (type png)
+
+<use images/dse12.png>
+Package pdftex.def Info: images/dse12.png used on input line 169.
+(pdftex.def)             Requested size: 411.93954pt x 211.99228pt.
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+[12pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.164 \begin{center}
-                     <./images/dse11.png>]
-<images/dse12.png, id=222, 514.92375pt x 264.99pt>
-File: images/dse12.png Graphic file (type png)
- <use images/dse12.png>
-Package pdftex.def Info: images/dse12.png used on input line 167.
-(pdftex.def)             Requested size: 411.93954pt x 211.99228pt.
-
-<images/dse13.png, id=223, 514.17094pt x 268.75406pt>
+l.174 \end{center}
+                   <./images/dse11.png>]
+<images/dse13.png, id=190, 514.17094pt x 268.75406pt>
 File: images/dse13.png Graphic file (type png)
  <use images/dse13.png>
-Package pdftex.def Info: images/dse13.png used on input line 178.
+Package pdftex.def Info: images/dse13.png used on input line 180.
 (pdftex.def)             Requested size: 411.33731pt x 215.00354pt.
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[15pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
+[13pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.183 \end{center}
-                   <./images/dse12.png>]
-<images/dse2.png, id=230, 729.47531pt x 353.06906pt>
+l.188 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+2.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.188 
+       <./images/dse12.png> <./images/dse13.png>]
+<images/dse2.png, id=200, 729.47531pt x 353.06906pt>
 File: images/dse2.png Graphic file (type png)
  <use images/dse2.png>
-Package pdftex.def Info: images/dse2.png used on input line 190.
+Package pdftex.def Info: images/dse2.png used on input line 192.
 (pdftex.def)             Requested size: 437.68855pt x 211.84306pt.
 
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.195 \end{center}
-                   <./images/dse13.png>]
-<images/dse21.png, id=237, 516.42938pt x 261.97874pt>
+<images/dse21.png, id=201, 516.42938pt x 261.97874pt>
 File: images/dse21.png Graphic file (type png)
  <use images/dse21.png>
-Package pdftex.def Info: images/dse21.png used on input line 202.
+Package pdftex.def Info: images/dse21.png used on input line 204.
 (pdftex.def)             Requested size: 413.14406pt x 209.58327pt.
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.211 \begin{center}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{figure.2.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.211 \begin{center}
-                     <./images/dse2.png> <./images/dse21.png>]
-<images/dse22.png, id=245, 510.40688pt x 264.23718pt>
+l.209 \end{center}
+                   <./images/dse2.png>]
+<images/dse22.png, id=207, 510.40688pt x 264.23718pt>
 File: images/dse22.png Graphic file (type png)
  <use images/dse22.png>
-Package pdftex.def Info: images/dse22.png used on input line 214.
+Package pdftex.def Info: images/dse22.png used on input line 216.
 (pdftex.def)             Requested size: 408.32605pt x 211.39001pt.
-
-<images/dse23.png, id=246, 511.15968pt x 264.99pt>
-File: images/dse23.png Graphic file (type png)
- <use images/dse23.png>
-Package pdftex.def Info: images/dse23.png used on input line 226.
-(pdftex.def)             Requested size: 408.92828pt x 211.99228pt.
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6
+[15pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.231 \end{center}
-                   <./images/dse22.png>]
-<images/dse24.png, id=253, 511.15968pt x 259.7203pt>
+l.225 \begin{center}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.2.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.225 \begin{center}
+                     <./images/dse21.png> <./images/dse22.png>]
+<images/dse23.png, id=216, 511.15968pt x 264.99pt>
+File: images/dse23.png Graphic file (type png)
+ <use images/dse23.png>
+Package pdftex.def Info: images/dse23.png used on input line 228.
+(pdftex.def)             Requested size: 408.92828pt x 211.99228pt.
+
+<images/dse24.png, id=217, 511.15968pt x 259.7203pt>
 File: images/dse24.png Graphic file (type png)
  <use images/dse24.png>
-Package pdftex.def Info: images/dse24.png used on input line 238.
+Package pdftex.def Info: images/dse24.png used on input line 240.
 (pdftex.def)             Requested size: 408.92828pt x 207.77652pt.
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.246 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.8}) has been already used, duplicate ignored
+l.245 \end{center}
+                   <./images/dse23.png>]
+<images/dse3.png, id=224, 730.98094pt x 347.04657pt>
+File: images/dse3.png Graphic file (type png)
+ <use images/dse3.png>
+Package pdftex.def Info: images/dse3.png used on input line 252.
+(pdftex.def)             Requested size: 438.59195pt x 208.22954pt.
+
+Overfull \vbox (2.31802pt too high) has occurred while \output is active []
+
+
+[17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.246 
-       <./images/dse23.png> <./images/dse24.png>]
-<images/dse3.png, id=263, 730.98094pt x 347.04657pt>
-File: images/dse3.png Graphic file (type png)
- <use images/dse3.png>
-Package pdftex.def Info: images/dse3.png used on input line 250.
-(pdftex.def)             Requested size: 438.59195pt x 208.22954pt.
+l.260 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+2.9}) has been already used, duplicate ignored
 
-<images/dse4.png, id=264, 715.17188pt x 370.38374pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.260 
+       <./images/dse24.png> <./images/dse3.png>]
+<images/dse4.png, id=232, 715.17188pt x 370.38374pt>
 File: images/dse4.png Graphic file (type png)
  <use images/dse4.png>
-Package pdftex.def Info: images/dse4.png used on input line 266.
+Package pdftex.def Info: images/dse4.png used on input line 268.
 (pdftex.def)             Requested size: 429.10643pt x 222.23195pt.
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.271 \end{center}
-                   <./images/dse3.png>]
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+[18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
 0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.316 	\end{center}
-                    <./images/dse4.png>]
+l.284 
+       <./images/dse4.png>]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 319.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 319.
+(hyperref)                removing `\h' on input line 327.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 319.
+(hyperref)                removing `\uhorn' on input line 327.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 327.
 
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[22] (Filecodes/SwitchCase.cs) (Filecodes/IfElse.cs)
+[19pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.335 \end{definition}
+                      ] (Filecodes/SwitchCase.cs) (Filecodes/IfElse.cs)
 LaTeX Font Info:    Font shape `T5/ppl/bx/it' in size <12> not available
-(Font)              Font shape `T5/ppl/b/it' tried instead on input line 340.
+(Font)              Font shape `T5/ppl/b/it' tried instead on input line 349.
 
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[23] (Filecodes/Khac_biet_HV_1.cs) (Filecodes/Khac_biet_HV_2.cs)
+[20] (Filecodes/Khac_biet_HV_1.cs) (Filecodes/Khac_biet_HV_2.cs)
 (Filecodes/TuongTu_HV_1.cs) (Filecodes/TuongTu_HV_2.cs)
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[24]
+[21]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 381.
+(hyperref)                removing `\textdotbelow' on input line 390.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 381.
+(hyperref)                removing `\ocircumflex' on input line 390.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 381.
+(hyperref)                removing `\textacute' on input line 390.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 381.
+(hyperref)                removing `\ocircumflex' on input line 390.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 381.
+(hyperref)                removing `\dj' on input line 390.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 381.
+(hyperref)                removing `\dj' on input line 390.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 381.
+(hyperref)                removing `\textdotbelow' on input line 390.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 381.
+(hyperref)                removing `\ocircumflex' on input line 390.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 381.
+(hyperref)                removing `\uhorn' on input line 390.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 381.
+(hyperref)                removing `\ohorn' on input line 390.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 381.
+(hyperref)                removing `\textdotbelow' on input line 390.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 381.
+(hyperref)                removing `\uhorn' on input line 390.
 
 
+Overfull \vbox (2.31802pt too high) has occurred while \output is active []
+
+
+[22]
+Overfull \vbox (2.31802pt too high) has occurred while \output is active []
+
+
+[23] (Filecodes/RS1.cs) (Filecodes/RS2.cs)
+Overfull \vbox (2.31802pt too high) has occurred while \output is active []
+
+
+[24]
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
@@ -2318,11 +2314,11 @@ Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[26] (Filecodes/RS1.cs) (Filecodes/RS2.cs)
+[26] (Filecodes/SSE1.cs) (Filecodes/SSE2.cs)
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[27]
+[27] (Filecodes/PSE.cs)
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
@@ -2330,23 +2326,11 @@ Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[29] (Filecodes/SSE1.cs) (Filecodes/SSE2.cs)
+[29])
 Overfull \vbox (2.31802pt too high) has occurred while \output is active []
 
 
-[30] (Filecodes/PSE.cs)
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[31]
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[32])
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[33]
+[30]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\UHORN'
 (hyperref)                not defined in PD1 encoding,
@@ -2365,7 +2349,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ECIRCUMFLEX'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ECIRCUMFLEX' on input line 32.
 
-(Main.bbl [34
+(Main.bbl [31
 
 ]
 
@@ -2388,9 +2372,26 @@ Underfull \hbox (badness 5388) in paragraph at lines 12--16
 Ma-hesh
  []
 
-[35
+[32
 
 ]
+Overfull \vbox (0.95602pt too high) has occurred while \output is active []
+
+
+[33]
+Overfull \vbox (0.95602pt too high) has occurred while \output is active []
+
+
+[34]
+Overfull \vbox (0.95602pt too high) has occurred while \output is active []
+
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
+[]\T5/ppl/m/n/12 Coursera MOOC on Soft-ware En-gi-neer-ing for SaaS.
+ []
+
+
 Overfull \vbox (0.95602pt too high) has occurred while \output is active []
 
 
@@ -2402,24 +2403,7 @@ Overfull \vbox (0.95602pt too high) has occurred while \output is active []
 Overfull \vbox (0.95602pt too high) has occurred while \output is active []
 
 
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 241--243
-[]\T5/ppl/m/n/12 Coursera MOOC on Soft-ware En-gi-neer-ing for SaaS.
- []
-
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[39]
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[40]
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[41]) <quyetdinh.pdf, id=562, 614.295pt x 794.97pt>
+[38]) <quyetdinh.pdf, id=529, 614.295pt x 794.97pt>
 File: quyetdinh.pdf Graphic file (type pdf)
  <use quyetdinh.pdf>
 Package pdftex.def Info: quyetdinh.pdf used on input line 41.
@@ -2429,7 +2413,7 @@ File: quyetdinh.pdf Graphic file (type pdf)
 <use quyetdinh.pdf>
 Package pdftex.def Info: quyetdinh.pdf used on input line 41.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- <quyetdinh.pdf, id=565, page=1, 614.295pt x 794.97pt>
+ <quyetdinh.pdf, id=532, page=1, 614.295pt x 794.97pt>
 File: quyetdinh.pdf Graphic file (type pdf)
 
 <use quyetdinh.pdf, page 1>
@@ -2443,7 +2427,7 @@ Package pdftex.def Info: quyetdinh.pdf, page1 used on input line 41.
 Overfull \vbox (0.95602pt too high) has occurred while \output is active []
 
 
-[42]
+[39]
 File: quyetdinh.pdf Graphic file (type pdf)
  <use quyetdinh.pdf, page 1>
 Package pdftex.def Info: quyetdinh.pdf, page1 used on input line 41.
@@ -2457,14 +2441,14 @@ File: quyetdinh.pdf Graphic file (type pdf)
 <use quyetdinh.pdf, page 1>
 Package pdftex.def Info: quyetdinh.pdf, page1 used on input line 41.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [43 <./quyetdinh.pdf>]
+ [40 <./quyetdinh.pdf>]
 
 Class memoir Warning: The material used in the headers is too large
 (16.81802pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
 (in both cases you will find help in the memoir manual). on input line 45.
 
-[44
+[41
 
 ]
 \tf@toc=\write6
@@ -2477,17 +2461,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
 Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: 8F706EA1D25D735A7E2FCDF18DEC05F8;504.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 29684 strings out of 493319
- 492120 string characters out of 3140669
- 773033 words of memory out of 3000000
- 32323 multiletter control sequences out of 15000+200000
- 58211 words of font info for 70 fonts, out of 3000000 for 9000
+ 29637 strings out of 493319
+ 491360 string characters out of 3140669
+ 773021 words of memory out of 3000000
+ 32303 multiletter control sequences out of 15000+200000
+ 58265 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,18n,72p,1967b,1982s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/vntex/t5.enc}{C:/Program Files/MiKTe
@@ -2502,10 +2482,11 @@ ogram Files/MiKTeX/fonts/type1/vntex/urwvn/uplr8v.pfb><C:/Program Files/MiKTeX/
 fonts/type1/vntex/urwvn/uplr8v.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/pal
 atino/uplri8a.pfb><C:/Program Files/MiKTeX/fonts/type1/vntex/urwvn/uplri8v.pfb>
 <C:/Program Files/MiKTeX/fonts/type1/vntex/vnr/vnssbx10.pfb><C:/Program Files/M
-iKTeX/fonts/type1/vntex/vnr/vntt10.pfb>
-Output written on Main.pdf (44 pages, 769629 bytes).
+iKTeX/fonts/type1/vntex/vnr/vntt10.pfb><C:/Program Files/MiKTeX/fonts/type1/vnt
+ex/vnr/vntt12.pfb>
+Output written on Main.pdf (41 pages, 763320 bytes).
 PDF statistics:
- 701 PDF objects out of 1000 (max. 8388607)
- 290 named destinations out of 1000 (max. 500000)
+ 666 PDF objects out of 1000 (max. 8388607)
+ 268 named destinations out of 1000 (max. 500000)
  192 words of extra memory for PDF output out of 10000 (max. 10000000)
 

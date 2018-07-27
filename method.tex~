@@ -1,90 +1,150 @@
-Chương này trình bày một số kiến thức cơ sở về kiểm thử phần mềm, các phương pháp kiểm thử phần mềm, kỹ thuật sinh dữ liệu thử. Một số định nghĩa liên quan đến hành vi chương trình, các phép đo độ tương tự hành vi của chương trình.
+Chương này tập trung làm rõ hành vi của chương trình, độ tương tự về
+hành vi giữa hai chương trình và các phương pháp đo độ tương tự về
+hành vi, sẽ được trình bày trong Phần \ref{sec:behavior} và
+\ref{sec:metrics}. Ngoài ra, chương này còn trình bày một số kiến thức
+cơ sở về kiểm thử phần mềm, các phương pháp kiểm thử phần mềm, kỹ
+thuật sinh dữ liệu kiểm thử trong Phần \ref{sec:base}.
 
 \section{Kiến thức cơ sở}
-Những kiến thức cơ sở để triển khai luận văn bao gồm kiến thức về kiểm thử phần mềm, kỹ thuật sinh ngẫu nhiên dữ liệu thử, và kỹ thuật Dynamic Symbolic Execution.
+\label{sec:base}
+
+Ý tưởng chính của việc đo độ tương tự về hành vi giữa hai chương trình
+máy tính là dựa trên tập dữ liệu vào, đếm số lượng dữ liệu ra tương
+ứng giống nhau giữa hai chương trình và đo tỷ lệ tương tự. Dữ liệu vào
+phải được chọn sao cho phủ nhiều nhất miền vào của chương trình. Về cơ
+bản, độ tương tự này được đo dựa trên dữ liệu các ca kiểm thử. Chương
+này trình bày ngắn gọn về kiểm thử phần mềm cùng việc sinh dữ liệu
+kiểm thử, chủ yếu tập trung vào phương pháp thực thi biểu trưng một
+chương trình (\emph{DSE -- Dynamic Symbolic Execution}) nhằm giúp tăng độ phủ
+của dữ liệu thử.
 
 \subsection{Kiểm thử phần mềm}
-Hiện nay, ngành công nghiệp phần mềm giữ vai trò hết sức quan trọng, một số nước có nền công nghệ thông tin phát triển thì ngành công nghiệp phần mềm có khả năng chi phối cả nền kinh tế. Vì vậy,  việc đảm bảo chất lượng phần mềm trở nên cần thiết hơn bao giờ hết. Quá trình phát hiện và khắc phục lỗi của phần mềm là một công việc đòi hỏi nhiều nỗ lực, công sức, phát sinh thêm nhiều chi phí trong việc phát triển phần mềm. Một sản phẩm phần mềm đạt chất lượng cao, đáp ứng được yêu cầu của người sử dụng sẽ được nhiều người biết đến, nó mang lại hiệu quả tích cực trong công việc của người sử dụng. Ngược lại, một phần mềm kém chất lượng sẽ gây thiệt hại về kinh tế, ảnh hưởng đến công việc của người sử dụng. Vì vậy, yêu cầu đặt ra đó là một sản phẩm phần mềm phải đảm bảo được sự ổn định, không phát sinh lỗi trong quá trình sử dụng.
+Hiện nay, ngành công nghiệp phần mềm giữ vai trò hết sức quan trọng, một số nước có nền công nghệ thông tin phát triển thì ngành công nghiệp phần mềm có khả năng chi phối cả nền kinh tế. Vì vậy,  việc đảm bảo chất lượng phần mềm trở nên cần thiết hơn bao giờ hết.
+
+Quá trình phát hiện và khắc phục lỗi của phần mềm là một công việc đòi hỏi nhiều nỗ lực, công sức, phát sinh thêm nhiều chi phí trong việc phát triển phần mềm. Một sản phẩm phần mềm đạt chất lượng cao, đáp ứng được yêu cầu của người sử dụng sẽ được nhiều người biết đến, nó mang lại hiệu quả tích cực trong công việc của người sử dụng. Ngược lại, một phần mềm kém chất lượng sẽ gây thiệt hại về kinh tế, ảnh hưởng đến công việc của người sử dụng. Vì vậy, yêu cầu đặt ra đó là một sản phẩm phần mềm phải đảm bảo được sự ổn định, không phát sinh lỗi trong quá trình sử dụng.
 
 Kiểm thử phần mềm chính là một quá trình hoặc một loạt các quy trình được thiết kế, để đảm bảo mã máy tính chỉ làm những gì nó được thiết kế và không làm bất cứ điều gì ngoài ý muốn \cite{myers2011art}. Phần mềm phải được dự đoán và nhất quán, không gây bất ngờ cho người dùng. Đây là một bước quan trọng trong quá trình phát triển một phần mềm, giúp cho nhà phát triển phần mềm và người sử dụng thấy được hệ thống đã đáp ứng được yêu cầu đặt ra.
 
 \subsubsection{Các phương pháp kiểm thử}
-Có nhiều phương pháp để kiểm thử phần mềm, trong đó hai phương pháp kiểm chính là kiểm thử thử tĩnh và kiểm thử động là hai phương pháp chính. \textbf{\textit{Kiểm thử tĩnh (Static testing)}}: Là phương pháp kiểm thử phần mềm bằng cách duyệt lại các yêu cầu và các đặc tả bằng tay, thông qua việc sử dụng giấy, bút để kiểm tra tính logic từng chi tiết mà không cần chạy chương trình. Kiểu kiểm thử này thường được sử dụng bởi chuyên viên thiết kế, người viết mã lệnh chương trình. Kiểm thử tĩnh cũng có thể được tự động hóa bằng cách thực hiện kiểm tra toàn bộ hệ thống thông qua một trình thông dịch hoặc trình biên dịch, xác nhận tính hợp lệ về cú pháp của chương trình.
+
+Có nhiều phương pháp để kiểm thử phần mềm, trong đó hai phương pháp
+kiểm thử chính là \emph{kiểm thử tĩnh} và \emph{kiểm thử động}.
+
+\emph{Kiểm thử tĩnh (Static testing)} là phương pháp kiểm thử phần mềm
+bằng cách duyệt lại các yêu cầu và các đặc tả, mã lệnh chương trình
+bằng tay, thông qua việc sử dụng giấy, bút để kiểm tra tính logic từng
+chi tiết mà không cần chạy chương trình. Kiểu kiểm thử này thường được
+sử dụng bởi chuyên viên thiết kế, người viết mã lệnh chương
+trình. Kiểm thử tĩnh cũng có thể được tự động hóa bằng cách thực hiện
+kiểm tra toàn bộ hệ thống thông qua một trình thông dịch hoặc trình
+biên dịch, xác nhận tính hợp lệ về cú pháp của chương trình.
 		
-\textbf{\textit{Kiểm thử động (Dynamic testing)}}: Là phương pháp kiểm thử thông qua việc chạy chương trình để kiểm tra trạng thái tác động của chương trình, dựa trên các ca kiểm thử xác định các đối tượng kiểm thử của chương trình. Đồng thời, kiểm thử động sẽ tiến hành kiểm tra cách thức hoạt động của mã lệnh, tức là kiểm tra phản ứng từ hệ thống với các biến thay đổi theo thời gian. Trong kiểm thử động, phần mềm phải được biên dịch và chạy, và bao gồm việc nhập các giá trị đầu vào và kiểm tra giá trị đầu ra có như mong muốn hay không.	
+\emph{Kiểm thử động (Dynamic testing)} là phương pháp kiểm thử thông
+qua việc thực thi chương trình để kiểm tra trạng thái tác động của
+chương trình, dựa trên các ca kiểm thử xác định các đối tượng kiểm thử
+của chương trình. Đồng thời, kiểm thử động sẽ tiến hành kiểm tra cách
+thức hoạt động của mã lệnh, tức là kiểm tra phản ứng từ hệ thống với
+các biến thay đổi theo thời gian. Trong kiểm thử động, phần mềm phải
+được biên dịch và chạy, và bao gồm việc nhập các giá trị đầu vào và
+kiểm tra giá trị đầu ra có như mong muốn hay không.
+
+Trong luận văn này, độ tương tự về hành vi giữa hai chương trình được
+đo thông qua việc thực thi hai chương trình, tức là sử dụng phương
+pháp kiểm thử động.
 	
 \subsubsection{Các chiến lược kiểm thử}
-Kiểm thử phần mềm có nhiều chiến lược để kiểm thử, trong đó có hai chiến lược được sử dụng nhiều nhất đó là kiểm thử hộp đen và kiểm thử hộp trắng.
+
+Hai chiến lược kiểm thử phần mềm được sử dụng nhiều nhất đó là \emph{kiểm thử hộp đen} và \emph{kiểm thử hộp trắng}.
 	
-\textbf{\textit{Kiểm thử hộp đen – Black box}}. Là một chiến lược kiểm thử với cách thức hoạt động chủ yếu dựa vào hướng dữ liệu inputs/outputs của chương trình, xem chương trình như là một “hộp đen”, chiến lược kiểm thử này  hoàn toàn không quan tâm về cách xử lý và cấu trúc bên trong của chương trình. Kiểm thử hộp đen tập trung vào tìm các trường hợp mà chương trình không thực hiện theo các đặc tả kỹ thuật. Kiểm thử viên hộp đen cố gắng tìm ra những lỗi mà lập trình viên không tìm ra. Tuy nhiên, phương pháp kiểm thử này cũng có mặt hạn chế của nó, kiểm thử viên không biết các phần mềm được kiểm tra thực sự được xây dựng như thế nào, cố gắng viết rất nhiều ca kiểm thử để kiểm tra một chức năng của phần mềm nhưng lẽ ra chỉ cần kiểm tra bằng một ca kiểm thử duy nhất, hoặc một số phần của chương trình có thể bị bỏ qua không được kiểm tra.
+\emph{Kiểm thử hộp đen – Black box} là một chiến lược kiểm thử với
+cách thức hoạt động chủ yếu dựa vào hướng dữ liệu inputs/outputs của
+chương trình, xem chương trình như là một ``hộp đen''. Chiến lược kiểm
+thử này hoàn toàn không quan tâm về cách xử lý và cấu trúc bên trong
+của chương trình, nó tập trung vào tìm các trường hợp mà chương trình
+không thực hiện theo các đặc tả. Tuy nhiên, phương pháp kiểm thử này
+cũng có mặt hạn chế của nó, kiểm thử viên không biết các phần mềm cần
+kiểm tra thực sự được xây dựng như thế nào, cố gắng viết rất nhiều ca
+kiểm thử để kiểm tra một chức năng của phần mềm nhưng lẽ ra chỉ cần
+kiểm tra bằng một vài ca kiểm thử, hoặc một số phần của chương trình
+có thể bị bỏ qua không được kiểm tra.
+
+Do vậy, kiểm thử hộp đen có ưu điểm là đánh giá khách quan, mặt khác
+nó lại có nhược điểm là thăm dò mù. Trong phần nghiên cứu của đề tài,
+kiểm thử hộp đen cũng được sử dụng như một phương pháp đo độ tương tự
+hành vi của các chương trình.
 		
-Do vậy, kiểm thử hộp đen có ưu điểm là đánh giá khách quan, mặt khác nó lại có nhược điểm là thăm dò mù. Trong phần nghiên cứu của đề tài, kiểm thử hộp đen cũng được sử dụng như một phương pháp đo độ tương tự hành vi của các chương trình.
-		
-\textbf{\textit{Kiểm thử hộp trắng – White box}}. Đây là một chiến lược kiểm thử khác, trái ngược hoàn toàn với kiểm thử hộp đen, kiểm thử hộp trắng hay còn gọi là kiểm thử hướng logic của phần mềm. Cách kiểm thử này cho phép tạo ra dữ liệu thử nghiệm từ việc kiểm tra, khảo sát cấu trúc bên trong và kiểm thử tính logic của chương trình. Dữ liệu thử nghiệm có độ phủ lớn, đảm bảo tất cả các đường dẫn, hoặc các nhánh của chương trình được thực hiện ít nhất một lần, khắc phục được những nhược điểm thăm dò mù trong cách kiểm thử hộp đen.
-		
-Phương pháp kiểm thử hộp trắng cũng có thể được sử dụng để đánh giá một bộ kiểm thử được tạo với các phương pháp kiểm thử hộp đen. Trong các phép đo độ tương tự của đề tài, phương pháp kiểm thử hộp trắng là một phương pháp quan trọng, được áp dụng để đo hành vi của các chương trình.
+\emph{Kiểm thử hộp trắng – White box} là một chiến lược kiểm thử khác,
+trái ngược hoàn toàn với kiểm thử hộp đen, còn gọi là kiểm thử hướng
+logic của phần mềm. Cách kiểm thử này cho phép tạo ra dữ liệu thử
+nghiệm từ việc kiểm tra, khảo sát cấu trúc bên trong và kiểm thử tính
+logic của chương trình. Dữ liệu thử nghiệm có độ phủ lớn, đảm bảo tất
+cả các đường dẫn, hoặc các nhánh của chương trình được thực hiện ít
+nhất một lần, khắc phục được những nhược điểm thăm dò mù trong cách
+kiểm thử hộp đen.
+			
+% \subsubsection{Các cấp độ kiểm thử trong kiểm thử phần mềm}
+% Kiểm thử phần mềm gồm có các cấp độ kiểm thử như sau:
+% \begin{itemize}
+% 	\item Kiểm thử đơn vị
+% 	\item Kiểm thử tích hợp
+% 	\item Kiểm thử hệ thống
+% 	\item Kiểm thử chấp nhận sản phẩm
+% \end{itemize}
 	
-\subsubsection{Các cấp độ kiểm thử trong kiểm thử phần mềm}
-Kiểm thử phần mềm gồm có các cấp độ kiểm thử như sau:
-\begin{itemize}
-	\item Kiểm thử đơn vị
-	\item Kiểm thử tích hợp
-	\item Kiểm thử hệ thống
-	\item Kiểm thử chấp nhận sản phẩm
-\end{itemize}
-	
-\begin{center}
-	\begin{figure}[h]
-		\begin{center}
-			\includegraphics[scale=.5]{kiemthu1.png}
-		\end{center}
-		\caption{Sơ đồ các cấp độ kiểm thử}		
-	\end{figure}
-\end{center}
+% \begin{center}
+% 	\begin{figure}[h]
+% 		\begin{center}
+% 			\includegraphics[scale=.5]{kiemthu1.png}
+% 		\end{center}
+% 		\caption{Sơ đồ các cấp độ kiểm thử}		
+% 	\end{figure}
+% \end{center}
 
-\subsection{Sinh dữ liệu kiểm thử}
-Sinh ngẫu nhiên dữ liệu thử là một kỹ thuật kiểm thử phần mềm Black-Box, kỹ thuật này tạo ra ngẫu nhiên các giá trị đầu vào và thực thi từng giá trị đầu vào trên chương trình được kiểm thử. Kết quả đầu ra của chương trình được so sánh với các thông số kỹ thuật của phần mềm, xác định đầu ra thử nghiệm thành công hoặc không thành công \cite{myers2011art}.  
+% \subsection{Sinh dữ liệu kiểm thử}
 
-Kỹ thuật sinh ngẫu nhiên dữ liệu thử không quan tâm đến hành vi và cấu trúc bên trong của chương trình, chỉ tập trung tìm kiếm những trường hợp chương trình không hoạt động theo đặc tả kỹ thuật của chương trình. Trong phương pháp này, dữ liệu thử nghiệm được tạo ngẫu nhiên từ các đặc tả kỹ thuật của phần mềm (tức là không liên quan tới hành vi và cấu trúc của chương trình).
+% Sinh ngẫu nhiên dữ liệu thử là một kỹ thuật kiểm thử phần mềm Black-Box, kỹ thuật này tạo ra ngẫu nhiên các giá trị đầu vào và thực thi từng giá trị đầu vào trên chương trình được kiểm thử. Kết quả đầu ra của chương trình được so sánh với các thông số kỹ thuật của phần mềm, xác định đầu ra thử nghiệm thành công hoặc không thành công \cite{myers2011art}.  
 
-\lstinputlisting[label={rt}, caption = {Hàm sinh ngẫu nhiên dữ liệu thử}]{RandomTesting.cs}
-Mã lệnh \ref{rt} là một hàm sinh ngẫu nhiên dữ liệu thử, chúng ta thấy hàm $testAbs$ chỉ thực hiện việc tạo giá trị đầu vào ngẫu nhiên $int x$ theo đặc tả tham số đầu vào của chương trình $myAbs$, và kiểm tra kết quả đầu ra của chương trình $assert(result >= 0)$, không quan tâm hành vi và cấu trúc bên trong của hàm $myAbs$.
+% Kỹ thuật sinh ngẫu nhiên dữ liệu thử không quan tâm đến hành vi và cấu trúc bên trong của chương trình, chỉ tập trung tìm kiếm những trường hợp chương trình không hoạt động theo đặc tả kỹ thuật của chương trình. Trong phương pháp này, dữ liệu thử nghiệm được tạo ngẫu nhiên từ các đặc tả kỹ thuật của phần mềm (tức là không liên quan tới hành vi và cấu trúc của chương trình).
 
-\subsubsection*{Ưu điểm, hạn chế, hướng khắc phục}
-Sinh ngẫu nhiên dữ liệu thử có một số ưu điểm và nhược điểm như sau:
+% \lstinputlisting[label={rt}, caption = {Hàm sinh ngẫu nhiên dữ liệu thử}]{RandomTesting.cs}
+% Mã lệnh \ref{rt} là một hàm sinh ngẫu nhiên dữ liệu thử, chúng ta thấy hàm $testAbs$ chỉ thực hiện việc tạo giá trị đầu vào ngẫu nhiên $int x$ theo đặc tả tham số đầu vào của chương trình $myAbs$, và kiểm tra kết quả đầu ra của chương trình $assert(result >= 0)$, không quan tâm hành vi và cấu trúc bên trong của hàm $myAbs$.
 
-\textit{* Ưu điểm:}
-\begin{itemize}
-	\item Đơn giản, dễ dàng sinh các đầu vào ngẫu nhiên
-	\item Không tốn nhiều tài nguyên bộ nhớ lúc thực thi
-\end{itemize}
+% \subsubsection*{Ưu điểm, hạn chế, hướng khắc phục}
+% Sinh ngẫu nhiên dữ liệu thử có một số ưu điểm và nhược điểm như sau:
 
-\textit{* Hạn chế:}
-\begin{itemize}
-	\item Một nhánh hành vi của chương trình được kiểm thử nhiều lần với nhiều đầu vào khác nhau
-	\item Có thể một số nhánh hành vi của chương trình bị bỏ qua
-	\item Khó xác định khi nào việc kiểm thử nên dừng lại
-	\item Không biết dữ liệu thử có duyệt được tất cả các nhánh trong chương trình hay không
-\end{itemize}
+% \textit{* Ưu điểm:}
+% \begin{itemize}
+% 	\item Đơn giản, dễ dàng sinh các đầu vào ngẫu nhiên
+% 	\item Không tốn nhiều tài nguyên bộ nhớ lúc thực thi
+% \end{itemize}
 
-\textit{* Hướng khắc phục:}
-Để xác định khi nào việc kiểm thử dừng lại, hệ thống kiểm thử ngẫu nhiên có thể kết hợp với kỹ thuật Adequacy Criterion \cite{zhu1997software}. Kỹ thuật Adequacy Criterion là một kỹ thuật yêu cầu duyệt tất cả các nhánh của chương trình, bằng việc kết hợp này cho phép việc kiểm thử chỉ dừng lại khi tất cả các câu lệnh của chương trình được thực thi ít nhất một lần.
+% \textit{* Hạn chế:}
+% \begin{itemize}
+% 	\item Một nhánh hành vi của chương trình được kiểm thử nhiều lần với nhiều đầu vào khác nhau
+% 	\item Có thể một số nhánh hành vi của chương trình bị bỏ qua
+% 	\item Khó xác định khi nào việc kiểm thử nên dừng lại
+% 	\item Không biết dữ liệu thử có duyệt được tất cả các nhánh trong chương trình hay không
+% \end{itemize}
+
+% \textit{* Hướng khắc phục:}
+% Để xác định khi nào việc kiểm thử dừng lại, hệ thống kiểm thử ngẫu nhiên có thể kết hợp với kỹ thuật Adequacy Criterion \cite{zhu1997software}. Kỹ thuật Adequacy Criterion là một kỹ thuật yêu cầu duyệt tất cả các nhánh của chương trình, bằng việc kết hợp này cho phép việc kiểm thử chỉ dừng lại khi tất cả các câu lệnh của chương trình được thực thi ít nhất một lần.
 
 \subsection{Kỹ thuật Dynamic symbolic execution}
+
 Dynamic symbolic execution (DSE) là một kỹ thuật duyệt tự động tất cả các đường đi có thể của chương trình bằng cách chạy chương trình với nhiều giá trị đầu vào khác nhau để tăng độ phủ của dữ liệu thử \cite{xie2009fitness}.
 
 Dựa trên các tham số đầu vào của chương trình, DSE sẽ tạo ra các giá trị đầu vào cụ thể và thực thi chương trình với các giá trị cụ thể này. Trong quá trình thực thi, DSE sẽ ghi nhận lại ràng buộc tại các nút, phủ định lại các ràng buộc này và sinh các giá trị đầu vào thỏa điều kiện ràng buộc tại các nút rẽ nhánh này. Với một giá trị đầu vào cụ thể, DSE sẽ thực thi chương trình và duyệt được một đường đi cụ thể, quá trình thực thi này sẽ lặp lại cho đến khi duyệt hết tất cả các đường đi của chương trình.
 
 \begin{algorithm}
 	\caption{DSE}
-	\begin{algorithmic}	
-		\item Set J:= $\varnothing $ \Comment{J: Tập hợp các đầu vào của chương trình phân tích}
-		\item loop
-			\subitem Chọn đầu vào i $\notin $ J \Comment{Dừng lại nếu không có i nào được tìm thấy}
-			\subitem Xuất ra i
-			\subitem Thực thi P(i); lưu lại điều kiện đường đi C(i); suy ra C'(i)
-			\subitem Đặt J := J $\cup $ i			
-		\item end loop
+	\begin{algorithmic}
+        \item Set J:= $\varnothing $ \Comment{J: Tập hợp các đầu vào
+            của chương trình phân tích}
+        \item loop \subitem Chọn đầu vào i $\notin $ J \Comment{Dừng
+            lại nếu không có i nào được tìm thấy} \subitem Xuất ra i
+          \subitem Thực thi P(i); lưu lại điều kiện đường đi C(i); suy
+          ra C'(i) \subitem Đặt J := J $\cup $ i
+        \item end loop
 	\end{algorithmic}
 \end{algorithm}
 
@@ -215,50 +275,52 @@ Sau đó tại điểm nhánh tiếp theo, với $x > y + 10$ vì vậy DSE thê
 Kết quả, sau 3 lần chạy chương trình, DSE tạo ra được các cặp giá trị đầu vào có thể duyệt hết các nhánh của chương trình test\_me đó là: $[22,7], [2,1], [30,15]$
 	
 \subsection{Một số công cụ ứng dụng DSE}	
-Trên thế giới hiện có nhiều công cụ sử dụng kỹ thuật DSE để giải quyết các ràng buộc và tạo ra các giá trị đầu vào có độ phủ cao như như Pex \cite{tillmann2008pex} và SAGE \cite{godefroid2008automated}... và những công cụ này được phát triển để có thể chạy được trên nhiều nền tảng khác nhau. Chúng ta có thể tham khảo một số công cụ sau đây:
+Trên thế giới hiện có nhiều công cụ sử dụng kỹ thuật DSE để giải quyết các ràng buộc và tạo ra các giá trị đầu vào có độ phủ cao như như Pex \cite{tillmann2008pex} và SAGE \cite{godefroid2008automated}... và những công cụ này được phát triển để có thể chạy được trên nhiều nền tảng khác nhau. Chúng ta có thể tham khảo một số công cụ khác sau đây:
 		
-	\begin{center}
-		\begin{tabular}  {|c|c|c|} 
-			\hline 
-			\textbf{Tên Công cụ} & \textbf{Ngôn ngữ} & \textbf{Url} \\ 
-			\hline 
-			KLEE & LLVM & klee.github.io/ \\ 
-			\hline 
-			JPF	 & Java	& babelfish.arc.nasa.gov/trac/jpf \\
-			\hline 
-			jCUTE &	Java &	github.com/osl/jcute \\
-			\hline 
-			janala2	 & Java &	github.com/ksen007/janala2 \\
-			\hline 
-			JBSE	& Java	 & github.com/pietrobraione/jbse \\
-			\hline 
-			KeY &	Java &	www.key-project.org/ \\	
-			\hline 
-			Mayhem & 	Binary &	forallsecure.com/mayhem.html \\
-			\hline 
-			Otter &	C	& bitbucket.org/khooyp/otter/overview \\
-			\hline 
-			Rubyx & 	Ruby &	www.cs.umd.edu/~avik/papers/ssarorwa.pdf \\
-			\hline 
-			Pex	& .NET Framework	 & research.microsoft.com/en-us/projects/pex/ \\
-			\hline 
-			Jalangi2 &	JavaScript &	github.com/Samsung/jalangi2 \\
-			\hline 
-			Kite &	LLVM &	www.cs.ubc.ca/labs/isd/Projects/Kite/ \\
-			\hline 
-			pysymemu &	x86-64 / Native	 &github.com/feliam/pysymemu/ \\
-			\hline 
-			Triton	& x86 and x86-64 &	triton.quarkslab.com \\	
-			\hline 
-			BE-PUM &	x86	 & https://github.com/NMHai/BE-PUM	 \\	
-			\hline
+\begin{center}
+  \begin{tabular} {|c|c|c|}
+    \hline 
+    \textbf{Tên Công cụ} & \textbf{Ngôn ngữ} & \textbf{Url} \\ 
+    \hline 
+    KLEE & LLVM & klee.github.io/ \\ 
+    \hline 
+    JPF	 & Java	& babelfish.arc.nasa.gov/trac/jpf \\
+    \hline 
+    jCUTE &	Java &	github.com/osl/jcute \\
+    \hline 
+    janala2	 & Java &	github.com/ksen007/janala2 \\
+    \hline 
+    JBSE	& Java	 & github.com/pietrobraione/jbse \\
+    \hline 
+    KeY &	Java &	www.key-project.org/ \\	
+    \hline 
+    Mayhem & 	Binary &	forallsecure.com/mayhem.html \\
+    \hline 
+    Otter &	C	& bitbucket.org/khooyp/otter/overview \\
+    \hline 
+    Rubyx & 	Ruby &	www.cs.umd.edu/~avik/papers/ssarorwa.pdf \\
+    \hline 
+    Pex	& .NET Framework	 & research.microsoft.com/en-us/projects/pex/ \\
+    \hline 
+    Jalangi2 &	JavaScript &	github.com/Samsung/jalangi2 \\
+    \hline 
+    Kite &	LLVM &	www.cs.ubc.ca/labs/isd/Projects/Kite/ \\
+    \hline 
+    pysymemu &	x86-64 / Native	 &github.com/feliam/pysymemu/ \\
+    \hline 
+    Triton	& x86 and x86-64 &	triton.quarkslab.com \\	
+    \hline 
+    BE-PUM &	x86	 & https://github.com/NMHai/BE-PUM	 \\	
+    \hline
 			
-		\end{tabular} 
+  \end{tabular} 
 
-	\end{center}
+\end{center}
 	
 
 \section{Hành vi của chương trình }
+\label{sec:behavior}
+        
 Để định lượng hai chương trình tương tự nhau, chúng ta nghiên cứu một số định nghĩa liên quan đến hành vi của hai chương trình như sau:
 	
 \subsection{Thực thi chương trình}
@@ -266,7 +328,7 @@ Trên thế giới hiện có nhiều công cụ sử dụng kỹ thuật DSE đ
 Cho $P$ là một chương trình, $I$ là tập hợp các trị đầu vào của $P$ và $O$ là tập hợp các giá trị đầu ra của $P$. Thực thi chương trình P là ánh xạ $exec: P \times I \rightarrow O$. Với giá trị đầu vào $i \in I$, sau khi thực thi $P$ trên $i$ ta có giá trị đầu ra tương ứng $o \in O$ và ký hiệu $o = exec(P, i)$.  
 \end{definition}
 
-\subsection{Độ tương đương về hành vi (Behavioral Equivalence)}
+\subsection{Tương đương về hành vi}
 
 Dựa trên định nghĩa về thực thi chương trình, chúng ta tìm hiểu thế nào là độ tương đương về hành vi giữa hai chương trình thông qua hai chương trình minh họa sau:
 
@@ -284,7 +346,7 @@ Mã lệnh \ref{SwitchCase} và \ref{IfElse} có tham số đầu vào cùng ki�
  Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền các giá trị đầu vào $I$. Hai chương trình này được gọi là tương đương khi và chỉ khi thực thi của chúng giống nhau trên mọi giá trị đầu vào trên $I$, ký hiệu là exec($P_{1}, I$) = exec($P_{2}, I$). 
 \end{definition}	
 	
-\subsection{Sự khác biệt về hành vi (Behavioral Difference)}
+\subsection{Khác biệt về hành vi}
 Để tìm hiểu sự khác biệt về hành vi của hai chương trình, chúng ta tìm hiểu hai mã lệnh sau:
 
 \begin{minipage}[t]{0.45\linewidth}
@@ -302,7 +364,7 @@ Mã lệnh \ref{KBHV1} và Mã lệnh \ref{KBHV2}  của Chương trình $P_{1}$
 Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng một miền các giá trị đầu vào $I$. Hai chương trình này được xem là có sự khác biêt về hành vi khi và chỉ khi thực thi của chúng khác nhau trên mọi giá trị đầu vào $I$, ký hiệu là $exec(P_{1}, I) \neq exec(P_{2}, I)$.
 \end{definition}
 
-\subsection{Độ tương tự hành vi (Behavioral Similarity)}
+\subsection{Độ tương tự về hành vi}
 Để hiểu thế nào là tương tự hành vi, chúng ta phân tích hai Mã lệnh sau:
 
 \begin{minipage}[t]{0.45\linewidth}
@@ -320,6 +382,8 @@ Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đ�
 \end{definition}
 
 \section{Một số phép đo độ tương tự hành vi}
+\label{sec:metrics}
+
 Để đo độ tương tự về hành vi giữa hai chương trình, chúng ta có thể chạy từng giá trị đầu vào trong miền giá trị đầu vào của hai chương trình. Tỷ lệ giữa số lượng đầu vào thử nghiệm khi thực thi trên cả hai chương trình cho kết quả đầu ra giống nhau trên tổng số lượng đầu vào được thử nghiệm là độ tương tự hành vi giữa hai chương trình. Dựa trên cách tính tỷ lệ kết quả đầu ra của hai chương trình, chúng ta có một số phép đo độ tương tự hành vi như sau:
 
 \subsection{Phép đo lấy mẫu ngẫu nhiên (RS)}
@@ -357,7 +421,7 @@ Phép đo \textbf{RS} là một một phép đo đơn giản và hiệu quả đ
 	\lstinputlisting[label={RS2}, caption = {Chương trình $P_{2}$}]{RS2.cs}
 \end{minipage}%
  
-Chúng ta thấy đoạn Mã lệnh \ref{RS1} và \ref{RS2} của hai Chương trình $P_{1}$ và $P_{2}$ có cùng miền giá trị đầu vào là $string x$, cấu trúc mã lệnh hai chương trình gần như nhau. Nhưng Chương trình $P_{1}$ khác với Chương trình $P_{2}$ đó là sẽ trả kết quả về $0$ nếu tham số đầu vào có giá trị là $XYZ$. Tỷ lệ phép đo \textbf{RS} lấy ngẫu nhiên giá trị đầu vào $x$ trên miền giá trị đầu vào của hai chương trình có giá trị bằng $XYZ$ là rất thấp, vì vậy khả năng câu lệnh $if (x == "XYZ") return 0;$ của Chương trình $P_{1}$ có thể sẽ không được thực thi nên kết quả của phép đo \textbf{RS} sẽ ở mức tương đối so với hành vi thực tế của chương trình.
+Chúng ta thấy đoạn Mã lệnh \ref{RS1} và \ref{RS2} của hai Chương trình $P_{1}$ và $P_{2}$ có cùng miền giá trị đầu vào là \texttt{string x}, cấu trúc mã lệnh hai chương trình gần như nhau. Nhưng Chương trình $P_{1}$ khác với Chương trình $P_{2}$ đó là sẽ trả kết quả về $0$ nếu tham số đầu vào có giá trị là $XYZ$. Tỷ lệ phép đo \textbf{RS} lấy ngẫu nhiên giá trị đầu vào $x$ trên miền giá trị đầu vào của hai chương trình có giá trị bằng $XYZ$ là rất thấp, vì vậy khả năng câu lệnh $if (x == "XYZ") return 0;$ của Chương trình $P_{1}$ có thể sẽ không được thực thi nên kết quả của phép đo \textbf{RS} sẽ ở mức tương đối so với hành vi thực tế của chương trình.
 
 \subsection{Phép đo tượng trưng trên một chương trình Single Program Symbol Execution (SSE)}
 Phép đo \textbf{SSE} là một phép đo dựa trên số lượng các nhánh đường đi của Chương trình mẫu, mỗi nhánh đường đi của Chương trình mẫu được xem là một hành vi của chương trình. Nếu chọn một giá trị đầu vào thử nghiệm cho một nhánh đường đi trong Chương trình thì các giá trị đầu vào thử nghiệm này sẽ khám phá hết các hành vi trong Chương trình mẫu. Do vậy, số phần tử trong tập các giá trị đầu vào thử nghiệm của phép đo \textbf{SSE} sẽ nhỏ hơn tập các giá trị đầu vào thử nghiệm được chọn theo phương pháp lấy ngẫu nhiên giá trị đầu vào. 
@@ -365,7 +429,17 @@ Phép đo \textbf{SSE} là một phép đo dựa trên số lượng các nhánh
 Để tính độ tương tự hành vi của hai chương trình với phép đo \textbf{SSE}, chúng ta chọn Chương trình mẫu làm Chương trình tham chiếu và áp dụng kỹ thuật \textbf{DSE} để tạo ra các đầu vào thử nghiệm dựa trên Chương trình tham chiếu. Sau đó thực thi cả hai chương trình dựa trên các giá trị đầu vào thử nghiệm. Tỷ lệ số lượng các kết quả đầu ra giống nhau của cả hai chương trình trên tổng số các giá trị đầu vào thử nghiệm của Chương trình tham chiếu là kết quả của phép đo \textbf{SSE}. Qua đó, chúng ta có định nghĩa phép đo \textbf{SSE} như sau:
 
 \begin{definition}
-	Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đầu vào $I$, Chương trình $P_{1}$ là Chương trình tham chiếu, $I_{s}$ là tập các giá trị đầu vào được tạo bởi DSE trên chương trình $P_{1}$, và $I_{a}$ là tập con $I_{s}$. Hai Chương trình thực thi giống nhau với $\forall i \in I_{a}$, ký hiệu $exec(P_{1}, i) = exec(P_{2}, i)$ và hai Chương trình thực thi khác nhau với $\forall j \in I_{s} \setminus I_{a}$, ký hiệu $exec(P_{1}, j) \neq exec(P_{2}, j)$. Chỉ số phép đo \textbf{SSE} được định nghĩa là $M_{SSE}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup \left|I_{s}\right| $.
+  Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đầu
+  vào $I$, Chương trình $P_{1}$ là Chương trình tham chiếu, $I_{s}$ là
+  tập các giá trị đầu vào được tạo bởi DSE trên chương trình $P_{1}$,
+  và $I_{a}$ là tập con $I_{s}$. Hai Chương trình thực thi giống nhau
+  với $\forall i \in I_{a}$, ký hiệu $exec(P_{1}, i) = exec(P_{2}, i)$
+  và hai Chương trình thực thi khác nhau với
+  $\forall j \in I_{s} \setminus I_{a}$, ký hiệu
+  $exec(P_{1}, j) \neq exec(P_{2}, j)$. Chỉ số phép đo \textbf{SSE}
+  được định nghĩa là
+  $M_{SSE}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup
+  \left|I_{s}\right| $.
 \end{definition}
 
 \begin{algorithm}[H]
@@ -428,6 +502,7 @@ Dựa trên cách thức hoạt động của phép đo \textbf{PSE}, chúng ta 
 
 
 Phép đo \textbf{PSE} đã cải thiện được hạn chế của phép đo \textbf{SSE} khi dữ liệu thử nghiệm được  tạo ra từ trên Chương trình kết hợp, tập dữ liệu thử nghiệm có khả năng thực thi hết các nhánh đường đi của Chương trình tham chiếu và Chương trình cần tính. Tuy nhiên, phép đo \textbf{PSE} cũng có hạn chế trong quá trình xử lý các vòng lặp lớn hoặc vô hạn. Để giảm bớt hạn chế này, chúng ta có thể giới hạn miền đầu vào hoặc đếm số vòng lặp của các Chương trình. Ngoài ra, phép đo \textbf{PSE} khám phá đường dẫn của Chương trình kết hợp nên quá trình xử lý sẽ tốn thời gian và tài nguyên hơn so với phép đo \textbf{SSE} khi chỉ khám phá đường dẫn của Chương trình tham chiếu.
+
 %\section{Tiêu chí đánh giá hiệu quả}
 %Để đánh giá độ hiệu quả của các phép đo, chúng ta có thể áp dụng những tiêu chí cơ bản sau:
 %\begin{itemize}
@@ -445,3 +520,7 @@ Phép đo \textbf{PSE} đã cải thiện được hạn chế của phép đo \
 \section*{Tổng kết chương}  
 Nội dung chính được trình bày trong chương này bao gồm những kiến thức cơ sở về kiểm thử phần mềm, kỹ thuật sinh dữ liệu kiểm, kỹ thuật Dynamic symbolic execution. Một số định nghĩa về thực thi chương trình, độ tương tự hành vi, sự khác biệt về hành vi độ tương tự về hành vi của chương trình. Mô tả thuật toán và định nghĩa 3 kỹ thuật đo RS, SSE, PSE cũng như trình bày những ưu điểm, nhược điểm và hướng khắc phục của 3 kỹ thuật đo. 
   
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "Main"
+%%% End:

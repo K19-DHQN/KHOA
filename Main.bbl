@@ -35,20 +35,9 @@ Yingnong Dang, Dongmei Zhang, Song Ge, Chengyun Chu, Yingjun Qiu, and Tao Xie.
 \newblock In {\em Proceedings of the 28th Annual Computer Security Applications
   Conference}, pages 369--378. ACM, 2012.
 
-\bibitem{de2008z3}
-Leonardo De~Moura and Nikolaj Bj{\o}rner.
-\newblock Z3: An efficient smt solver.
-\newblock {\em Tools and Algorithms for the Construction and Analysis of
-  Systems}, pages 337--340, 2008.
-
 \bibitem{edx}
 EdX.
 \newblock https://www.edx.org/.
-
-\bibitem{godefroid2005dart}
-Patrice Godefroid, Nils Klarlund, and Koushik Sen.
-\newblock Dart: directed automated random testing.
-\newblock In {\em ACM Sigplan Notices}, volume~40, pages 213--223. ACM, 2005.
 
 \bibitem{godefroid2008automated}
 Patrice Godefroid, Michael~Y Levin, David~A Molnar, et~al.
@@ -77,11 +66,6 @@ Raghavan Komondoor and Susan Horwitz.
 \newblock In {\em International Static Analysis Symposium}, pages 40--56.
   Springer, 2001.
 
-\bibitem{kroening2016decision}
-Daniel Kroening and Ofer Strichman.
-\newblock Decision procedures for propositional logic.
-\newblock In {\em Decision Procedures}, pages 27--58. Springer, 2016.
-
 \bibitem{merlo2004linear}
 Ettore Merlo, Giuliano Antoniol, Massimiliano Di~Penta, and Vincenzo~Fabio
   Rollo.
@@ -94,6 +78,10 @@ Ettore Merlo, Giuliano Antoniol, Massimiliano Di~Penta, and Vincenzo~Fabio
 Glenford~J Myers, Corey Sandler, and Tom Badgett.
 \newblock {\em The art of software testing}.
 \newblock John Wiley \& Sons, 2011.
+
+\bibitem{DSE}
+Mayur Naik.
+\newblock http://www.cis.upenn.edu/~mhnaik/edu/cis700/index.html.
 
 \bibitem{mooc}
 Coursera~MOOC on~Software Engineering~for SaaS.

@@ -1,25 +1,28 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.12.31)  27 JUL 2018 15:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.5.25)  29 JUL 2018 20:46
 entering extended mode
-**\input Main.tex
-(Main.tex ("C:\Program Files\MiKTeX\tex\latex\memoir\memoir.cls"
-Document Class: memoir 2016/05/16 v3.7f configurable book, report, article docu
+**./Main.tex
+(Main.tex
+LaTeX2e <2017-04-15>
+Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\memoir\memoir.cls
+Document Class: memoir 2018/04/04 v3.7g configurable book, report, article docu
 ment class
 \onelineskip=\skip41
 \lxvchars=\skip42
 \xlvchars=\skip43
 \@memcnta=\count79
 \c@@memmarkcntra=\count80
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\ifpdf.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-("C:\Program Files\MiKTeX\tex\latex\ifetex\ifetex.sty"
-Package: ifetex 2011/12/15 v1.2 ifetex
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\ifetex\ifetex.sty
+Package: ifetex 2018/03/31 v1.2a ifetex
 
-("C:\Program Files\MiKTeX\tex\plain\ifetex\ifetex.tex"))
-("C:\Program Files\MiKTeX\tex\generic\ifxetex\ifxetex.sty"
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\plain\ifetex\ifetex.tex))
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\ifluatex.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -28,7 +31,7 @@ Package ifluatex Info: LuaTeX not detected.
 \trimtop=\skip46
 \trimedge=\skip47
 
-("C:\Program Files\MiKTeX\tex\latex\memoir\mem12.clo"
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\memoir\mem12.clo
 File: mem12.clo 2010/10/19 v0.4b memoir class 12pt size option
 )
 \binding=\skip48
@@ -181,8 +184,8 @@ File: mem12.clo 2010/10/19 v0.4b memoir class 12pt size option
 \afterepigraphskip=\skip125
 \epigraphwidth=\skip126
 \epigraphrule=\skip127
-LaTeX Info: Redefining \em on input line 7551.
-LaTeX Info: Redefining \emph on input line 7559.
+LaTeX Info: Redefining \em on input line 7578.
+LaTeX Info: Redefining \emph on input line 7586.
 \tocentryskip=\skip128
 \tocbaseline=\skip129
 \cftparskip=\skip130
@@ -265,8 +268,8 @@ LaTeX Info: Redefining \emph on input line 7559.
 \FrameRule=\dimen145
 \FrameSep=\dimen146
 \c@cp@cntr=\count118
-LaTeX Info: Redefining \: on input line 12068.
-LaTeX Info: Redefining \! on input line 12070.
+LaTeX Info: Redefining \: on input line 12100.
+LaTeX Info: Redefining \! on input line 12102.
 \c@ism@mctr=\count119
 \c@xsm@mctr=\count120
 \c@csm@mctr=\count121
@@ -293,7 +296,7 @@ LaTeX Info: Redefining \! on input line 12070.
 \cfttablenumwidth=\skip184
 Package abstract [2008/07/23] emulated by memoir.
 Package appendix [2008/07/23] emulated by memoir.
-Package array [2008/09/09] emulated by memoir.
+Package array [2016/10/06] emulated by memoir.
 Package booktabs [2016/05/16] emulated by memoir.
 Package ccaption [2008/07/23] emulated by memoir.
 Package changepage [2008/07/23] emulated by memoir.
@@ -301,7 +304,7 @@ Package chngcntr [2008/07/23] emulated by memoir.
 Package chngpage [2008/07/23] emulated by memoir.
 Package crop emulated by memoir.
 Package dcolumn [2008/07/23] emulated by memoir.
-Package delarray [2008/07/23] emulated by memoir.
+Package delarray [2014/10/28] emulated by memoir.
 Package enumerate [2008/07/23] emulated by memoir.
 Package epigraph [2008/07/23] emulated by memoir.
 Package ifmtarg [2008/07/23] emulated by memoir.
@@ -318,7 +321,7 @@ Package patchcmd [2008/07/23] emulated by memoir.
 Package setspace [2008/07/23] emulated by memoir.
 Package shortvrb [2008/07/23] emulated by memoir.
 Package showidx [2008/07/23] emulated by memoir.
-Package tabularx [2008/07/23] emulated by memoir.
+Package tabularx [2016/02/03] emulated by memoir.
 Package titleref [2008/07/23] emulated by memoir.
 Package titling [2008/07/23] emulated by memoir.
 Package tocbibind [2008/07/23] emulated by memoir.
@@ -326,40 +329,62 @@ Package tocloft [2008/07/23] emulated by memoir.
 Package tocvsec2 [2008/07/23] emulated by memoir.
 Package verbatim [2008/07/23] emulated by memoir.
 Package verse [2008/07/23] emulated by memoir.
+)
+(dangkhoa.sty ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files\MiKTeX\tex\latex\memoir\mempatch.sty"
-Package: mempatch 2009/07/24 v6.0f Patches for memoir class v1.6180339
-)) (dangkhoa.sty
-("C:\Program Files\MiKTeX\tex\latex\vntex\vietnam.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count137
+\Gm@cntv=\count138
+\c@Gm@tempcnt=\count139
+\Gm@bindingoffset=\dimen147
+\Gm@wd@mp=\dimen148
+\Gm@odd@mp=\dimen149
+\Gm@even@mp=\dimen150
+\Gm@layoutwidth=\dimen151
+\Gm@layoutheight=\dimen152
+\Gm@layouthoffset=\dimen153
+\Gm@layoutvoffset=\dimen154
+\Gm@dimlist=\toks23
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\vntex\vietnam.sty
 Package: vietnam 2009/07/12 v1.3 support for Vietnamese
 
-("C:\Program Files\MiKTeX\tex\latex\base\ifthen.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-("C:\Program Files\MiKTeX\tex\latex\vntex\t5enc.def"
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\vntex\t5enc.def
 File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
 )
 LaTeX Font Info:    Try loading font information for T5+cmr on input line 105.
 
-("C:\Program Files\MiKTeX\tex\latex\vntex\t5cmr.fd"
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\vntex\t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ))
-("C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks22
-\inpenc@posthook=\toks23
+\inpenc@prehook=\toks24
+\inpenc@posthook=\toks25
 
-("C:\Program Files\MiKTeX\tex\latex\base\utf8.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX\tex\latex\base\t1enc.dfu"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -600,7 +625,7 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX\tex\latex\base\ot1enc.dfu"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -641,7 +666,7 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX\tex\latex\base\omsenc.dfu"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -657,7 +682,7 @@ Now handling font encoding U ...
 Now handling font encoding T5 ...
 ... processing UTF-8 mapping file for font encoding T5
 
-("C:\Program Files\MiKTeX\tex\latex\vntex\t5enc.dfu"
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\vntex\t5enc.dfu
 File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00BB (decimal 187)
@@ -822,52 +847,128 @@ File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files\MiKTeX\tex\latex\vntex\vncaps.tex"
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\vntex\vncaps.tex
 File: vncaps.tex 2006/06/07 v1.1 Captions in Vietnamese
 ))
-("C:\Program Files\MiKTeX\tex\latex\pdfpages\pdfpages.sty"
-Package: pdfpages 2017/01/14 v0.5h Insert pages of external PDF documents (AM)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip185
 
-("C:\Program Files\MiKTeX\tex\latex\tools\calc.sty"
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks26
+\ex@=\dimen155
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen156
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count140
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count141
+\leftroot@=\count142
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count143
+\DOTSCASE@=\count144
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen157
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count145
+\c@MaxMatrixCols=\count146
+\dotsspace@=\muskip10
+\c@parentequation=\count147
+\dspbrk@lvl=\count148
+\tag@help=\toks27
+\row@=\count149
+\column@=\count150
+\maxfields@=\count151
+\andhelp@=\toks28
+\eqnshift@=\dimen158
+\alignsep@=\dimen159
+\tagshift@=\dimen160
+\tagwidth@=\dimen161
+\totwidth@=\dimen162
+\lineht@=\dimen163
+\@envbody=\toks29
+\multlinegap=\skip186
+\multlinetaggap=\skip187
+\mathdisplay@stack=\toks30
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip188
+\f@nch@O@elh=\skip189
+\f@nch@O@erh=\skip190
+\f@nch@O@olh=\skip191
+\f@nch@O@orh=\skip192
+\f@nch@O@elf=\skip193
+\f@nch@O@erf=\skip194
+\f@nch@O@olf=\skip256
+\f@nch@O@orf=\skip257
+)
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count137
-\calc@Bcount=\count138
-\calc@Adimen=\dimen147
-\calc@Bdimen=\dimen148
-\calc@Askip=\skip185
-\calc@Bskip=\skip186
+\calc@Acount=\count152
+\calc@Bcount=\count153
+\calc@Adimen=\dimen164
+\calc@Bdimen=\dimen165
+\calc@Askip=\skip258
+\calc@Bskip=\skip259
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count139
-\calc@Cskip=\skip187
+\calc@Ccount=\count154
+\calc@Cskip=\skip260
 )
-("C:\Program Files\MiKTeX\tex\latex\eso-pic\eso-pic.sty"
-Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\eso-pic\eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\atbegshi.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\infwarerr.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 ))
-("C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty"
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks24
-)
-("C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty"
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX\tex\latex\graphics-cfg\color.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-("C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-\Gread@gobject=\count140
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
@@ -879,313 +980,78 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ))
-("C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty"
-Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 )
-\Gin@req@height=\dimen149
-\Gin@req@width=\dimen150
+\Gin@req@height=\dimen166
+\Gin@req@width=\dimen167
 )
-\AM@pagewidth=\dimen151
-\AM@pageheight=\dimen152
+\AM@pagewidth=\dimen168
+\AM@pageheight=\dimen169
 
-("C:\Program Files\MiKTeX\tex\latex\pdfpages\pppdftex.def"
-File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 )
-\AM@pagebox=\box29
-\AM@global@opts=\toks25
-\AM@toc@title=\toks26
-\c@AM@survey=\count141
-\AM@templatesizebox=\box30
+\AM@pagebox=\box31
+\AM@global@opts=\toks31
+\AM@toc@title=\toks32
+\c@AM@survey=\count155
+\AM@templatesizebox=\box32
 )
-("C:\Program Files\MiKTeX\tex\latex\todonotes\todonotes.sty"
-Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
-Package: todonotes 2012/07/25
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\lipsum\lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count156
+)
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count157
+\lst@gtempboxa=\box33
+\lst@token=\toks33
+\lst@length=\count158
+\lst@currlwidth=\dimen170
+\lst@column=\count159
+\lst@pos=\count160
+\lst@lostspace=\dimen171
+\lst@width=\dimen172
+\lst@newlines=\count161
+\lst@lineno=\count162
+\lst@maxwidth=\dimen173
 
-("C:\Program Files\MiKTeX\tex\latex\xkeyval\xkeyval.sty"
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-
-("C:\Program Files\MiKTeX\tex\generic\xkeyval\xkeyval.tex"
-("C:\Program Files\MiKTeX\tex\generic\xkeyval\xkvutils.tex"
-\XKV@toks=\toks27
-\XKV@tempa@toks=\toks28
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count163
+\lst@skipnumbers=\count164
+\lst@framebox=\box34
 )
-\XKV@depth=\count142
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
-("C:\Program Files\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty"
-("C:\Program Files\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty"
-("C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty"
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfutil-common.tex"
-\pgfutil@everybye=\toks29
-\pgfutil@tempdima=\dimen153
-\pgfutil@tempdimb=\dimen154
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfutil-common-lists.tex"))
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfutil-latex.def"
-\pgfutil@abb=\box31
-
-("C:\Program Files\MiKTeX\tex\latex\ms\everyshi.sty"
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex"
-Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
-))
-Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-
-("C:\Program Files\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty"
-("C:\Program Files\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty"
-("C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex"
-Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
-
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex"
-\pgfkeys@pathtoks=\toks30
-\pgfkeys@temptoks=\toks31
-
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex"
-\pgfkeys@tmptoks=\toks32
-))
-\pgf@x=\dimen155
-\pgf@y=\dimen156
-\pgf@xa=\dimen157
-\pgf@ya=\dimen158
-\pgf@xb=\dimen159
-\pgf@yb=\dimen160
-\pgf@xc=\dimen161
-\pgf@yc=\dimen162
-\w@pgf@writea=\write4
-\r@pgf@reada=\read2
-\c@pgf@counta=\count143
-\c@pgf@countb=\count144
-\c@pgf@countc=\count145
-\c@pgf@countd=\count146
-\t@pgf@toka=\toks33
-\t@pgf@tokb=\toks34
-\t@pgf@tokc=\toks35
-("C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgf.cfg"
-File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
-)
-Driver file for pgf: pgfsys-pdftex.def
-
-("C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
-File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
-
-("C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def"
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
-))) ("C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
-ex"
-File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count147
-\pgfsyssoftpath@bigbuffer@items=\count148
-) ("C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
-"
-File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-)) ("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex"
-Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
-
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex"
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathcalc.code.tex"
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathutil.code.tex")
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen163
-\pgfmath@count=\count149
-\pgfmath@box=\box32
-\pgfmath@toks=\toks36
-\pgfmath@stack@operand=\toks37
-\pgfmath@stack@operation=\toks38
-)
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.code.tex"
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex"
-)
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.trigonometric.c
-ode.tex")
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.random.code.tex
-")
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.comparison.code
-.tex")
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.base.code.tex")
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.round.code.tex"
-) ("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex
-")
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.integerarithmet
-ics.code.tex")))
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count150
-))
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex"
-File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen164
-\pgf@picmaxx=\dimen165
-\pgf@picminy=\dimen166
-\pgf@picmaxy=\dimen167
-\pgf@pathminx=\dimen168
-\pgf@pathmaxx=\dimen169
-\pgf@pathminy=\dimen170
-\pgf@pathmaxy=\dimen171
-\pgf@xx=\dimen172
-\pgf@xy=\dimen173
-\pgf@yx=\dimen174
-\pgf@yy=\dimen175
-\pgf@zx=\dimen176
-\pgf@zy=\dimen177
-)
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.
-tex"
-File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen178
-\pgf@path@lasty=\dimen179
-)
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex"
-File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen180
-\pgf@shorten@start@additional=\dimen181
-) ("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex"
-File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box33
-\pgf@hbox=\box34
-\pgf@layerbox@main=\box35
-\pgf@picture@serial@count=\count151
-)
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.t
-ex"
-File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen182
-)
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransformations.cod
-e.tex"
-File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen183
-\pgf@pt@y=\dimen184
-\pgf@pt@temp=\dimen185
-)
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
-File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
-)
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex"
-File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
-)
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code
-.tex"
-File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
-)
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex"
-File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen186
-)
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
-File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen187
-\pgf@sys@shading@range@num=\count152
-)
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex"
-File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
-
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex"
-File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box36
-)) ("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex"
-File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
-)
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransparency.code.t
-ex"
-File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
-)
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex"
-File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
-))) ("C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
-File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box37
-) ("C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
-File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
-)
-("C:\Program Files\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty"
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen188
-\pgf@nodesepend=\dimen189
-) ("C:\Program Files\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-1-18.st
-y"
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-)) ("C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgffor.sty"
-("C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgfkeys.sty"
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex"))
-("C:\Program Files\MiKTeX\tex\latex\pgf\math\pgfmath.sty"
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex"))
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex"
-Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
-
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex")
-\pgffor@iter=\dimen190
-\pgffor@skip=\dimen191
-\pgffor@stack=\toks39
-\pgffor@toks=\toks40
-))
-("C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex"
-Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
-
-("C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryplothandlers.code
-.tex"
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count153
-\pgfplotmarksize=\dimen192
-)
-\tikz@lastx=\dimen193
-\tikz@lasty=\dimen194
-\tikz@lastxsaved=\dimen256
-\tikz@lastysaved=\dimen257
-\tikzleveldistance=\dimen258
-\tikzsiblingdistance=\dimen259
-\tikz@figbox=\box38
-\tikz@figbox@bg=\box39
-\tikz@tempbox=\box40
-\tikz@tempbox@bg=\box41
-\tikztreelevel=\count154
-\tikznumberofchildren=\count155
-\tikznumberofcurrentchild=\count156
-\tikz@fig@count=\count157
-
-("C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count158
-\pgfmatrixcurrentcolumn=\count159
-\pgf@matrix@numberofcolumns=\count160
-)
-\tikz@expandcount=\count161
-
-("C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibr
-arytopaths.code.tex"
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-)))
-("C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibr
-arypositioning.code.tex"
-File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-)
-\c@@todonotes@numberoftodonotes=\count162
-)
-("C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package hobsub Info: Skipping package `ifluatex' (already loaded).
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
@@ -1217,24 +1083,24 @@ Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX\tex\latex\oberdiek\auxhook.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Program Files\MiKTeX\tex\latex\oberdiek\kvoptions.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen260
-\Hy@linkcounter=\count163
-\Hy@pagecounter=\count164
+\@linkdim=\dimen174
+\Hy@linkcounter=\count165
+\Hy@pagecounter=\count166
 
-("C:\Program Files\MiKTeX\tex\latex\hyperref\pd1enc.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count165
+\Hy@SavedSpaceFactor=\count167
 
-("C:\Program Files\MiKTeX\tex\latex\00miktex\hyperref.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4498.
@@ -1244,17 +1110,17 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count166
+\c@Hy@tempcnt=\count168
 
-("C:\Program Files\MiKTeX\tex\latex\url\url.sty"
-\Urlmuskip=\muskip10
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+\Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5104.
-\XeTeXLinkMargin=\dimen261
-\Fld@menulength=\count167
-\Field@Width=\dimen262
-\Fld@charsize=\dimen263
+\XeTeXLinkMargin=\dimen175
+\Fld@menulength=\count169
+\Field@Width=\dimen176
+\Fld@charsize=\dimen177
 Package hyperref Info: Hyper figures OFF on input line 6358.
 Package hyperref Info: Link nesting OFF on input line 6363.
 Package hyperref Info: Hyper index ON on input line 6366.
@@ -1264,220 +1130,106 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count168
-\c@Item=\count169
-\c@Hfootnote=\count170
+\Hy@abspage=\count170
+\c@Item=\count171
+\c@Hfootnote=\count172
 )
-("C:\Program Files\MiKTeX\tex\latex\memoir\memhfixc.sty"
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\memoir\memhfixc.sty
 Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
 ass
-\c@memhycontfloat=\count171
-\c@Hpagenote=\count172
+\c@memhycontfloat=\count173
+\c@Hpagenote=\count174
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\Program Files\MiKTeX\tex\latex\hyperref\hpdftex.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
-\Fld@listcount=\count173
-\c@bookmark@seq@number=\count174
+\Fld@listcount=\count175
+\c@bookmark@seq@number=\count176
 
-("C:\Program Files\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip188
+\Hy@SectionHShift=\skip261
 )
-("C:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2016/11/05 v2.16a AMS math features
-\@mathmargin=\skip189
-
-For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty"
-Package: amstext 2000/06/29 v2.01 AMS text
-
-("C:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty"
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks41
-\ex@=\dimen264
-))
-("C:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty"
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen265
-)
-("C:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty"
-Package: amsopn 2016/03/08 v2.02 operator names
-)
-\inf@bad=\count175
-LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count176
-\leftroot@=\count177
-LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count178
-\DOTSCASE@=\count179
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box42
-\strutbox@=\box43
-\big@size=\dimen266
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count180
-\c@MaxMatrixCols=\count181
-\dotsspace@=\muskip11
-\c@parentequation=\count182
-\dspbrk@lvl=\count183
-\tag@help=\toks42
-\row@=\count184
-\column@=\count185
-\maxfields@=\count186
-\andhelp@=\toks43
-\eqnshift@=\dimen267
-\alignsep@=\dimen268
-\tagshift@=\dimen269
-\tagwidth@=\dimen270
-\totwidth@=\dimen271
-\lineht@=\dimen272
-\@envbody=\toks44
-\multlinegap=\skip190
-\multlinetaggap=\skip191
-\mathdisplay@stack=\toks45
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
-)
-("C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty"
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-("C:\Program Files\MiKTeX\tex\latex\amsfonts\amsfonts.sty"
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-("C:\Program Files\MiKTeX\tex\latex\algorithms\algorithm.sty"
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-("C:\Program Files\MiKTeX\tex\latex\float\float.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count187
-\float@exts=\toks46
-\float@box=\box44
-\@float@everytoks=\toks47
-\@floatcapt=\box45
+\c@float@type=\count177
+\float@exts=\toks34
+\float@box=\box35
+\@float@everytoks=\toks35
+\@floatcapt=\box36
 )
-\@float@every@algorithm=\toks48
-\c@algorithm=\count188
+\@float@every@algorithm=\toks36
+\c@algorithm=\count178
 )
-("C:\Program Files\MiKTeX\tex\latex\algorithmicx\algpseudocode.sty"
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algpseudocode
+.sty
 Package: algpseudocode 
 
-("C:\Program Files\MiKTeX\tex\latex\algorithmicx\algorithmicx.sty"
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algorithmicx.
+sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count189
-\c@ALG@rem=\count190
-\c@ALG@nested=\count191
-\ALG@tlm=\skip192
-\ALG@thistlm=\skip193
-\c@ALG@Lnr=\count192
-\c@ALG@blocknr=\count193
-\c@ALG@storecount=\count194
-\c@ALG@tmpcounter=\count266
-\ALG@tmplength=\skip194
+\c@ALG@line=\count179
+\c@ALG@rem=\count180
+\c@ALG@nested=\count181
+\ALG@tlm=\skip262
+\ALG@thistlm=\skip263
+\c@ALG@Lnr=\count182
+\c@ALG@blocknr=\count183
+\c@ALG@storecount=\count184
+\c@ALG@tmpcounter=\count185
+\ALG@tmplength=\skip264
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) ("C:\Program Files\MiKTeX\tex\latex\lipsum\lipsum.sty"
-Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count267
 )
-("C:\Program Files\MiKTeX\tex\latex\geometry\geometry.sty"
-Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count268
-\Gm@cntv=\count269
-\c@Gm@tempcnt=\count270
-\Gm@bindingoffset=\dimen273
-\Gm@wd@mp=\dimen274
-\Gm@odd@mp=\dimen275
-\Gm@even@mp=\dimen276
-\Gm@layoutwidth=\dimen277
-\Gm@layoutheight=\dimen278
-\Gm@layouthoffset=\dimen279
-\Gm@layoutvoffset=\dimen280
-\Gm@dimlist=\toks49
-
-("C:\Program Files\MiKTeX\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX\tex\latex\psnfss\mathpazo.sty"
-Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
-\symupright=\mathgroup6
-)
-("C:\Program Files\MiKTeX\tex\latex\listings\listings.sty"
-\lst@mode=\count271
-\lst@gtempboxa=\box46
-\lst@token=\toks50
-\lst@length=\count272
-\lst@currlwidth=\dimen281
-\lst@column=\count273
-\lst@pos=\count274
-\lst@lostspace=\dimen282
-\lst@width=\dimen283
-\lst@newlines=\count275
-\lst@lineno=\count276
-\lst@maxwidth=\dimen284
-
-("C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty"
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count277
-\lst@skipnumbers=\count278
-\lst@framebox=\box47
-)
-("C:\Program Files\MiKTeX\tex\latex\listings\listings.cfg"
-File: listings.cfg 2015/06/04 1.6 listings configuration
-))
-Package: listings 2015/06/04 1.6 (Carsten Heinz)
-
-("C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-("C:\Program Files\MiKTeX\tex\latex\tabu\tabu.sty"
+\c@definition=\count186
+ (C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\tabu\tabu.sty
 Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
 
-("C:\Program Files\MiKTeX\tex\latex\ltxmisc\varwidth.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box48
-\sift@deathcycles=\count279
-\@vwid@loff=\dimen285
-\@vwid@roff=\dimen286
+\@vwid@box=\box37
+\sift@deathcycles=\count187
+\@vwid@loff=\dimen178
+\@vwid@roff=\dimen179
 )
-\c@taburow=\count280
-\tabu@nbcols=\count281
-\tabu@cnt=\count282
-\tabu@Xcol=\count283
-\tabu@alloc=\count284
-\tabu@nested=\count285
-\tabu@target=\dimen287
-\tabu@spreadtarget=\dimen288
-\tabu@naturalX=\dimen289
-\tabucolX=\dimen290
-\tabu@Xsum=\dimen291
-\extrarowdepth=\dimen292
-\abovetabulinesep=\dimen293
-\belowtabulinesep=\dimen294
-\tabustrutrule=\dimen295
-\tabu@thebody=\toks51
-\tabu@footnotes=\toks52
-\tabu@box=\box49
-\tabu@arstrutbox=\box50
-\tabu@hleads=\box51
-\tabu@vleads=\box52
-\tabu@cellskip=\skip256
+\c@taburow=\count188
+\tabu@nbcols=\count189
+\tabu@cnt=\count190
+\tabu@Xcol=\count191
+\tabu@alloc=\count192
+\tabu@nested=\count193
+\tabu@target=\dimen180
+\tabu@spreadtarget=\dimen181
+\tabu@naturalX=\dimen182
+\tabucolX=\dimen183
+\tabu@Xsum=\dimen184
+\extrarowdepth=\dimen185
+\abovetabulinesep=\dimen186
+\belowtabulinesep=\dimen187
+\tabustrutrule=\dimen188
+\tabu@thebody=\toks37
+\tabu@footnotes=\toks38
+\tabu@box=\box38
+\tabu@arstrutbox=\box39
+\tabu@hleads=\box40
+\tabu@vleads=\box41
+\tabu@cellskip=\skip265
 )
-\c@definition=\count286
-) (Main.aux)
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+))
+(Main.aux)
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -1496,68 +1248,6 @@ LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Try loading font information for T5+ppl on input line 5.
-
-("C:\Program Files\MiKTeX\tex\latex\vntex\t5ppl.fd"
-File: t5upl.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ppl.
-)
-\AtBeginShipoutBox=\box53
-
-("C:\Program Files\MiKTeX\tex\context\base\supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
-\scratchdimen=\dimen296
-\scratchbox=\box54
-\nofMPsegments=\count288
-\nofMParguments=\count289
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count290
-\MPscratchDim=\dimen297
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
-\everyMPtoPDFconversion=\toks54
-) ("C:\Program Files\MiKTeX\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files\MiKTeX\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-)
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
-("C:\Program Files\MiKTeX\tex\latex\oberdiek\pdflscape.sty"
-Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
-
-("C:\Program Files\MiKTeX\tex\latex\graphics\lscape.sty"
-Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-)
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)
-ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 5.
-
-("C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty"
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\gettitlestring.sty"
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
-)
-\c@section@level=\count293
-)
-Redoing nameref's sectioning
-Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 5.
-LaTeX Info: Redefining \ref on input line 5.
-LaTeX Info: Redefining \pageref on input line 5.
-LaTeX Info: Redefining \nameref on input line 5.
-(Main.out) (Main.out)
-\@outlinefile=\write5
-\openout5 = `Main.out'.
-
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1593,114 +1283,143 @@ LaTeX Info: Redefining \nameref on input line 5.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count294
-<trangbia.pdf, id=74, 614.295pt x 794.97pt>
-File: trangbia.pdf Graphic file (type pdf)
- <use trangbia.pdf>
-Package pdftex.def Info: trangbia.pdf used on input line 6.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: trangbia.pdf Graphic file (type pdf)
+\AtBeginShipoutBox=\box42
+(C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count194
+\scratchdimen=\dimen189
+\scratchbox=\box43
+\nofMPsegments=\count266
+\nofMParguments=\count267
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count268
+\MPscratchDim=\dimen190
+\MPnumerator=\count269
+\makeMPintoPDFobject=\count270
+\everyMPtoPDFconversion=\toks40
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+\c@lstlisting=\count271
+Package hyperref Info: Link coloring OFF on input line 5.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count272
+)
+Redoing nameref's sectioning
+Redoing nameref's label
+LaTeX Info: Redefining \nameref on input line 5.
+LaTeX Info: Redefining \ref on input line 5.
+LaTeX Info: Redefining \pageref on input line 5.
+LaTeX Info: Redefining \nameref on input line 5.
+(Main.out) (Main.out)
+\@outlinefile=\write4
+\openout4 = `Main.out'.
+
+<trangbia.pdf, id=75, pagebox=cropbox, 614.295pt x 794.97pt>
+File: trangbia.pdf Graphic file (type pdf)
 <use trangbia.pdf>
-Package pdftex.def Info: trangbia.pdf used on input line 6.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- <trangbia.pdf, id=77, page=1, 614.295pt x 794.97pt>
+Package pdftex.def Info: trangbia.pdf  used on input line 6. on input line 6.
+Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
+e 6.
 File: trangbia.pdf Graphic file (type pdf)
-
+<use trangbia.pdf>
+Package pdftex.def Info: trangbia.pdf  used on input line 6. on input line 6.
+Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
+e 6.
+<trangbia.pdf, id=78, page=1, pagebox=cropbox, 614.295pt x 794.97pt>
+File: trangbia.pdf Graphic file (type pdf)
 <use trangbia.pdf, page 1>
-Package pdftex.def Info: trangbia.pdf, page1 used on input line 6.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+Package pdftex.def Info: trangbia.pdf , page1 used on input line 6. on input li
+ne 6.
+Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
+e 6.
 File: trangbia.pdf Graphic file (type pdf)
- <use trangbia.pdf, page 1>
-Package pdftex.def Info: trangbia.pdf, page1 used on input line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: trangbia.pdf Graphic file (type pdf)
-
 <use trangbia.pdf, page 1>
-Package pdftex.def Info: trangbia.pdf, page1 used on input line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+Package pdftex.def Info: trangbia.pdf , page1 used on input line 6. on input li
+ne 6.
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 6.
 File: trangbia.pdf Graphic file (type pdf)
- <use trangbia.pdf, page 1>
-Package pdftex.def Info: trangbia.pdf, page1 used on input line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: trangbia.pdf Graphic file (type pdf)
-
 <use trangbia.pdf, page 1>
-Package pdftex.def Info: trangbia.pdf, page1 used on input line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+Package pdftex.def Info: trangbia.pdf , page1 used on input line 6. on input li
+ne 6.
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 6.
+File: trangbia.pdf Graphic file (type pdf)
+<use trangbia.pdf, page 1>
+Package pdftex.def Info: trangbia.pdf , page1 used on input line 6. on input li
+ne 6.
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 6.
+File: trangbia.pdf Graphic file (type pdf)
+<use trangbia.pdf, page 1>
+Package pdftex.def Info: trangbia.pdf , page1 used on input line 6. on input li
+ne 6.
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 6.
  [1
 
  <./trangbia.pdf>]
-<trangbia.pdf, id=108, page=2, 614.295pt x 794.97pt>
+<trangbia.pdf, id=109, page=2, pagebox=cropbox, 614.295pt x 794.97pt>
 File: trangbia.pdf Graphic file (type pdf)
-
 <use trangbia.pdf, page 2>
-Package pdftex.def Info: trangbia.pdf, page2 used on input line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+Package pdftex.def Info: trangbia.pdf , page2 used on input line 6. on input li
+ne 6.
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 6.
 File: trangbia.pdf Graphic file (type pdf)
- <use trangbia.pdf, page 2>
-Package pdftex.def Info: trangbia.pdf, page2 used on input line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: trangbia.pdf Graphic file (type pdf)
-
 <use trangbia.pdf, page 2>
-Package pdftex.def Info: trangbia.pdf, page2 used on input line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [2 <./trangbia.pdf>]
-LaTeX Font Info:    Font shape `T5/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T5/ppl/b/n' tried instead on input line 12.
- (Loicamdoan.tex) [3
+Package pdftex.def Info: trangbia.pdf , page2 used on input line 6. on input li
+ne 6.
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 6.
+File: trangbia.pdf Graphic file (type pdf)
+<use trangbia.pdf, page 2>
+Package pdftex.def Info: trangbia.pdf , page2 used on input line 6. on input li
+ne 6.
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 6.
+ [2 <./trangbia.pdf>] (Loicamdoan.tex) [3
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (Loicamon.tex
+{C:/Users/admin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(Loicamon.tex
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 12.
-("C:\Program Files\MiKTeX\tex\latex\psnfss\ot1ppl.fd"
-File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+LaTeX Font Info:    Try loading font information for U+msa on input line 12.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 12.
+LaTeX Font Info:    Try loading font information for U+msb on input line 12.
 
-
-("C:\Program Files\MiKTeX\tex\latex\psnfss\omlzplm.fd"
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 12.
-
-
-("C:\Program Files\MiKTeX\tex\latex\psnfss\omszplm.fd"
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 12.
-
-
-("C:\Program Files\MiKTeX\tex\latex\psnfss\omxzplm.fd"
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 12.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 12.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 12.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 12.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 12.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 12.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 12.
-
-
-("C:\Program Files\MiKTeX\tex\latex\psnfss\ot1zplm.fd"
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-Overfull \hbox (17.62483pt too wide) in paragraph at lines 12--19
-[][] 
- []
-
-) [4
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)) [4
 
 ]
 
@@ -1713,77 +1432,82 @@ Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textdotbelow' on input line 21.
 
-(Main.toc) <Danhmuckyhieu.pdf, id=143, 614.295pt x 794.97pt>
+(Main.toc)
+<Danhmuckyhieu.pdf, id=145, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Danhmuckyhieu.pdf Graphic file (type pdf)
-
 <use Danhmuckyhieu.pdf>
-Package pdftex.def Info: Danhmuckyhieu.pdf used on input line 21.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+Package pdftex.def Info: Danhmuckyhieu.pdf  used on input line 21. on input lin
+e 21.
+Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
+e 21.
 File: Danhmuckyhieu.pdf Graphic file (type pdf)
- <use Danhmuckyhieu.pdf>
-Package pdftex.def Info: Danhmuckyhieu.pdf used on input line 21.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-<Danhmuckyhieu.pdf, id=146, page=1, 614.295pt x 794.97pt>
+<use Danhmuckyhieu.pdf>
+Package pdftex.def Info: Danhmuckyhieu.pdf  used on input line 21. on input lin
+e 21.
+Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
+e 21.
+<Danhmuckyhieu.pdf, id=148, page=1, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Danhmuckyhieu.pdf Graphic file (type pdf)
-
 <use Danhmuckyhieu.pdf, page 1>
-Package pdftex.def Info: Danhmuckyhieu.pdf, page1 used on input line 21.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+Package pdftex.def Info: Danhmuckyhieu.pdf , page1 used on input line 21. on in
+put line 21.
+Package pdftex.def Info: Requested size: 614.29349pt x 794.96806pt on input lin
+e 21.
 File: Danhmuckyhieu.pdf Graphic file (type pdf)
- <use Danhmuckyhieu.pdf, page 1>
-Package pdftex.def Info: Danhmuckyhieu.pdf, page1 used on input line 21.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+<use Danhmuckyhieu.pdf, page 1>
+Package pdftex.def Info: Danhmuckyhieu.pdf , page1 used on input line 21. on in
+put line 21.
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 21.
  [5]
 File: Danhmuckyhieu.pdf Graphic file (type pdf)
-
 <use Danhmuckyhieu.pdf, page 1>
-Package pdftex.def Info: Danhmuckyhieu.pdf, page1 used on input line 21.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+Package pdftex.def Info: Danhmuckyhieu.pdf , page1 used on input line 21. on in
+put line 21.
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 21.
 File: Danhmuckyhieu.pdf Graphic file (type pdf)
- <use Danhmuckyhieu.pdf, page 1>
-Package pdftex.def Info: Danhmuckyhieu.pdf, page1 used on input line 21.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Danhmuckyhieu.pdf Graphic file (type pdf)
-
 <use Danhmuckyhieu.pdf, page 1>
-Package pdftex.def Info: Danhmuckyhieu.pdf, page1 used on input line 21.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+Package pdftex.def Info: Danhmuckyhieu.pdf , page1 used on input line 21. on in
+put line 21.
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 21.
+File: Danhmuckyhieu.pdf Graphic file (type pdf)
+<use Danhmuckyhieu.pdf, page 1>
+Package pdftex.def Info: Danhmuckyhieu.pdf , page1 used on input line 21. on in
+put line 21.
+Package pdftex.def Info: Requested size: 614.58406pt x 795.3441pt on input line
+ 21.
  [6 <./Danhmuckyhieu.pdf>]
 
 Package hyperref Warning: Composite letter `\texttilde+e'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\texttilde' on input line 24.
 
-(Main.lof) [7] (Main.lol
-LaTeX Font Info:    Try loading font information for T5+cmtt on input line 2.
- ("C:\Program Files\MiKTeX\tex\latex\vntex\t5cmtt.fd"
+(Main.lof
+LaTeX Font Info:    Try loading font information for T5+cmtt on input line 5.
+ (C:\Users\admin\AppData\Roaming\MiKTeX\2.9\tex\latex\vntex\t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)) [8
-
-]
+)) [7] (Main.lol) [8]
 
 Package hyperref Warning: Composite letter `\textacute+\OHORN'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 26.
+(hyperref)                removing `\textacute' on input line 28.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\OHORN' on input line 26.
+(hyperref)                removing `\OHORN' on input line 28.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ECIRCUMFLEX'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 26.
+(hyperref)                removing `\textdotbelow' on input line 28.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ECIRCUMFLEX' on input line 26.
+(hyperref)                removing `\ECIRCUMFLEX' on input line 28.
 
 (intro.tex
-LaTeX Font Info:    Font shape `T5/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T5/ppl/b/n' tried instead on input line 5.
-
 
 Package hyperref Warning: Composite letter `\textdotbelow+o'
 (hyperref)                not defined in PD1 encoding,
@@ -1808,140 +1532,115 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 
 Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 57.
+(hyperref)                removing `\textacute' on input line 52.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 57.
+(hyperref)                removing `\ocircumflex' on input line 52.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 57.
+(hyperref)                removing `\uhorn' on input line 52.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 57.
+(hyperref)                removing `\textdotbelow' on input line 52.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 57.
+(hyperref)                removing `\ohorn' on input line 52.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 57.
+(hyperref)                removing `\textdotbelow' on input line 52.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 57.
+(hyperref)                removing `\uhorn' on input line 52.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 57.
+(hyperref)                removing `\ohorn' on input line 52.
 
 
 Package hyperref Warning: Composite letter `\textacute+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 57.
+(hyperref)                removing `\textacute' on input line 52.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 57.
+(hyperref)                removing `\uhorn' on input line 52.
 
-LaTeX Font Info:    Font shape `T5/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T5/ppl/b/n' tried instead on input line 58.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 62.
-("C:\Program Files\MiKTeX\tex\latex\psnfss\omsppl.fd"
-File: omsppl.fd 
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 57.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
-
-
-Class memoir Warning: The material used in the headers is too large
-(15.45602pt) for the given head height (14.5pt), it is recommended to
-either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 91.
-
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[10]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
+ [10]
 
 Package hyperref Warning: Composite letter `\texttilde+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 104.
+(hyperref)                removing `\texttilde' on input line 99.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 104.
+(hyperref)                removing `\uhorn' on input line 99.
 
 
 Package hyperref Warning: Composite letter `\textacute+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 104.
+(hyperref)                removing `\textacute' on input line 99.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 104.
+(hyperref)                removing `\uhorn' on input line 99.
 
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[11]
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[12])
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[13]
+[11] [12]) [13]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\UHORN' on input line 30.
+(hyperref)                removing `\UHORN' on input line 32.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\OHORN' on input line 30.
+(hyperref)                removing `\OHORN' on input line 32.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\UHORN'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 30.
+(hyperref)                removing `\textdotbelow' on input line 32.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\UHORN' on input line 30.
+(hyperref)                removing `\UHORN' on input line 32.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ECIRCUMFLEX'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 30.
+(hyperref)                removing `\textasciigrave' on input line 32.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ECIRCUMFLEX' on input line 30.
+(hyperref)                removing `\ECIRCUMFLEX' on input line 32.
 
 
 Package hyperref Warning: Composite letter `\texttilde+\UHORN'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 30.
+(hyperref)                removing `\texttilde' on input line 32.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\UHORN' on input line 30.
+(hyperref)                removing `\UHORN' on input line 32.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\UHORN' on input line 30.
+(hyperref)                removing `\UHORN' on input line 32.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\OHORN' on input line 30.
+(hyperref)                removing `\OHORN' on input line 32.
 
 (method.tex
 
@@ -1976,612 +1675,547 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 
 [14
 
-]
-
-Class memoir Warning: The material used in the headers is too large
-(16.81802pt) for the given head height (14.5pt), it is recommended to
-either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 70.
-
-
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[15]
+] [15]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 140.
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 152.
- (Filecodes/DSE.cs
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[16]) <images/dse11.png, id=386, 513.41812pt x 271.0125pt>
+put line 93.
+ (Filecodes/DSE.cs) [16]
+<images/dse11.png, id=396, 513.41812pt x 271.0125pt>
 File: images/dse11.png Graphic file (type png)
-
 <use images/dse11.png>
-Package pdftex.def Info: images/dse11.png used on input line 160.
-(pdftex.def)             Requested size: 410.73505pt x 216.81029pt.
- <images/dse12.png, id=388, 514.92375pt x 264.99pt>
+Package pdftex.def Info: images/dse11.png  used on input line 121. on input lin
+e 121.
+Package pdftex.def Info: Requested size: 359.39023pt x 189.70744pt on input lin
+e 121.
+<images/dse12.png, id=399, 514.92375pt x 264.99pt>
 File: images/dse12.png Graphic file (type png)
-
 <use images/dse12.png>
-Package pdftex.def Info: images/dse12.png used on input line 170.
-(pdftex.def)             Requested size: 411.93954pt x 211.99228pt.
-
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-}) has been already used, duplicate ignored
+Package pdftex.def Info: images/dse12.png  used on input line 131. on input lin
+e 131.
+Package pdftex.def Info: Requested size: 360.44417pt x 185.49173pt on input lin
+e 131.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.175 \end{center}
-                   <./images/dse11.png>]
-<images/dse13.png, id=400, 514.17094pt x 268.75406pt>
-File: images/dse13.png Graphic file (type png)
- <use images/dse13.png>
-Package pdftex.def Info: images/dse13.png used on input line 181.
-(pdftex.def)             Requested size: 411.33731pt x 215.00354pt.
-
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.189 
+l.134 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.3}) has been already used, duplicate ignored
+2.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.189 
-       <./images/dse12.png> <./images/dse13.png>]
-<images/dse2.png, id=407, 729.47531pt x 353.06906pt>
+l.134 
+       <./images/dse11.png>]
+<images/dse13.png, id=416, 514.17094pt x 268.75406pt>
+File: images/dse13.png Graphic file (type png)
+<use images/dse13.png>
+Package pdftex.def Info: images/dse13.png  used on input line 141. on input lin
+e 141.
+Package pdftex.def Info: Requested size: 359.9172pt x 188.12656pt on input line
+ 141.
+<images/dse2.png, id=418, 508.14844pt x 254.45062pt>
 File: images/dse2.png Graphic file (type png)
- <use images/dse2.png>
-Package pdftex.def Info: images/dse2.png used on input line 193.
-(pdftex.def)             Requested size: 437.68855pt x 211.84306pt.
+<use images/dse2.png>
+Package pdftex.def Info: images/dse2.png  used on input line 151. on input line
+ 151.
+Package pdftex.def Info: Requested size: 355.70148pt x 178.11421pt on input lin
+e 151.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+3}) has been already used, duplicate ignored
 
-<images/dse21.png, id=408, 516.42938pt x 261.97874pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.153 \end{figure}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.2.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.153 \end{figure}
+                   <./images/dse12.png> <./images/dse13.png>]
+<images/dse21.png, id=426, 516.42938pt x 261.97874pt>
 File: images/dse21.png Graphic file (type png)
- <use images/dse21.png>
-Package pdftex.def Info: images/dse21.png used on input line 205.
-(pdftex.def)             Requested size: 413.14406pt x 209.58327pt.
-
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.210 \end{center}
-                   <./images/dse2.png>]
-<images/dse22.png, id=414, 510.40688pt x 264.23718pt>
+<use images/dse21.png>
+Package pdftex.def Info: images/dse21.png  used on input line 161. on input lin
+e 161.
+Package pdftex.def Info: Requested size: 361.4981pt x 183.38387pt on input line
+ 161.
+<images/dse22.png, id=428, 510.40688pt x 264.23718pt>
 File: images/dse22.png Graphic file (type png)
- <use images/dse22.png>
-Package pdftex.def Info: images/dse22.png used on input line 217.
-(pdftex.def)             Requested size: 408.32605pt x 211.39001pt.
-
-<images/dse23.png, id=415, 511.15968pt x 264.99pt>
-File: images/dse23.png Graphic file (type png)
- <use images/dse23.png>
-Package pdftex.def Info: images/dse23.png used on input line 229.
-(pdftex.def)             Requested size: 408.92828pt x 211.99228pt.
-
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5
-}) has been already used, duplicate ignored
+<use images/dse22.png>
+Package pdftex.def Info: images/dse22.png  used on input line 173. on input lin
+e 173.
+Package pdftex.def Info: Requested size: 357.28238pt x 184.96475pt on input lin
+e 173.
+ [19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.234 \end{center}
+l.175 \end{figure}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{figure.2.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.234 \end{center}
-                   <./images/dse21.png> <./images/dse22.png>]
-<images/dse24.png, id=422, 511.15968pt x 259.7203pt>
-File: images/dse24.png Graphic file (type png)
- <use images/dse24.png>
-Package pdftex.def Info: images/dse24.png used on input line 241.
-(pdftex.def)             Requested size: 408.92828pt x 207.77652pt.
-
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7
-}) has been already used, duplicate ignored
+l.175 \end{figure}
+                   <./images/dse2.png> <./images/dse21.png>]
+<images/dse23.png, id=437, 511.15968pt x 264.99pt>
+File: images/dse23.png Graphic file (type png)
+<use images/dse23.png>
+Package pdftex.def Info: images/dse23.png  used on input line 183. on input lin
+e 183.
+Package pdftex.def Info: Requested size: 357.80933pt x 185.49173pt on input lin
+e 183.
+ [20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.249 
+l.188 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.249 
-       <./images/dse23.png> <./images/dse24.png>]
-<images/dse3.png, id=429, 730.98094pt x 347.04657pt>
+l.188 
+       <./images/dse22.png> <./images/dse23.png>]
+<images/dse24.png, id=445, 511.15968pt x 259.7203pt>
+File: images/dse24.png Graphic file (type png)
+<use images/dse24.png>
+Package pdftex.def Info: images/dse24.png  used on input line 193. on input lin
+e 193.
+Package pdftex.def Info: Requested size: 357.80933pt x 181.80296pt on input lin
+e 193.
+<images/dse3.png, id=447, 511.15968pt x 251.43938pt>
 File: images/dse3.png Graphic file (type png)
- <use images/dse3.png>
-Package pdftex.def Info: images/dse3.png used on input line 253.
-(pdftex.def)             Requested size: 438.59195pt x 208.22954pt.
+<use images/dse3.png>
+Package pdftex.def Info: images/dse3.png  used on input line 203. on input line
+ 203.
+Package pdftex.def Info: Requested size: 357.80933pt x 176.00635pt on input lin
+e 203.
+ [21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+9}) has been already used, duplicate ignored
 
-<images/dse4.png, id=430, 715.17188pt x 370.38374pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.208 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+2.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.208 
+       <./images/dse24.png> <./images/dse3.png>]
+<images/dse31.png, id=455, 511.15968pt x 252.945pt>
+File: images/dse31.png Graphic file (type png)
+<use images/dse31.png>
+Package pdftex.def Info: images/dse31.png  used on input line 213. on input lin
+e 213.
+Package pdftex.def Info: Requested size: 357.80933pt x 177.06029pt on input lin
+e 213.
+<images/dse32.png, id=457, 505.89pt x 254.45062pt>
+File: images/dse32.png Graphic file (type png)
+<use images/dse32.png>
+Package pdftex.def Info: images/dse32.png  used on input line 224. on input lin
+e 224.
+Package pdftex.def Info: Requested size: 354.12057pt x 178.11421pt on input lin
+e 224.
+<images/dse33.png, id=459, 514.17094pt x 257.46187pt>
+File: images/dse33.png Graphic file (type png)
+<use images/dse33.png>
+Package pdftex.def Info: images/dse33.png  used on input line 235. on input lin
+e 235.
+Package pdftex.def Info: Requested size: 359.9172pt x 180.22206pt on input line
+ 235.
+ [22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.237 \end{figure}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.2.12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.237 \end{figure}
+                   <./images/dse31.png> <./images/dse32.png>]
+<images/dse4.png, id=467, 509.65407pt x 270.25969pt>
 File: images/dse4.png Graphic file (type png)
- <use images/dse4.png>
-Package pdftex.def Info: images/dse4.png used on input line 269.
-(pdftex.def)             Requested size: 429.10643pt x 222.23195pt.
-
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9
-}) has been already used, duplicate ignored
+<use images/dse4.png>
+Package pdftex.def Info: images/dse4.png  used on input line 245. on input line
+ 245.
+Package pdftex.def Info: Requested size: 305.7948pt x 162.15706pt on input line
+ 245.
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.274 \end{center}
-                   <./images/dse3.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 328.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 328.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 328.
-
-
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-0}) has been already used, duplicate ignored
+l.250 	
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.2.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.349 ...n{definition}[Thực thi chương trình]
-                                                   <./images/dse4.png>]
-(Filecodes/SwitchCase.cs) (Filecodes/IfElse.cs)
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
+l.250 	
+        <./images/dse33.png> <./images/dse4.png>]
 
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 300.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 300.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 300.
 
 [24pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.378 M
-       ã lệnh \ref{lst:SwitchCase} và \ref{lst:IfElse} có cùng tham s�...
-] (Filecodes/Khac_biet_HV_1.cs) (Filecodes/Khac_biet_HV_2.cs)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[25] (Filecodes/TuongTu_HV_1.cs) (Filecodes/TuongTu_HV_2.cs)
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[26pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-1}) has been already used, duplicate ignored
+l.317 \subsection
+                 {Thực thi chương trình}] (Filecodes/SwitchCase.cs)
+(Filecodes/IfElse.cs) [25] (Filecodes/Khac_biet_HV_1.cs)
+(Filecodes/Khac_biet_HV_2.cs) [26pdfTeX warning (ext4): destination with the sa
+me identifier (name{figure.2.15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.463   C
-         ho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền gi�...
-]
+l.417 
+      ] (Filecodes/TuongTu_HV_1.cs) (Filecodes/TuongTu_HV_2.cs)
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 470.
+(hyperref)                removing `\textdotbelow' on input line 447.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 470.
+(hyperref)                removing `\ocircumflex' on input line 447.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 470.
+(hyperref)                removing `\textacute' on input line 447.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 470.
+(hyperref)                removing `\ocircumflex' on input line 447.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 470.
+(hyperref)                removing `\dj' on input line 447.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 470.
+(hyperref)                removing `\dj' on input line 447.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 470.
+(hyperref)                removing `\textdotbelow' on input line 447.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 470.
+(hyperref)                removing `\ocircumflex' on input line 447.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 470.
+(hyperref)                removing `\uhorn' on input line 447.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 470.
+(hyperref)                removing `\ohorn' on input line 447.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 470.
+(hyperref)                removing `\textdotbelow' on input line 447.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 470.
+(hyperref)                removing `\uhorn' on input line 447.
 
+[27pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+6}) has been already used, duplicate ignored
 
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.466 
+      ] [28] (Filecodes/RS1.cs) (Filecodes/RS2.cs) [29pdfTeX warning (ext4): de
+stination with the same identifier (name{figure.2.17}) has been already used, d
+uplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.571 
+      ] (Filecodes/SSE1.cs) (Filecodes/SSE2.cs)
 
-[27] (Filecodes/RS1.cs) (Filecodes/RS2.cs)
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
+[30] [31pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.2.18}) has been already used, duplicate ignored
 
-[28]
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[29] (Filecodes/SSE1.cs) (Filecodes/SSE2.cs)
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[30]
-LaTeX Font Info:    Font shape `T5/ppl/bx/it' in size <12> not available
-(Font)              Font shape `T5/ppl/b/it' tried instead on input line 711.
-
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[31])
-Overfull \vbox (2.31802pt too high) has occurred while \output is active []
-
-
-[32]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.692  \end{algorithm}
+                      ]) [32]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\UHORN'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 34.
+(hyperref)                removing `\textdotbelow' on input line 36.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\UHORN' on input line 34.
+(hyperref)                removing `\UHORN' on input line 36.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ECIRCUMFLEX'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 34.
+(hyperref)                removing `\textdotbelow' on input line 36.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ECIRCUMFLEX' on input line 34.
+(hyperref)                removing `\ECIRCUMFLEX' on input line 36.
 
 (results.tex
 
 Package hyperref Warning: Composite letter `\texttilde+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 4.
+(hyperref)                removing `\texttilde' on input line 8.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 4.
+(hyperref)                removing `\uhorn' on input line 8.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 4.
+(hyperref)                removing `\textdotbelow' on input line 8.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 4.
+(hyperref)                removing `\ecircumflex' on input line 8.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 4.
+(hyperref)                removing `\textdotbelow' on input line 8.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 4.
+(hyperref)                removing `\uhorn' on input line 8.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 4.
+(hyperref)                removing `\textdotbelow' on input line 8.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 4.
+(hyperref)                removing `\ecircumflex' on input line 8.
 
-<images/codehunt2.png, id=638, 669.2503pt x 493.0922pt>
-File: images/codehunt2.png Graphic file (type png)
-
-<use images/codehunt2.png>
-Package pdftex.def Info: images/codehunt2.png used on input line 28.
-(pdftex.def)             Requested size: 200.77664pt x 147.92879pt.
- [33
+<images/codehunt.png, id=668, 556.32843pt x 362.10281pt>
+File: images/codehunt.png Graphic file (type png)
+<use images/codehunt.png>
+Package pdftex.def Info: images/codehunt.png  used on input line 32. on input l
+ine 32.
+Package pdftex.def Info: Requested size: 278.16353pt x 181.05095pt on input lin
+e 32.
+[33
 
 ]
-<images/java-to-csharp-collections.png, id=643, 532.389pt x 356.532pt>
-File: images/java-to-csharp-collections.png Graphic file (type png)
-
-<use images/java-to-csharp-collections.png>
-Package pdftex.def Info: images/java-to-csharp-collections.png used on input li
-ne 40.
-(pdftex.def)             Requested size: 212.95183pt x 142.61026pt.
-
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 47.
+(hyperref)                removing `\textdotbelow' on input line 46.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 47.
+(hyperref)                removing `\textdotbelow' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 47.
+(hyperref)                removing `\uhorn' on input line 46.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 47.
+(hyperref)                removing `\textdotbelow' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 47.
-
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
+(hyperref)                removing `\ecircumflex' on input line 46.
 
 [34pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.54 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.3
-.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.54 
-      <./images/codehunt2.png> <./images/java-to-csharp-collections.png>]
-<images/visualstudio.png, id=648, 916.92563pt x 576.65437pt>
-File: images/visualstudio.png Graphic file (type png)
-
-<use images/visualstudio.png>
-Package pdftex.def Info: images/visualstudio.png used on input line 58.
-(pdftex.def)             Requested size: 275.0798pt x 172.99763pt.
-
-<images/quatrinhthongdich.png, id=649, 562.1pt x 195.73125pt>
+l.58 
+      <./images/codehunt.png>]
+<images/quatrinhthongdich.png, id=679, 562.1pt x 195.73125pt>
 File: images/quatrinhthongdich.png Graphic file (type png)
-
 <use images/quatrinhthongdich.png>
-Package pdftex.def Info: images/quatrinhthongdich.png used on input line 72.
-(pdftex.def)             Requested size: 224.83601pt x 78.2911pt.
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[35pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.76 \end{center}
-                  <./images/visualstudio.png>] (Filecodes/TestPex.cs)
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[36pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.98 \item P
-            hân tích động (dynamic analysis): Kiểm chứng một tín...
- <./images/quatrinhthongdich.png>]
-<images/pex.png, id=678, 573.64313pt x 433.62pt>
+Package pdftex.def Info: images/quatrinhthongdich.png  used on input line 64. o
+n input line 64.
+Package pdftex.def Info: Requested size: 393.46732pt x 137.01093pt on input lin
+e 64.
+<images/pex.png, id=681, 573.64313pt x 433.62pt>
 File: images/pex.png Graphic file (type png)
- <use images/pex.png>
-Package pdftex.def Info: images/pex.png used on input line 113.
-(pdftex.def)             Requested size: 229.45319pt x 173.44492pt.
+<use images/pex.png>
+Package pdftex.def Info: images/pex.png  used on input line 87. on input line 8
+7.
+Package pdftex.def Info: Requested size: 344.18852pt x 260.17401pt on input lin
+e 87.
+ [35pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+2}) has been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.90 
+      <./images/quatrinhthongdich.png>] (Filecodes/TestPex.cs)
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 120.
+(hyperref)                removing `\textacute' on input line 99.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 120.
+(hyperref)                removing `\ecircumflex' on input line 99.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 120.
+(hyperref)                removing `\h' on input line 99.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 120.
+(hyperref)                removing `\textdotbelow' on input line 99.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 120.
+(hyperref)                removing `\uhorn' on input line 99.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 120.
+(hyperref)                removing `\textdotbelow' on input line 99.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 120.
+(hyperref)                removing `\ecircumflex' on input line 99.
 
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[37pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5
+[36pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.128 
+l.107 
        <./images/pex.png>]
-<images/main.png, id=688, 426.09187pt x 225.09094pt>
+<images/main.png, id=706, 468.24937pt x 258.9675pt>
 File: images/main.png Graphic file (type png)
- <use images/main.png>
-Package pdftex.def Info: images/main.png used on input line 132.
-(pdftex.def)             Requested size: 213.04541pt x 112.54518pt.
-
-(Filecodes/solution.cs) (Filecodes/user1.cs
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[38pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6
-}) has been already used, duplicate ignored
+<use images/main.png>
+Package pdftex.def Info: images/main.png  used on input line 112. on input line
+ 112.
+Package pdftex.def Info: Requested size: 374.59999pt x 207.17426pt on input lin
+e 112.
+ (Filecodes/solution.cs [37pdfTeX warning (ext4): destination with the same ide
+ntifier (name{figure.3.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5   {
-        <./images/main.png>]) (Filecodes/user2.cs)
-<images/kq_rs.png, id=711, 478.78876pt x 374.14781pt>
+l.8             case 
+                     2: y += 8; break; <./images/main.png>])
+(Filecodes/user1.cs) (Filecodes/user2.cs)
+<images/kq_rs.png, id=723, 478.78876pt x 374.14781pt>
 File: images/kq_rs.png Graphic file (type png)
- <use images/kq_rs.png>
-Package pdftex.def Info: images/kq_rs.png used on input line 150.
-(pdftex.def)             Requested size: 239.39378pt x 187.07344pt.
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[39pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7
-}) has been already used, duplicate ignored
+<use images/kq_rs.png>
+Package pdftex.def Info: images/kq_rs.png  used on input line 132. on input lin
+e 132.
+Package pdftex.def Info: Requested size: 383.03152pt x 299.31863pt on input lin
+e 132.
+ [38] [39pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.3.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.162 
+l.144 
        <./images/kq_rs.png>]
-<images/kq_sse.png, id=738, 385.44pt x 295.1025pt>
+<images/kq_sse.png, id=766, 385.44pt x 295.1025pt>
 File: images/kq_sse.png Graphic file (type png)
- <use images/kq_sse.png>
-Package pdftex.def Info: images/kq_sse.png used on input line 168.
-(pdftex.def)             Requested size: 192.71953pt x 147.55087pt.
-
-<images/kq_pse.png, id=739, 612.03656pt x 285.31593pt>
+<use images/kq_sse.png>
+Package pdftex.def Info: images/kq_sse.png  used on input line 149. on input li
+ne 149.
+Package pdftex.def Info: Requested size: 308.35242pt x 236.0823pt on input line
+ 149.
+<images/kq_pse.png, id=768, 612.03656pt x 285.31593pt>
 File: images/kq_pse.png Graphic file (type png)
- <use images/kq_pse.png>
-Package pdftex.def Info: images/kq_pse.png used on input line 189.
-(pdftex.def)             Requested size: 306.01753pt x 142.65761pt.
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[40pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8
-}) has been already used, duplicate ignored
+<use images/kq_pse.png>
+Package pdftex.def Info: images/kq_pse.png  used on input line 162. on input li
+ne 162.
+Package pdftex.def Info: Requested size: 428.42267pt x 199.71979pt on input lin
+e 162.
+ [40pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.194 
+l.165 
        <./images/kq_sse.png>]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 204.
+(hyperref)                removing `\h' on input line 170.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\u' on input line 204.
+(hyperref)                removing `\u' on input line 170.
 
 
 Package hyperref Warning: Composite letter `\textacute+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 204.
+(hyperref)                removing `\textacute' on input line 170.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 204.
+(hyperref)                removing `\uhorn' on input line 170.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 204.
+(hyperref)                removing `\textdotbelow' on input line 170.
 
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[41pdfTeX warning (ext4): destination with the same identifier (name{figure.3.9
+[41pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.240 
+l.191 
        <./images/kq_pse.png>]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 252.
+(hyperref)                removing `\textacute' on input line 218.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 252.
+(hyperref)                removing `\ecircumflex' on input line 218.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 252.
+(hyperref)                removing `\textdotbelow' on input line 218.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 252.
+(hyperref)                removing `\acircumflex' on input line 218.
 
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[42]) (Main.bbl
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[43]
+[42]) (Main.bbl [43]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -2596,207 +2230,109 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 1.
 
 bibitemlist
-
-Underfull \hbox (badness 5388) in paragraph at lines 4--8
-[]\T5/ppl/m/n/12 Rajeev Alur, Loris D'Antoni, Sumit Gul-wani, Dileep Kini, and 
-Ma-hesh
- []
-
 [44
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
-[]\T5/ppl/m/n/12 Coursera MOOC on Soft-ware En-gi-neer-ing for SaaS.
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
+[]\T5/cmr/m/n/12 Coursera MOOC on Soft-ware En-gi-neer-ing for SaaS.
  []
 
-) <quyetdinh.pdf, id=767, 614.295pt x 794.97pt>
+)
+<quyetdinh.pdf, id=794, pagebox=cropbox, 597.49223pt x 845.01697pt>
 File: quyetdinh.pdf Graphic file (type pdf)
- <use quyetdinh.pdf>
-Package pdftex.def Info: quyetdinh.pdf used on input line 45.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: quyetdinh.pdf Graphic file (type pdf)
-
 <use quyetdinh.pdf>
-Package pdftex.def Info: quyetdinh.pdf used on input line 45.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- <quyetdinh.pdf, id=770, page=1, 614.295pt x 794.97pt>
+Package pdftex.def Info: quyetdinh.pdf  used on input line 45. on input line 45
+.
+Package pdftex.def Info: Requested size: 597.49077pt x 845.01491pt on input lin
+e 45.
 File: quyetdinh.pdf Graphic file (type pdf)
-
+<use quyetdinh.pdf>
+Package pdftex.def Info: quyetdinh.pdf  used on input line 45. on input line 45
+.
+Package pdftex.def Info: Requested size: 597.49077pt x 845.01491pt on input lin
+e 45.
+<quyetdinh.pdf, id=797, page=1, pagebox=cropbox, 597.49223pt x 845.01697pt>
+File: quyetdinh.pdf Graphic file (type pdf)
 <use quyetdinh.pdf, page 1>
-Package pdftex.def Info: quyetdinh.pdf, page1 used on input line 45.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+Package pdftex.def Info: quyetdinh.pdf , page1 used on input line 45. on input 
+line 45.
+Package pdftex.def Info: Requested size: 597.49077pt x 845.01491pt on input lin
+e 45.
 File: quyetdinh.pdf Graphic file (type pdf)
- <use quyetdinh.pdf, page 1>
-Package pdftex.def Info: quyetdinh.pdf, page1 used on input line 45.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[45]
-File: quyetdinh.pdf Graphic file (type pdf)
- <use quyetdinh.pdf, page 1>
-Package pdftex.def Info: quyetdinh.pdf, page1 used on input line 45.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: quyetdinh.pdf Graphic file (type pdf)
- <use quyetdinh.pdf, page 1>
-Package pdftex.def Info: quyetdinh.pdf, page1 used on input line 45.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: quyetdinh.pdf Graphic file (type pdf)
-
 <use quyetdinh.pdf, page 1>
-Package pdftex.def Info: quyetdinh.pdf, page1 used on input line 45.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [46 <./quyetdinh.pdf>] (SourceCode.tex
+Package pdftex.def Info: quyetdinh.pdf , page1 used on input line 45. on input 
+line 45.
+Package pdftex.def Info: Requested size: 562.10774pt x 794.97366pt on input lin
+e 45.
+ [45]
+File: quyetdinh.pdf Graphic file (type pdf)
+<use quyetdinh.pdf, page 1>
+Package pdftex.def Info: quyetdinh.pdf , page1 used on input line 45. on input 
+line 45.
+Package pdftex.def Info: Requested size: 562.10774pt x 794.97366pt on input lin
+e 45.
+File: quyetdinh.pdf Graphic file (type pdf)
+<use quyetdinh.pdf, page 1>
+Package pdftex.def Info: quyetdinh.pdf , page1 used on input line 45. on input 
+line 45.
+Package pdftex.def Info: Requested size: 562.10774pt x 794.97366pt on input lin
+e 45.
+File: quyetdinh.pdf Graphic file (type pdf)
+<use quyetdinh.pdf, page 1>
+Package pdftex.def Info: quyetdinh.pdf , page1 used on input line 45. on input 
+line 45.
+Package pdftex.def Info: Requested size: 562.10774pt x 794.97366pt on input lin
+e 45.
+ [46 <./quyetdinh.pdf, page is rotated 90 degrees>] (SourceCode.tex
 (Filecodes/MakeProjects.cs [47
 
 ]) (Filecodes/MakeSecretProjects.cs)
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
+(Filecodes/BuildProjects.cs [48]) (Filecodes/BuildSecretProjects.cs)
+(Filecodes/BuildMetaProjects.cs) (Filecodes/RunPexOnMetaProjects.cs [49])
+(Filecodes/ComputeMetric3.cs [50] [51] [52]) (Filecodes/ComputeMetric2.cs
+[53] [54]) (Filecodes/ComputeMetric1.cs [55])) [56]
+\tf@toc=\write5
+\openout5 = `Main.toc'.
 
+\tf@lof=\write6
+\openout6 = `Main.lof'.
 
-[48] (Filecodes/BuildProjects.cs) (Filecodes/BuildSecretProjects.cs)
-(Filecodes/BuildMetaProjects.cs
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[49]) (Filecodes/RunPexOnMetaProjects.cs
-Overfull \hbox (0.3198pt too wide) in paragraph at lines 19--20
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) (Filecodes/ComputeMetric1.cs
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[50]
-Overfull \hbox (62.85017pt too wide) in paragraph at lines 18--19
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (6.52606pt too wide) in paragraph at lines 31--32
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[51]) (Filecodes/ComputeMetric2.cs
-Overfull \hbox (11.1242pt too wide) in paragraph at lines 23--24
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[52]
-Overfull \hbox (78.94228pt too wide) in paragraph at lines 36--37
-[][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.92091pt too wide) in paragraph at lines 37--38
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[53]) (Filecodes/ComputeMetric3.cs
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[54]
-Overfull \hbox (11.1242pt too wide) in paragraph at lines 24--25
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (78.94228pt too wide) in paragraph at lines 37--38
-[][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.92091pt too wide) in paragraph at lines 38--39
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[55]
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[56]))
-
-Class memoir Warning: The material used in the headers is too large
-(16.81802pt) for the given head height (14.5pt), it is recommended to
-either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 49.
-
-
-Overfull \vbox (0.95602pt too high) has occurred while \output is active []
-
-
-[57]
-\tf@toc=\write6
-\openout6 = `Main.toc'.
-
-\tf@lof=\write7
-\openout7 = `Main.lof'.
-
-\tf@lol=\write8
-\openout8 = `Main.lol'.
+\tf@lol=\write7
+\openout7 = `Main.lol'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (Main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
-
-
-Package rerunfilecheck Warning: File `Main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Main.out':
-(rerunfilecheck)             Before: 8281A00E4F8A99B5B4507940F8151A36;1158
-(rerunfilecheck)             After:  C3E1C9DCC44EC09CE82B2CE6D7195D7F;1159.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `Main.out' has not changed.
+(rerunfilecheck)             Checksum: 4ED98586BC2BB5982B6423C8766AF25D;1205.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 26454 strings out of 493319
- 442784 string characters out of 3140669
- 665802 words of memory out of 3000000
- 28684 multiletter control sequences out of 15000+200000
- 50472 words of font info for 71 fonts, out of 3000000 for 9000
+ 16527 strings out of 493312
+ 229314 string characters out of 3138899
+ 500119 words of memory out of 3000000
+ 18986 multiletter control sequences out of 15000+200000
+ 22723 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,18n,72p,1240b,1984s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX/fonts/enc/dvips/vntex/t5.enc}{C:/Program Files/MiKTe
-X/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10
-.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pro
-gram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/M
-iKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Program Files/MiKTeX/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/fonts/type1/vntex
-/urwvn/uplb8v.pfb><C:/Program Files/MiKTeX/fonts/type1/vntex/urwvn/uplbi8v.pfb>
-<C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/
-MiKTeX/fonts/type1/vntex/urwvn/uplr8v.pfb><C:/Program Files/MiKTeX/fonts/type1/
-vntex/urwvn/uplr8v.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8
-a.pfb><C:/Program Files/MiKTeX/fonts/type1/vntex/urwvn/uplri8v.pfb><C:/Program 
-Files/MiKTeX/fonts/type1/vntex/vnr/vntt10.pfb><C:/Program Files/MiKTeX/fonts/ty
-pe1/vntex/vnr/vntt12.pfb>
-Output written on Main.pdf (57 pages, 1976743 bytes).
+ 43i,18n,46p,972b,1870s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb><C:/Users/admin/AppData/Roaming/MiKTeX/2.9/fonts/type
+1/vntex/vnr/vnbx12.pfb><C:/Users/admin/AppData/Roaming/MiKTeX/2.9/fonts/type1/v
+ntex/vnr/vnbxti10.pfb><C:/Users/admin/AppData/Roaming/MiKTeX/2.9/fonts/type1/vn
+tex/vnr/vnr12.pfb><C:/Users/admin/AppData/Roaming/MiKTeX/2.9/fonts/type1/vntex/
+vnr/vnti12.pfb><C:/Users/admin/AppData/Roaming/MiKTeX/2.9/fonts/type1/vntex/vnr
+/vntt10.pfb><C:/Users/admin/AppData/Roaming/MiKTeX/2.9/fonts/type1/vntex/vnr/vn
+tt12.pfb>
+Output written on Main.pdf (56 pages, 2097655 bytes).
 PDF statistics:
- 1425 PDF objects out of 1440 (max. 8388607)
- 738 named destinations out of 1000 (max. 500000)
- 309 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1452 PDF objects out of 1728 (max. 8388607)
+ 749 named destinations out of 1000 (max. 500000)
+ 310 words of extra memory for PDF output out of 10000 (max. 10000000)
 

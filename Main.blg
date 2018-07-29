@@ -1,17 +1,14 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Main.aux
 The style file: plain.bst
 Database file #1: biblio.bib
-Repeated entry---line 402 of file biblio.bib
- : @inproceedings{godefroid2005dart
- :                                 ,
-I'm skipping whatever remains of this entry
 Warning--empty booktitle in coursera
 Warning--empty year in coursera
 Warning--empty booktitle in edx
 Warning--empty year in edx
-Warning--can't use both volume and number fields in godefroid2005dart
 Warning--empty booktitle in CodeHunt
 Warning--empty year in CodeHunt
+Warning--empty booktitle in DSE
+Warning--empty year in DSE
 Warning--empty booktitle in mooc
 Warning--empty year in mooc
 Warning--empty booktitle in Pex4Fun
@@ -20,4 +17,4 @@ Warning--empty booktitle in Udacity
 Warning--empty year in Udacity
 Warning--empty booktitle in wang2007semantic
 Warning--can't use both volume and number fields in wang2007semantic
-(There was 1 error message)
+(There were 16 warnings)

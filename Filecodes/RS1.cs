@@ -1,4 +1,4 @@
-﻿public static int Y(string x) 
+﻿public static int Y1(string x) 
 {
   if (x == "XYZ") 
     return 0;

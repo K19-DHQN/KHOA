@@ -11,12 +11,19 @@ mẽ và học trực tuyến ngày càng trở nên phổ biến. Một số ch
   Courses (MOOC)} \cite{mooc}, \href{https://www.edx.org/}{edX}
 \cite{edx}, \href{https://www.coursera.org/}{Coursera}
 \cite{coursera}, \href{http://www.udacity.com/}{Udacity}
-\cite{Udacity} ngày càng có nhiều người tham gia. Ngoài ra, một số
+\cite{Udacity} (Hình \ref{fig:progarming-online}) ngày càng có nhiều người tham gia. Ngoài ra, một số
 chương trình hỗ trợ rèn luyện kỹ năng lập trình trực tuyến như
 \href{https://www.pexforfun.com/}{Pex4Fun} \cite{Pex4Fun} hay
 \href{https://www.microsoft.com/en-us/research/project/code-hunt/}{Code
   Hunt} \cite{CodeHunt} cũng thu hút nhiều sự quan tâm của nhiều
 người. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=.4]{topMOOC.png}
+	\caption{Một số chương trình đào tạo trực tuyến nổi tiếng}
+	\label{fig:progarming-online}		
+\end{figure}
 
 Một trong những thách thức của việc đào tạo lập trình trực tuyến là
 làm sao cho phép tổ chức những lớp học có quy mô lớn, trong khi đó vẫn
@@ -33,7 +40,14 @@ nhiều nơi trên thế giới nên thời gian học cũng khác nhau. Những
 gặp khó khăn trong việc viết mã chương trình, họ có thể tìm kiếm sự
 trợ giúp từ bạn bè hoặc những người có kinh nghiệm, từ người dạy. Tuy
 nhiên, không phải lúc nào cũng có người này cũng có bên cạnh để giúp
-đỡ cho họ.
+đỡ cho họ, ảnh minh họa Hình \ref{fig:Retry}. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=.8]{Retry.png}
+	\caption{Những khó khăn của người dạy và người học}
+	\label{fig:Retry}		
+\end{figure}
 
 Thách thức trên có thể giải quyết nếu có được công cụ tự động hóa việc
 so sánh giải pháp của học viên đưa ra so với giải pháp của giáo viên
@@ -50,7 +64,7 @@ Chúng tôi nhận thấy vấn đề cốt lõi để xây dựng công cụ n�
 đo được độ tương tự về hành vi giữa hai chương trình. Đó là lý do tôi chọn đề tài \emph{``Độ tương tự hành vi của chương trình và thực nghiệm''}. Đề tài này  sẽ làm rõ hành vi của chương trình, độ tương tự về hành vi của chương trình và một số phương pháp đo độ tương tự về hành vi.
 
 \section{Đối tượng, phạm vi, phương pháp nghiên cứu}
-\subsection*{Mục tiêu nghiên cứu}
+\subsection{Mục tiêu nghiên cứu}
 
 Mục tiêu nghiên cứu chính của luận văn là tìm cách đánh giá độ tương tự về hành vi giữa hai chương trình máy tính. Nó được cụ thể hóa thành những mục tiêu sau:
 \begin{itemize}
@@ -61,7 +75,7 @@ Mục tiêu nghiên cứu chính của luận văn là tìm cách đánh giá đ
 \item Đánh giá kết quả thực nghiệm.
 \end{itemize}
 
-\subsection*{Đối tượng, phạm vi nghiên cứu}
+\subsection{Đối tượng, phạm vi nghiên cứu}
 
 \subsubsection*{Đối tượng nghiên cứu}
 
@@ -79,7 +93,7 @@ Mục tiêu nghiên cứu chính của luận văn là tìm cách đánh giá đ
 \end{itemize}
 
 
-\subsection*{Phương pháp nghiên cứu, thực nghiệm}
+\subsection{Phương pháp nghiên cứu, thực nghiệm}
 \subsubsection*{Nghiên cứu lý thuyết}
 \begin{itemize}
 \item Độ tương tự hành vi
@@ -110,7 +124,7 @@ chiếu. Cách tiếp cận này của các tác giả sử dụng các kỹ thu
 khác nhau về cả cú pháp và ngữ nghĩa giữa hai automat. Sự khác biệt về
 cú pháp được đo qua khoảng cách chỉnh sửa (\emph{syntactic edit
   distance}) và sự khác biệt về ngữ nghĩa được đo dựa trên các
-xâu vào được đoán nhận bởi automat (\emph{accepted string
+câu vào được đoán nhận bởi automat (\emph{accepted string
   inputs}). Mặc dù cách tiếp cận của nhóm tác giả bài báo và tác giả
 luận văn đều sử dụng khái niệm về độ tương tự về ngữ nghĩa, cách tiếp
 cận của bài báo dùng cho automat hữu hạn đơn định trong khi các độ đo

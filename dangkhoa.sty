@@ -1,6 +1,5 @@
 \usepackage[left=3.5cm,right=2cm,top=3.5cm,bottom=3cm]{geometry}
 \usepackage[utf8]{vietnam}
-\setlength{\parindent}{0pt} % Ngăn thụt vào đầu dòng ở đầu dòng mỗi đoạn
 \setlength{\parskip}{0.5em}
 \renewcommand{\baselinestretch}{1.0}
 \usepackage{amsmath}
@@ -24,7 +23,17 @@
 \lstset{inputpath=Filecodes}
 \newtheorem{definition}{Định nghĩa}
 \renewcommand{\lstlistingname}{Mã lệnh}
-%--------------------------------------------
+\renewcommand{\lstlistlistingname}{Danh sách mã lệnh}
+\floatname{algorithm}{Thuật toán}
+
+% Đánh số cho Mục lục và đánh số sebsection
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% Hiển thị chữ "Chương" trong Table Of Content
+\renewcommand\cftchaptername{\chaptername~}
+
+% Cấu hình table và nhập code
 \usepackage{tabu}
 \usepackage{color}
 \definecolor{dkgreen}{rgb}{0,0.6,0}
@@ -48,60 +57,3 @@
 	tabsize=3
 }
 
-%\usepackage[utf8]{vietnam}
-%\usepackage{pdfpages}
-%\usepackage{todonotes}
-%\usepackage{hyperref}
-%
-%\usepackage{amsmath}
-%\usepackage{amssymb}
-%\usepackage{algorithm}
-%\usepackage[noend]{algpseudocode}
-%
-%\usepackage{graphicx}
-%\graphicspath{ {images/} }
-%\usepackage{lipsum}
-%\usepackage[left=3.5cm,right=2cm,top=3.5cm,bottom=3cm]{geometry}
-%
-%\usepackage{fancyhdr}
-%\pagestyle{fancy}
-%\fancyhf{}
-%\chead{\thepage}
-%\renewcommand{\headrulewidth}{0.1pt}
-%
-%
-%\setlength{\parskip}{0.5em} % Khoảng cách giữa các Paragraph
-%
-%\usepackage{mathpazo}
-%\usepackage{lipsum}
-%
-%% Cấu hình file --> để hiển nhập code c# 
-%\usepackage{listings}
-%\usepackage{color}
-%\definecolor{dkgreen}{rgb}{0,0.6,0}
-%\definecolor{gray}{rgb}{0.5,0.5,0.5}
-%\definecolor{mauve}{rgb}{0.58,0,0.82}
-%\lstset{inputpath=Filecodes}
-%\lstset{frame=tb,
-%	language=[Sharp]C,
-%	aboveskip=3mm,
-%	belowskip=3mm,
-%	showstringspaces=false,
-%	columns=flexible,
-%	basicstyle={\small\ttfamily},
-%	numbers=none,
-%	numberstyle=\tiny\color{gray},
-%	keywordstyle=\color{blue},
-%	commentstyle=\color{dkgreen},
-%	stringstyle=\color{mauve},
-%	breaklines=true,
-%	breakatwhitespace=true,
-%	tabsize=3
-%}
-%
-%% Cấu hình table
-%\usepackage{tabu}
-%
-%\newtheorem{definition}{Định nghĩa}
-%
-%\renewcommand{\lstlistingname}{Mã lệnh}

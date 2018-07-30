@@ -2,8 +2,8 @@ Chương này tập trung làm rõ hành vi của chương trình, độ tương
 hành vi giữa hai chương trình và các phương pháp đo độ tương tự về
 hành vi, sẽ được trình bày trong Phần \ref{sec:behavior} và
 \ref{sec:metrics}. Ngoài ra, chương này còn trình bày một số kiến thức
-cơ sở về kiểm thử phần mềm và kỹ thuật sinh dữ liệu kiểm thử trong
-Phần \ref{sec:base}.
+cơ sở về kiểm thử phần mềm, các phương pháp kiểm thử phần mềm, kỹ
+thuật sinh dữ liệu kiểm thử trong Phần \ref{sec:base}.
 
 \section{Kiến thức cơ sở}
 \label{sec:base}
@@ -19,19 +19,11 @@ chương trình (\emph{DSE -- Dynamic Symbolic Execution}) nhằm giúp tăng đ
 của dữ liệu thử.
 
 \subsection{Kiểm thử phần mềm}
-Hiện nay, ngành công nghiệp phần mềm giữ vai trò khá quan trọng. Một
-số nước có nền công nghệ thông tin phát triển thì ngành công nghiệp
-phần mềm có khả năng chi phối cả nền kinh tế. Vì vậy, việc đảm bảo
-chất lượng phần mềm trở nên cần thiết hơn bao giờ hết.
+Hiện nay, ngành công nghiệp phần mềm giữ vai trò hết sức quan trọng, một số nước có nền công nghệ thông tin phát triển thì ngành công nghiệp phần mềm có khả năng chi phối cả nền kinh tế. Vì vậy,  việc đảm bảo chất lượng phần mềm trở nên cần thiết hơn bao giờ hết.
 
 Quá trình phát hiện và khắc phục lỗi của phần mềm là một công việc đòi hỏi nhiều nỗ lực, công sức, phát sinh thêm nhiều chi phí trong việc phát triển phần mềm. Một sản phẩm phần mềm đạt chất lượng cao, đáp ứng được yêu cầu của người sử dụng sẽ được nhiều người biết đến, nó mang lại hiệu quả tích cực trong công việc của người sử dụng. Ngược lại, một phần mềm kém chất lượng sẽ gây thiệt hại về kinh tế, ảnh hưởng đến công việc của người sử dụng. Vì vậy, yêu cầu đặt ra đó là một sản phẩm phần mềm phải đảm bảo được sự ổn định, không phát sinh lỗi trong quá trình sử dụng.
 
-Kiểm thử phần mềm chính là một quá trình hoặc một loạt các quy trình
-được thiết kế nhằm đảm bảo mã máy tính chỉ làm những gì nó được thiết
-kế và không làm bất cứ điều gì ngoài ý muốn \cite{myers2011art}. Đây
-là một bước quan trọng trong quá trình phát triển một phần mềm, giúp
-cho nhà phát triển phần mềm và người sử dụng thấy được hệ thống đã đáp
-ứng được yêu cầu đặt ra.
+Kiểm thử phần mềm chính là một quá trình hoặc một loạt các quy trình được thiết kế, để đảm bảo mã máy tính chỉ làm những gì nó được thiết kế và không làm bất cứ điều gì ngoài ý muốn \cite{myers2011art}. Phần mềm phải được dự đoán và nhất quán, không gây bất ngờ cho người dùng. Đây là một bước quan trọng trong quá trình phát triển một phần mềm, giúp cho nhà phát triển phần mềm và người sử dụng thấy được hệ thống đã đáp ứng được yêu cầu đặt ra.
 
 \subsubsection{Các phương pháp kiểm thử}
 
@@ -39,7 +31,7 @@ Có nhiều phương pháp để kiểm thử phần mềm, trong đó hai phư�
 kiểm thử chính là \emph{kiểm thử tĩnh} và \emph{kiểm thử động}.
 
 \emph{Kiểm thử tĩnh (Static testing)} là phương pháp kiểm thử phần mềm
-bằng cách duyệt lại các yêu cầu, các đặc tả và mã lệnh chương trình
+bằng cách duyệt lại các yêu cầu và các đặc tả, mã lệnh chương trình
 bằng tay, thông qua việc sử dụng giấy, bút để kiểm tra tính logic từng
 chi tiết mà không cần chạy chương trình. Kiểu kiểm thử này thường được
 sử dụng bởi chuyên viên thiết kế, người viết mã lệnh chương
@@ -54,17 +46,17 @@ của chương trình. Đồng thời, kiểm thử động sẽ tiến hành ki
 thức hoạt động của mã lệnh, tức là kiểm tra phản ứng từ hệ thống với
 các biến thay đổi theo thời gian. Trong kiểm thử động, phần mềm phải
 được biên dịch và chạy, và bao gồm việc nhập các giá trị đầu vào và
-kiểm tra giá trị đầu ra có như mong muốn không.
+kiểm tra giá trị đầu ra có như mong muốn hay không.
 
 Trong luận văn này, độ tương tự về hành vi giữa hai chương trình được
 đo thông qua việc thực thi hai chương trình, tức là sử dụng phương
-pháp \emph{kiểm thử động}.
+pháp kiểm thử động.
 	
 \subsubsection{Các chiến lược kiểm thử}
 
 Hai chiến lược kiểm thử phần mềm được sử dụng nhiều nhất đó là \emph{kiểm thử hộp đen} và \emph{kiểm thử hộp trắng}.
 	
-\emph{Kiểm thử hộp đen (black box)} là một chiến lược kiểm thử với
+\emph{Kiểm thử hộp đen – Black box} là một chiến lược kiểm thử với
 cách thức hoạt động chủ yếu dựa vào hướng dữ liệu inputs/outputs của
 chương trình, xem chương trình như là một ``hộp đen''. Chiến lược kiểm
 thử này hoàn toàn không quan tâm về cách xử lý và cấu trúc bên trong
@@ -81,186 +73,187 @@ nó lại có nhược điểm là thăm dò mù. Trong phần nghiên cứu c�
 kiểm thử hộp đen cũng được sử dụng như một phương pháp đo độ tương tự
 hành vi của các chương trình.
 		
-\emph{Kiểm thử hộp trắng (white box)} là một chiến lược kiểm ngược lại
-với kiểm thử hộp đen, còn gọi là kiểm thử hướng logic của phần
-mềm. Cách kiểm thử này cho phép tạo ra dữ liệu thử nghiệm từ việc kiểm
-tra, khảo sát cấu trúc bên trong và kiểm thử tính logic của chương
-trình. Dữ liệu thử nghiệm có độ phủ lớn, đảm bảo tất cả các đường dẫn,
-hoặc các nhánh của chương trình được thực hiện ít nhất một lần, khắc
-phục được những nhược điểm thăm dò mù trong cách kiểm thử hộp đen.
+\emph{Kiểm thử hộp trắng – White box} là một chiến lược kiểm thử khác,
+trái ngược hoàn toàn với kiểm thử hộp đen, còn gọi là kiểm thử hướng
+logic của phần mềm. Cách kiểm thử này cho phép tạo ra dữ liệu thử
+nghiệm từ việc kiểm tra, khảo sát cấu trúc bên trong và kiểm thử tính
+logic của chương trình. Dữ liệu thử nghiệm có độ phủ lớn, đảm bảo tất
+cả các đường dẫn, hoặc các nhánh của chương trình được thực hiện ít
+nhất một lần, khắc phục được những nhược điểm thăm dò mù trong cách
+kiểm thử hộp đen.			
 
 \subsection{Kỹ thuật Dynamic symbolic execution}
 \label{sec:dse}
 
-Dynamic symbolic execution (DSE) là một kỹ thuật sinh dữ liệu thử bằng
-cách duyệt tự động tất cả các đường đi có thể của chương trình bằng
-cách chạy chương trình với nhiều giá trị đầu vào khác nhau để tăng độ
-phủ của dữ liệu thử được sinh ra \cite{xie2009fitness}.
+Dynamic symbolic execution (DSE) là một kỹ thuật duyệt tự động tất cả các đường đi có thể của chương trình bằng cách chạy chương trình với nhiều giá trị đầu vào khác nhau để tăng độ phủ của dữ liệu thử \cite{xie2009fitness}.
 
-Dựa trên kiểu dữ liệu của các tham số đầu vào của chương trình, kỹ
-thuật DSE sẽ tạo ra các giá trị đầu vào cụ thể và thực thi chương
-trình với các giá trị cụ thể vừa tạo. Trong quá trình thực thi, DSE sẽ
-ghi nhận lại ràng buộc tại các nút rẽ nhánh của chương trình, phủ định
-lại các ràng buộc này và sinh các giá trị đầu vào thỏa các điều kiện
-ràng buộc vừa được ghi nhận. Với một giá trị đầu vào cụ thể, DSE sẽ
-thực thi chương trình và duyệt được một đường đi cụ thể, quá trình
-thực thi này sẽ lặp lại cho đến khi duyệt hết tất cả các đường đi của
-chương trình. Thuật toán Algorithm~\ref{alg:DSE} mô tả cách thức hoạt
-động tạo tập dữ liệu đầu vào thử nghiệm của kỹ thuật DSE.
+Dựa trên kiểu dữ liệu các tham số đầu vào của chương trình, DSE sẽ tạo ra các giá trị đầu vào cụ thể và thực thi chương trình với các giá trị cụ thể vừa tạo. Trong quá trình thực thi, DSE sẽ ghi nhận lại ràng buộc tại các nút rẽ nhánh của chương trình, phủ định lại các ràng buộc này và sinh các giá trị đầu vào thỏa các điều kiện ràng buộc vừa được ghi nhận. Với một giá trị đầu vào cụ thể, DSE sẽ thực thi chương trình và duyệt được một đường đi cụ thể, quá trình thực thi này sẽ lặp lại cho đến khi duyệt hết tất cả các đường đi của chương trình. Từ đó, chúng tôi xây dựng Thuật toán \ref{alg:DSE} để mô tả cách thức hoạt động tạo tập dữ liệu đầu vào thử nghiệm của kỹ thuật DSE.
 
 \begin{algorithm}
-	\caption{Thuật toán Dynamic symbolic execution}
+	\caption{Dynamic symbolic execution}
 	\label{alg:DSE}
 	\begin{algorithmic}
-        \item Set J:= $\varnothing $ \Comment{J: Tập hợp các đầu vào
-            của chương trình phân tích}
-        \item loop \subitem Chọn đầu vào i $\notin $ J \Comment{Dừng
-            lại nếu không có i nào được tìm thấy} \subitem Xuất ra i
-          \subitem Thực thi P(i); lưu lại điều kiện đường đi C(i); suy
-          ra C'(i) \subitem Đặt J := J $\cup $ i
+		\item $ P $: Chương trình được thực thi		
+		\item $ I $: Tập đầu vào của $ P $		
+		\item $ P(i)$: Thực thi $ P $ với $ i \in I  $
+		\item $ J $: Tập các giá trị được thực thi trên $ P $, ký hiệu $ J = \{i | P(i)\} $
+		\item $ Q $: Tập các ràng buộc của $ P $, hay còn gọi là tập các điều kiện đường đi của $ P $
+		\item $ C(i) $: Là ràng buộc thu gom được từ việc thực thi $ P(i)$
+		\item $ C'(i) $: Là điều kiện đường đi suy ra từ $ C(i) $
+        \item Set $J:= \varnothing $
+        \item Set $i:= Random(I) $; 
+        \item loop 
+        	\subitem Set $ Q:= \varnothing $
+        	\subitem Chọn đầu vào $ i \notin J $
+        	\Comment{Dừng lại nếu $ i \in J $}         	
+          	\subitem Thực thi P(i) 
+          	\subitem Lưu lại điều kiện đường đi $ C(i) $ vào $ Q $; suy ra $ C'(i)$ 
+	        \subitem Từ $ Q $ và $ C'(i) $ suy ra $ i $
+          	\subitem Set J := J $\cup $ i
         \item end loop
 	\end{algorithmic}
 \end{algorithm}
 
-Để hiểu rõ cách thức hoạt động tạo tập dữ liệu đầu vào thử nghiệm của kỹ thuật DSE chúng ta phân tích ví dụ trong Mã lệnh~\ref{lst:DSE} \cite{DSE}, với hàm \texttt{test\_me} có hai tham số đầu vào là \texttt{int x} và \texttt{int y} và hàm này không có giá trị trả về.
-
-\lstinputlisting[caption={Ví dụ minh họa cách thức hoạt động của kỹ thuật DSE},label={lst:DSE}]{DSE.cs}	
-
-Đầu tiên, DSE tạo hai tham số đầu vào thử nghiệm \texttt{(int x, int y)} có giá trị ngẫu nhiên, giả sử $x = 22$ và $y = 7$. Bên cạnh đó, DSE theo dõi tham số đầu vào của chương trình bằng một giá trị biểu trưng, với \texttt{x} bằng một số $x_{0}$ và \texttt{y} bằng một số $y_{0}$ (Hình \ref{fig:dse11}).
+Để hiểu rõ cách thức hoạt động tạo tập dữ liệu đầu vào thử nghiệm của kỹ thuật DSE chúng ta phân tích ví dụ trong Hình \ref{lst:vddse} \cite{DSE}, với hàm \texttt{test\_me} có hai tham số đầu vào là \texttt{int x} và \texttt{int y} và hàm này không có giá trị trả về.
 
 \begin{figure}[H]
-	\caption{DSE tạo ngẫu nhiên các tham số đầu vào của chương trình}
-	\label{fig:dse11}
+	\centering
+	\label{lst:vddse}
+	\lstinputlisting[caption={Ví dụ minh họa cách thức hoạt động của kỹ thuật DSE},label={DSE}]{DSE.cs}	
+\end{figure}	
+
+Đầu tiên, DSE tạo hai đầu vào có giá trị ngẫu nhiên, giả sử $x = 22$ và $y = 7$. Đồng thời, DSE theo dõi trạng thái biểu trưng của chương trình với $ x $ bằng một số $x_{0}$ và $ y $ bằng một số $y_{0}$ (Hình \ref{fig:dse11}).
+
+\begin{figure}[H]	
 	\begin{center}
 		\includegraphics[scale=.7]{dse11.png}
-	\end{center}	
+	\end{center}
+	\caption{DSE tạo hai đầu vào có giá trị ngẫu nhiên}
+	\label{fig:dse11}	
 \end{figure}
 
-Tiếp theo, DSE thực thi dòng lệnh \texttt{(int z = foo(y))} nghĩa là gán  biến \texttt{z} bằng hàm \texttt{foo(y)}, lúc này biến $ z = 14 $ và trạng thái biểu trưng của biến \texttt{z} là $ z = 2*y_{0} $ (Hình \ref{fig:dse12})
+Ở dòng đầu tiên, số nguyên $ z $ được gán bằng hàm $ foo(y) $, nghĩa là số nguyên $ z = 14 $ và ở trạng thái biểu trưng của số nguyên $ z $ bằng $ 2*y_{0} $ (Hình \ref{fig:dse12}).
 
-\begin{figure}[H]
-	\caption{DSE gán số nguyên \texttt{Z} bằng hàm \texttt{foo(y)}}
-	\label{fig:dse12}
+\begin{figure}[H]	
 	\begin{center}
 		\includegraphics[scale=.7]{dse12.png}
-	\end{center}	
+	\end{center}
+	\caption{DSE gán số nguyên $ z $ bằng hàm $foo(y)$}
+	\label{fig:dse12}	
 \end{figure}
 
-Tại câu lệnh \texttt{if(z == x)}, chúng ta thấy giá trị của \texttt{z} và \texttt{x} không bằng nhau, kết quả trả về của câu lệnh này sẽ là \texttt{fasle} dẫn đến kết thúc chương trình. Vì vậy, DSE sẽ lưu lại điều kiện ràng buộc \texttt{(z != x)} của đường dẫn này là $ 2*y_{0} != x_{0} $ (\ref{fig:dse13}).
+Tại điểm nhánh $z == x$, DSE nhận thấy giá trị của $ z $ và $ x $ không bằng nhau. Về mặt biểu trưng, DSE lưu lại ràng buộc $ z != x $ như là điều kiện đường dẫn của chương trình với các giá trị biểu trưng của $ z $ và $ x $ là $ 2*y_{0} != x_{0} $. Sau đó, DSE đi theo đi theo nhánh $ fasle $, dẫn đến kết thúc chương trình (Hình \ref{fig:dse13}).
 
-\begin{figure}[H]
-	\caption{DSE lưu lại điều kiện ràng buộc \texttt{(z != x)} của chương trình  }
-	\label{fig:dse13}
+\begin{figure}[H]	
 	\begin{center}
 		\includegraphics[scale=.7]{dse13.png}
-	\end{center}	
+	\end{center}
+	\caption{DSE lưu lại ràng buộc $ z != x $ của chương trình  }
+	\label{fig:dse13}	
 \end{figure}
 
-Sau khi kết thúc chương trình, DSE quay trở lại điểm vừa lưu điều kiện ràng buộc \texttt{(if(z == x))} để thực hiện phủ định điều kiện $2*y_{0} != x_{0}$ thành $2*y_{0} == x_{0}$. Sau đó DSE thực hiện tính toán và giải ràng buộc $2*y_{0} == x_{0}$, kết quả trả về là hai số nguyên có giá trị $ x_{0} = 2$, $ y_{0} = 1 $ thỏa ràng buộc (Hình \ref{fig:dse2}).
+Lúc này, DSE quay trở lại điểm nhánh $z == x$ và chọn nhánh $ true $. Để thực hiện việc này, DSE phủ định lại ràng buộc trong điều kiện đường dẫn $2*y_{0} != x_{0}$ thành $2*y_{0} == x_{0}$. Sau đó, DSE thực hiện giải ràng buộc $2*y_{0} == x_{0}$ và trả về hai số nguyên thỏa ràng buộc có giá trị $ x_{0} = 2$, $ y_{0} = 1 $ (Hình \ref{fig:dse2}).
 
-\begin{figure}[H]
-	\caption{DSE tính toán và giải ràng buộc $2*y_{0} == x_{0}$}
-	\label{fig:dse2}
+\begin{figure}[H]	
 	\begin{center}
 		\includegraphics[scale=.7]{dse2.png}
-	\end{center}	
+	\end{center}
+	\caption{DSE tính toán và giải ràng buộc $2*y_{0} == x_{0}$}
+	\label{fig:dse2}	
 \end{figure}
 
-Sau đó, DSE khởi động lại hàm \texttt{test\_me} với các giá trị đầu vào cụ thể $x = 2$, $y = 1$ vừa tạo ra trước đó và tiếp tục theo dõi trạng thái biểu trưng các giá trị đầu vào với $x = x_{0}$ và $y = y_{0}$ (Hình \ref{fig:dse21}).
+Sau khi có hai số nguyên thỏa ràng buộc của chương trình, DSE khởi động lại hàm $ test\_me $ với các giá trị đầu vào cụ thể $x = 2$, $y = 1$ vừa tạo ra trước đó và tiếp tục theo dõi trạng thái biểu trưng của chương trình với $ x $ bằng một số $x_{0}$ và $ y $ bằng một số $y_{0}$ (Hình \ref{fig:dse21}).
 
-\begin{figure}[H]
-	\caption{DSE khởi động lại hàm \texttt{test\_me}}
-	\label{fig:dse21}
+\begin{figure}[H]	
 	\begin{center}
 		\includegraphics[scale=.7]{dse21.png}
-	\end{center}		
+	\end{center}
+	\caption{DSE khởi động lại hàm \texttt{test\_me}}
+	\label{fig:dse21}		
 \end{figure}
 
+Sau khi thực hiện dòng đầu tiên, biến $ z $ sẽ có giá trị bằng $2$ (đầu ra của hàm $ foo(y) $) và DSE lưu giá trị biểu trưng của số nguyên $ z $ là $z = 2*y_{0}$ (Hình \ref{fig:dse22}).
 
-Tại câu lệnh gắn biến \texttt{z = foo(y)}, lúc này biến \texttt{z} sẽ có giá trị bằng $2$ và DSE thực hiện lưu trạng thái biểu trưng của biến \texttt{z} là $z = 2*y_{0}$ (Hình \ref{fig:dse22}).
-
-
-\begin{figure}[H]
-	\caption{DSE ghi nhận trạng thái biểu trưng của biến \texttt{z}}
-	\label{fig:dse22}
+\begin{figure}[H]	
 	\begin{center}
 		\includegraphics[scale=.7]{dse22.png}
-	\end{center}		
+	\end{center}
+	\caption{DSE lưu giá trị biểu trưng của số nguyên $ z $}
+	\label{fig:dse22}		
 \end{figure}
 
-Tại nút rẽ nhánh \texttt{if(z == x)}, chúng ta thấy giá trị của biến $ z == x $ thỏa điều kiện nên chương trình tiếp tục thực thi theo nhánh điều kiện \texttt{true} và DSE ghi nhận ràng buộc $2*y_{0} == x_{0}$ cho nút nhánh này (Hình \ref{fig:dse23}).
+Tại điểm nhánh $ z == x $, DSE thấy giá trị của biến $ z == x $, đây là điều kiện $ true $ nên DSE lưu lại ràng buộc trong điều kiện đường dẫn là $2*y_{0} == x_{0}$. Sau đó DSE tiếp tục kiểm tra các dòng tiếp theo của nhánh $ true $ (Hình \ref{fig:dse23}).
 
-\begin{figure}[H]
-	\caption{DSE ghi nhận điều kiện ràng buộc $2*y_{0} == x_{0}$}
-	\label{fig:dse23}
+\begin{figure}[H]	
 	\begin{center}
 		\includegraphics[scale=.7]{dse23.png}
-	\end{center}	
+	\end{center}
+	\caption{DSE ghi nhận điều kiện ràng buộc $2*y_{0} == x_{0}$}
+	\label{fig:dse23}	
 \end{figure}
 
-Tại nút rẽ nhánh tiếp theo \texttt{if(x > y+10)}, giá trị biến \texttt{x} bằng $2$, và $(y + 10)$ bằng $11$ nên chương trình sẽ thực thi theo nhánh \texttt{false} để kết thúc chương trình. Tại đây, DSE ghi nhận lại ràng buộc $x_{0} <= y_{0} + 10$ cho nút rẽ nhánh \texttt{if(x > y+10)} (Hình \ref{fig:dse24}).
+Tại điểm nhánh tiếp theo $ x > y+10 $, lúc này $ x $ có giá trị bằng $2$, $(y + 10)$ có giá trị bằng $11$ nên DSE chọn nhánh $ fasle $ và kết thúc chương trình. Cùng lúc đó, DSE lưu lại ràng buộc trong điều kiện đường dẫn của chương trình là $x_{0} <= y_{0} + 10$ (Hình \ref{fig:dse24}).
 
-\begin{figure}[H]
-	\caption{DSE ghi nhận ràng buộc $x_{0} <= y_{0} + 10$}
-	\label{fig:dse24}
+\begin{figure}[H]	
 	\begin{center}
 		\includegraphics[scale=.7]{dse24.png}
-	\end{center}		
+	\end{center}
+	\caption{DSE lưu lại ràng buộc $x_{0} <= y_{0} + 10$}
+	\label{fig:dse24}		
 \end{figure}
 
-Vì đã đến cuối chương trình nên DSE quay lại nút nhánh gần nhất \texttt{if(x > y+10)} và thực hiện phủ định lại ràng buộc $x_{0} <= y_{0} + 10$ thành $ x_{0} > y_{0} + 10 $. Sau đó, DSE thực hiện giải ràng buộc $(2*y_{0} == x_{0}) and (x_{0} > y_{0} + 10)$ và tạo ra một giá trị đầu vào thỏa ràng buộc với $x_{0} = 30$ và $y_{0} = 15$ (Hình \ref{fig:dse3})
+Vì đã đến cuối chương trình nên DSE quay lại điểm nhánh $ x > y+10 $ và thực hiện phủ định lại ràng buộc $x_{0} <= y_{0} + 10$ thành $ x_{0} > y_{0} + 10 $. Sau đó, DSE thực hiện giải ràng buộc $(2*y_{0} == x_{0}) and (x_{0} > y_{0} + 10)$ và trả về giá trị $x_{0} = 30$ và $y_{0} = 15$ (Hình \ref{fig:dse3})
 
-\begin{figure}[H]
-	\caption{DSE thực hiện giải ràng buộc $(2*y_{0} == x_{0}) and (x_{0} > y_{0} + 10)$}
-	\label{fig:dse3}
+\begin{figure}[H]	
 	\begin{center}
 		\includegraphics[scale=.7]{dse3.png}
 	\end{center}
+	\caption{DSE thực hiện giải ràng buộc $(2*y_{0} == x_{0}) and (x_{0} > y_{0} + 10)$}
+	\label{fig:dse3}
 \end{figure}
 
-Sau khi có giá trị đầu vào mới, DSE thực thi hàm \texttt{test\_me} một lần nữa với các giá trị đầu vào cụ thể $x = 30$ và $y = 15$ và tạo các trạng thái biểu trưng cho các biến đầu vào lần lượt $x = x_{0}$ và $y = y_{0}$ (Hình \ref{fig:dse31})
+Bây giờ, DSE chạy lại hàm \texttt{test\_me} một lần nữa với đầu vào cụ thể $x = 30$ và $y = 15$ và theo dõi trạng thái biểu trưng của chương trình với $x = x_{0}$ và $y = y_{0}$ (Hình \ref{fig:dse31})
 
-\begin{figure}[H]
-	\caption{DSE thực thi hàm \texttt{test\_me} với $ x = 30 $ và $ y = 15 $}
-	\label{fig:dse31}
+\begin{figure}[H]	
 	\begin{center}
 		\includegraphics[scale=.7]{dse31.png}
 	\end{center}
+	\caption{DSE chạy lại hàm \texttt{test\_me} với $ x = 30 $ và $ y = 15 $}
+	\label{fig:dse31}
 \end{figure}
 
 
-Tại câu lệnh \texttt{z = foo(y)}, giá trị của biến \texttt{z} lúc này bằng $ 30 $ và trạng thái biểu trưng của biến \texttt{z} được khởi tạo $ z = 2*y_{0} $ như những lần trước đó (Hình \ref{fig:dse32})
+Ở dòng đầu tiên, số nguyên $ z $ lúc này bằng $ 30 $ và ở trạng thái biểu trưng của chương trình DSE lưu giá trị của số nguyên $ z $ là $ z = 2*y_{0} $ như những lần trước đó (Hình \ref{fig:dse32})
 
-\begin{figure}[H]
-	\caption{DSE tạo trạng thái biểu trưng của biến \texttt{z}, với $ z = 30 $}
-	\label{fig:dse32}
+\begin{figure}[H]	
 	\begin{center}
 		\includegraphics[scale=.7]{dse32.png}
 	\end{center}
+	\caption{DSE lưu lại trạng thái biểu trưng số nguyên \texttt{z}}
+	\label{fig:dse32}
 \end{figure}
 
+Tại điểm nhánh $ z == x $, DSE nhận thấy giá trị của $ z $ bằng giá trị của $ x $, đây là điều kiện $ true $ nên DSE thực thi chương trình theo nhánh $ true $, cùng lúc đó DSE lưu lại ràng buộc biểu trưng trong điều kiện đường dẫn của chương trình là $ 2*y_{0} == x_{0} $ cho điểm nhánh này (Hình \ref{fig:dse33})
 
-Tại điểm nhánh \texttt{if(z == x)}, chúng ta thấy giá trị của biến \texttt{z} bằng giá trị của biến \texttt{x} nên chương trình thực thi theo nhánh \texttt{true} và DSE ghi nhận ràng buộc $ 2*y_{0} == x_{0} $ cho điểm nhánh này (Hình \ref{fig:dse33})
-
-\begin{figure}[H]
-	\caption{Ghi nhận điều kiện ràng buộc tại điểm nhánh \texttt{if(z == x)}}
-	\label{fig:dse33}
+\begin{figure}[H]	
 	\begin{center}
 		\includegraphics[scale=.7]{dse33.png}
 	\end{center}
+	\caption{DSE lưu lại điều kiện đường dẫn của chương trình $ 2*y_{0} == x_{0} $}
+	\label{fig:dse33}
 \end{figure}
 
-Tại điểm nhánh tiếp theo \texttt{if(x > y+10)}, giá trị của biến $x = 30 $, biến $ y = 15 $ nên $(x >  y+10)$ thỏa điều kiện đường dẫn, chương trình sẽ thực thi theo nhánh \texttt{true} dẫn đến kết quả \texttt{ERROR}, lúc này DSE thực hiện ghi nhận lại ràng buộc $ x_{0} > y_{0}+ 10 $ cho nút rẻ nhánh \texttt{if(x > y+10)}. Vì chương trình thực thi đến \texttt{ERROR} và kết thúc chương trình nên chúng ta đã xác định được giá trị đầu vào cụ thể làm cho chương trình thực thi theo nhánh này với $x = 30$ và $y = 15$ (Hình \ref{fig:dse4}).
+Tại điểm nhánh tiếp theo $ x > y+10 $, lúc này giá trị $x = 30 $, $ y = 15 $ nên $ x $ thực sự lớn hơn $(y+10)$, vì vậy DSE thêm một ràng buộc biểu trưng mới là $ x_{0} > y_{0}+ 10 $. Nhánh này dẫn đến $ ERROR $ và kết thúc chương trình nên chúng ta đã xác định được giá trị đầu vào cụ thể làm cho chương trình dẫn đến $ ERROR $ là $x = 30$ và $y = 15$ (Hình \ref{fig:dse4}).
 
 \begin{figure}[H]
-	\caption{Đường dẫn của chương trình khi thực thi với giá trị $x = 30$ và $y = 15$}
-	\label{fig:dse4}
 	\begin{center}
 		\includegraphics[scale=.6]{dse4.png}
 	\end{center}	
+	\caption{DSE chạy chương trình với giá trị đầu vào $x = 30$ và $y = 15$}
+\label{fig:dse4}
 \end{figure}
 
-Sau 3 lần chạy chương trình, kỹ thuật DSE tạo ra tập các giá trị đầu vào $ [22,7] $, $ [2,1] $, $ [30,15] $ có độ phủ cao. Khi thực thi chương trình với tập giá trị đầu vào này tất cả các nhánh trong chương trình đều được thực thi. 
+Với mỗi giá trị đầu vào, DSE thực thi chương trình và duyệt được một đường đi cụ thể. Sau 3 lần thực thi chương trình DSE đã tạo ra được một tập các giá trị đầu vào $[22,7] [2,1] [30,15]$ có thể phủ được tất cả các nhánh trong chương trình.
 	
 \subsection{Một số công cụ áp dụng DSE}	
 
@@ -342,7 +335,7 @@ Việc thực thi một chương trình có thể xem là sự tương ứng m�
 \end{definition}
 
 Với giá trị đầu vào $i \in I$, sau khi thực thi chương trình $P$ trên
-$i$ ta thu được giá trị đầu ra tương ứng $o \in O, o = exec(P, i)$.
+$i$ ta có giá trị đầu ra tương ứng $o \in O, o = exec(P, i)$.
 
 \subsection{Tương đương về hành vi}
 
@@ -395,20 +388,18 @@ phần này ta chỉ xét những chương trình có cùng miền giá trị v�
   \caption{Ví dụ sự khác biệt về hành vi}
   \label{fig:behavioral-diff}
   \begin{minipage}[t]{0.45\linewidth}
-    \lstinputlisting[caption={Chương trình $ P_{1} $}, label={KBHV1}]{Khac_biet_HV_1.cs}
+    \lstinputlisting[caption={Khác biệt về hành vi $ P_{1} $}, label={KBHV1}]{Khac_biet_HV_1.cs}
   \end{minipage}%
 \hfill\vrule\hfill
 \begin{minipage}[t]{0.45\linewidth}
-  \lstinputlisting[caption={Chương trình $ P_{2} $}, label={KBHV2}]{Khac_biet_HV_2.cs}
+  \lstinputlisting[caption={Khác biệt về hành vi $ P_{2} $}, label={KBHV2}]{Khac_biet_HV_2.cs}
 \end{minipage}%
 \end{figure}
 
-Trong Hình \ref{fig:behavioral-diff}, hàm $F1$ và $F2$ có cùng miền
-giá trị đầu vào kiểu \texttt{int}. Với mối giá trị vào \texttt{x}, giá
-trị trả về của hàm $F1$ là $x - 10$ và của $F2$ là $x + 10$. Rõ ràng
-hai hàm này có hành vi khác nhau. Mô tả hình thức về sự khác biệt hành
-vi giữa hai chương trình được nêu ra trong Định nghĩa
-\ref{def:equiv-diff}.
+Trong Hình \ref{fig:behavioral-diff}, hàm $F1$ và $F2$ có miền
+cùng giá trị đầu vào kiểu \texttt{int}, giá trị trả về của $F1$ là
+$x - 10$ và của $F2$ là $x + 10$. Như vậy hai hàm này có sự khác
+nhau về hành vi. Mô tả hình thức về sự khác biệt hành vi giữa hai chương trình được nêu ra trong Định nghĩa \ref{def:equiv-diff}.
 
 \begin{definition}[Sự khác biệt về hành vi]
   \label{def:equiv-diff}
@@ -423,30 +414,25 @@ vi giữa hai chương trình được nêu ra trong Định nghĩa
 
 Trong trường hợp hai chương trình không tương đương nhau về hành vi,
 nghĩa là có sự khác biệt về hành vi giữa chúng, thì ta cần biết mức độ
-tương tự giữa chúng là bao nhiêu. Thông tin này khá hữu ích, nó giúp
-cho người dạy có thể đánh giá xếp hạng được giải pháp của người học
-dựa vào giải pháp của mình đưa ra, hoặc có thể biết được mức độ hoàn
-thiện của giải pháp do người học đưa ra. Xét độ tương tự về hành vi
-của hai chương trình $P_{1}$ và $P_{2}$ được cho lần lượt trong Mã
-lệnh \ref{TTHV1} và \ref{TTHV2}. Chúng ta dễ dàng thấy được hai hàm
-$F1$ và $F2$ là không tương đương nhau trên toàn bộ miền giá trị vào
-\texttt{int} mà chỉ tương đương trên miền các giá trị số nguyên
-$E = [0,100] \cup \{-1\}$. Từ đó, ta có thể tính được độ tương tự về
-hành vi của hai hàm này là $|E| / |\texttt{int}|$, trong đó
-$|\mathtt{int}|$ là kích thước miền giá trị vào của hai hàm,
-\texttt{int}.
+tương tự giữa chúng. Thông tin này khá hữu ích, nó giúp cho người dạy
+có thể đánh giá xếp hạng được giải pháp của người học dựa vào giải
+pháp của mình đưa ra, hoặc có thể biết được mức độ hoàn thiện của giải
+pháp do người học đưa ra. Xét độ tương tự về hành vi của hai chương
+trình $P_{1}$ và $P_{2}$ được cho lần lượt trong Mã lệnh \ref{TTHV1} và
+\ref{TTHV2}. Chúng ta dễ dàng thấy được hai hàm $F1$ và $F2$ là
+không tương đương nhau trên toàn bộ miền giá trị vào \texttt{int} mà chỉ tương đương trên miền các số nguyên $E = [0,100] \cup \{-1\}$. Từ đó, ta có thể tính được độ tương tự về hành vi của hai hàm này là $|E| / |\texttt{int}|$, trong đó $|\mathtt{int}|$ là kích thước miền giá trị vào của hai hàm, \texttt{int}.
 
 \begin{figure}[H]
 	\centering
 	\caption{Ví dụ độ tương tự về hành vi}
 	\label{fig:behavioral-sim}
 	\begin{minipage}[t]{0.45\linewidth}
-	  \lstinputlisting[label={TTHV1}, caption = {Chương trình  
+	  \lstinputlisting[label={TTHV1}, caption = {Tương tự về hành vi   
 	  	$P_{1}$}]{TuongTu_HV_1.cs}
 	\end{minipage}%
 	\hfill\vrule\hfill
 	\begin{minipage}[t]{0.45\linewidth}
-	  \lstinputlisting[label={TTHV2}, caption = {Chương trình  
+	  \lstinputlisting[label={TTHV2}, caption = {Tương tự về hành vi  
 	    $P_{2}$}]{TuongTu_HV_2.cs}
 	\end{minipage}%
 \end{figure}

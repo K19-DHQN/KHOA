@@ -1,14 +1,14 @@
-\documentclass[12pt, oneside ]{memoir}
+\documentclass[12pt,a4paper,openany,oneside]{memoir} %memoir
 \input{dangkhoa.sty}
 \title{Độ tương tự hành vi của chương trình \\ và thực nghiệm}
 \author{Đỗ Đăng Khoa}
 \begin{document}
+	
+\fontsize{14pt}{14pt}\selectfont \baselineskip 0.65cm
+\thispagestyle{empty}
+
 \includepdf[pages=-]{trangbia.pdf}
-% \pagenumbering{gobble} % Trước trang không đánh số thứ tự 
-% \pagenumbering{roman} % Trước trang đánh số la mã
-% \setcounter{page}{1}
-%\pagenumbering{arabic} % Trước trang đánh số thứ tự thêm 2 dòng này
-%\setcounter{page}{1}   % Trước trang đánh số thứ tự thêm 2 dòng này - số trang bắt đầu bằng 3
+
 \chapter*{LỜI CAM ĐOAN}
 \input{Loicamdoan}
 
@@ -17,11 +17,13 @@
 
 \newpage
 \tableofcontents
-%======================================================================
+
 \includepdf[pages=1]{Danhmuckyhieu.pdf}
 \newpage
+
 \listoffigures
 \newpage
+
 \lstlistoflistings
 
 
@@ -44,8 +46,9 @@
 
 \includepdf{quyetdinh.pdf}
 
-\chapter*{MỘT SỐ MÃ LỆNH QUAN TRỌNG}
+\chapter{MỘT SỐ MÃ LỆNH QUAN TRỌNG}
 \input{SourceCode}
+
 \end{document}
 
 

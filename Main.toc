@@ -32,4 +32,4 @@
 \contentsline {subsection}{\IeC {\DJ }\IeC {\d \ocircumflex } t\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\d \uhorn } h\IeC {\`a}nh vi c\IeC {\h u}a ch\IeC {\uhorn }\IeC {\ohorn }ng tr\IeC {\`\i }nh theo ph\IeC {\'e}p \IeC {\dj }o PSE}{40}{section*.35}
 \contentsline {section}{\numberline {3.4}Kh\IeC {\h a} n\IeC {\u a}ng \IeC {\'\uhorn }ng d\IeC {\d u}ng}{41}{section.3.4}
 \contentsline {section}{\numberline {3.5}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{42}{section.3.5}
-\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{44}{chapter*.36}
+\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{44}{section*.37}

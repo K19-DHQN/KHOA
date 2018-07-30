@@ -1,4 +1,4 @@
-\contentsline {lstlisting}{\numberline {2.1}V\IeC {\'\i } d\IeC {\d u} minh h\IeC {\d o}a c\IeC {\'a}ch th\IeC {\'\uhorn }c ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng c\IeC {\h u}a k\IeC {\~y} thu\IeC {\d \acircumflex }t DSE}{17}{lstlisting.2.1}
+\contentsline {lstlisting}{\numberline {2.1}V\IeC {\'\i } d\IeC {\d u} minh h\IeC {\d o}a c\IeC {\'a}ch th\IeC {\'\uhorn }c ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng c\IeC {\h u}a k\IeC {\~y} thu\IeC {\d \acircumflex }t DSE}{16}{lstlisting.2.1}
 \contentsline {lstlisting}{\numberline {2.2}S\IeC {\h \uhorn } d\IeC {\d u}ng \texttt {switch...case}}{25}{lstlisting.2.2}
 \contentsline {lstlisting}{\numberline {2.3}S\IeC {\h \uhorn } d\IeC {\d u}ng \texttt {if...else}}{25}{lstlisting.2.3}
 \contentsline {lstlisting}{\numberline {2.4}Ch\IeC {\uhorn }\IeC {\ohorn }ng tr\IeC {\`\i }nh $ P_{1} $}{26}{lstlisting.2.4}

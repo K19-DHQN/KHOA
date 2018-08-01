@@ -25,6 +25,11 @@ David Binkley.
 \newblock In {\em Software Maintenance, 1992. Proceerdings., Conference on},
   pages 41--50. IEEE, 1992.
 
+\bibitem{cadar2013symbolic}
+Cristian Cadar and Koushik Sen.
+\newblock Symbolic execution for software testing: three decades later.
+\newblock {\em Communications of the ACM}, 56(2):82--90, 2013.
+
 \bibitem{coursera}
 Coursera.
 \newblock https://www.coursera.org/.
@@ -66,6 +71,13 @@ Raghavan Komondoor and Susan Horwitz.
 \newblock In {\em International Static Analysis Symposium}, pages 40--56.
   Springer, 2001.
 
+\bibitem{li2016measuring}
+Sihan Li, Xusheng Xiao, Blake Bassett, Tao Xie, and Nikolai Tillmann.
+\newblock Measuring code behavioral similarity for programming and software
+  engineering education.
+\newblock In {\em Proceedings of the 38th International Conference on Software
+  Engineering Companion}, pages 501--510. ACM, 2016.
+
 \bibitem{merlo2004linear}
 Ettore Merlo, Giuliano Antoniol, Massimiliano Di~Penta, and Vincenzo~Fabio
   Rollo.
@@ -101,6 +113,21 @@ Rishabh Singh, Sumit Gulwani, and Armando Solar-Lezama.
 Nikolai Tillmann and Jonathan De~Halleux.
 \newblock Pex--white box test generation for. net.
 \newblock {\em Tests and Proofs}, pages 134--153, 2008.
+
+\bibitem{tillmann2014transferring}
+Nikolai Tillmann, Jonathan De~Halleux, and Tao Xie.
+\newblock Transferring an automated test generation tool to practice: From pex
+  to fakes and code digger.
+\newblock In {\em Proceedings of the 29th ACM/IEEE international conference on
+  Automated software engineering}, pages 385--396. ACM, 2014.
+
+\bibitem{tillmann2013teaching}
+Nikolai Tillmann, Jonathan De~Halleux, Tao Xie, Sumit Gulwani, and Judith
+  Bishop.
+\newblock Teaching and learning programming and software engineering via
+  interactive gaming.
+\newblock In {\em Proceedings of the 2013 International Conference on Software
+  Engineering}, pages 1117--1126. IEEE Press, 2013.
 
 \bibitem{Udacity}
 Udacity.

@@ -6,6 +6,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[vietnamese]{babel}
 
+% Adding todo notes
+\usepackage{todonotes}
+\presetkeys{todonotes}{inline}{}
+
 % Cấu hình table và nhập code
 \usepackage{tabu,color,listings}
 \definecolor{dkgreen}{rgb}{0,0.6,0}
@@ -44,15 +48,16 @@
 \begin{document}
 
 \begin{frame}
+  \todo{Thêm slide number cho các slides}
   \titlepage
 \end{frame}
 
+\part{}
+
 \begin{frame}
   \frametitle{Nội dung}
-  \tableofcontents
+  \tableofcontents{}
 \end{frame}
-
-\part{}
 
 \section{Giới thiệu}
 \begin{frame}
@@ -66,103 +71,108 @@
     \item Một số vấn đề
       \begin{itemize}
       \item Người dạy ít, người học đông
-      \item Thời gian nghiên cứu
-      \item Đánh giá, xếp hạng      
+      \item Thời gian nghiên cứu \todo{Tìm cách nói rõ hơn}
+      \item Đánh giá, xếp hạng
       \end{itemize}
     \item Giải pháp
       \begin{itemize}
-      \item Công cụ hỗ trợ tự động
+      \item Công cụ hỗ trợ tự động \todo{Không lặp lại những nội dung bên dưới, vì đó là các vấn đề cần giải quyết ở trên}
       	\begin{itemize}
       	\item So sánh hai giải pháp
       	\item Tương đương hay tương tự
       	\item Đánh giá, xếp hạng giải pháp
     	\end{itemize}
-      \item Đo được độ tương tự về hành vi giữa hai chương trình
+      \item Đo được độ tương tự về hành vi giữa hai chương trình \todo{Tách riêng ý này thành một block dưới cùng để chú ý}
       \end{itemize}
-  \end{itemize}
+    \end{itemize}
 
   \end{minipage}
 \end{frame}
 
 \begin{frame}
   \frametitle{Một số nghiên cứu liên quan}
-  %  Nhớ so sánh với luận văn
+  % Nhớ so sánh với luận văn
+  \todo{Phải nói rõ người ta làm thế nào, mình khác người thế nào? ghép trích dẫn cho gọn}
   \begin{itemize}
-  	\item Xếp hạng tự động
-  		\begin{itemize}
-  			\item \cite{alur2013automated}
-  			\item \cite{singh2013automated}  			
-  		\end{itemize}
-  	\item Kiểm tra sự tương đương giữa hai chương trình
-	  	\begin{itemize}
-	  		\item \cite{jackson1994semantic}
-	  		\item \cite{jiang2009automatic}
-	  	\end{itemize}
-  	\item Phát hiện đạo code
-  		\begin{itemize}
-  			\item \cite{baxter1998clone}
-  			\item \cite{komondoor2001using}
-  		\end{itemize}
+  \item Xếp hạng tự động
+    \begin{itemize}
+    \item \cite{alur2013automated}
+    \item \cite{singh2013automated}
+    \end{itemize}
+  \item Kiểm tra sự tương đương giữa hai chương trình
+    \begin{itemize}
+    \item \cite{jackson1994semantic}
+    \item \cite{jiang2009automatic}
+    \end{itemize}
+  \item Phát hiện đạo code
+    \begin{itemize}
+    \item \cite{baxter1998clone}
+    \item \cite{komondoor2001using}
+    \end{itemize}
   \end{itemize}
 
 \end{frame}
 
 \begin{frame}
-  \frametitle{Dynamic Symbolic Execution}   
+  \frametitle{Dynamic Symbolic Execution}
+  \todo{Đọc lại thật kỹ DSE, diễn đạt lại cho tốt hơn, giải thích ví dụ chưa ổn, hãy cẩn trọng}
   \begin{itemize}
-  	\item Ý tưởng chính
-  	\begin{itemize}
-  	\item Dựa trên kiểu dữ liệu đầu vào
-	\item Ghi nhận và phủ định các ràng buộc
-  	\item Lặp lại quá trình thực thi
-  	\end{itemize}
+  \item Ý tưởng chính
+    \begin{itemize}
+    \item Dựa trên kiểu dữ liệu đầu vào
+    \item Ghi nhận và phủ định các ràng buộc
+    \item Lặp lại quá trình thực thi
+    \end{itemize}
   \end{itemize}
 
-  \begin{exampleblock}{Cách thức hoạt động}
-	\begin{minipage}{0.45\linewidth}
-	\lstinputlisting[basicstyle=\small]{test_me.cs}
-	\end{minipage}
-	\hfill
-	\begin{minipage}{0.50\linewidth}
-	\begin{itemize}
-		\item Lần 1
-		\begin{itemize}
-			\item Hệ thống $ x = 0 $
-			\item Biểu trưng $ x = x_{0} $
-			\item Ràng buộc $ x_{0} != 10 $
-		\end{itemize}
-		\item Lần 2
-		\begin{itemize}
-			\item Hệ thống $ x = 10 $
-			\item Biểu trưng $ x = x_{0} $
-			\item Ràng buộc $ x_{0} == 10 $
-		\end{itemize}
-	\end{itemize}		
-	\end{minipage}
-  \end{exampleblock}
+  \begin{block}{Cách thức hoạt động}
+    \begin{minipage}{0.45\linewidth}
+      \lstinputlisting[basicstyle=\small]{test_me.cs}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.50\linewidth}
+      \begin{itemize}
+      \item Lần 1
+        \begin{itemize}
+        \item Hệ thống $ x = 0 $
+        \item Biểu trưng $ x = x_{0} $
+        \item Ràng buộc $ x_{0} != 10 $
+        \end{itemize}
+      \item Lần 2
+        \begin{itemize}
+        \item Hệ thống $ x = 10 $
+        \item Biểu trưng $ x = x_{0} $
+        \item Ràng buộc $ x_{0} == 10 $
+        \end{itemize}
+      \end{itemize}
+    \end{minipage}
+  \end{block}
 	
 \end{frame}
 
 \section{Sự tương tự về hành vi chương trình}
+
 \begin{frame}
-	\frametitle{Hai chương trình tương đương}
-	\begin{minipage}[t]{0.48\linewidth}
-	\lstinputlisting[basicstyle=\footnotesize]{SwitchCase.cs}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[t]{0.48\linewidth}
-	\lstinputlisting[basicstyle=\footnotesize]{IfElse.cs}
-	\end{minipage}
-	\begin{itemize}
-		\item Cùng tham số đầu vào $ x $ kiểu \texttt{int}
-		\item Trả về giá trị $ y $ phụ thuộc vào $ x $
-		\item Cấu trúc khác nhau
-	\end{itemize}
+  \frametitle{Hai chương trình tương đương}
+  \todo{Viền code cho đẹp hơn}
+  \begin{minipage}[t]{0.48\linewidth}
+    \lstinputlisting[basicstyle=\footnotesize]{SwitchCase.cs}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.48\linewidth}
+    \lstinputlisting[basicstyle=\footnotesize]{IfElse.cs}
+  \end{minipage}
+  \begin{itemize}
+  \item Cùng tham số đầu vào $ x $ kiểu \texttt{int}
+  \item Trả về giá trị $ y $ phụ thuộc vào $ x $
+  \item Cấu trúc khác nhau
+  \end{itemize}
 \end{frame}
 
 
 \begin{frame}
   \frametitle{Thực thi của một chương trình}
+  \todo{Tìm cách trình bày lại tất cả các định nghĩa cho đẹp hơn, dễ đọc hơn}
   \begin{itemize}
   	\item Cho $P$ là một chương trình
   	\item $I$ là tập hợp các trị đầu vào của $P$
@@ -240,6 +250,7 @@
 
 \begin{frame}
   \frametitle{Thuật toán phép đo RS}
+  \todo{Tìm cách tách phần input và các bước thực hiện để rõ hơn, trong tất cả các thuật toán}
   \begin{algorithm}[H]
   	\KwIn{
   		$P_{1}, P_{2}$ hai chương trình cần đo độ tương tự\; 
@@ -263,6 +274,7 @@
 
 \begin{frame}
   \frametitle{DSE trên chương trình tham chiếu}
+  \todo{Việc tìm tập dữ liệu thử do DSE làm}
   \begin{itemize}
   	\item Áp dụng DSE trên chương trình tham chiếu
   	\\ (\emph{Single program Symbolic Execution -- SSE})
@@ -311,6 +323,7 @@
 
 \begin{frame}
   \frametitle{DSE trên chương trình hợp thành}
+  \todo{Tách riêng ý về chương trình hợp thành, sau đó nói về DSE trên nó}
   \begin{itemize}
   	\item Xây dựng một chương trình hợp thành kết hợp cả hai
   	\item DSE xác định tập dữ liệu thử trên chương trình hợp thành
@@ -358,6 +371,7 @@
 
 \begin{frame}
   \frametitle{Nguồn dữ liệu}
+  \todo{Ghép slide Nguồn dữ liệu và Công cụ thành 2 blocks}
   \begin{itemize}
   	\item Trò chơi Code Hunt
   	\begin{itemize}
@@ -365,7 +379,7 @@
   		\item 250 người sử dụng
   		\item Chương trình do sinh viên viết
   	\end{itemize}
-  	\item Do tôi tự xây dựng.
+  	\item Do tôi tự xây dựng. \todo{Tự xây dựng}
   \end{itemize}
 \end{frame}
 
@@ -385,13 +399,15 @@
 
 \begin{frame}
   \frametitle{Kết quả thực nghiệm}
+  \todo{Sửa lại title cụ thể hơn cho mỗi slide}
   \centering
   \includegraphics[width=0.6\linewidth]{images/main.png} \\
   \includegraphics[width=0.6\linewidth]{images/kq_rs.png}
 \end{frame}
 
 \begin{frame}
-\frametitle{Kết quả thực nghiệm}
+  \frametitle{Kết quả thực nghiệm}
+  \todo{Nên tách từng thực nghiệm, mỗi cái cần giải thích dữ liệu liên quan}
 \centering
 \includegraphics[width=0.8\linewidth]{images/kq_sse.png} \\
 \includegraphics[width=0.8\linewidth]{images/kq_pse.png}
@@ -399,6 +415,7 @@
 
 \begin{frame}
   \frametitle{Kết luận}
+  \todo{Còn thiếu, đầu tiên phải nói những thứ mình làm}
   \begin{itemize}
   	\item Hướng phát triển
   	\begin{itemize}
@@ -415,9 +432,19 @@
 \end{frame}
 
 
+\begin{frame}
+  \frametitle{Tài liệu tham khảo}
+  \todo{Điều chỉnh style cho gọn hơn, đẹp hơn, font chữ nhỏ hơn cho vừa slide}
+  \bibliographystyle{plain}
+  \bibliography{biblio}
+\end{frame}
+
+
 \part{}
 
 \begin{frame}
+  \todo{Sửa lại cho lịch sự hơn}
+  \todo{Sau khi hoàn thành hãy thêm hiệu ứng cho một số slides}
   \begin{center}
     \begin{Huge}
       \textbf{Cảm ơn}
@@ -427,8 +454,7 @@
 \end{frame}
 
 % Tài liệu tham khảo
-\bibliographystyle{plain}
-\bibliography{biblio}
+
 \end{document}
 
 

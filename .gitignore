@@ -10,4 +10,7 @@
 *.toc
 *.out
 *.tdo
+*.nav
+*.snm
+*.gz
 auto/

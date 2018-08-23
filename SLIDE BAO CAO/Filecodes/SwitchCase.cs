@@ -1,4 +1,4 @@
-﻿public static int TinhY(int x) 
+﻿public static int Code1(int x) 
 {
   y = 0;
   switch (x) 

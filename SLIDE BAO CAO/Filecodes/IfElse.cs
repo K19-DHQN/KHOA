@@ -1,4 +1,4 @@
-﻿public static int TinhY(int x) 
+﻿public static int Code2(int x) 
 {
   y = 0;
   if (x == 1)

@@ -13,4 +13,6 @@
 *.nav
 *.snm
 *.gz
+*.dtx
+*.lol
 auto/

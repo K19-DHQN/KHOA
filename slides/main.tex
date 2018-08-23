@@ -2,6 +2,7 @@
 
 \usetheme{Singapore}
 \usecolortheme{rose}
+\setbeamertemplate{blocks}[rounded][shadow=true]
 
 \usepackage[utf8]{inputenc}
 \usepackage[vietnamese]{babel}
@@ -74,51 +75,52 @@
 \end{frame}
 
 \section{Giới thiệu}
+
 \begin{frame}
   \frametitle{Học trực tuyến}
   \begin{minipage}{0.39\linewidth}
-    \includegraphics[width=0.9\linewidth]{images/topMOOC.png} 
-  \end{minipage} \pause	
-  \hfill
+    \includegraphics[width=0.9\linewidth]{images/topMOOC.png}
+  \end{minipage}\hfill
+  \pause
   \begin{minipage}{0.59\linewidth}
     \begin{itemize}
     \item Một số vấn đề
       \begin{itemize}
       \item Người dạy ít, người học đông
-      \item Tốn thời gian tìm hiểu mã lệnh 
+      \item Tốn thời gian đọc mã lệnh
       \item Đánh giá, xếp hạng
       \end{itemize} \pause
-    \item Giải pháp
-      \begin{itemize}
-      \item Công cụ hỗ trợ tự động 
-      	\begin{itemize}
-      	\item So sánh hai giải pháp
-      	\item Tương đương hay tương tự      	
-    	\end{itemize}
-      \end{itemize}
+    \item $\rightarrow$ Cần công cụ hỗ trợ tự động
     \end{itemize} \pause
-	\begin{block}{Vấn đề cốt lõi}
-		Đo được độ tương tự về hành vi giữa hai chương trình
-	\end{block}
   \end{minipage}
+  \begin{block}{Vấn đề cốt lõi}
+    Đo được độ tương tự về hành vi giữa hai chương trình
+  \end{block}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Một số nghiên cứu liên quan}  
-	%\todo{Phải nói rõ người ta làm thế nào, mình khác người thế nào? ghép trích dẫn cho gọn}
+  \frametitle{Một số nghiên cứu liên quan}
+  \todo{Viết gọn, chi tiết khi trình bày}
   \begin{itemize}
   \item Xếp hạng tự động
     \begin{itemize}
-    \item \cite{alur2013automated} sử dụng khái niệm về độ tương tự về ngữ nghĩa dùng cho automat hữu hạn đơn định; giải pháp luận văn dùng cho các chương trình máy tính    
+    \item \cite{alur2013automated} sử dụng khái niệm về độ tương tự về
+      ngữ nghĩa dùng cho automat hữu hạn đơn định; giải pháp luận văn
+      dùng cho các chương trình máy tính
     \end{itemize}
   \item Kiểm tra sự tương đương giữa hai chương trình
     \begin{itemize}
-    \item \cite{bates1993incremental} sử dụng đồ thị phụ thuộc; giải pháp luận văn còn có thể đo được độ tương tự. 
-    \item \cite{jiang2009automatic} sử dụng các phép thử ngẫu nhiên tương tự phép đo RS trong luận văn, khác phép đo SSE và PSE
+    \item \cite{bates1993incremental} sử dụng đồ thị phụ thuộc; giải
+      pháp luận văn còn có thể đo được độ tương tự.
+    \item \cite{jiang2009automatic} sử dụng các phép thử ngẫu nhiên
+      tương tự phép đo RS trong luận văn, khác phép đo SSE và PSE
     \end{itemize}
   \item Phát hiện đạo code
     \begin{itemize}
-    \item \cite{komondoor2001using} sử dụng đồ thị phụ thuộc của chương trình, tính toán độ tương tự bằng cách phân tích tĩnh các đoạn mã lệnh; tiếp cận trong luận văn thực thi chương trình để sinh ra các cặp dữ liệu vào/ra.
+    \item \cite{komondoor2001using} sử dụng đồ thị phụ thuộc của
+      chương trình, tính toán độ tương tự bằng cách phân tích tĩnh các
+      đoạn mã lệnh; tiếp cận trong luận văn thực thi chương trình để
+      sinh ra các cặp dữ liệu vào/ra.
     \end{itemize}
   \end{itemize}
 
@@ -126,7 +128,7 @@
 
 \begin{frame}
   \frametitle{Dynamic Symbolic Execution}
-%  \todo{Đọc lại thật kỹ DSE, diễn đạt lại cho tốt hơn, giải thích ví dụ chưa ổn, hãy cẩn trọng}
+  \todo{Đọc lại thật kỹ DSE, diễn đạt lại cho tốt hơn, giải thích ví dụ chưa ổn, hãy cẩn trọng}
   \begin{itemize}
   \item Ý tưởng chính
     \begin{itemize}
@@ -160,11 +162,11 @@
 	
 \end{frame}
 
-\section{Sự tương tự về hành vi chương trình}
+\section{Tương tự về hành vi của chương trình}
 
 \begin{frame}
   \frametitle{Hai chương trình tương đương}
-%  \todo{Viền code cho đẹp hơn}
+ \todo{Viền code cho đẹp hơn, giản lược code}
   \begin{minipage}[t]{0.45\linewidth}
     \lstinputlisting[basicstyle=\footnotesize]{SwitchCase.cs}
   \end{minipage}
@@ -182,7 +184,7 @@
 
 \begin{frame}
   \frametitle{Thực thi của một chương trình}
-%  \todo{Tìm cách trình bày lại tất cả các định nghĩa cho đẹp hơn, dễ đọc hơn}
+  \todo{Tìm cách trình bày lại tất cả các định nghĩa cho đẹp hơn, dễ đọc hơn}
   \begin{itemize}
   	\item Cho $P$ là một chương trình, $I$ là tập hợp các trị đầu vào của $P$, 
   	$O$ là tập hợp các giá trị đầu ra của $P$. 
@@ -233,7 +235,7 @@
 \end{frame}
 
 
-\section{Một số phép đo độ tương tự}
+\section{Đo độ tương tự về hành vi}
 \begin{frame}
   \frametitle{Lấy mẫu ngẫu nhiên}
   \begin{itemize}  	
@@ -282,7 +284,7 @@
 
 \begin{frame}
   \frametitle{DSE trên chương trình tham chiếu}
-%  \todo{Việc tìm tập dữ liệu thử do DSE làm}
+ \todo{Không viết lại câu tôi nói!!!, tìm cách trình bày đẹp hơn}
   \begin{itemize}
   	\item Việc tìm tập dữ liệu thử do DSE làm
   	\item Áp dụng DSE trên chương trình tham chiếu
@@ -330,7 +332,7 @@
 
 \begin{frame}
   \frametitle{DSE trên chương trình hợp thành}
-%  \todo{Tách riêng ý về chương trình hợp thành, sau đó nói về DSE trên nó}
+ \todo{Trình bày còn rối rắm}
   \begin{itemize}  	
   	\item Mô hình hóa chương trình hợp thành:
   	\begin{itemize}
@@ -376,48 +378,47 @@
 
 \begin{frame}
   \frametitle{Nguồn dữ liệu và các công cụ sử dụng}
-%  \todo{Ghép slide Nguồn dữ liệu và Công cụ thành 2 blocks}
+  % \todo{Ghép slide Nguồn dữ liệu và Công cụ thành 2 blocks}
   \begin{block}{Nguồn dữ liệu}
-  	\begin{itemize}
-  		\item Trò chơi Code Hunt
-  		\begin{itemize}
-  			\item 24 câu hỏi
-  			\item 250 người sử dụng
-  			\item Chương trình do sinh viên viết
-  		\end{itemize}
-  		\item Tự xây dựng
-  	\end{itemize}
+    \begin{itemize}
+    \item Trò chơi Code Hunt
+      \begin{itemize}
+      \item 24 câu hỏi
+      \item 250 người sử dụng
+      \item Chương trình do sinh viên viết
+      \end{itemize}
+    \item Tự xây dựng
+    \end{itemize}
   \end{block} \pause
   \begin{block}{Các công cụ sử dụng}
-  	\begin{itemize}
-  		\item Microsoft Visual Studio
-  		\item Công cụ sinh dữ liệu thử PEX
-  		\begin{itemize}
-  			\item Sản phẩm của Microsoft
-  			\item Dựa trên kỹ thuật DSE
-  			\item Tích hợp như một Add-in
-  		\end{itemize}
-  	\end{itemize}
+    \begin{itemize}
+    \item Microsoft Visual Studio
+    \item Công cụ sinh dữ liệu thử PEX
+      \begin{itemize}
+      \item Của Microsoft
+      \item Dựa trên kỹ thuật DSE
+      \item Tích hợp như một Add-in trong MVS
+      \end{itemize}
+    \end{itemize}
   \end{block}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Kết quả thực nghiệm}
-%  \todo{Sửa lại title cụ thể hơn cho mỗi slide}
+  \frametitle{Prototype tool support}
+ \todo{Sửa title, label cho logic hơn}
   \centering
-  \includegraphics[width=0.8\linewidth]{images/main.png}
+  \includegraphics[width=\linewidth]{images/main.png}
   
 \end{frame}
 
 \begin{frame}
-\frametitle{Kết quả phép đo RS}
-\centering
-\includegraphics[width=0.8\linewidth]{images/kq_rs.png}
+  \frametitle{Kết quả phép đo RS}
+  \todo{mỗi cái cần giải thích dữ liệu liên quan}
+  \centering \includegraphics[width=0.8\linewidth]{images/kq_rs.png}
 \end{frame}
 
 \begin{frame}
 \frametitle{Kết quả phép đo SSE}
-%  \todo{Nên tách từng thực nghiệm, mỗi cái cần giải thích dữ liệu liên quan}
 \centering
 \includegraphics[width=0.8\linewidth]{images/kq_sse.png} 
 \end{frame}
@@ -433,7 +434,7 @@
 %  \todo{Còn thiếu, đầu tiên phải nói những thứ mình làm}
 	
   \begin{itemize}
-  	\item Kết quả đạt được
+  	\item Kết quả đạt được \todo{Vừa thừa vừa thiếu}
   	\begin{itemize}
   		\item Kiến thức cơ sở
   		\item Kỹ thuật Dynamic symbolic execution
@@ -443,7 +444,7 @@
   	\item Hướng phát triển
   	\begin{itemize}
   		\item Cải tiến các phép đo để kết quả được chính xác hơn
-  		\item Tích hợp thêm một số ngôn ngữ Java, C++...
+  		\item Hỗ trợ một số ngôn ngữ Java, C++...
   	\end{itemize} \pause
   	\item Khả năng áp dụng
   	\begin{itemize}
@@ -455,15 +456,15 @@
 \end{frame}
 
 
+\part{}
+
 \begin{frame}
   \frametitle{Tài liệu tham khảo}
-%  \todo{Điều chỉnh style cho gọn hơn, đẹp hơn, font chữ nhỏ hơn cho vừa slide}
+ \todo{Còn cách nào đẹp hơn không????, chưa khớp với những nghiên cứu liên quan}
   \bibliographystyle{plain}
   {\footnotesize\bibliography{biblio}}
 \end{frame}
 
-
-\part{}
 
 \begin{frame}
 %  \todo{Sửa lại cho lịch sự hơn}

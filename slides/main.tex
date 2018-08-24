@@ -105,22 +105,19 @@
   \item Xếp hạng tự động: \cite{alur2013automated}
     \begin{itemize}
     \item Sử dụng khái niệm về độ tương tự về
-      ngữ nghĩa dùng cho DFA; giải pháp luận văn
-      dùng cho các chương trình máy tính
+      ngữ nghĩa dùng cho DFA; 
+      \item liên hệ luận văn...
     \end{itemize}
   \item Kiểm tra sự tương đương giữa hai chương trình
     \begin{itemize}
-    \item \cite{bates1993incremental} sử dụng đồ thị phụ thuộc; giải
-      pháp luận văn còn có thể đo được độ tương tự.
+    \item \cite{bates1993incremental} sử dụng đồ thị phụ thuộc; 
     \item \cite{jiang2009automatic} sử dụng các phép thử ngẫu nhiên
-      tương tự phép đo RS trong luận văn, khác phép đo SSE và PSE
+      tương tự phép đo RS trong luận văn
     \end{itemize}
   \item Phát hiện đạo code
     \begin{itemize}
-    \item \cite{komondoor2001using} sử dụng đồ thị phụ thuộc của
-      chương trình, tính toán độ tương tự bằng cách phân tích tĩnh các
-      đoạn mã lệnh; tiếp cận trong luận văn thực thi chương trình để
-      sinh ra các cặp dữ liệu vào/ra.
+    \item \cite{komondoor2001using} tính toán độ tương tự bằng cách phân tích tĩnh các
+      đoạn mã lệnh; 
     \end{itemize}
   \end{itemize}
 
@@ -129,8 +126,9 @@
 \begin{frame}
   \frametitle{Dynamic Symbolic Execution}
   \todo{Đọc lại thật kỹ DSE, diễn đạt lại cho tốt hơn, giải thích ví dụ chưa ổn, hãy cẩn trọng}
-  \begin{itemize}
-  \item Ý tưởng chính
+  - Bỏ hết public, static trong các đoạn code vi dụ
+	- Viết ngắn gọn lại, để 3, 4 dòng..
+	- Viết lại cách thức hoạt động
     \begin{itemize}
     \item Dựa trên kiểu dữ liệu đầu vào của chương trình
     \item DSE tạo ra các giá trị đầu vào cụ thể và thực thi chương trình 
@@ -138,7 +136,7 @@
     \item Phủ định lại ràng buộc, sinh ra giá trị đầu vào mới
     \item Quá trình thực thi lặp lại
     \end{itemize}
-  \end{itemize} \pause
+ \pause
 	
   \begin{block}{Cách thức hoạt động}
     \begin{minipage}[T]{0.40\linewidth}
@@ -167,6 +165,7 @@
 \begin{frame}
   \frametitle{Hai chương trình tương đương}
  \todo{Viền code cho đẹp hơn, giản lược code}
+ - Them hiệu ứng vào
   \begin{minipage}[t]{0.45\linewidth}
     \lstinputlisting[basicstyle=\footnotesize]{SwitchCase.cs}
   \end{minipage}
@@ -174,11 +173,10 @@
   \begin{minipage}[t]{0.45\linewidth}
     \lstinputlisting[basicstyle=\footnotesize]{IfElse.cs}
   \end{minipage}
-  \begin{itemize}
-  \item Cùng tham số đầu vào $ x $ kiểu \texttt{int}
-  \item Trả về giá trị $ y $ phụ thuộc vào $ x $
-  \item Cấu trúc khác nhau
-  \end{itemize}
+  \begin{block}{}
+  	\centering
+	Hai chương trình khác cú pháp, tương đương về hành vi
+  \end{block}
 \end{frame}
 
 
@@ -224,6 +222,7 @@
 
 \begin{frame}
   \frametitle{Độ tương tự về hành vi}
+  \todo{Không được để rớt 1 2 chữ trên 1 dòng}
   \begin{itemize}
   	\item  Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đầu
   	vào $I$. 
@@ -238,15 +237,16 @@
 \section{Đo độ tương tự về hành vi}
 \begin{frame}
   \frametitle{Lấy mẫu ngẫu nhiên}
+  	
   \begin{itemize}  	
   	\item Lấy ngẫu nhiên một số giá trị trên miền vào \\(\emph{Random
   		Sampling -- RS})
   	\item Tính số lượng giá trị hai chương trình
   	thực thi giống nhau
   	\item Mô tả hình thức:
+  	\todo{Không viết nhiều chữ, viết công thức toán học cho hình thức hóa}
   	\begin{itemize}
-  		\item $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đầu
-  		vào $I$
+  		\item $P_{1}$ và $P_{2}$ cùng miền vào $I$
   		\item $I_{s}$ là tập con ngẫu nhiên của $I$
   		\item $I_{a}$ là tập con
   		$I_{s}$ sao cho $exec(P_{1}, I_a) = exec(P_{2}, I_a)$
@@ -262,6 +262,7 @@
 \begin{frame}
   \frametitle{Thuật toán phép đo RS}
 %  \todo{Tìm cách tách phần input và các bước thực hiện để rõ hơn, trong tất cả các thuật toán}
+\todo{Bỏ Next trong thuật toán, sửa phần thêm phần tử i trong các thuật toán khác}
   \begin{algorithm}[H]
   	\KwIn{
   		$P_{1}, P_{2}$ hai chương trình cần đo độ tương tự có cùng miền giá trị vào $I$\;	  	
@@ -271,7 +272,7 @@
   	\For{$i \in I_s$}
   	{  			
 		\eIf{$ (exec(P_{1}, i) = exec(P_{2}, i)) $}{
-			$I_{a} = I_{a} \cup i$\;
+			$I_{a} = I_{a} \cup \{i\} $\;
 		}{
 			Next\;
 		}
@@ -285,6 +286,7 @@
 \begin{frame}
   \frametitle{DSE trên chương trình tham chiếu}
  \todo{Không viết lại câu tôi nói!!!, tìm cách trình bày đẹp hơn}
+ \todo{làm cacsi block cho mô tả hình thức}
   \begin{itemize}
   	\item Việc tìm tập dữ liệu thử do DSE làm
   	\item Áp dụng DSE trên chương trình tham chiếu
@@ -310,6 +312,7 @@
 
 \begin{frame}
   \frametitle{Thuật toán phép đo SSE}
+  \todo{đạt lại tên Pr, Ps, bỏ next, phần tử i, đặt lại tên Is...}
   \begin{algorithm}[H]
   	\KwIn{
   		$P_{1}, P_{2}:$ hai chương trình cần đo tương tự có cùng miền giá trị vào $I$; $P_1$ là chương trình tham chiếu\; 
@@ -330,28 +333,43 @@
 \end{frame}
 
 
-\begin{frame}
-  \frametitle{DSE trên chương trình hợp thành}
- \todo{Trình bày còn rối rắm}
-  \begin{itemize}  	
-  	\item Mô hình hóa chương trình hợp thành:
-  	\begin{itemize}
-  		\item $P_1$ và $P_2$ là hai chương trình có cùng miền vào $I$
-  		\item $P_1$ là chương trình tham chiếu
-  		\item $P_c = P_1 \oplus P_2$ có dạng
-  		$assert(exec(P_{1}, I) = exec(P_{2}, I))$
-  		\item  $assert(\dots)$ là hàm đánh giá biểu thức đúng hay sai
-  		\item Ký hiệu $exec(P_c,i) = \top$ để chỉ
-  		chương trình hợp thành $P_c$ thỏa hàm đánh giá, cũng có nghĩa là hai
-  		chương trình thành phần thực thi giống nhau trên đầu vào $i$.  				
-  	\end{itemize}
-  \item Áp dụng DSE trên chương trình hợp thành xác định tập dữ liệu thử 
-  \end{itemize}
-\end{frame}
+%\begin{frame}
+%  \frametitle{DSE trên chương trình hợp thành}
+% \todo{Trình bày còn rối rắm}
+%  \begin{itemize}  	
+%  	\item Chương trình hợp thành:
+%  	\begin{itemize}
+%  		\item $P_1$ và $P_2$ cùng miền vào $I$
+%  		\item $P_1$ là chương trình tham chiếu
+%  		\item $P_c = P_1 \oplus P_2$ có dạng
+%  		$assert(exec(P_{1}, I) = exec(P_{2}, I))$
+%  		\item  $assert(\dots)$ là hàm đánh giá biểu thức đúng hay sai
+%  		\item Ký hiệu $exec(P_c,i) = \top$ để chỉ
+%  		chương trình hợp thành $P_c$ thỏa hàm đánh giá, cũng có nghĩa là hai
+%  		chương trình thành phần thực thi giống nhau trên đầu vào $i$.  				
+%  	\end{itemize}
+%  \item Áp dụng DSE trên chương trình hợp thành xác định tập dữ liệu thử 
+%  \end{itemize}
+%\end{frame}
 
+\begin{frame}
+\frametitle{DSE trên chương trình hợp thành}
+\begin{block}{Chương trình hợp thành}
+Cho $ P_{r}, P_{s} $ là hai chương trình có cùng miền vào $ I $
+\[ P_{c} = P_{r} \oplus P_{s} \equiv assert(exec(P_{r}, I) = exec(P_{s}, I)) \]
+\end{block}
+\begin{block}{Áp dụng DSE}
+\begin{itemize}
+	\item Tìm tập dữ liệu thử chung 
+	\[ I_{c} = DSE(P_{c}) \]
+	\item Đo độ tương tự trên $ I_c $
+\end{itemize}
+\end{block}
+\end{frame}
 
 \begin{frame}
   \frametitle{Thuật toán phép đo PSE}
+  \todo{Đổi p1 p2 thành Pr và Ps cho đồng nhất, các tập Is Ia trong tất cả slide }
   \begin{algorithm}[H]
   	\KwIn{
   		$P_{1}, P_{2}$ là hai chương trình cần đo tương tự, có cùng miền giá trị đầu
@@ -406,6 +424,7 @@
 \begin{frame}
   \frametitle{Prototype tool support}
  \todo{Sửa title, label cho logic hơn}
+ 
   \centering
   \includegraphics[width=\linewidth]{images/main.png}
   
@@ -414,6 +433,9 @@
 \begin{frame}
   \frametitle{Kết quả phép đo RS}
   \todo{mỗi cái cần giải thích dữ liệu liên quan}
+  -Thêm 1 slide giới thiệu 2 đoạn code, xem tương tự như thế nào, sau đó đến cái slide kết quả các phép đo.
+  - Thêm hai đoạn code 2 bên, giải thích hai đoạn code tính độ tương tự để có kết quả như hình bên dưới
+  
   \centering \includegraphics[width=0.8\linewidth]{images/kq_rs.png}
 \end{frame}
 
@@ -436,10 +458,9 @@
   \begin{itemize}
   	\item Kết quả đạt được \todo{Vừa thừa vừa thiếu}
   	\begin{itemize}
-  		\item Kiến thức cơ sở
-  		\item Kỹ thuật Dynamic symbolic execution
-  		\item Kỹ thuật các phép đo RS, SSE, PSE
-  		\item Ứng dụng lý thuyết, xây dựng ứng dụng
+  		\item Kiến thức cơ sở: testing, DSE, \dots tự điền thêm
+  		\item Các phép đo RS, SSE, PSE
+  		\item Xây dựng cộng cụ hỗ trợ
   	\end{itemize} \pause
   	\item Hướng phát triển
   	\begin{itemize}
@@ -450,7 +471,7 @@
   	\begin{itemize}
   		\item Đánh giá tiến bộ trong lập trình
   		\item Xếp hạng tự động
-  		\item Gợi ý giải pháp lập trình
+%  		\item Gợi ý giải pháp lập trình
   	\end{itemize}
   \end{itemize}
 \end{frame}
@@ -461,13 +482,14 @@
 \begin{frame}
   \frametitle{Tài liệu tham khảo}
  \todo{Còn cách nào đẹp hơn không????, chưa khớp với những nghiên cứu liên quan}
+ Hiển thị thống nhất như tham chiếu, tên tác giả tới năm. 
   \bibliographystyle{plain}
   {\footnotesize\bibliography{biblio}}
 \end{frame}
 
 
 \begin{frame}
-%  \todo{Sửa lại cho lịch sự hơn}
+  \todo{Sửa lại cho lịch sự hơn}
 %  \todo{Sau khi hoàn thành hãy thêm hiệu ứng cho một số slides}
   \begin{center}
     \begin{Huge}

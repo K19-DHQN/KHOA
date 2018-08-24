@@ -1,5 +1,4 @@
-﻿public static int Code2(int x) 
-{
+﻿int Code2(int x) {
   y = 0;
   if (x == 1)
       y += 4;

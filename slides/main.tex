@@ -190,7 +190,7 @@
 		\item $O$ là tập hợp các giá trị đầu ra của $P$. 
 		\item Thực thi chương trình $ P $ là ánh xạ: 
 		\[exec: P \times I \rightarrow O\]
-		\item Với $i \in I$, $o \in O$, $exec(P, i) = o$.
+		\item Với $i \in I$, $exec(P, i) = o$, trong đó $o \in O$
 	\end{itemize}
 \end{block}
   
@@ -212,7 +212,7 @@
   		\item Cho $P_r$ và $P_s$ là hai chương trình có cùng miền vào $I$ 
   		\item Hai chương trình này được gọi là tương đương khi và chỉ
   		khi thực thi của chúng giống nhau trên mọi giá trị đầu vào trên $I$
-  		\item Ký hiệu: \[exec(P_r, I) = exec(P_c, I).\]
+  		\[exec(P_r, I) = exec(P_s, I).\]
   	\end{itemize}
   \end{block}
 %  \begin{itemize}
@@ -234,11 +234,9 @@
   	\item Hai chương trình này được xem là có sự khác biệt về
   	hành vi khi và chỉ khi thực thi của chúng khác nhau trên một vài giá
   	trị đầu vào $i \in I$
-  	\item Ký hiệu \[exec(P_{1}, I) \neq exec(P_{2}, I)\]
+  	\[exec(P_r, I) \neq exec(P_s, I)\]
   \end{itemize}
   \end{block}
-  
-
 \end{frame}
 
 
@@ -249,8 +247,8 @@
   	\begin{itemize}
   		\item Cho $P_r$ và $P_s$ là hai chương trình có cùng miền
   		vào $I$
-  		\item Gọi $I_{s} \subseteq I$, $exec(P_s, I_{s}) = exec(P_s, I_{s})$ 
-  		\item $\forall j \in I \setminus I_{s}, exec(P_r, j) \neq exec(P_s,
+  		\item Gọi $I_{s} \subseteq I$ sao cho $exec(P_s, I_{s}) = exec(P_s, I_{s})$ 
+  		\item $\forall j \in I \setminus I_{s}$ sao cho $exec(P_r, j) \neq exec(P_s,
   		j)$
   		\item Độ tương tự về hành vi giữa $P_r$ và $P_s$ là: $|I_s|/|I|$.
   	\end{itemize}

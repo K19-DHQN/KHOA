@@ -106,18 +106,19 @@
     \begin{itemize}
     \item Sử dụng khái niệm về độ tương tự về
       ngữ nghĩa dùng cho DFA; 
-      \item liên hệ luận văn...
+	\item Các độ đo dùng cho các chương trình máy tính
     \end{itemize}
-  \item Kiểm tra sự tương đương giữa hai chương trình
+  \item Kiểm tra sự tương đương: \cite{jiang2009automatic}
     \begin{itemize}
-    \item \cite{bates1993incremental} sử dụng đồ thị phụ thuộc; 
-    \item \cite{jiang2009automatic} sử dụng các phép thử ngẫu nhiên
-      tương tự phép đo RS trong luận văn
+%    \item \cite{bates1993incremental} sử dụng đồ thị phụ thuộc; 
+%    \item Luận văn tính độ tương tự 
+    \item Sử dụng các phép thử ngẫu nhiên
+    \item Tương tự phép đo RS, khác phép đo SSE và PSE
     \end{itemize}
-  \item Phát hiện đạo code
+  \item Phát hiện đạo code: \cite{komondoor2001using}
     \begin{itemize}
-    \item \cite{komondoor2001using} tính toán độ tương tự bằng cách phân tích tĩnh các
-      đoạn mã lệnh; 
+    \item Phân tích tĩnh các đoạn mã lệnh
+	\item Thực thi chương trình, sinh dữ liệu vào/ra
     \end{itemize}
   \end{itemize}
 
@@ -126,16 +127,16 @@
 \begin{frame}
   \frametitle{Dynamic Symbolic Execution}
   \todo{Đọc lại thật kỹ DSE, diễn đạt lại cho tốt hơn, giải thích ví dụ chưa ổn, hãy cẩn trọng}
-  - Bỏ hết public, static trong các đoạn code vi dụ
-	- Viết ngắn gọn lại, để 3, 4 dòng..
-	- Viết lại cách thức hoạt động
-    \begin{itemize}
-    \item Dựa trên kiểu dữ liệu đầu vào của chương trình
-    \item DSE tạo ra các giá trị đầu vào cụ thể và thực thi chương trình 
-    \item Ghi nhận ràng buộc tại các nút rẽ nhánh
-    \item Phủ định lại ràng buộc, sinh ra giá trị đầu vào mới
-    \item Quá trình thực thi lặp lại
-    \end{itemize}
+%  - Bỏ hết public, static trong các đoạn code vi dụ
+%	- Viết ngắn gọn lại, để 3, 4 dòng..
+%	- Viết lại cách thức hoạt động
+	\begin{block}{}
+		\begin{itemize}
+			\item Dựa trên kiểu dữ liệu vào sinh dữ liệu thử
+			\item Ghi nhận ràng buộc tại các nút rẽ nhánh
+			\item Phủ định và giải các ràng buộc tìm giá trị đầu vào mới
+		\end{itemize}
+	\end{block}
  \pause
 	
   \begin{block}{Cách thức hoạt động}
@@ -165,14 +166,14 @@
 \begin{frame}
   \frametitle{Hai chương trình tương đương}
  \todo{Viền code cho đẹp hơn, giản lược code}
- - Them hiệu ứng vào
-  \begin{minipage}[t]{0.45\linewidth}
+  \begin{minipage}[t]{0.40\linewidth}
     \lstinputlisting[basicstyle=\footnotesize]{SwitchCase.cs}
   \end{minipage}
   \hfill\vrule\hfill
-  \begin{minipage}[t]{0.45\linewidth}
+  \begin{minipage}[t]{0.40\linewidth}
     \lstinputlisting[basicstyle=\footnotesize]{IfElse.cs}
   \end{minipage}
+\pause
   \begin{block}{}
   	\centering
 	Hai chương trình khác cú pháp, tương đương về hành vi
@@ -183,39 +184,60 @@
 \begin{frame}
   \frametitle{Thực thi của một chương trình}
   \todo{Tìm cách trình bày lại tất cả các định nghĩa cho đẹp hơn, dễ đọc hơn}
-  \begin{itemize}
-  	\item Cho $P$ là một chương trình, $I$ là tập hợp các trị đầu vào của $P$, 
-  	$O$ là tập hợp các giá trị đầu ra của $P$. 
-  	Thực thi chương trình P là ánh xạ: 
-  	\[exec: P \times I \rightarrow O\]
-  	\item Với $i \in I$, $o \in O$ thực thi chương trình $P$ trên
-  	$i$ ta thu được giá trị đầu ra tương ứng $o = exec(P, i)$.
-  \end{itemize}  
+\begin{block}{}
+	\begin{itemize}
+		\item Cho $P$ là chương trình có tập các giá trị đầu vào $I$
+		\item $O$ là tập hợp các giá trị đầu ra của $P$. 
+		\item Thực thi chương trình $ P $ là ánh xạ: 
+		\[exec: P \times I \rightarrow O\]
+		\item Với $i \in I$, $o \in O$, $exec(P, i) = o$.
+	\end{itemize}
+\end{block}
+  
+%  \begin{itemize}
+%  	\item Cho $P$ là một chương trình, $I$ là tập hợp các trị đầu vào của $P$, 
+%  	$O$ là tập hợp các giá trị đầu ra của $P$. 
+%  	Thực thi chương trình P là ánh xạ: 
+%  	\[exec: P \times I \rightarrow O\]
+%  	\item Với $i \in I$, $o \in O$ thực thi chương trình $P$ trên
+%  	$i$ ta thu được giá trị đầu ra tương ứng $o = exec(P, i)$.
+%  \end{itemize}  
 \end{frame}
 
 
 \begin{frame}
   \frametitle{Tương đương về hành vi của 2 chương trình}
-  \begin{itemize}
-  	\item Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền các giá trị
-  	đầu vào $I$. 
-  	\item Hai chương trình này được gọi là tương đương khi và chỉ
-  	khi thực thi của chúng giống nhau trên mọi giá trị đầu vào trên $I$,
-  	Ký hiệu: \[exec(P_{1}, I) = exec(P_{2}, I).\]
-  \end{itemize}
+  \begin{block}{}
+  	\begin{itemize}
+  		\item Cho $P_r$ và $P_s$ là hai chương trình có cùng miền vào $I$ 
+  		\item Hai chương trình này được gọi là tương đương khi và chỉ
+  		khi thực thi của chúng giống nhau trên mọi giá trị đầu vào trên $I$
+  		\item Ký hiệu: \[exec(P_r, I) = exec(P_c, I).\]
+  	\end{itemize}
+  \end{block}
+%  \begin{itemize}
+%  	\item Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền các giá trị
+%  	đầu vào $I$. 
+%  	\item Hai chương trình này được gọi là tương đương khi và chỉ
+%  	khi thực thi của chúng giống nhau trên mọi giá trị đầu vào trên $I$,
+%  	Ký hiệu: \[exec(P_{1}, I) = exec(P_{2}, I).\]
+%  \end{itemize}
  
 \end{frame}
 
 
 \begin{frame}
   \frametitle{Sự khác biệt hành vi}
+  \begin{block}{}
   \begin{itemize}
-  	\item Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền các giá trị
-  	đầu vào $I$. 
+  	\item Cho $P_r$ và $P_s$ là hai chương trình có cùng miền vào $I$ 
   	\item Hai chương trình này được xem là có sự khác biệt về
   	hành vi khi và chỉ khi thực thi của chúng khác nhau trên một vài giá
-  	trị đầu vào $i \in I$, ký hiệu là: \[exec(P_{1}, I) \neq exec(P_{2}, I)\]
+  	trị đầu vào $i \in I$
+  	\item Ký hiệu \[exec(P_{1}, I) \neq exec(P_{2}, I)\]
   \end{itemize}
+  \end{block}
+  
 
 \end{frame}
 
@@ -223,39 +245,42 @@
 \begin{frame}
   \frametitle{Độ tương tự về hành vi}
   \todo{Không được để rớt 1 2 chữ trên 1 dòng}
-  \begin{itemize}
-  	\item  Cho $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đầu
-  	vào $I$. 
-  	\item Gọi $I_{s} \subseteq I$ là tập con của $I$ sao cho
-  	$exec(P_{1}, I_{s}) = exec(P_{2}, I_{s})$ và
-  	$\forall j \in I \setminus I_{s}, exec(P_{1}, j) \neq exec(P_{2},
-  	j)$. Khi đó, độ tương tự về hành vi giữa $P_1$ và $P_2$ là $|I_s|/|I|$.
-  \end{itemize}
+  \begin{block}{}
+  	\begin{itemize}
+  		\item Cho $P_r$ và $P_s$ là hai chương trình có cùng miền
+  		vào $I$
+  		\item Gọi $I_{s} \subseteq I$, $exec(P_s, I_{s}) = exec(P_s, I_{s})$ 
+  		\item $\forall j \in I \setminus I_{s}, exec(P_r, j) \neq exec(P_s,
+  		j)$
+  		\item Độ tương tự về hành vi giữa $P_r$ và $P_s$ là: $|I_s|/|I|$.
+  	\end{itemize}
+  \end{block}
+  
 \end{frame}
 
 
 \section{Đo độ tương tự về hành vi}
 \begin{frame}
   \frametitle{Lấy mẫu ngẫu nhiên}
-  	
   \begin{itemize}  	
   	\item Lấy ngẫu nhiên một số giá trị trên miền vào \\(\emph{Random
   		Sampling -- RS})
   	\item Tính số lượng giá trị hai chương trình
   	thực thi giống nhau
-  	\item Mô tả hình thức:
   	\todo{Không viết nhiều chữ, viết công thức toán học cho hình thức hóa}
-  	\begin{itemize}
-  		\item $P_{1}$ và $P_{2}$ cùng miền vào $I$
-  		\item $I_{s}$ là tập con ngẫu nhiên của $I$
-  		\item $I_{a}$ là tập con
-  		$I_{s}$ sao cho $exec(P_{1}, I_a) = exec(P_{2}, I_a)$
-  		\item Và $\forall j \in I_{s} \setminus I_{a}$, thì
-  		$exec(P_{1}, j) \neq exec(P_{2}, j)$
-  		\item $M_{RS}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup
-  		\left|I_{s}\right| $.
-  	\end{itemize}
   \end{itemize}
+  	\begin{block}{Mô tả hình thức}
+	\begin{itemize}
+		\item $P_r$ và $P_s$ cùng miền vào $I$
+		\item $I_{s} = Random(I)$
+		\item $I_{a}$ $\subseteq $	$I_{s}$, $exec(P_r, I_a) = exec(P_s, I_a)$
+		\item $\forall j \in I_{s} \setminus I_{a}$, $exec(P_r, j) \neq exec(P_s, j)$
+		\item $M_{RS}(P_r, P_s) = \left|I_{a}\right| \diagup
+		\left|I_{s}\right| $.
+	\end{itemize}
+	
+	\end{block}
+
 \end{frame}
 
 
@@ -265,19 +290,17 @@
 \todo{Bỏ Next trong thuật toán, sửa phần thêm phần tử i trong các thuật toán khác}
   \begin{algorithm}[H]
   	\KwIn{
-  		$P_{1}, P_{2}$ hai chương trình cần đo độ tương tự có cùng miền giá trị vào $I$\;	  	
+  		$P_r, P_s$ có cùng miền vào $I$\;	  	
   	}  	
-	Set $I_{s} = Random(I)$ \;
-	Set $I_{a} = \emptyset$\;
+	Set $I_s = Random(I)$ \;
+	Set $I_a = \emptyset$\;
   	\For{$i \in I_s$}
   	{  			
-		\eIf{$ (exec(P_{1}, i) = exec(P_{2}, i)) $}{
+		\If{$ (exec(P_r, i) = exec(P_s, i)) $}{
 			$I_{a} = I_{a} \cup \{i\} $\;
-		}{
-			Next\;
 		}
   	}
-	\KwOut{$M_{RS}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup
+	\KwOut{$M_{RS}(P_r, P_s) = \left|I_{a}\right| \diagup
 		\left|I_{s}\right| $.}
   \end{algorithm}
 \end{frame}
@@ -288,25 +311,24 @@
  \todo{Không viết lại câu tôi nói!!!, tìm cách trình bày đẹp hơn}
  \todo{làm cacsi block cho mô tả hình thức}
   \begin{itemize}
-  	\item Việc tìm tập dữ liệu thử do DSE làm
-  	\item Áp dụng DSE trên chương trình tham chiếu
-  	\\ (\emph{Single program Symbolic Execution -- SSE})
-  	\item Phân tích các câu lệnh chương trình tham chiếu
-  	\item Xác định tập dữ liệu thử
-  	\item Mô tả hình thức
-  	\begin{itemize}
-	\item $P_{1}$ và $P_{2}$ là hai chương trình có cùng miền giá trị đầu
-	vào $I$
-	\item $P_{1}$ là chương trình tham chiếu
-	\item $I_{s} = DSE(P_{1})$
-	\item $I_{a} \subseteq I_s$ sao cho
-	$exec(P_{1}, I_a) = exec(P_{2}, I_a)$
-	\item $\forall j \in I_{s} \setminus I_{a}, exec(P_{1}, j) \neq
-	exec(P_{2}, j)$
-	\item $M_{SSE}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup
-	\left|I_{s}\right| $.
-  	\end{itemize}
+%  	\item Việc tìm tập dữ liệu thử do DSE làm
+  	\item Áp dụng DSE trên $ P_r $ \\ (\emph{Single program Symbolic Execution -- SSE})
+  	\item Phân tích các câu lệnh $ P_r $
+  	\item Tìm tập dữ liệu thử  	
   \end{itemize}
+	\begin{block}{Mô tả hình thức}
+	\begin{itemize}
+		\item $P_r$ và $P_s$ có cùng miền vào $I$
+		\item $P_r$ là chương trình tham chiếu
+		\item $I_{s} = DSE(P_r)$
+		\item $I_{a} \subseteq I_s$, 
+		$exec(P_r, I_a) = exec(P_s, I_a)$
+		\item $\forall j \in I_{s} \setminus I_{a}, exec(P_r, j) \neq
+		exec(P_s, j)$
+		\item $M_{SSE}(P_r, P_s) = \left|I_{a}\right| \diagup
+		\left|I_{s}\right| $.
+	\end{itemize}
+	\end{block}
 \end{frame}
 
 
@@ -315,42 +337,20 @@
   \todo{đạt lại tên Pr, Ps, bỏ next, phần tử i, đặt lại tên Is...}
   \begin{algorithm}[H]
   	\KwIn{
-  		$P_{1}, P_{2}:$ hai chương trình cần đo tương tự có cùng miền giá trị vào $I$; $P_1$ là chương trình tham chiếu\; 
+  		$P_r, P_s$ có cùng miền vào $I$; $P_r$ là tham chiếu
   	}  	
-  	Set $I_{s} = DSE(P_{1})$ \;
-  	Set $I_{a} = \emptyset$ \;
-  	\For{$i \in I_{s}$}
+  	Set $I_s = DSE(P_r)$ \;
+  	Set $I_a = \emptyset$ \;
+  	\For{$i \in I_s$}
   	{  			
-  		\eIf{$ (exec(P_{1}, i) = exec(P_{2}, i)) $}{
-  			$I_{a} = I_{a} \cup i$\;
-  		}{
-  			Next\;
+  		\If{$ (exec(P_r, i) = exec(P_s, i)) $}{
+  			$I_a = I_a \cup \{i\}$\;
   		}
   	}
-  	\KwOut{$M_{SSE}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup
+  	\KwOut{$M_{SSE}(P_r, P_s) = \left|I_{a}\right| \diagup
   		\left|I_{s}\right| $.}
   \end{algorithm}
 \end{frame}
-
-
-%\begin{frame}
-%  \frametitle{DSE trên chương trình hợp thành}
-% \todo{Trình bày còn rối rắm}
-%  \begin{itemize}  	
-%  	\item Chương trình hợp thành:
-%  	\begin{itemize}
-%  		\item $P_1$ và $P_2$ cùng miền vào $I$
-%  		\item $P_1$ là chương trình tham chiếu
-%  		\item $P_c = P_1 \oplus P_2$ có dạng
-%  		$assert(exec(P_{1}, I) = exec(P_{2}, I))$
-%  		\item  $assert(\dots)$ là hàm đánh giá biểu thức đúng hay sai
-%  		\item Ký hiệu $exec(P_c,i) = \top$ để chỉ
-%  		chương trình hợp thành $P_c$ thỏa hàm đánh giá, cũng có nghĩa là hai
-%  		chương trình thành phần thực thi giống nhau trên đầu vào $i$.  				
-%  	\end{itemize}
-%  \item Áp dụng DSE trên chương trình hợp thành xác định tập dữ liệu thử 
-%  \end{itemize}
-%\end{frame}
 
 \begin{frame}
 \frametitle{DSE trên chương trình hợp thành}
@@ -372,22 +372,19 @@ Cho $ P_{r}, P_{s} $ là hai chương trình có cùng miền vào $ I $
   \todo{Đổi p1 p2 thành Pr và Ps cho đồng nhất, các tập Is Ia trong tất cả slide }
   \begin{algorithm}[H]
   	\KwIn{
-  		$P_{1}, P_{2}$ là hai chương trình cần đo tương tự, có cùng miền giá trị đầu
-  		vào $I$; $P_1$ là chương trình tham chiếu\;  	
+  		$P_r, P_s$ có cùng miền vào $I$; $P_r$ là tham chiếu  	
   	}  	
-  	$P_{3} = P_1 \oplus P_2$\;
-  	Set $I_{s} = DSE(P_{3})$ \;
-  	Set $I_{a} = \emptyset$ \;
-  	\For{$i \in I_{s}$}
+  	$P_c = P_r \oplus P_s$\;
+  	Set $I_s = DSE(P_c)$ \;
+  	Set $I_a = \emptyset$ \;
+  	\For{$i \in I_s$}
   	{  			
-  		\eIf{$ (exec(P_{1}, i) = exec(P_{2}, i)) $}{
-  			$I_{a} = I_{a} \cup i$\;
-  		}{
-  			Next\;
+  		\If{$ (exec(P_r, i) = exec(P_s, i)) $}{
+  			$I_{a} = I_{a} \cup \{i\}$\;
   		}
   	}
-  	\KwOut{$M_{PSE}(P_{1}, P_{2}) = \left|I_{a}\right| \diagup
-  		\left|I_{s}\right| $.}
+  	\KwOut{$M_{PSE}(P_r, P_s) = \left|I_a\right| \diagup
+  		\left|I_s\right| $.}
   \end{algorithm}
 \end{frame}
 
@@ -403,7 +400,7 @@ Cho $ P_{r}, P_{s} $ là hai chương trình có cùng miền vào $ I $
       \begin{itemize}
       \item 24 câu hỏi
       \item 250 người sử dụng
-      \item Chương trình do sinh viên viết
+%      \item Chương trình do sinh viên viết
       \end{itemize}
     \item Tự xây dựng
     \end{itemize}
@@ -413,7 +410,7 @@ Cho $ P_{r}, P_{s} $ là hai chương trình có cùng miền vào $ I $
     \item Microsoft Visual Studio
     \item Công cụ sinh dữ liệu thử PEX
       \begin{itemize}
-      \item Của Microsoft
+      \item Microsoft
       \item Dựa trên kỹ thuật DSE
       \item Tích hợp như một Add-in trong MVS
       \end{itemize}
@@ -431,24 +428,56 @@ Cho $ P_{r}, P_{s} $ là hai chương trình có cùng miền vào $ I $
 \end{frame}
 
 \begin{frame}
-  \frametitle{Kết quả phép đo RS}
+  \frametitle{Thực nghiệm}
   \todo{mỗi cái cần giải thích dữ liệu liên quan}
-  -Thêm 1 slide giới thiệu 2 đoạn code, xem tương tự như thế nào, sau đó đến cái slide kết quả các phép đo.
-  - Thêm hai đoạn code 2 bên, giải thích hai đoạn code tính độ tương tự để có kết quả như hình bên dưới
-  
-  \centering \includegraphics[width=0.8\linewidth]{images/kq_rs.png}
+%  -Thêm 1 slide giới thiệu 2 đoạn code, xem tương tự như thế nào, sau đó đến cái slide kết quả các phép đo.
+%  - Thêm hai đoạn code 2 bên, giải thích hai đoạn code tính độ tương tự để có kết quả như hình bên dưới
+  \begin{minipage}[t]{0.32\linewidth}
+  	\centering
+  	\lstinputlisting[basicstyle=\tiny]{CT_Thamchieu.cs}
+  \end{minipage}%
+  \hfill\vrule\hfill
+  \begin{minipage}[t]{0.32\linewidth}
+  	\centering
+  	\lstinputlisting[basicstyle=\tiny]{Hocsinh1.cs}
+  \end{minipage}%
+  \hfill\vrule\hfill
+  \begin{minipage}[t]{0.32\linewidth}
+  	\centering
+  	\lstinputlisting[basicstyle=\tiny]{Hocsinh2.cs}
+  \end{minipage}%
+	\pause
+	\begin{itemize}
+		\item Sub1 khác biệt hành vi: $ x = 2$ \pause
+		\item Sub2 khác biệt hành vi: $ x = \{2, 3\}$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Kết quả phép đo RS}
+\centering \includegraphics[width=0.8\linewidth]{images/kq_rs.png}
+\begin{itemize}
+	\item Lấy ngẫu nhiên 200 giá trị trên miền vào
+	\item Độ tương tự hành vi bằng 1
+\end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Kết quả phép đo SSE}
-\centering
 \includegraphics[width=0.8\linewidth]{images/kq_sse.png} 
+\begin{itemize}
+	\item $ DSE(P_r) = \{0, 1, 2\} $
+	\item $ M_{SSE}= 0.66 $
+\end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Kết quả phép đo PSE}
-\centering
-\includegraphics[width=0.8\linewidth]{images/kq_pse.png}
+\includegraphics[width=1.0\linewidth]{images/kq_pse.png}
+\begin{itemize}
+	\item Hàm Sub1: $ DSE(P_{c}) = \{0, 1, 2\} $, $ M_{PSE}= 0.66 $
+	\item Hàm Sub2: $ DSE(P_{c}) = \{0, 1, 2, 3\} $, $ M_{PSE}= 0.5 $
+\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -458,7 +487,7 @@ Cho $ P_{r}, P_{s} $ là hai chương trình có cùng miền vào $ I $
   \begin{itemize}
   	\item Kết quả đạt được \todo{Vừa thừa vừa thiếu}
   	\begin{itemize}
-  		\item Kiến thức cơ sở: testing, DSE, \dots tự điền thêm
+  		\item Kiến thức cơ sở: testing, DSE
   		\item Các phép đo RS, SSE, PSE
   		\item Xây dựng cộng cụ hỗ trợ
   	\end{itemize} \pause
@@ -482,18 +511,17 @@ Cho $ P_{r}, P_{s} $ là hai chương trình có cùng miền vào $ I $
 \begin{frame}
   \frametitle{Tài liệu tham khảo}
  \todo{Còn cách nào đẹp hơn không????, chưa khớp với những nghiên cứu liên quan}
- Hiển thị thống nhất như tham chiếu, tên tác giả tới năm. 
   \bibliographystyle{plain}
   {\footnotesize\bibliography{biblio}}
 \end{frame}
 
-
+\part{}
 \begin{frame}
   \todo{Sửa lại cho lịch sự hơn}
 %  \todo{Sau khi hoàn thành hãy thêm hiệu ứng cho một số slides}
   \begin{center}
     \begin{Huge}
-      \textcolor{BlueGreen}{\textbf{XIN CẢM ƠN}}
+      \textcolor{BlueGreen}{\textbf{XIN TRÂN TRỌNG \\ CẢM ƠN QUÝ THẦY CÔ!}}
     \end{Huge}
 \end{center}
 

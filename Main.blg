@@ -7,8 +7,6 @@ Warning--empty booktitle in edx
 Warning--empty year in edx
 Warning--empty booktitle in CodeHunt
 Warning--empty year in CodeHunt
-Warning--empty booktitle in DSE
-Warning--empty year in DSE
 Warning--empty booktitle in mooc
 Warning--empty year in mooc
 Warning--empty booktitle in Pex4Fun
@@ -17,4 +15,4 @@ Warning--empty booktitle in Udacity
 Warning--empty year in Udacity
 Warning--empty booktitle in wang2007semantic
 Warning--can't use both volume and number fields in wang2007semantic
-(There were 16 warnings)
+(There were 14 warnings)

@@ -26,20 +26,20 @@ người.
 \end{figure}
 
 Một trong những thách thức của việc đào tạo lập trình trực tuyến là
-làm sao cho phép tổ chức những lớp học có quy mô lớn, trong khi đó vẫn
+tổ chức những lớp học có quy mô lớn, trong khi đó vẫn
 đảm bảo chất lượng đào tạo. Thông thường, những khóa học trực tuyến
-phổ biến có rất nhiều học viên tham gia, hàng trăm thậm chí hàng ngàn
-người, nhưng số người phụ trách giảng dạy không nhiều. Sự hạn chế về
+có nhiều học viên tham gia, hàng trăm thậm chí hàng ngàn, 
+nhưng số người phụ trách giảng dạy không nhiều. Sự hạn chế về
 số người phụ trách này có ảnh hưởng rất nhiều đến chất lượng đào
 tạo. Về phía người giảng dạy, để xếp hạng học viên hay cung cấp những
-phản hồi đối với từng lời giải của học viên đòi hỏi họ phải đọc hiểu
+phản hồi đối với từng lời giải của học viên đòi hỏi người dạy phải đọc hiểu
 toàn bộ mã lệnh do học viên viết. Công việc này dường như quá nặng
-nhọc nhưng không thể bỏ qua hoặc trì hoãn vì như vậy sẽ không thể bắt
-kịp tiến độ của học viên. Ngoài ra, về phía học viên, họ đến từ rất
-nhiều nơi trên thế giới nên thời gian học cũng khác nhau. Những lúc họ
-gặp khó khăn trong việc viết mã chương trình, họ có thể tìm kiếm sự
-trợ giúp từ bạn bè hoặc những người có kinh nghiệm, từ người dạy. Tuy
-nhiên, không phải lúc nào cũng có người này cũng có bên cạnh để giúp
+nhọc nhưng không thể bỏ qua hoặc trì hoãn vì như vậy sẽ không thể nắm bắt
+được tiến bộ của học viên. Ngoài ra, học viên đến từ rất
+nhiều nơi trên thế giới nên thời gian học cũng khác nhau. Những lúc 
+gặp khó khăn trong việc viết mã chương trình, người học có thể tìm kiếm sự
+trợ giúp từ bạn bè hoặc những người có kinh nghiệm. Tuy
+nhiên, không phải lúc nào cũng có người bên cạnh để giúp
 đỡ cho họ, ảnh minh họa Hình \ref{fig:Retry}. 
 
 \begin{figure}[h]
@@ -57,16 +57,20 @@ cùng kết quả nếu nhận vào cùng dữ liệu. Việc chuyển đổi t�
 thành dữ liệu ra của một chương trình có thể xem là \emph{hành vi} của
 nó. Công cụ này có thể giúp người dạy đánh giá xếp hạng giải pháp của
 học viên dựa vào giải pháp của mình. Ngoài ra, công cụ còn có thể giúp
-đánh giá được người học có tiến bộ không, giúp đưa ra những gợi ý lập
+đánh giá được tiến bộ của người học, giúp đưa ra những gợi ý lập
 trình cho học viên,\dots
 
 Chúng tôi nhận thấy vấn đề cốt lõi để xây dựng công cụ này là làm sao
-đo được độ tương tự về hành vi giữa hai chương trình. Đó là lý do tôi chọn đề tài \emph{``Độ tương tự hành vi của chương trình và thực nghiệm''}. Đề tài này  sẽ làm rõ hành vi của chương trình, độ tương tự về hành vi của chương trình và một số phương pháp đo độ tương tự về hành vi.
+đo được độ tương tự về hành vi giữa hai chương trình. Đó là lý do tôi 
+chọn đề tài \emph{``Độ tương tự hành vi của chương trình và thực nghiệm''}. 
+Đề tài này sẽ làm rõ hành vi của chương trình, độ tương tự về hành vi của 
+chương trình và một số phương pháp đo độ tương tự về hành vi.
 
 \section{Đối tượng, phạm vi, phương pháp nghiên cứu}
 \subsection{Mục tiêu nghiên cứu}
 
-Mục tiêu nghiên cứu chính của luận văn là tìm cách đánh giá độ tương tự về hành vi giữa hai chương trình máy tính. Nó được cụ thể hóa thành những mục tiêu sau:
+Mục tiêu nghiên cứu chính của luận văn là tìm cách đánh giá độ tương tự về 
+hành vi giữa hai chương trình máy tính và được cụ thể hóa thành những mục tiêu sau:
 \begin{itemize}
 \item Tìm hiểu sự tương tự hành vi của chương trình;
 \item Tìm hiểu kỹ thuật, công cụ sinh test case tự động và áp dụng để
@@ -130,8 +134,16 @@ luận văn đều sử dụng khái niệm về độ tương tự về ngữ n
 cận của bài báo dùng cho automat hữu hạn đơn định trong khi các độ đo
 trong luận văn dùng cho các chương trình máy tính.
 
-Một bài báo khác liên quan đến chủ đề này là \cite{singh2013automated}. Trong đó, nhóm tác giả đề xuất phương pháp tự động
-xác định số sửa lỗi tối thiểu cần thực hiện trên chương trình của sinh viên (chưa đúng) sao cho khớp với giải pháp tham chiếu của giáo viên. Cách tiếp cận này cung cấp cách sử lỗi thông qua việc tính khoảng cách cú pháp tối thiểu (\emph{minimal syntactic distance}) giữa chương trình sai với chương trình tham chiếu, trong khi đó luận văn tập trung vào đo độ tương tự về ngữ nghĩa của hai chương trình dựa vào các hành vi vào/ra. Các độ đo trong luận văn có thể nhận biết độ tương tự giữa các chương trình có cấu trúc cú pháp khác nhau.
+Một bài báo khác liên quan đến chủ đề này là \cite{singh2013automated}. 
+Trong đó, nhóm tác giả đề xuất phương pháp tự động
+xác định số sửa lỗi tối thiểu cần thực hiện trên chương trình của sinh 
+viên (chưa đúng) sao cho khớp với giải pháp tham chiếu của giáo viên. 
+Cách tiếp cận này cung cấp cách sử lỗi thông qua việc tính khoảng cách 
+cú pháp tối thiểu (\emph{minimal syntactic distance}) giữa chương trình 
+sai với chương trình tham chiếu, trong khi đó luận văn tập trung vào đo 
+độ tương tự về ngữ nghĩa của hai chương trình dựa vào các hành vi vào/ra. 
+Các độ đo trong luận văn có thể nhận biết độ tương tự giữa các chương trình 
+có cấu trúc cú pháp khác nhau.
 
 Ngoài ra, trước những nghiên cứu vừa nêu được đưa ra, trong bài báo
 \cite{wang2007semantic}, tác giả đề xuất một giải pháp đo độ tương tự
@@ -158,27 +170,14 @@ Phương pháp tự động xác định những đoạn mã tương đương nh
 năng thông qua các phép thử ngẫu nhiên
 \cite{jiang2009automatic}. Cách tiếp cận này xem xét hai đoạn mã có
 tương đương nhau hay không thông qua giá trị đầu vào và đầu ra, không
-quan tâm đến cấu trúc và cú pháp của chúng. Độ đo RS trong luận văn này cũng tương tự với cách tiếp cận trong bài báo. Tuy nhiên, luận văn này các đưa ra hai phương pháp đo khác, dựa trên kỹ thuật thực thi biểu trưng chương trình DSE (\emph{Dynamic Symbolic Execution}).
-	
-% \subsection*{Phản hồi dựa trên trường hợp các thử nghiệm}
-
-% Phương pháp tự động phân loại chương trình, bài tập đơn giản
-% \cite{hext1969automatic}, cách tiếp cận của phương pháp này là so sánh
-% dữ liệu được tạo ra trong quá trình thực thi chương trình với dữ liệu
-% đã lưu trữ trước đó.
-	
-% Phương pháp phân loại chương trình của sinh viên sử dụng ASSYST
-% \cite{jackson1997grading}, tác giả đề xuất cách tiếp cận đó là tự động
-% kiểm tra tính chính xác của chương trình và kiểu lập trình như mô đun,
-% độ phức tạp và hiệu quả.
-	
-% Pex4Fun sử dụng DSE để tạo ra các giá trị đầu vào thử nghiệm cho các
-% chương trình và các chương trình khi thực thi các giá trị này sẽ cho
-% ra các giá trị đầu ra khác nhau.
-	
+quan tâm đến cấu trúc và cú pháp của chúng. Độ đo RS trong luận văn này 
+cũng tương tự với cách tiếp cận trong bài báo. Tuy nhiên, luận văn này 
+các đưa ra hai phương pháp đo khác, dựa trên kỹ thuật thực thi biểu 
+trưng chương trình DSE (\emph{Dynamic Symbolic Execution}).
+		
 \subsection*{Phát hiện đạo code}
 
-Những nhà nghiên cứu đã đề xuất các tiếp cận tính cho việc tính toán
+Những nhà nghiên cứu đã đề xuất cách tiếp cận cho việc tính toán
 độ tương tự giữa các biến thể của các đoạn mã lệnh để tự động nhận
 diện đạo code, như sử dụng cây cú pháp trừu tượng
 \cite{baxter1998clone}, đồ thị phụ thuộc của chương trình
@@ -200,11 +199,14 @@ tương tự về hành vi giữa hai chương trình máy tính làm cơ sở �
 dựng công cụ tự động hóa nhằm giảm thiểu công sức người dạy trong việc
 đánh giá xếp hạng kết quả học tập của học viên cũng như đưa ra những
 gợi ý hỗ trợ cho người học trong quá trình viết chương trình.
-Chương \ref{chap:intro} cho thấy sự cần thiết của đề tài cũng như đối tượng, phạm vi và phương pháp nghiên cứu. Ngoài ra, chương này còn trình bày một số nghiên cứu có liên quan về việc xếp hạng tự động, kiểm tra sự tương đương, phát hiện đạo code.
+Chương \ref{chap:intro} cho thấy sự cần thiết của đề tài cũng như đối 
+tượng, phạm vi và phương pháp nghiên cứu. Ngoài ra, chương này còn trình 
+bày một số nghiên cứu có liên quan về việc xếp hạng tự động, kiểm tra sự 
+tương đương, phát hiện đạo code.
 
-Phần còn lại của luận văn được tổ chức thành hai chương. Chương
-\ref{chap:method} làm rõ về hành vi của chương trình cùng những phương
-pháp đo độ tương tự về hành vi. Chương \ref{chap:results} trình bày
+Phần còn lại của luận văn được tổ chức thành ba chương. Chương \ref{chap:behaviors}
+tập trung làm rõ về hành vi của chương trình, Chương \ref{chap:method} những phương
+pháp đo độ tương tự về hành vi, Chương \ref{chap:results} trình bày
 kết quả thực nghiệm cùng một số vấn đề liên quan.
 
 

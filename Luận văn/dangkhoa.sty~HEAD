@@ -1,0 +1,57 @@
+\usepackage[utf8]{vietnam}
+
+\usepackage[acronym]{glossaries}
+\usepackage{pdfpages}
+\usepackage{todonotes}
+\usepackage{hyperref}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{lipsum}
+% \usepackage[left=3.5cm,right=2cm,top=3.5cm,bottom=3cm]{geometry}
+
+
+% Cấu hình paragraph
+\setlength{\parindent}{0.0em} %Thụt vào đầu dòng mỗi paragraph
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.5} % Khoảng cách giữa các dòng
+% \usepackage{indentfirst} % Tất cả đều thụt đầu dòng trong mỗi đoạn văn bản
+% Ép hai chữ nào đó luôn ở cùng 1 dòng
+% ... thông~minh ...
+
+
+% Cấu hình file --> để hiển nhập code c# 
+\usepackage{listings}
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+	language=[Sharp]C,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+% Cấu hình table
+\usepackage{tabu}
+
+\newtheorem{definition}{Định nghĩa}
+\renewcommand{\lstlistingname}{Mã lệnh}
+
+\newacronym{dse}{DSE}{Dynamic Symbolic Execution}

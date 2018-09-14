@@ -1,0 +1,62 @@
+\documentclass[12pt,a4paper,openany,oneside]{memoir} %memoir
+\input{dangkhoa.sty}
+\title{Độ tương tự hành vi của chương trình \\ và thực nghiệm}
+\author{Đỗ Đăng Khoa}
+\begin{document}
+	
+\fontsize{14pt}{14pt}\selectfont \baselineskip 0.65cm
+\thispagestyle{empty}
+
+\includepdf[pages=-]{trangbia.pdf}
+
+\chapter*{LỜI CAM ĐOAN}
+\input{Loicamdoan}
+
+\chapter*{LỜI CẢM ƠN}
+\input{Loicamon}
+
+\newpage
+\tableofcontents
+
+\includepdf[pages=1]{Danhmuckyhieu.pdf}
+\newpage
+
+\listoffigures
+\newpage
+
+\lstlistoflistings
+
+
+\chapter{GIỚI THIỆU}
+\label{chap:intro}
+\input{intro}
+
+\chapter{HÀNH VI CỦA CHƯƠNG TRÌNH}
+\label{chap:behaviors}
+\input{behaviors}
+
+\chapter{ĐO ĐỘ TƯƠNG TỰ HÀNH VI CHƯƠNG TRÌNH}
+\label{chap:method}
+\input{method}
+
+\chapter{THỰC NGHIỆM, ĐÁNH GIÁ}
+\label{chap:results}
+\input{results}
+
+\bibliographystyle{plain}
+\bibliography{biblio}
+
+\appendix
+
+\includepdf{quyetdinh.pdf}
+
+\chapter{MỘT SỐ MÃ LỆNH QUAN TRỌNG}
+\input{SourceCode}
+
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
